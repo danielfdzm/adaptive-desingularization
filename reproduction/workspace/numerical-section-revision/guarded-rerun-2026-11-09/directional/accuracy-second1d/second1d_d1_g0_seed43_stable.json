@@ -1,0 +1,182 @@
+{
+ "method": "stable",
+ "d": 1,
+ "fits": 68,
+ "iterations": 40,
+ "stop": "function_tolerance",
+ "final_relative_error": 2.2740778155219718e-08,
+ "trace_final_error_double": 2.2301741431289768e-08,
+ "coefficient_norm": 0.40000002433035997,
+ "completions": 0,
+ "joins": 1,
+ "rejections": 0,
+ "blocks_final": {
+  "line2": 1
+ },
+ "wall": 1.74595195800066,
+ "solve_seconds": 1.565314166015014,
+ "optimizer_seconds": 1.565314166015014,
+ "posthoc_validation_seconds": 0.18063891702331603,
+ "postprocessing_seconds": 0.1806393750011921,
+ "guard_counts": {},
+ "guard_examples": [],
+ "coordinate_convention": "dimensionless p_hat = (q/sigma)/prod((t_i-t_j)/sigma)",
+ "trace": [
+  {
+   "fits": 1,
+   "iterations": 0,
+   "wall": 0.01399541599676013,
+   "relative_error": 0.4519551100991454,
+   "coefficient_norm": 1.83895972078094,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 3
+   }
+  },
+  {
+   "fits": 23,
+   "iterations": 20,
+   "wall": 0.2924516249913722,
+   "relative_error": 5.940832721460287e-05,
+   "coefficient_norm": 6513.868348374642,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 3
+   }
+  },
+  {
+   "fits": 24,
+   "iterations": 20,
+   "wall": 0.31292175012640655,
+   "relative_error": 4.7006867262151644e-05,
+   "coefficient_norm": 3095.7009515842024,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 1,
+    "pair": 1
+   }
+  },
+  {
+   "fits": 36,
+   "iterations": 22,
+   "wall": 0.5491663331631571,
+   "relative_error": 4.383885747765275e-05,
+   "coefficient_norm": 3095.7009545352794,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 1,
+    "pair": 1
+   }
+  },
+  {
+   "fits": 37,
+   "iterations": 22,
+   "wall": 0.5929488751571625,
+   "relative_error": 4.91747127735518e-05,
+   "coefficient_norm": 0.4000526185160331,
+   "completions": 0,
+   "joins": 1,
+   "blocks": {
+    "line2": 1
+   }
+  },
+  {
+   "fits": 65,
+   "iterations": 39,
+   "wall": 1.3898688331246376,
+   "relative_error": 2.5751832837505154e-08,
+   "coefficient_norm": 0.40000002433036974,
+   "completions": 0,
+   "joins": 1,
+   "blocks": {
+    "line2": 1
+   }
+  },
+  {
+   "fits": 68,
+   "iterations": 40,
+   "wall": 1.5596045411657542,
+   "relative_error": 2.2301741431289768e-08,
+   "coefficient_norm": 0.40000002433035997,
+   "completions": 0,
+   "joins": 1,
+   "blocks": {
+    "line2": 1
+   }
+  },
+  {
+   "fits": 68,
+   "iterations": 40,
+   "wall": 1.5645632911473513,
+   "relative_error": 2.2301741431289768e-08,
+   "coefficient_norm": 0.40000002433035997,
+   "completions": 0,
+   "joins": 1,
+   "blocks": {
+    "line2": 1
+   }
+  }
+ ],
+ "events": [
+  {
+   "kind": "pair",
+   "fits": 23,
+   "h": 0.005162953432710074
+  },
+  {
+   "kind": "join",
+   "fits": 36,
+   "into": "pair",
+   "base": "pair",
+   "order": 2,
+   "s": 0.019804170125730186,
+   "q": 0.0
+  }
+ ],
+ "final_blocks": [
+  {
+   "kind": "line",
+   "base": "pair",
+   "k": 2,
+   "id": 5,
+   "c": [
+    0.23015577325513797
+   ],
+   "e": [
+    -1.0
+   ],
+   "h": 7.242360984502904e-13,
+   "s": [
+    0.00046731977044979186
+   ],
+   "p": [
+    [
+     0.0
+    ]
+   ]
+  }
+ ],
+ "final_coefficients": [
+  2.6786637527383892e-08,
+  5.630858052990006e-12,
+  0.4000000243303591
+ ],
+ "setup_seconds": 0.041605457896366715,
+ "end_to_end_seconds": 1.6069196239113808,
+ "timing_scope": "problem, quadrature, target and solver setup + initial coefficient fit through solver termination; excludes high-precision endpoint validation, imports, process launch and JSON I/O",
+ "input_sha256": {
+  "X": "0eb79f53b19ffb823d4f5b475aaa72814d5ac3249e80eb95e6b09e69f6a60e9d",
+  "W": "56c1eb4c95c6c5b71c638387128699cedfff15ce63286a37cb7bd7bbed802d1c",
+  "starts": "4bd1669cee197d734ee16b01a59a655138f4ad07b693c8e03bfe338392aa7880"
+ },
+ "problem": "second1d",
+ "geometry": 0,
+ "seed": 43,
+ "slots": 3,
+ "timing_mode": "accuracy",
+ "concurrent_workers": 2
+}

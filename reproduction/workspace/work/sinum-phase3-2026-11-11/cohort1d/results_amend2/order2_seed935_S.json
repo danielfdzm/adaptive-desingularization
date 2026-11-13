@@ -1,0 +1,172 @@
+{
+  "stationarity": {
+    "projected_gradient_max_abs": 1.8202912031028973e-06,
+    "gradient_max_abs": 1.8202912031028973e-06,
+    "active_bounds": 0,
+    "normalized_coefficient_kkt": 1.181859590493521e-12,
+    "final_objective_normalized": -0.5000000006339547,
+    "final_chain_slopes": []
+  },
+  "final_squared_halfgaps": [],
+  "zero_gap_pairs": 0,
+  "method": "standard_restart",
+  "d": 1,
+  "fits": 67,
+  "iterations": 17,
+  "stop": "function_tolerance",
+  "final_relative_error": 5.08456912745992e-05,
+  "trace_final_error_double": 0.0,
+  "coefficient_norm": 4504.406451861727,
+  "completions": 0,
+  "joins": 0,
+  "rejections": 0,
+  "blocks_final": {
+    "atom": 3
+  },
+  "wall": 0.8732210830785334,
+  "solve_seconds": 0.8554662500973791,
+  "optimizer_seconds": 0.8554662500973791,
+  "posthoc_validation_seconds": 0.017756582936272025,
+  "postprocessing_seconds": 0.017757040914148092,
+  "guard_counts": {},
+  "guard_examples": [],
+  "coordinate_convention": "dimensionless p_hat = (q/sigma)/prod((t_i-t_j)/sigma)",
+  "trace": [
+    {
+      "fits": 1,
+      "iterations": 0,
+      "wall": 0.005127333104610443,
+      "relative_error": 0.45707972309202133,
+      "coefficient_norm": 43.23076099808008,
+      "completions": 0,
+      "joins": 0,
+      "blocks": {
+        "atom": 3
+      }
+    },
+    {
+      "fits": 57,
+      "iterations": 15,
+      "wall": 0.7378530001733452,
+      "relative_error": 2.651146603162232e-05,
+      "coefficient_norm": 4504.395103208389,
+      "completions": 0,
+      "joins": 0,
+      "blocks": {
+        "atom": 3
+      }
+    },
+    {
+      "fits": 67,
+      "iterations": 17,
+      "wall": 0.8554023751057684,
+      "relative_error": 0.0,
+      "coefficient_norm": 4504.406451861727,
+      "completions": 0,
+      "joins": 0,
+      "blocks": {
+        "atom": 3
+      }
+    }
+  ],
+  "events": [],
+  "final_blocks": [
+    {
+      "kind": "atom",
+      "id": 1,
+      "c": [
+        -0.15237478623679931
+      ]
+    },
+    {
+      "kind": "atom",
+      "id": 2,
+      "c": [
+        -0.12695616066346344
+      ]
+    },
+    {
+      "kind": "atom",
+      "id": 3,
+      "c": [
+        -0.1397879098509763
+      ]
+    }
+  ],
+  "final_coefficients": [
+    1856.6027977941617,
+    1821.1728090681052,
+    -3677.775568778964
+  ],
+  "order": 2,
+  "seed": 935,
+  "phase3_method": "S",
+  "sigma": 0.65,
+  "lambda_value": 10.0,
+  "target": [
+    [
+      [
+        -0.1397080595981147
+      ]
+    ],
+    [
+      [
+        1.0
+      ]
+    ],
+    [
+      2
+    ],
+    [
+      0.2969624931675534
+    ]
+  ],
+  "target_shift": -0.1397080595981147,
+  "target_amplitude_factor": 0.7028698063137357,
+  "initial_centers": [
+    [
+      -0.5928750045861726
+    ],
+    [
+      -0.4249313923104708
+    ],
+    [
+      -0.5242672624799075
+    ]
+  ],
+  "width": 3,
+  "stage": "phase-3 enlarged cohort",
+  "setup_seconds": 0.02177341701462865,
+  "end_to_end_seconds": 0.8772396671120077,
+  "validation": {
+    "quadrature": [
+      {
+        "nodes": 384,
+        "box": 10.0,
+        "quadratic_gap": 3.816853178763704e-09,
+        "nonlinear_gap": 2.1771177816593537e-10,
+        "total_gap": 4.03456495692964e-09,
+        "target_nonlinear_over_quadratic": 0.033969715080841706
+      },
+      {
+        "nodes": 768,
+        "box": 10.0,
+        "quadratic_gap": 3.816853178763704e-09,
+        "nonlinear_gap": 2.1771178054010803e-10,
+        "total_gap": 4.034564959303812e-09,
+        "target_nonlinear_over_quadratic": 0.03396971508084667
+      },
+      {
+        "nodes": 768,
+        "box": 12.0,
+        "quadratic_gap": 3.816853178763704e-09,
+        "nonlinear_gap": 2.1771177926882286e-10,
+        "total_gap": 4.034564958032527e-09,
+        "target_nonlinear_over_quadratic": 0.03396971508084667
+      }
+    ],
+    "normalized_coefficient_kkt": 1.1818595904935207e-12,
+    "normalized_maximum_gap_change": 4.305421858095403e-19
+  },
+  "independent_validation_seconds": 0.1221074159257114
+}

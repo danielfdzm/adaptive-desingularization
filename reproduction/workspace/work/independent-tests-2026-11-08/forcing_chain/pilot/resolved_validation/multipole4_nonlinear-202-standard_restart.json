@@ -1,0 +1,41 @@
+{
+  "source": "work/independent-tests-2026-11-08/forcing_chain/pilot/runs/multipole4_nonlinear-202-standard_restart.json",
+  "problem": "multipole4_nonlinear",
+  "seed": 202,
+  "method": "standard_restart",
+  "status": "validated",
+  "error": 0.8886247145469868,
+  "checks": [
+    {
+      "nodes": 1024,
+      "error": 0.8886247145469319,
+      "energy": -71.17524215185517,
+      "reference_energy": -237.7384989933609,
+      "nonlinear_to_quadratic_ratio": 0.33306854192774754,
+      "reference_peak": 3.3692298906765408
+    },
+    {
+      "nodes": 1536,
+      "error": 0.8886247145470069,
+      "energy": -71.17524215182914,
+      "reference_energy": -237.73849899337048,
+      "nonlinear_to_quadratic_ratio": 0.3330685419277441,
+      "reference_peak": 3.371649626338637
+    },
+    {
+      "nodes": 2048,
+      "error": 0.8886247145469868,
+      "energy": -71.17524215188608,
+      "reference_energy": -237.7384989933698,
+      "nonlinear_to_quadratic_ratio": 0.3330685419277463,
+      "reference_peak": 3.371956082688116
+    }
+  ],
+  "reference_relative_H1_difference": 2.744622146145585e-13,
+  "base_mesh_nodes": 9968,
+  "fine_mesh_nodes": 14379,
+  "fits": 48,
+  "completions": 0,
+  "joins": 0,
+  "original_stop": "exception"
+}

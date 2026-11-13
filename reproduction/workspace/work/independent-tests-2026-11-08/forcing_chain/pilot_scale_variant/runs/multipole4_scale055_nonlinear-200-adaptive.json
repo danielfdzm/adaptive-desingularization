@@ -1,0 +1,229 @@
+{
+ "problem": "multipole4_scale055_nonlinear",
+ "seed": 200,
+ "method": "adaptive",
+ "capacity": 3,
+ "sigma": 0.55,
+ "reaction": 10.0,
+ "initial_centers": [
+  -0.7059497568962586,
+  0.049175991413823845,
+  0.6089704957326906
+ ],
+ "fits": 45,
+ "iterations": 21,
+ "stop": "function_tolerance",
+ "coefficient_norm": 2.788952051186221,
+ "completions": 1,
+ "joins": 1,
+ "rejections": 0,
+ "blocks_final": {
+  "chain2": 1
+ },
+ "solve_seconds": 0.6223185420967638,
+ "trace": [
+  {
+   "fits": 1,
+   "iterations": 0,
+   "wall": 0.012150334077887237,
+   "energy": -0.009909305594306046,
+   "coefficient_norm": 9.998040311945525,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 3
+   }
+  },
+  {
+   "fits": 10,
+   "iterations": 5,
+   "wall": 0.07071604207158089,
+   "energy": -0.01645221752983668,
+   "coefficient_norm": 130.10726955594768,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 3
+   }
+  },
+  {
+   "fits": 11,
+   "iterations": 5,
+   "wall": 0.07660712499637157,
+   "energy": -0.01645221752983689,
+   "coefficient_norm": 62.401188494634034,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 1,
+    "pair": 1
+   }
+  },
+  {
+   "fits": 20,
+   "iterations": 10,
+   "wall": 0.3972865840187296,
+   "energy": -0.016529984248412476,
+   "coefficient_norm": 6053.93742207136,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 1,
+    "pair": 1
+   }
+  },
+  {
+   "fits": 21,
+   "iterations": 10,
+   "wall": 0.4081440420122817,
+   "energy": -0.016529984248211435,
+   "coefficient_norm": 2.7881000482936398,
+   "completions": 0,
+   "joins": 1,
+   "blocks": {
+    "line2": 1
+   }
+  },
+  {
+   "fits": 29,
+   "iterations": 15,
+   "wall": 0.49166450009215623,
+   "energy": -0.01653794700653427,
+   "coefficient_norm": 2.7889519114032124,
+   "completions": 0,
+   "joins": 1,
+   "blocks": {
+    "line2": 1
+   }
+  },
+  {
+   "fits": 33,
+   "iterations": 19,
+   "wall": 0.5394534590886906,
+   "energy": -0.016537951372145046,
+   "coefficient_norm": 2.788952051186285,
+   "completions": 0,
+   "joins": 1,
+   "blocks": {
+    "line2": 1
+   }
+  },
+  {
+   "fits": 34,
+   "iterations": 19,
+   "wall": 0.5589021251071244,
+   "energy": -0.016537951372145036,
+   "coefficient_norm": 2.788952051186219,
+   "completions": 1,
+   "joins": 1,
+   "blocks": {
+    "chain2": 1
+   }
+  },
+  {
+   "fits": 42,
+   "iterations": 20,
+   "wall": 0.6016957920510322,
+   "energy": -0.01653795137214504,
+   "coefficient_norm": 2.788952051186219,
+   "completions": 1,
+   "joins": 1,
+   "blocks": {
+    "chain2": 1
+   }
+  },
+  {
+   "fits": 42,
+   "iterations": 20,
+   "wall": 0.6018442090135068,
+   "energy": -0.01653795137214504,
+   "coefficient_norm": 2.788952051186219,
+   "completions": 1,
+   "joins": 1,
+   "blocks": {
+    "chain2": 1
+   }
+  },
+  {
+   "fits": 45,
+   "iterations": 21,
+   "wall": 0.6222693750169128,
+   "energy": -0.016537951372145046,
+   "coefficient_norm": 2.788952051186221,
+   "completions": 1,
+   "joins": 1,
+   "blocks": {
+    "chain2": 1
+   }
+  }
+ ],
+ "events": [
+  {
+   "kind": "pair",
+   "fits": 10,
+   "h": 0.07719927557991377
+  },
+  {
+   "kind": "join",
+   "fits": 20,
+   "into": "pair",
+   "base": "pair",
+   "order": 2,
+   "s": 0.02874904213458665,
+   "q": 0.0
+  },
+  {
+   "kind": "completion",
+   "fits": 33,
+   "from": "line",
+   "base": "pair",
+   "order": 2,
+   "omega": 0.0,
+   "a_priori_bound": 1.2899286355276703e-07,
+   "centre_shift": 0.0,
+   "tolerance": 0.13058910038550395,
+   "dJ_normalized": 6.938893903907228e-18,
+   "eps_normalized": 0.0005
+  }
+ ],
+ "final_blocks": [
+  {
+   "kind": "chain",
+   "k": 2,
+   "id": 6,
+   "c": [
+    0.2299999999999812
+   ],
+   "e": [
+    -1.0
+   ]
+  }
+ ],
+ "final_coefficients": [
+  -2.155753586550892,
+  -8.764989330137536e-14,
+  -1.76945754904965
+ ],
+ "forcing_squared_norm": 23030.82222520512,
+ "error": 0.3299986540894758,
+ "validation": [
+  {
+   "nodes": 1024,
+   "error": 0.32999865408947604,
+   "energy": -380.8826180209175,
+   "reference_energy": -406.73593161173994,
+   "nonlinear_to_quadratic_energy_ratio": 0.6842720698816156,
+   "reference_peak": 3.6121224951840816
+  },
+  {
+   "nodes": 1536,
+   "error": 0.3299986540894758,
+   "energy": -380.8826180209335,
+   "reference_energy": -406.7359316117571,
+   "nonlinear_to_quadratic_energy_ratio": 0.6842720698816102,
+   "reference_peak": 3.6131383801774857
+  }
+ ],
+ "reference_refinement_relative_H1": 3.513163251381833e-13,
+ "total_seconds": 0.6263478340115398
+}

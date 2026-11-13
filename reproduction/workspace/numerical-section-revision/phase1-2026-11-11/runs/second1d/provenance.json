@@ -1,0 +1,56 @@
+{
+ "command": [
+  "chain_experiments.py",
+  "--problem",
+  "second1d",
+  "--seeds",
+  "40",
+  "50",
+  "--methods",
+  "tpair",
+  "--jobs",
+  "2",
+  "--output",
+  "../runs/second1d"
+ ],
+ "python": "3.13.9",
+ "started": "2026-11-11 11:20:17",
+ "source_sha256": {
+  "chain_experiments.py": "f82ab1cd991c835929c96a8fc15d8652c8bb1062219b9ac89b39b64235a06fbc",
+  "chain_kernels.py": "26d1e4972976ba49fc70ee53f9fab60e52d5251eaa334ba43c8cf7729b32a0ae",
+  "chain_solver.py": "10cc742297c2640964c0b8abc5ae3b56573aec116329d09a7a57ecbd951e0824",
+  "config.py": "54517c2adcf5ef507bc8528e4fc35fa34ec405fddc211fb729e8bc213d2f3c90",
+  "directional_guard.py": "22ac3b90826d4b90378e772bceec00d17d509cafc391a80adc22ad5a8fdae876",
+  "fit.py": "98aef2bb1dcdebc14510af261ee7b96cc7ebfef24006644cbd433443fbb713d4",
+  "kernels.py": "49cd15bc5fb530e90a3bb7da0a9a4bb4b5eb96861de38dfbd5c62f1f5fdbf8ef",
+  "quadrature.py": "4b4f026ff8b45d2d0fed6caf36303b56be3a8587b807805650108fd670f50b80",
+  "safeguard_cleanup.py": "9f13406f2b17effd56948df867ab79c60664fe6b3069b8d3b9da4830cd82f2ba",
+  "test_guard.py": "d8391d1640d2060dd31786011a3907f615fdf9499cf908a0c0e7e7a62c419978"
+ },
+ "timing_mode": "accuracy",
+ "jobs": 2,
+ "numpy": "2.4.2",
+ "scipy": "1.17.0",
+ "torch": "2.10.0",
+ "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+ "machine": "arm64",
+ "threadpools": [
+  {
+   "user_api": "openmp",
+   "internal_api": "openmp",
+   "num_threads": 1,
+   "prefix": "libomp",
+   "filepath": "/opt/miniconda3/lib/python3.13/site-packages/torch/lib/libomp.dylib",
+   "version": null
+  }
+ ],
+ "torch_threads": 1,
+ "thread_environment": {
+  "OMP_NUM_THREADS": "1",
+  "OPENBLAS_NUM_THREADS": "1",
+  "MKL_NUM_THREADS": "1",
+  "VECLIB_MAXIMUM_THREADS": "1"
+ },
+ "old_higher_results": "revision-2026-11/experiments/results/chain-higher-d5",
+ "old_second1d_results": "revision-2026-11/experiments/results/chain-second1d-final"
+}

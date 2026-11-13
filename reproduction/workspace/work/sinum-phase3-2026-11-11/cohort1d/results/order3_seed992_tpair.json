@@ -1,0 +1,178 @@
+{
+  "stationarity": {
+    "projected_gradient_max_abs": 0.002408931490208488,
+    "gradient_max_abs": 0.04078844113989059,
+    "active_bounds": 1,
+    "normalized_coefficient_kkt": 0.00025562654488040285,
+    "final_objective_normalized": -0.45771691533855413,
+    "final_chain_slopes": []
+  },
+  "final_squared_halfgaps": [
+    0.0
+  ],
+  "zero_gap_pairs": 1,
+  "method": "tpair",
+  "d": 1,
+  "fits": 16,
+  "iterations": 7,
+  "stop": "singular unconstrained coefficient system",
+  "final_relative_error": 0.27933632156710353,
+  "trace_final_error_double": 0.3756321263236235,
+  "coefficient_norm": 494582.6696078211,
+  "completions": 0,
+  "joins": 0,
+  "rejections": 0,
+  "blocks_final": {
+    "atom": 2,
+    "pair": 1
+  },
+  "wall": 1.3864712498616427,
+  "solve_seconds": 1.311184415826574,
+  "optimizer_seconds": 1.311184415826574,
+  "posthoc_validation_seconds": 0.07528916699811816,
+  "postprocessing_seconds": 0.07528966711834073,
+  "guard_counts": {},
+  "guard_examples": [],
+  "coordinate_convention": "dimensionless p_hat = (q/sigma)/prod((t_i-t_j)/sigma)",
+  "trace": [
+    {
+      "fits": 1,
+      "iterations": 0,
+      "wall": 0.17844895785674453,
+      "relative_error": 0.37563212632360826,
+      "coefficient_norm": 26.86476735936739,
+      "completions": 0,
+      "joins": 0,
+      "blocks": {
+        "atom": 4
+      }
+    },
+    {
+      "fits": 2,
+      "iterations": 0,
+      "wall": 0.22199024981819093,
+      "relative_error": 0.3756321263236235,
+      "coefficient_norm": 9.674680652252999,
+      "completions": 0,
+      "joins": 0,
+      "blocks": {
+        "atom": 2,
+        "pair": 1
+      }
+    }
+  ],
+  "events": [
+    {
+      "kind": "pair",
+      "fits": 1,
+      "h": 0.051357191464253715
+    }
+  ],
+  "final_blocks": [
+    {
+      "kind": "atom",
+      "id": 1,
+      "c": [
+        0.23176873109901244
+      ]
+    },
+    {
+      "kind": "atom",
+      "id": 2,
+      "c": [
+        0.22585880603599864
+      ]
+    },
+    {
+      "kind": "pair",
+      "id": 5,
+      "c": [
+        0.2526139181331243
+      ],
+      "e": [
+        1.0
+      ],
+      "t": 0.0
+    }
+  ],
+  "final_coefficients": [
+    400564.91636857245,
+    -244612.4344539757,
+    -155952.75023459303,
+    1805.9501110859649
+  ],
+  "order": 3,
+  "seed": 992,
+  "phase3_method": "tpair",
+  "sigma": 0.65,
+  "lambda_value": 10.0,
+  "target": [
+    [
+      [
+        -0.40326090035714757
+      ]
+    ],
+    [
+      [
+        1.0
+      ]
+    ],
+    [
+      3
+    ],
+    [
+      0.20614418593667322
+    ]
+  ],
+  "target_shift": -0.40326090035714757,
+  "target_amplitude_factor": 0.7506388199787828,
+  "initial_centers": [
+    [
+      0.33571829797094505
+    ],
+    [
+      -0.44711283841310184
+    ],
+    [
+      0.9110627619488837
+    ],
+    [
+      0.8083483790203763
+    ]
+  ],
+  "width": 4,
+  "stage": "phase-3 enlarged cohort",
+  "setup_seconds": 0.034790542209520936,
+  "end_to_end_seconds": 1.345974958036095,
+  "validation": {
+    "quadrature": [
+      {
+        "nodes": 384,
+        "box": 10.0,
+        "quadratic_gap": 0.4408721541190976,
+        "nonlinear_gap": 0.03691178111072939,
+        "total_gap": 0.477783935229827,
+        "target_nonlinear_over_quadratic": 0.06850574860821655
+      },
+      {
+        "nodes": 768,
+        "box": 10.0,
+        "quadratic_gap": 0.4408721541190976,
+        "nonlinear_gap": 0.03691178110943027,
+        "total_gap": 0.47778393522852786,
+        "target_nonlinear_over_quadratic": 0.06850574860822647
+      },
+      {
+        "nodes": 768,
+        "box": 12.0,
+        "quadratic_gap": 0.4408721541190976,
+        "nonlinear_gap": 0.036911781109468286,
+        "total_gap": 0.4777839352285659,
+        "target_nonlinear_over_quadratic": 0.0685057486082265
+      }
+    ],
+    "normalized_coefficient_kkt": 0.00025562654488040285,
+    "normalized_maximum_gap_change": 1.1159956046389779e-13
+  },
+  "independent_validation_seconds": 0.09295841702260077
+}

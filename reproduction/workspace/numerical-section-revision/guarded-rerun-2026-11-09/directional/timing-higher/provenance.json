@@ -1,0 +1,96 @@
+{
+  "command": [
+    "/Users/eg75agon/Downloads/Desingularization_paper/numerical-section-revision/guarded-rerun-2026-11-09/directional/run_controlled.py",
+    "--problem",
+    "higher"
+  ],
+  "timing_mode": "controlled",
+  "concurrent_workers": 1,
+  "prespecified_tasks": [
+    [
+      "higher",
+      5,
+      0,
+      10,
+      "stable"
+    ],
+    [
+      "higher",
+      5,
+      0,
+      10,
+      "adaptive"
+    ],
+    [
+      "higher",
+      5,
+      0,
+      11,
+      "stable"
+    ],
+    [
+      "higher",
+      5,
+      0,
+      11,
+      "adaptive"
+    ],
+    [
+      "higher",
+      5,
+      1,
+      10,
+      "stable"
+    ],
+    [
+      "higher",
+      5,
+      1,
+      10,
+      "adaptive"
+    ]
+  ],
+  "started_unix": 1794249591.276721,
+  "derived_solver_version": "restart-safe-v1",
+  "derived_solver_sha256": {
+    "restart_safe.py": "781981617525c7dbf497216bd17deb30e9d6033fdf9f0621aff9c7e12c5b01e7"
+  },
+  "runner_source_sha256": {
+    "run_controlled.py": "55933a7a486fbb0e59f29d50c769ace71935801b288baa8d5fcb2a9140bb3a78"
+  },
+  "scope": "Problem/quadrature/target/solver setup plus optimization from initial fit to termination; excludes imports, process launch, mp80 endpoint validation, and JSON I/O.",
+  "source_sha256": {
+    "fit.py": "98aef2bb1dcdebc14510af261ee7b96cc7ebfef24006644cbd433443fbb713d4",
+    "config.py": "54517c2adcf5ef507bc8528e4fc35fa34ec405fddc211fb729e8bc213d2f3c90",
+    "test_guard.py": "d8391d1640d2060dd31786011a3907f615fdf9499cf908a0c0e7e7a62c419978",
+    "quadrature.py": "4b4f026ff8b45d2d0fed6caf36303b56be3a8587b807805650108fd670f50b80",
+    "chain_solver.py": "92f19f01013e4d18ee1820b744450ebf642ecb79fd3c3150ee9481dc058219cc",
+    "directional_guard.py": "22ac3b90826d4b90378e772bceec00d17d509cafc391a80adc22ad5a8fdae876",
+    "chain_kernels.py": "46921f3c2abc77b1419b880b1b0fc0f656360b78e648c42573f4644d56399226",
+    "kernels.py": "49cd15bc5fb530e90a3bb7da0a9a4bb4b5eb96861de38dfbd5c62f1f5fdbf8ef",
+    "chain_experiments.py": "68051c5143568e659a70faaedb99e5f7db311958474f838c21ae9b16379e0dc9"
+  },
+  "python": "3.13.9",
+  "numpy": "2.4.2",
+  "scipy": "1.17.0",
+  "torch": "2.10.0",
+  "torch_threads": 1,
+  "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "threadpools": [
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 1,
+      "prefix": "libomp",
+      "filepath": "/opt/miniconda3/lib/python3.13/site-packages/torch/lib/libomp.dylib",
+      "version": null
+    }
+  ],
+  "thread_environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  }
+}

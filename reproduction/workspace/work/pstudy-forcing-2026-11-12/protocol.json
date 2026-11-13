@@ -1,0 +1,73 @@
+{
+  "written": "2026-11-12T13:54:03",
+  "purpose": "Prescribed (non-manufactured) forcing; vary the Gaussian budget P; compare S, NC, C (paper's chain solver, forcing energy) with fixed-centre Gaussian Galerkin and P1 finite elements.",
+  "pde": "-u''+u+lambda(sinh u - u)=f on R; sigma=1",
+  "cases": {
+    "single_source": {
+      "kind": "single_source",
+      "a": 0.4,
+      "A": 25.0,
+      "lam": 10.0
+    },
+    "sech_dipole": {
+      "kind": "sech_dipole",
+      "a": 0.5,
+      "A": 12.0,
+      "x1": 0.3,
+      "x2": -0.7,
+      "lam": 5.0
+    }
+  },
+  "budgets": [
+    2,
+    4,
+    6,
+    8,
+    12,
+    16
+  ],
+  "seeds": [
+    300,
+    301,
+    302,
+    303,
+    304,
+    305,
+    306,
+    307,
+    308,
+    309
+  ],
+  "starts": "centres uniform on [-3,3] (seeded), coefficients refitted",
+  "methods": {
+    "S": "standard_restart",
+    "NC": "stable",
+    "C": "tpair"
+  },
+  "max_fits": 3000,
+  "centre_box": [
+    -6,
+    6
+  ],
+  "objective": "exact whole-line Gaussian H1 Gram; 768-node Gauss-Legendre rule on [-12,12] for load and nonlinear terms; normalized by Q[f^2]; no reference information during optimization",
+  "reference": "solve_bvp with decay conditions u'=u at -L, u'=-u at +L; L=12 tol 1e-10 and L=14 tol 3e-11 (errors use the latter); staged from tol 1e-6",
+  "error": "relative H1 error against the reference with a 1536-node Gauss-Legendre rule on [-12,12]",
+  "collision_flags": {
+    "C": "a pair at t=0, a completion, or a completed chain at the end",
+    "NC": "a pair with h<=1e-6 sigma, or largest ordinary weight >1e6",
+    "S": "smallest centre spacing <=1e-3 sigma, or largest weight >1e6"
+  },
+  "baselines": {
+    "gaussian_galerkin": "P fixed equispaced centres on [-L,L], L in {0.5,...,6} by smallest energy",
+    "fem_p1": "n interior nodes on [-L,L], zero Dirichlet, L in {3,...,12} by smallest energy, n in {4,...,512}"
+  },
+  "validation": "finite-difference gradient check (max abs diff 2.2e-11); P=2 single-source reproduces the paper's 0.66",
+  "sources": {
+    "work/pstudy-forcing-2026-11-12/pstudy.py": "40fb7360f40f692ea7a51cd1a02bb139289e203a1eb53e93bdce47e043ed8eb5",
+    "numerical-section-revision/phase1-2026-11-11/src/chain_solver.py": "2a23acc6b52f259f54b76e80a9e1822ed02b2116706b479c8756e4effa63ad6b",
+    "numerical-section-revision/phase1-2026-11-11/src/chain_kernels.py": "26d1e4972976ba49fc70ee53f9fab60e52d5251eaa334ba43c8cf7729b32a0ae",
+    "numerical-section-revision/phase1-2026-11-11/src/fit.py": "98aef2bb1dcdebc14510af261ee7b96cc7ebfef24006644cbd433443fbb713d4",
+    "numerical-section-revision/phase1-2026-11-11/src/quadrature.py": "4b4f026ff8b45d2d0fed6caf36303b56be3a8587b807805650108fd670f50b80",
+    "numerical-section-revision/phase1-2026-11-11/src/directional_guard.py": "22ac3b90826d4b90378e772bceec00d17d509cafc391a80adc22ad5a8fdae876"
+  }
+}

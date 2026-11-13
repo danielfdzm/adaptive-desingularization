@@ -1,0 +1,85 @@
+{
+  "purpose": "manufactured higher-order recovery from target-independent lattice starts",
+  "parameters": {
+    "orders": [
+      2,
+      3
+    ],
+    "seeds": [
+      200,
+      201,
+      202
+    ],
+    "methods": [
+      "standard_restart",
+      "stable",
+      "adaptive"
+    ],
+    "nodes": 96,
+    "lam": 1.0,
+    "max_fits": 1200,
+    "jobs": 2,
+    "output": "work/independent-tests-2026-11-08/blind_higher_order/pilot"
+  },
+  "source_sha256": {
+    "work/independent-tests-2026-11-08/blind_higher_order/run.py": "e2ffa68c9ef6cd8059873e4a1f29154b33bb86899f42d5938f877e47585cb185",
+    "revision-2026-11/experiments/chain_solver.py": "a69517525cd6601bb92ca53d35d9c757c9e47e381c811694dd73d9a2e3780344",
+    "revision-2026-11/experiments/chain_kernels.py": "46921f3c2abc77b1419b880b1b0fc0f656360b78e648c42573f4644d56399226",
+    "adaptive-desingularization/final-experiments/pb/fit.py": "98aef2bb1dcdebc14510af261ee7b96cc7ebfef24006644cbd433443fbb713d4",
+    "adaptive-desingularization/final-experiments/pb/quadrature.py": "4b4f026ff8b45d2d0fed6caf36303b56be3a8587b807805650108fd670f50b80"
+  },
+  "python": "3.14.0",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "torch": "2.10.0",
+  "source_behavior": "unmodified chain_solver; endpoint validation added externally",
+  "target_is_known_only_for_manufactured_training_objective": true,
+  "fixed_cases": [
+    {
+      "order": 2,
+      "target": [
+        [
+          [
+            0.31,
+            -0.23
+          ]
+        ],
+        [
+          [
+            0.7451744023448704,
+            0.6668696350036979
+          ]
+        ],
+        [
+          2
+        ],
+        [
+          0.42250000000000004
+        ]
+      ]
+    },
+    {
+      "order": 3,
+      "target": [
+        [
+          [
+            -0.28,
+            0.37
+          ]
+        ],
+        [
+          [
+            0.3901516843082303,
+            0.9207505977361357
+          ]
+        ],
+        [
+          3
+        ],
+        [
+          0.274625
+        ]
+      ]
+    }
+  ]
+}

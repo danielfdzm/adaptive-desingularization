@@ -1,0 +1,234 @@
+{
+ "problem": "multipole5_nonlinear",
+ "seed": 202,
+ "method": "adaptive",
+ "capacity": 4,
+ "sigma": 0.55,
+ "reaction": 10.0,
+ "initial_centers": [
+  -1.5461137500228772,
+  -0.5169032276076773,
+  0.5947265400729354,
+  1.5562475042350459
+ ],
+ "fits": 189,
+ "iterations": 34,
+ "stop": "exception",
+ "coefficient_norm": 2.3723701719294,
+ "completions": 1,
+ "joins": 2,
+ "rejections": 0,
+ "blocks_final": {
+  "chain3": 1
+ },
+ "solve_seconds": 4.234938665991649,
+ "trace": [
+  {
+   "fits": 1,
+   "iterations": 0,
+   "wall": 0.009166041039861739,
+   "energy": -0.0009659428862241432,
+   "coefficient_norm": 2.5623574647697467,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 4
+   }
+  },
+  {
+   "fits": 60,
+   "iterations": 17,
+   "wall": 1.175399124971591,
+   "energy": -0.009129553874916738,
+   "coefficient_norm": 2916455.2405075505,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 4
+   }
+  },
+  {
+   "fits": 61,
+   "iterations": 17,
+   "wall": 1.1894259579712525,
+   "energy": -0.009129375277637726,
+   "coefficient_norm": 1164289.2072606944,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 2,
+    "pair": 1
+   }
+  },
+  {
+   "fits": 79,
+   "iterations": 20,
+   "wall": 1.6351508750813082,
+   "energy": -0.009129895590088408,
+   "coefficient_norm": 2968514.2625738364,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 2,
+    "pair": 1
+   }
+  },
+  {
+   "fits": 80,
+   "iterations": 20,
+   "wall": 1.6558276250725612,
+   "energy": -0.009129834016258562,
+   "coefficient_norm": 1834287.7106160969,
+   "completions": 0,
+   "joins": 1,
+   "blocks": {
+    "atom": 1,
+    "line2": 1
+   }
+  },
+  {
+   "fits": 161,
+   "iterations": 23,
+   "wall": 3.1556844579754397,
+   "energy": -0.009129871484403734,
+   "coefficient_norm": 1849278.1500935124,
+   "completions": 0,
+   "joins": 1,
+   "blocks": {
+    "atom": 1,
+    "line2": 1
+   }
+  },
+  {
+   "fits": 162,
+   "iterations": 23,
+   "wall": 3.2000553329708055,
+   "energy": -0.009129797716514825,
+   "coefficient_norm": 2.3726574958864393,
+   "completions": 0,
+   "joins": 2,
+   "blocks": {
+    "line3": 1
+   }
+  },
+  {
+   "fits": 174,
+   "iterations": 31,
+   "wall": 3.7916466660099104,
+   "energy": -0.009130585833939426,
+   "coefficient_norm": 2.3723701719294104,
+   "completions": 0,
+   "joins": 2,
+   "blocks": {
+    "line3": 1
+   }
+  },
+  {
+   "fits": 180,
+   "iterations": 32,
+   "wall": 4.0727610000176355,
+   "energy": -0.009130585833939438,
+   "coefficient_norm": 2.372370171929404,
+   "completions": 0,
+   "joins": 2,
+   "blocks": {
+    "line3": 1
+   }
+  },
+  {
+   "fits": 181,
+   "iterations": 32,
+   "wall": 4.152882041060366,
+   "energy": -0.009130585833939426,
+   "coefficient_norm": 2.3723701719294046,
+   "completions": 1,
+   "joins": 2,
+   "blocks": {
+    "chain3": 1
+   }
+  },
+  {
+   "fits": 186,
+   "iterations": 33,
+   "wall": 4.202003707992844,
+   "energy": -0.009130585833939426,
+   "coefficient_norm": 2.372370171929404,
+   "completions": 1,
+   "joins": 2,
+   "blocks": {
+    "chain3": 1
+   }
+  },
+  {
+   "fits": 189,
+   "iterations": 34,
+   "wall": 4.234882625052705,
+   "energy": -0.009130585833939426,
+   "coefficient_norm": 2.3723701719294,
+   "completions": 1,
+   "joins": 2,
+   "blocks": {
+    "chain3": 1
+   }
+  }
+ ],
+ "events": [
+  {
+   "kind": "pair",
+   "fits": 60,
+   "h": 0.0015259984766517326
+  },
+  {
+   "kind": "join",
+   "fits": 79,
+   "into": "pair",
+   "base": "pair",
+   "order": 2,
+   "s": -0.01573436310519799,
+   "q": 0.0
+  },
+  {
+   "kind": "join",
+   "fits": 161,
+   "into": "line",
+   "base": "pair",
+   "order": 3,
+   "s": -0.02145297104122787,
+   "q": 0.0
+  },
+  {
+   "kind": "completion",
+   "fits": 180,
+   "from": "line",
+   "base": "pair",
+   "order": 3,
+   "omega": 2.384185791015625e-07,
+   "a_priori_bound": 8.932875922891495e-09,
+   "centre_shift": 0.0,
+   "tolerance": 0.11301530238913209,
+   "dJ_normalized": 1.0408340855860843e-17,
+   "eps_normalized": 0.0005
+  }
+ ],
+ "final_blocks": [
+  {
+   "kind": "chain",
+   "k": 3,
+   "id": 8,
+   "c": [
+    -0.1900000000000003
+   ],
+   "e": [
+    -1.0
+   ]
+  }
+ ],
+ "final_coefficients": [
+  -4.908272079571437e-15,
+  2.302292489428331,
+  -2.424982655260864e-16,
+  0.5723543708073088
+ ],
+ "forcing_squared_norm": 13085.694446139285,
+ "exception": "RuntimeError('reference: The maximum number of mesh nodes is exceeded.')"
+}

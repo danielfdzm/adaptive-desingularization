@@ -1,0 +1,265 @@
+{
+ "figure_recovery": {
+  "runs": {
+   "linear": {
+    "NC": 10,
+    "C": 10
+   },
+   "pb_d10": {
+    "NC": 10,
+    "C": 10
+   }
+  },
+  "linear_median_error": {
+   "NC": 3.258629195792831e-08,
+   "C": 3.1665776217584902e-09
+  },
+  "pb_median_error": {
+   "NC": 2.5522001223869256e-06,
+   "C": 9.176778653748352e-08
+  },
+  "pb_C_pairs_at_t0_at_end": [
+   1,
+   1,
+   3,
+   0,
+   0,
+   0,
+   1,
+   2,
+   2,
+   2
+  ],
+  "t0_markers_drawn": 29,
+  "note": "t = 0 markers come from recorded trace rows (zero_squared_gaps); first-order traces are sparse, so a star marks the first recorded row after a pair reached t = 0.",
+  "outputs": {
+   "pdf": "79445584e6132b9010e448aca90e6f36899e32080f976f04e7d5c16cc6985675",
+   "png": "d0ada280fbf5dc7acb0147eeea09307130323e1424b22250b157d5624025d045"
+  }
+ },
+ "figure_dimension": {
+  "per_dimension": {
+   "5": {
+    "S": {
+     "n": 10,
+     "median_error": 0.0001868675921287797,
+     "median_fits": 1500.0,
+     "fit_limit": 9
+    },
+    "C": {
+     "n": 10,
+     "median_error": 7.618813944318926e-08,
+     "median_fits": 119.5,
+     "fit_limit": 0
+    }
+   },
+   "10": {
+    "S": {
+     "n": 10,
+     "median_error": 0.00025240160302005384,
+     "median_fits": 1500.0,
+     "fit_limit": 9
+    },
+    "C": {
+     "n": 10,
+     "median_error": 9.176778653748352e-08,
+     "median_fits": 118.0,
+     "fit_limit": 0
+    }
+   },
+   "20": {
+    "S": {
+     "n": 10,
+     "median_error": 0.0002493849926034293,
+     "median_fits": 1500.0,
+     "fit_limit": 9
+    },
+    "C": {
+     "n": 10,
+     "median_error": 8.475882159696834e-08,
+     "median_fits": 115.5,
+     "fit_limit": 0
+    }
+   }
+  },
+  "outputs": {
+   "pdf": "5eb9b73b87e97df10610cb0b67d53f068df4c1eae18e80eb4d6d93a8b38f633d",
+   "png": "66fda9ba9c2f5638eda8c0b1011196ab243d1a499bc5d3d5cb14d6165246f4a1"
+  }
+ },
+ "figure_variance_family": {
+  "runs": {
+   "S": 10,
+   "NC": 10,
+   "C": 10
+  },
+  "within_1pct_of_reference": {
+   "S": 9,
+   "NC": 8,
+   "C": 7
+  },
+  "C_runs_reaching_t0": 10,
+  "unsuccessful_seeds": {
+   "S": [
+    0
+   ],
+   "NC": [
+    0,
+    3
+   ],
+   "C": [
+    0,
+    3,
+    6
+   ]
+  },
+  "median_iterations": {
+   "S": 1144.0,
+   "NC": 21.5,
+   "C": 19.0
+  },
+  "x_axis": "iterations + 1 (C times are shared-host and are not plotted)",
+  "outputs": {
+   "pdf": "a6253d9ccbe830f2bf612f37c1733a9dac88ab8764d18ffd085f5140a9bf6238",
+   "png": "89da491ddc6445574b7a5fc0b37e0bd9233acbeb42065af6cb021966142f7526"
+  }
+ },
+ "figure_solution_1d": {
+  "seed": 3,
+  "seed_rule": "first seed in 0-9 whose S run ends on the function tolerance (S under the directional solver stops on a singular coefficient system for seeds 0, 2, 4, 8, 9)",
+  "S_final_error": 1.70927831691406e-05,
+  "C_final_error": 2.222715401839976e-09,
+  "S_max_abs_weight": 11984.963508350866,
+  "C_blocks": [
+   "atom",
+   "chain",
+   "pair"
+  ],
+  "zoom_panels": [
+   {
+    "target_center": -2.1,
+    "S_offsets": [
+     -1.0460769020781413e-05
+    ],
+    "S_weights": [
+     0.9999998452392672
+    ],
+    "C_block": "atom",
+    "C_center_offset": 2.847868163513567e-09,
+    "C_coefficients_of_G_derivatives": [
+     0.9999999998344867
+    ],
+    "C_t": null,
+    "half_width": 1.3075961275976766e-05
+   },
+   {
+    "target_center": 0.0,
+    "S_offsets": [
+     0.0025511438062578375,
+     -0.00257268092861493
+    ],
+    "S_weights": [
+     234.5995072357742,
+     -233.79954092633122
+    ],
+    "C_block": "pair",
+    "C_center_offset": -2.1899528692009704e-09,
+    "C_coefficients_of_G_derivatives": [
+     0.8000000007652831,
+     -1.200000012917421
+    ],
+    "C_t": 7.769757234961885e-09,
+    "half_width": 0.02
+   },
+   {
+    "target_center": 2.2,
+    "S_offsets": [
+     -0.008807548948060795,
+     -0.0008019201616704663,
+     0.00962732161581048
+    ],
+    "S_weights": [
+     6812.385919956902,
+     -11984.963508350866,
+     5171.6776444414845
+    ],
+    "C_block": "chain",
+    "C_center_offset": 2.185429170964426e-09,
+    "C_coefficients_of_G_derivatives": [
+     -0.9000000036421079,
+     0.5999999894802208,
+     0.49999999979852955
+    ],
+    "C_t": null,
+    "half_width": 0.02
+   }
+  ],
+  "max_pointwise_error": {
+   "S": 3.27234119739192e-05,
+   "C": 4.7088276402112164e-09
+  },
+  "outputs": {
+   "pdf": "f5e3a5a88c4b602f293ed7f5d83c154ac433493938bad4bd5387b7a5d1dfb0d7",
+   "png": "f4394dee8a3a46c7b830e98742dd6c6679c691f0519e0da40f8981a26ab7dcc1"
+  }
+ },
+ "figure_solution_pb": {
+  "S_error": 0.00023180198783370778,
+  "C_error": 1.0710226180779089e-07,
+  "C_pairs": 4,
+  "C_pairs_at_t0": 1,
+  "C_squared_gaps": [
+   2.517943235437791e-07,
+   1.1957302593078991e-08,
+   5.484668281131171e-08,
+   0.0
+  ],
+  "C_singletons": 2,
+  "validation_80digit_max_abs_discrepancy": 7.807488021391016e-15,
+  "slice_max_abs_error": {
+   "S": 0.0006141300501697755,
+   "C": 2.326728067297834e-07
+  },
+  "error_floor_display": 1e-10,
+  "outputs": {
+   "pdf": "8863b5a4e210ac9de664dfd356584f31c0f3b339ae30149db0589c22e2c0959b",
+   "png": "ea96275dbd268418cefad2d5f31529eb2e0d03397e0344f37e31d1164dd1626d"
+  }
+ },
+ "figure_order": {
+  "runs": {
+   "S": 10,
+   "NC": 10,
+   "C": 10
+  },
+  "missing_C_runs_geometry_seed": [],
+  "successes_1e6": {
+   "S": 0,
+   "NC": 0,
+   "C": 6
+  },
+  "median_error": {
+   "S": 0.01851787066256865,
+   "NC": 0.0016041071160643214,
+   "C": 5.344278768744187e-08
+  },
+  "S_all_at_fit_limit": true,
+  "C_completions_per_run": [
+   4,
+   4,
+   2,
+   0,
+   4,
+   4,
+   0,
+   4,
+   0,
+   4
+  ],
+  "completed_target_norm": 2.5939040521118932,
+  "outputs": {
+   "pdf": "120afe93ec639564210e9e2a85c9bcbe8a0684e618d244ddfbe2f3e66c5e891a",
+   "png": "54a6f17bb883a1f61dca5f76a01bcfe4920fa05e8f91097476ca379311612ad0"
+  }
+ }
+}

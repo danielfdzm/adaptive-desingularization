@@ -1,0 +1,41 @@
+{
+  "source": "work/independent-tests-2026-11-08/forcing_chain/pilot_grid_variant/runs/multipole4_nonlinear-202-adaptive.json",
+  "problem": "multipole4_nonlinear",
+  "seed": 202,
+  "method": "adaptive",
+  "status": "validated",
+  "error": 0.6897317271746168,
+  "checks": [
+    {
+      "nodes": 1024,
+      "error": 0.689731727174614,
+      "energy": -153.57452730032497,
+      "reference_energy": -237.7384989933609,
+      "nonlinear_to_quadratic_ratio": 0.33306854192774754,
+      "reference_peak": 3.3692298906765408
+    },
+    {
+      "nodes": 1536,
+      "error": 0.6897317271746148,
+      "energy": -153.57452730033106,
+      "reference_energy": -237.73849899337048,
+      "nonlinear_to_quadratic_ratio": 0.3330685419277441,
+      "reference_peak": 3.371649626338637
+    },
+    {
+      "nodes": 2048,
+      "error": 0.6897317271746168,
+      "energy": -153.57452730033086,
+      "reference_energy": -237.7384989933698,
+      "nonlinear_to_quadratic_ratio": 0.3330685419277463,
+      "reference_peak": 3.371956082688116
+    }
+  ],
+  "reference_relative_H1_difference": 2.744622146145585e-13,
+  "base_mesh_nodes": 9968,
+  "fine_mesh_nodes": 14379,
+  "fits": 89,
+  "completions": 1,
+  "joins": 1,
+  "original_stop": "exception"
+}

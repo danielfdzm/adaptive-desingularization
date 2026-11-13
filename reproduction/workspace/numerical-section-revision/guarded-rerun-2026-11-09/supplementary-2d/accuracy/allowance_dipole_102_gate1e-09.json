@@ -1,0 +1,678 @@
+{
+  "dimension": 2,
+  "geometry_id": 0,
+  "seed": 102,
+  "method": "adaptive",
+  "chi_nl_training": null,
+  "target_sampled_peak": null,
+  "setup_wall": 0.0020878328941762447,
+  "reaction_strength": 1.0,
+  "worker_peak_rss_bytes": 287686656,
+  "nonlinear_value_calls": 4353,
+  "nonlinear_derivative_calls": 1027,
+  "quadrature_point_evaluations": 22036480,
+  "objective_normalization": "divide by squared L2 norm of forcing",
+  "time_to_error": {
+    "0.001": null,
+    "0.0001": null,
+    "1e-05": null,
+    "1e-06": null,
+    "1e-07": null
+  },
+  "initial_centers": [
+    [
+      -0.7316021251989672,
+      -0.6293735564383455
+    ],
+    [
+      -0.5722791734761169,
+      0.6013424568224711
+    ],
+    [
+      0.6943758851711125,
+      -0.6586678015265641
+    ],
+    [
+      0.743925783169373,
+      0.665569582887142
+    ]
+  ],
+  "blocks": [
+    {
+      "id": "1",
+      "kind": "single",
+      "c": [
+        -0.7552779686289202,
+        0.5472802260899782
+      ]
+    },
+    {
+      "id": "2",
+      "kind": "single",
+      "c": [
+        0.1861666921684373,
+        -0.11323851343263831
+      ]
+    },
+    {
+      "id": "0:3",
+      "kind": "pair",
+      "c": [
+        0.18037828806113854,
+        -0.10885077367921314
+      ],
+      "e": [
+        0.641213414153293,
+        0.7673625984564777
+      ],
+      "completed": true,
+      "h": 0.0
+    }
+  ],
+  "coefficients": [
+    0.006861699540092545,
+    20.378456745950253,
+    -20.368267304711782,
+    0.5222286324453698
+  ],
+  "target_blocks": [],
+  "target_coefficients": [],
+  "C": null,
+  "R_target": null,
+  "target_norm": 2.2708706076259593,
+  "quadrature": {
+    "rule": "tensor_gauss_legendre",
+    "nodes_per_axis": 64,
+    "halfwidth": 4.0,
+    "nodes": 4096,
+    "positive_weights": true,
+    "target_geometry_used": false
+  },
+  "fits": 352,
+  "iterations": 191,
+  "wall": 2.8132407078519464,
+  "stop": "ABNORMAL: ",
+  "abnormal_returns": 1,
+  "max_cond": 20584.165261641927,
+  "optimizer_status": 2,
+  "optimizer_message": "ABNORMAL: ",
+  "optimizer_returns": [
+    {
+      "fits": 239,
+      "status": 0,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "success": true,
+      "classification": "function_tolerance",
+      "projected_gradient_max_abs": 1.613553168855475e-08,
+      "geometry_displacement_max_abs": 0.6321939163733682
+    },
+    {
+      "fits": 352,
+      "status": 2,
+      "message": "ABNORMAL: ",
+      "success": false,
+      "classification": "ABNORMAL: ",
+      "projected_gradient_max_abs": 1.6135531799577052e-08,
+      "geometry_displacement_max_abs": 3.9968028886505635e-15
+    }
+  ],
+  "projected_gradient_max_abs": 1.6135531799577052e-08,
+  "completions": 1,
+  "transfer_rejections": 0,
+  "best_relative_error": 0.00492434361361622,
+  "final_relative_error": 0.00492434361361622,
+  "coefficient_norm": 28.81701896744739,
+  "energy_gap": -2.595234133480746,
+  "nonlinear_gap": 0.005586119314247674,
+  "cost": 83.52773972624945,
+  "coefficient_fit": {
+    "newton": 1,
+    "qp_solves": 1,
+    "initial_guess_reset": false,
+    "nonlinearvals": 28,
+    "nonlinear_derivatives": 1,
+    "backtracks": 27,
+    "stop": "line_search_no_decrease",
+    "newton_decrement_squared": 9.55067182295429e-28,
+    "quadratic_gradient_gap_bound": 1.643117978037985e-26,
+    "gram_normalized_min_eigenvalue": 0.00011711684456260893,
+    "kkt_residual": 3.951781393438103e-16,
+    "kkt_scaled_residual": 1.8175491198554466e-15,
+    "multiplier": 0.0,
+    "cost": 83.52773972624945,
+    "coefficient_constraint": null,
+    "budget_violation": null,
+    "complementarity": null
+  },
+  "trace": [
+    {
+      "fits": 1,
+      "iterations": 0,
+      "wall": 0.025727791944518685,
+      "relative_error": 0.9254839991308282,
+      "error_norm": 2.1016544114543265,
+      "target_norm": 2.2708706076259593,
+      "energy_gap": -0.375069338523956,
+      "nonlinear_gap": 0.00026136497870757536,
+      "coefficient_norm": 0.4417802335060109,
+      "ordinary_finite_part_norm": 0.4417802335060109,
+      "min_positive_halfgap": null,
+      "cost": 1.4280184731685595,
+      "completions": 0,
+      "stored_gram_condition": 1.4574743427485481
+    },
+    {
+      "fits": 2,
+      "iterations": 0,
+      "wall": 0.031996874837204814,
+      "relative_error": 0.9254839991308282,
+      "error_norm": 2.1016544114543265,
+      "target_norm": 2.2708706076259593,
+      "energy_gap": -0.375069338523956,
+      "nonlinear_gap": 0.00026136497870757536,
+      "coefficient_norm": 0.4417802335060109,
+      "ordinary_finite_part_norm": 0.4417802335060109,
+      "min_positive_halfgap": null,
+      "cost": 1.4280184731685595,
+      "completions": 0,
+      "stored_gram_condition": 1.4574743427485481
+    },
+    {
+      "fits": 33,
+      "iterations": 20,
+      "wall": 0.2402048329822719,
+      "relative_error": 0.005235028974606559,
+      "error_norm": 0.011888073428504297,
+      "target_norm": 2.2708706076259593,
+      "energy_gap": -2.5952259381172533,
+      "nonlinear_gap": 0.005590106658221749,
+      "coefficient_norm": 27.177827437914463,
+      "ordinary_finite_part_norm": 27.177827437914463,
+      "min_positive_halfgap": null,
+      "cost": 74.72155172668676,
+      "completions": 0,
+      "stored_gram_condition": 1220.680700911102
+    },
+    {
+      "fits": 54,
+      "iterations": 40,
+      "wall": 0.41864591697230935,
+      "relative_error": 0.005168382435490068,
+      "error_norm": 0.011736727761724665,
+      "target_norm": 2.2708706076259593,
+      "energy_gap": -2.59522775351501,
+      "nonlinear_gap": 0.005588537600780175,
+      "coefficient_norm": 0.5495527232761968,
+      "ordinary_finite_part_norm": 863371511752.4608,
+      "min_positive_halfgap": 4.5e-13,
+      "cost": 4.573903501313183,
+      "completions": 0,
+      "stored_gram_condition": 2.0746398689322225
+    },
+    {
+      "fits": 55,
+      "iterations": 40,
+      "wall": 0.4293900418560952,
+      "relative_error": 0.005168382435502727,
+      "error_norm": 0.011736727761753413,
+      "target_norm": 2.2708706076259593,
+      "energy_gap": -2.5952277535150103,
+      "nonlinear_gap": 0.005588537600212807,
+      "coefficient_norm": 0.5495527232621231,
+      "ordinary_finite_part_norm": 0.5495527232621231,
+      "min_positive_halfgap": null,
+      "cost": 4.573903501189793,
+      "completions": 1,
+      "stored_gram_condition": 2.0746398689322216
+    },
+    {
+      "fits": 77,
+      "iterations": 60,
+      "wall": 0.578081666957587,
+      "relative_error": 0.005092818243443184,
+      "error_norm": 0.011565131259016393,
+      "target_norm": 2.2708706076259593,
+      "energy_gap": -2.5952297585022244,
+      "nonlinear_gap": 0.005586914987805485,
+      "coefficient_norm": 0.5495809669337361,
+      "ordinary_finite_part_norm": 0.5495809669337361,
+      "min_positive_halfgap": null,
+      "cost": 4.574478757765843,
+      "completions": 1,
+      "stored_gram_condition": 2.1001975396580552
+    },
+    {
+      "fits": 98,
+      "iterations": 80,
+      "wall": 0.7152310418896377,
+      "relative_error": 0.005082873381684419,
+      "error_norm": 0.011542547764751512,
+      "target_norm": 2.2708706076259593,
+      "energy_gap": -2.595230025850676,
+      "nonlinear_gap": 0.005586912769023384,
+      "coefficient_norm": 0.5496195943134133,
+      "ordinary_finite_part_norm": 0.5496195943134133,
+      "min_positive_halfgap": null,
+      "cost": 4.574708098491958,
+      "completions": 1,
+      "stored_gram_condition": 2.250971421746305
+    },
+    {
+      "fits": 121,
+      "iterations": 100,
+      "wall": 0.8789876669179648,
+      "relative_error": 0.0050389637528683385,
+      "error_norm": 0.011442834679281307,
+      "target_norm": 2.2708706076259593,
+      "energy_gap": -2.595231177217636,
+      "nonlinear_gap": 0.00558666125195637,
+      "coefficient_norm": 0.5496065270765239,
+      "ordinary_finite_part_norm": 0.5496065270765239,
+      "min_positive_halfgap": null,
+      "cost": 4.575192887498668,
+      "completions": 1,
+      "stored_gram_condition": 3.3970119743154092
+    },
+    {
+      "fits": 145,
+      "iterations": 120,
+      "wall": 1.0268927498254925,
+      "relative_error": 0.004954728497288759,
+      "error_norm": 0.011251547313259778,
+      "target_norm": 2.2708706076259593,
+      "energy_gap": -2.5952333711309583,
+      "nonlinear_gap": 0.005586236981933994,
+      "coefficient_norm": 0.553947195228098,
+      "ordinary_finite_part_norm": 0.553947195228098,
+      "min_positive_halfgap": null,
+      "cost": 4.760966270909623,
+      "completions": 1,
+      "stored_gram_condition": 59.588167377443284
+    },
+    {
+      "fits": 170,
+      "iterations": 140,
+      "wall": 1.1661096669267863,
+      "relative_error": 0.00493141984847697,
+      "error_norm": 0.011198616387769615,
+      "target_norm": 2.2708706076259593,
+      "energy_gap": -2.5952339547091783,
+      "nonlinear_gap": 0.005586002829234855,
+      "coefficient_norm": 1.2205563355869968,
+      "ordinary_finite_part_norm": 1.2205563355869968,
+      "min_positive_halfgap": null,
+      "cost": 7.489687569953367,
+      "completions": 1,
+      "stored_gram_condition": 758.6202098143933
+    },
+    {
+      "fits": 197,
+      "iterations": 160,
+      "wall": 1.334447749890387,
+      "relative_error": 0.004925625977283027,
+      "error_norm": 0.011185459255970918,
+      "target_norm": 2.2708706076259593,
+      "energy_gap": -2.59523409910044,
+      "nonlinear_gap": 0.005586033869815243,
+      "coefficient_norm": 10.041645751958887,
+      "ordinary_finite_part_norm": 10.041645751958887,
+      "min_positive_halfgap": null,
+      "cost": 31.969619645479305,
+      "completions": 1,
+      "stored_gram_condition": 6472.739260539333
+    },
+    {
+      "fits": 222,
+      "iterations": 180,
+      "wall": 1.512150416849181,
+      "relative_error": 0.004924372120948449,
+      "error_norm": 0.011182611910474538,
+      "target_norm": 2.2708706076259593,
+      "energy_gap": -2.5952341329428905,
+      "nonlinear_gap": 0.005586108864407209,
+      "coefficient_norm": 31.099883137225515,
+      "ordinary_finite_part_norm": 31.099883137225515,
+      "min_positive_halfgap": null,
+      "cost": 89.82926594293848,
+      "completions": 1,
+      "stored_gram_condition": 18669.564800624223
+    },
+    {
+      "fits": 239,
+      "iterations": 190,
+      "wall": 1.6976321670226753,
+      "relative_error": 0.004924343613616871,
+      "error_norm": 0.011182547174013157,
+      "target_norm": 2.2708706076259593,
+      "energy_gap": -2.595234133480618,
+      "nonlinear_gap": 0.0055861193142437045,
+      "coefficient_norm": 28.817018967379063,
+      "ordinary_finite_part_norm": 28.817018967379063,
+      "min_positive_halfgap": null,
+      "cost": 83.52773972606147,
+      "completions": 1,
+      "stored_gram_condition": 17156.3817038894
+    },
+    {
+      "fits": 352,
+      "iterations": 191,
+      "wall": 2.809765832964331,
+      "relative_error": 0.00492434361361622,
+      "error_norm": 0.011182547174011676,
+      "target_norm": 2.2708706076259593,
+      "energy_gap": -2.595234133480746,
+      "nonlinear_gap": 0.005586119314247674,
+      "coefficient_norm": 28.81701896744739,
+      "ordinary_finite_part_norm": 28.81701896744739,
+      "min_positive_halfgap": null,
+      "cost": 83.52773972624945,
+      "completions": 1,
+      "stored_gram_condition": 17156.381703887004
+    },
+    {
+      "fits": 352,
+      "iterations": 191,
+      "wall": 2.813137291930616,
+      "relative_error": 0.00492434361361622,
+      "error_norm": 0.011182547174011676,
+      "target_norm": 2.2708706076259593,
+      "energy_gap": -2.595234133480746,
+      "nonlinear_gap": 0.005586119314247674,
+      "coefficient_norm": 28.81701896744739,
+      "ordinary_finite_part_norm": 28.81701896744739,
+      "min_positive_halfgap": null,
+      "cost": 83.52773972624945,
+      "completions": 1,
+      "stored_gram_condition": 17156.381703887004
+    }
+  ],
+  "events": [
+    {
+      "kind": "regroup",
+      "fits": 33,
+      "block_id": "0:3",
+      "h": 0.0143008790751418,
+      "old_cost": 74.70457300188377,
+      "new_cost": 4.558122771193138,
+      "exact": true
+    },
+    {
+      "kind": "scan",
+      "fits": 33,
+      "scan": 1,
+      "block_id": "0:3",
+      "gram_smallest_singular_value": 0.042993837262535584,
+      "flag": true,
+      "persistence": 1,
+      "h": 0.0143008790751418
+    },
+    {
+      "kind": "scan",
+      "fits": 54,
+      "scan": 2,
+      "block_id": "0:3",
+      "gram_smallest_singular_value": 0.0,
+      "flag": true,
+      "persistence": 2,
+      "h": 4.5e-13
+    },
+    {
+      "kind": "completion",
+      "fits": 54,
+      "block_id": "0:3",
+      "h": 4.5e-13,
+      "direction": [
+        0.8242890808339017,
+        0.5661691542445612
+      ],
+      "state_error_bound": 1.0226780430328153e-24,
+      "state_tolerance": 0.022708256638003334,
+      "gate": 0.0,
+      "eps_j": 3.995686913142422e-08,
+      "before_blocks": [
+        {
+          "id": "1",
+          "kind": "single",
+          "c": [
+            -0.5750163843227053,
+            0.5713719131676643
+          ]
+        },
+        {
+          "id": "2",
+          "kind": "single",
+          "c": [
+            0.8183606085418059,
+            -0.4632864901822164
+          ]
+        },
+        {
+          "id": "0:3",
+          "kind": "pair",
+          "c": [
+            0.18068366609095504,
+            -0.10911121506008455
+          ],
+          "e": [
+            0.8242890808339017,
+            0.5661691542445612
+          ],
+          "completed": false,
+          "h": 4.5e-13
+        }
+      ],
+      "before_coefficients": [
+        0.0077905599708091074,
+        0.0011337120504362383,
+        0.0074174641078637036,
+        0.5494462655791015
+      ],
+      "trial_blocks": [
+        {
+          "id": "1",
+          "kind": "single",
+          "c": [
+            -0.5750163843227053,
+            0.5713719131676643
+          ]
+        },
+        {
+          "id": "2",
+          "kind": "single",
+          "c": [
+            0.8183606085418059,
+            -0.4632864901822164
+          ]
+        },
+        {
+          "id": "0:3",
+          "kind": "pair",
+          "c": [
+            0.18068366609095504,
+            -0.10911121506008455
+          ],
+          "e": [
+            0.8242890808339017,
+            0.5661691542445612
+          ],
+          "completed": true,
+          "h": 0.0
+        }
+      ],
+      "trial_coefficients": [
+        0.0077905599708091074,
+        0.0011337120504362383,
+        0.0074174641078637036,
+        0.5494462655791015
+      ],
+      "after_blocks": [
+        {
+          "id": "1",
+          "kind": "single",
+          "c": [
+            -0.5750163843227053,
+            0.5713719131676643
+          ]
+        },
+        {
+          "id": "2",
+          "kind": "single",
+          "c": [
+            0.8183606085418059,
+            -0.4632864901822164
+          ]
+        },
+        {
+          "id": "0:3",
+          "kind": "pair",
+          "c": [
+            0.18068366609095504,
+            -0.10911121506008455
+          ],
+          "e": [
+            0.8242890808339017,
+            0.5661691542445612
+          ],
+          "completed": true,
+          "h": 0.0
+        }
+      ],
+      "after_coefficients": [
+        0.007790559971082033,
+        0.001133712052199621,
+        0.007417464101903343,
+        0.5494462655650981
+      ],
+      "dJ_after_refit": -4.440892098500626e-16
+    }
+  ],
+  "case": "dipole",
+  "exact_target": [
+    {
+      "c": [
+        0.18,
+        -0.11
+      ],
+      "sigma": 0.45,
+      "a": 0.0,
+      "v": [
+        -0.4539345882003231,
+        -0.3105533603672695
+      ]
+    },
+    {
+      "c": [
+        -0.42,
+        0.31
+      ],
+      "sigma": 0.8,
+      "a": 0.01,
+      "v": [
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "budget_rule": null,
+  "coefficient_constraint": "none",
+  "initialization": "lattice",
+  "force_norm": 8.939448431690204,
+  "training_consumes_only_evaluated_forcing": true,
+  "capacity": 4,
+  "forcing_is_manufactured": true,
+  "energy_gap_field_means": "absolute sampled objective, not an excess above its unknown minimum",
+  "target_outside_fixed_width_completed_dictionary": true,
+  "energy_refinement_abs_difference": 6.0327773887536296e-09,
+  "energy_validation_96": -2.5952341274479687,
+  "energy_validation_halfwidth5": -2.5952341274478763,
+  "energy_domain_refinement_abs_difference": 9.237055564881302e-14,
+  "energy_factor": 1e-09,
+  "guard_counts": {
+    "tested": 13,
+    "eligible": 13,
+    "unresolved": 0,
+    "nonfinite": 0
+  },
+  "directional_guard": {
+    "applicable": false,
+    "reason": "Only singles and first-order pairs; no directional joins or higher-order charts."
+  },
+  "supplementary_task": {
+    "id": "allowance_dipole_102_gate1e-09",
+    "cohort": "allowance",
+    "case": "dipole",
+    "seed": 102,
+    "method": "adaptive",
+    "historical": "historical/allowance/dipole_102_gate1e-09.json",
+    "historical_source": "adaptive-desingularization/final-experiments/pb-independent-2d/unconstrained-gate-sensitivity/dipole_102_gate1e-09.json",
+    "historical_sha256": "7ad6bdac149b41e4d117e850623291b5daeb44153cf2d532407ef5916970fbc6",
+    "order": 64,
+    "max_fits": 1000,
+    "perturbation": 0.01,
+    "energy_factor": 1e-09,
+    "snapshot": null
+  },
+  "independent_endpoint_check": {
+    "kind": "analytic mixed-width Gaussian H1, 110 decimal digits",
+    "relative_H1": 0.00492434361361622,
+    "discrepancy_from_recorded": 0.0
+  },
+  "independent_transfer_checks": [
+    {
+      "fits": 54,
+      "block_id": "0:3",
+      "state_change_norm_110_digits": 1.0125416089977202e-24,
+      "state_bound_pass": true,
+      "state_tolerance_pass": true,
+      "recorded_gate": 0.0,
+      "allowance": 3.995686913142422e-08,
+      "refined_gate_order120_halfwidth5": 1.1501064018286828e-18,
+      "quadrature_numerical_tolerance": 7.991373826284844e-09,
+      "refined_gate_within_allowance_and_numerical_tolerance": true
+    }
+  ],
+  "timing": {
+    "context": "accuracy-only shared host; not controlled runtime evidence",
+    "setup_seconds": 0.0021012919023633003,
+    "end_to_end_seconds": 2.830984416883439,
+    "independent_postrun_audit_seconds": 0.02251304080709815,
+    "definition": "perf_counter from construction through run return; includes original monitoring and post-run energy diagnostics inside run; excludes added independent audits, imports and I/O"
+  },
+  "reproduction": {
+    "python": "3.14.0 (v3.14.0:ebf955df7a8, Oct  7 2025, 08:20:14) [Clang 16.0.0 (clang-1600.0.26.6)]",
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "torch": "2.10.0",
+    "mpmath": "1.3.0",
+    "threadpools": [
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 1,
+        "prefix": "libomp",
+        "filepath": "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/torch/lib/libomp.dylib",
+        "version": null
+      }
+    ],
+    "torch_threads": 1,
+    "source_hashes": {
+      "workspace/work/independent-tests-2026-11-08/forcing_2d/pilot_multi6.py": "74c43cbcabc7fc2a5547908994d97bf58bd5e348bdc34956b698b7250054a7ec",
+      "workspace/work/independent-tests-2026-11-08/forcing_2d/pilot_smoke.py": "7552e71af0bfbc43a304c913b6d40cdd1f195b21ca5d419a33a8da7968aa3c05",
+      "workspace/work/independent-tests-2026-11-08/forcing_2d/pilot_smooth.py": "4f1a33c66643740466980b96a59788905dd3338d72c4c00b5d9c4ec339f4fc41",
+      "workspace/adaptive-desingularization/experiments/core/coefficient_fit.py": "2d2ff34512654b74d2105b533887f4ae69e719ec89b4b0107189807a9e8e44aa",
+      "workspace/adaptive-desingularization/final-experiments/pb/run.py": "ff3eead4aa2d608049b3b016c15973b5917bf57d733a51f069266512c58a159d",
+      "workspace/adaptive-desingularization/final-experiments/pb/fit.py": "98aef2bb1dcdebc14510af261ee7b96cc7ebfef24006644cbd433443fbb713d4",
+      "workspace/adaptive-desingularization/final-experiments/pb/config.py": "54517c2adcf5ef507bc8528e4fc35fa34ec405fddc211fb729e8bc213d2f3c90",
+      "workspace/adaptive-desingularization/final-experiments/pb/quadrature.py": "4b4f026ff8b45d2d0fed6caf36303b56be3a8587b807805650108fd670f50b80",
+      "workspace/adaptive-desingularization/final-experiments/pb/kernels.py": "49cd15bc5fb530e90a3bb7da0a9a4bb4b5eb96861de38dfbd5c62f1f5fdbf8ef",
+      "workspace/adaptive-desingularization/final-experiments/pb-independent-2d/run.py": "cbe8413f56d1ccf335ded860a9dbb7d74d96aeba64f7679449947faac92c4412",
+      "workspace/adaptive-desingularization/final-experiments/pb-independent-2d/sensitivity.py": "21e58ddfd35d356009614fb4bd1436b02cc553dac380657addba33702dcbfb6f",
+      "workspace/revision-2026-11/experiments/pb_variants.py": "1727f566ee2c2f336ab6ad9c9e43f6a11acc5552be68bbb88c11483eb8bb461c",
+      "pair_guard.py": "5e1b2b49ef3fd6315f3b4738abed175369022a19a334b56edde5b962c1713fd7",
+      "run_case.py": "e064f4b285fdca417d437257ec36343bea0124e409aaa0b1a69cd680520c5b85"
+    },
+    "tasks_sha256": "d76eb1bca38786b12d1c621637ca482b13bff030d3d8a0fb02b9b062710a66c6",
+    "pid": 57858
+  }
+}

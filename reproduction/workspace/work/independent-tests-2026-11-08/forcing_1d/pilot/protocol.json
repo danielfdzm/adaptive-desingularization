@@ -1,0 +1,152 @@
+{
+  "arguments": {
+    "cases": [
+      "two_gaussian_linear",
+      "two_gaussian_nonlinear",
+      "two_compact_linear",
+      "two_compact_nonlinear",
+      "three_mixed_linear",
+      "three_mixed_nonlinear"
+    ],
+    "seeds": [
+      200,
+      201,
+      202
+    ],
+    "nodes": 768,
+    "max_fits": 800,
+    "output": "/Users/eg75agon/Downloads/Desingularization_paper/work/independent-tests-2026-11-08/forcing_1d/pilot"
+  },
+  "cases": {
+    "two_gaussian_linear": {
+      "capacity": 4,
+      "reaction": 0.0,
+      "sources": [
+        [
+          "gaussian",
+          -0.85,
+          0.2,
+          24.0
+        ],
+        [
+          "gaussian",
+          0.9,
+          0.35,
+          -20.0
+        ]
+      ]
+    },
+    "two_gaussian_nonlinear": {
+      "capacity": 4,
+      "reaction": 10.0,
+      "sources": [
+        [
+          "gaussian",
+          -0.85,
+          0.2,
+          48.0
+        ],
+        [
+          "gaussian",
+          0.9,
+          0.35,
+          -40.0
+        ]
+      ]
+    },
+    "two_compact_linear": {
+      "capacity": 4,
+      "reaction": 0.0,
+      "sources": [
+        [
+          "compact",
+          -0.8,
+          0.55,
+          80.0
+        ],
+        [
+          "compact",
+          0.95,
+          0.7,
+          -65.0
+        ]
+      ]
+    },
+    "two_compact_nonlinear": {
+      "capacity": 4,
+      "reaction": 10.0,
+      "sources": [
+        [
+          "compact",
+          -0.8,
+          0.55,
+          160.0
+        ],
+        [
+          "compact",
+          0.95,
+          0.7,
+          -130.0
+        ]
+      ]
+    },
+    "three_mixed_linear": {
+      "capacity": 6,
+      "reaction": 0.0,
+      "sources": [
+        [
+          "compact",
+          -1.15,
+          0.5,
+          65.0
+        ],
+        [
+          "gaussian",
+          0.05,
+          0.27,
+          -18.0
+        ],
+        [
+          "compact",
+          1.2,
+          0.65,
+          55.0
+        ]
+      ]
+    },
+    "three_mixed_nonlinear": {
+      "capacity": 6,
+      "reaction": 10.0,
+      "sources": [
+        [
+          "compact",
+          -1.15,
+          0.5,
+          130.0
+        ],
+        [
+          "gaussian",
+          0.05,
+          0.27,
+          -36.0
+        ],
+        [
+          "compact",
+          1.2,
+          0.65,
+          110.0
+        ]
+      ]
+    }
+  },
+  "script_sha256": "52565ed4fddf7c911ce63781b6b565d95e96fb91914ef555f20d92622de2fcbe",
+  "source_hashes": {
+    "multi.py": "94e44f190c58553336eadaff1f2811deabd34ed605d5e05689e8bf7664c04740",
+    "run.py": "0a822678c79df5fc87aaaca8f4548b28a38e44edbcea42e98b7f9f45cdc44ae7"
+  },
+  "python": "3.14.0",
+  "role": "exploratory screen, all outcomes retained",
+  "starts": "linspace(-1.5,1.5,P) + independent uniform(-.15,.15) jitter",
+  "solver": "fixed adjacent pairs; no regrouping/insertion/pruning",
+  "timing": "sequential process, includes post-run validation; cached reference makes runtimes noncomparable"
+}

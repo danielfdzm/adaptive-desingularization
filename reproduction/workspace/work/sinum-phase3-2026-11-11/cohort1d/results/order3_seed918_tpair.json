@@ -1,0 +1,318 @@
+{
+  "stationarity": {
+    "projected_gradient_max_abs": 2.648496569813969e-16,
+    "gradient_max_abs": 2.648496569813969e-16,
+    "active_bounds": 0,
+    "normalized_coefficient_kkt": 2.269695827836848e-16,
+    "final_objective_normalized": -0.5,
+    "final_chain_slopes": [
+      {
+        "order": 3,
+        "slope_normalized": -1.1742085407066791e-17,
+        "threshold": -0.01
+      }
+    ]
+  },
+  "final_squared_halfgaps": [],
+  "zero_gap_pairs": 0,
+  "method": "tpair",
+  "d": 1,
+  "fits": 119,
+  "iterations": 44,
+  "stop": "function_tolerance",
+  "final_relative_error": 1.4379451497401134e-16,
+  "trace_final_error_double": 0.0,
+  "coefficient_norm": 0.3517668304502909,
+  "completions": 1,
+  "joins": 2,
+  "rejections": 0,
+  "blocks_final": {
+    "chain3": 1
+  },
+  "wall": 7.233123250072822,
+  "solve_seconds": 7.1833802501205355,
+  "optimizer_seconds": 7.1833802501205355,
+  "posthoc_validation_seconds": 0.049744667019695044,
+  "postprocessing_seconds": 0.04974491707980633,
+  "guard_counts": {},
+  "guard_examples": [],
+  "coordinate_convention": "dimensionless p_hat = (q/sigma)/prod((t_i-t_j)/sigma)",
+  "trace": [
+    {
+      "fits": 1,
+      "iterations": 0,
+      "wall": 0.35291108419187367,
+      "relative_error": 0.3584065494829491,
+      "coefficient_norm": 11.429669224018507,
+      "completions": 0,
+      "joins": 0,
+      "blocks": {
+        "atom": 4
+      }
+    },
+    {
+      "fits": 2,
+      "iterations": 0,
+      "wall": 0.3727292090188712,
+      "relative_error": 0.3584065494763214,
+      "coefficient_norm": 8.354806517653257,
+      "completions": 0,
+      "joins": 0,
+      "blocks": {
+        "atom": 2,
+        "pair": 1
+      }
+    },
+    {
+      "fits": 42,
+      "iterations": 13,
+      "wall": 3.09605933399871,
+      "relative_error": 0.006726374071459028,
+      "coefficient_norm": 2730.6517209704866,
+      "completions": 0,
+      "joins": 0,
+      "blocks": {
+        "atom": 2,
+        "pair": 1
+      }
+    },
+    {
+      "fits": 43,
+      "iterations": 13,
+      "wall": 3.1119406670331955,
+      "relative_error": 0.006726371954804057,
+      "coefficient_norm": 106.04162009325331,
+      "completions": 0,
+      "joins": 1,
+      "blocks": {
+        "atom": 1,
+        "line2": 1
+      }
+    },
+    {
+      "fits": 58,
+      "iterations": 20,
+      "wall": 3.7559364170301706,
+      "relative_error": 0.0005692913232253101,
+      "coefficient_norm": 7269.242089102685,
+      "completions": 0,
+      "joins": 1,
+      "blocks": {
+        "atom": 1,
+        "line2": 1
+      }
+    },
+    {
+      "fits": 59,
+      "iterations": 20,
+      "wall": 3.9074420421384275,
+      "relative_error": 0.0005691978729718236,
+      "coefficient_norm": 0.3526536571996566,
+      "completions": 0,
+      "joins": 2,
+      "blocks": {
+        "line3": 1
+      }
+    },
+    {
+      "fits": 87,
+      "iterations": 40,
+      "wall": 5.2324271670077,
+      "relative_error": 8.816955209554936e-08,
+      "coefficient_norm": 0.3517669639140535,
+      "completions": 0,
+      "joins": 2,
+      "blocks": {
+        "line3": 1
+      }
+    },
+    {
+      "fits": 113,
+      "iterations": 43,
+      "wall": 6.79403716721572,
+      "relative_error": 4.156352545396235e-08,
+      "coefficient_norm": 0.35176690466237054,
+      "completions": 0,
+      "joins": 2,
+      "blocks": {
+        "line3": 1
+      }
+    },
+    {
+      "fits": 115,
+      "iterations": 43,
+      "wall": 6.93178545916453,
+      "relative_error": 0.0,
+      "coefficient_norm": 0.3517668304502909,
+      "completions": 1,
+      "joins": 2,
+      "blocks": {
+        "chain3": 1
+      }
+    },
+    {
+      "fits": 118,
+      "iterations": 44,
+      "wall": 7.16253404202871,
+      "relative_error": 0.0,
+      "coefficient_norm": 0.3517668304502909,
+      "completions": 1,
+      "joins": 2,
+      "blocks": {
+        "chain3": 1
+      }
+    },
+    {
+      "fits": 119,
+      "iterations": 44,
+      "wall": 7.183307541999966,
+      "relative_error": 0.0,
+      "coefficient_norm": 0.3517668304502909,
+      "completions": 1,
+      "joins": 2,
+      "blocks": {
+        "chain3": 1
+      }
+    }
+  ],
+  "events": [
+    {
+      "kind": "pair",
+      "fits": 1,
+      "h": 0.26358192122784696
+    },
+    {
+      "kind": "tpair_join",
+      "fits": 42,
+      "t": 0.0,
+      "as": "chain"
+    },
+    {
+      "kind": "join",
+      "fits": 42,
+      "into": "pair",
+      "base": "chain",
+      "order": 2,
+      "s": 0.06413027233828524,
+      "q": 0.0
+    },
+    {
+      "kind": "join",
+      "fits": 58,
+      "into": "line",
+      "base": "chain",
+      "order": 3,
+      "s": 0.09593509377971014,
+      "q": 0.0
+    },
+    {
+      "kind": "completion",
+      "fits": 114,
+      "from": "line",
+      "base": "chain",
+      "order": 3,
+      "omega": 2.384185791015625e-07,
+      "a_priori_bound": 0.009667535565634074,
+      "centre_shift": -1.4177558647302392e-06,
+      "tolerance": 0.05736245367647719,
+      "dJ_normalized": -1.0547118733938987e-15,
+      "eps_normalized": 0.0005,
+      "slope_normalized": 1.555635046559507e-17,
+      "slope_threshold": -0.01,
+      "slope_ok": true
+    }
+  ],
+  "final_blocks": [
+    {
+      "kind": "chain",
+      "k": 3,
+      "id": 8,
+      "c": [
+        -0.0874488104606063
+      ],
+      "e": [
+        1.0
+      ]
+    }
+  ],
+  "final_coefficients": [
+    -9.341662372820364e-17,
+    2.3102702492030535e-16,
+    -1.8640882757230425e-16,
+    -0.3517668304502909
+  ],
+  "order": 3,
+  "seed": 918,
+  "phase3_method": "tpair",
+  "sigma": 0.65,
+  "lambda_value": 10.0,
+  "target": [
+    [
+      [
+        -0.08744881046060637
+      ]
+    ],
+    [
+      [
+        1.0
+      ]
+    ],
+    [
+      3
+    ],
+    [
+      0.3517668304502909
+    ]
+  ],
+  "target_shift": -0.08744881046060637,
+  "target_amplitude_factor": 1.2808987908977365,
+  "initial_centers": [
+    [
+      -0.5717127097296879
+    ],
+    [
+      -1.0988765521853818
+    ],
+    [
+      0.6915318117985692
+    ],
+    [
+      0.002973755048152693
+    ]
+  ],
+  "width": 4,
+  "stage": "phase-3 enlarged cohort",
+  "setup_seconds": 0.010898832930251956,
+  "end_to_end_seconds": 7.1942790830507874,
+  "validation": {
+    "quadrature": [
+      {
+        "nodes": 384,
+        "box": 10.0,
+        "quadratic_gap": 3.401810209834749e-31,
+        "nonlinear_gap": 7.870584966774473e-31,
+        "total_gap": 1.1272395176609221e-30,
+        "target_nonlinear_over_quadratic": 0.21114202161224155
+      },
+      {
+        "nodes": 768,
+        "box": 10.0,
+        "quadratic_gap": 3.401810209834749e-31,
+        "nonlinear_gap": 1.3046511126418412e-30,
+        "total_gap": 1.644832133625316e-30,
+        "target_nonlinear_over_quadratic": 0.2111420216122725
+      },
+      {
+        "nodes": 768,
+        "box": 12.0,
+        "quadratic_gap": 3.401810209834749e-31,
+        "nonlinear_gap": 1.3466230627268526e-30,
+        "total_gap": 1.6868040837103277e-30,
+        "target_nonlinear_over_quadratic": 0.21114202161227252
+      }
+    ],
+    "normalized_coefficient_kkt": 2.2696958278368473e-16,
+    "normalized_maximum_gap_change": 1.7005710046834273e-32
+  },
+  "independent_validation_seconds": 0.08559670788235962
+}

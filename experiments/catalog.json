@@ -1,0 +1,1074 @@
+{
+  "protocol_tables": [
+    {
+      "number": "SM6",
+      "label": "tab:parameters",
+      "title": "Adaptive-method and ablation settings"
+    },
+    {
+      "number": "SM7",
+      "label": "tab:acceptance-tests",
+      "title": "Completion acceptance rules by experiment"
+    },
+    {
+      "number": "SM8",
+      "label": "tab:main-benchmark-setup",
+      "title": "Benchmark initialization, quadrature and error measurement"
+    }
+  ],
+  "schema_version": 1,
+  "path_base": "reproduction/workspace",
+  "scope": "All numerical studies, controls, negative outcomes and supporting checks reported in the current paper and supplement; unreported research campaigns are excluded.",
+  "source_manuscript": {
+    "title": "Adaptive model completion for Gaussian approximation of elliptic PDEs",
+    "snapshot_date": "2026-11-12",
+    "documents_included": false
+  },
+  "experiments": [
+    {
+      "id": "independent-recovery",
+      "title": "Independent second- and third-order recovery",
+      "group": "Main-paper studies",
+      "paper": {
+        "sections": [
+          "5.4",
+          "SM5.2"
+        ],
+        "labels": [
+          "tab:main-recovery",
+          "tab:sm-describe-1d",
+          "tab:sm-pre-amend2",
+          "tab:sm-amend2",
+          "tab:paired"
+        ],
+        "tables": [
+          "1",
+          "SM13",
+          "SM14",
+          "SM15",
+          "SM17"
+        ],
+        "figures": [
+          "SM2",
+          "SM4"
+        ]
+      },
+      "records": [
+        "work/sinum-phase3-2026-11-11/cohort1d/results_amend2",
+        "work/sinum-phase3-2026-11-11/cohort1d/results",
+        "work/sinum-phase3-2026-11-11/prereg",
+        "work/sinum-phase3-2026-11-11/stats"
+      ],
+      "analysis": [
+        {
+          "script": "work/sinum-phase3-2026-11-11/stats/analyze.py",
+          "kind": "saved_records",
+          "notes": ""
+        },
+        {
+          "script": "work/sinum-phase3-2026-11-11/stats/make_tables.py",
+          "kind": "saved_records",
+          "notes": ""
+        },
+        {
+          "script": "work/sinum-phase3-2026-11-11/stats/main_recovery_table.py",
+          "kind": "saved_records",
+          "notes": "Rebuilds main Table 1 directly from all 700 relevant NC/C endpoints with coverage checks and input provenance."
+        }
+      ],
+      "rerun": [
+        "work/sinum-phase3-2026-11-11/cohort1d/run_amend2.py"
+      ],
+      "notes": "100 matched starts for each derivative order, four methods. Retain all failed basins and both protocol versions: the supplement explicitly reports the earlier trial-failure rule and its 57 changed runs. The original ten-start guarded cohort is retained as reproduction evidence."
+    },
+    {
+      "id": "pb-recovery",
+      "title": "First-order Poisson\u2013Boltzmann recovery in dimensions 5, 10 and 20",
+      "group": "Main-paper studies",
+      "paper": {
+        "sections": [
+          "5.1",
+          "5.4",
+          "SM5.1.3",
+          "SM5.2"
+        ],
+        "labels": [
+          "fig:main-solution-fields",
+          "tab:main-recovery",
+          "tab:sm-describe-pb",
+          "tab:paired"
+        ],
+        "tables": [
+          "1",
+          "SM12",
+          "SM16",
+          "SM17",
+          "SM20"
+        ],
+        "figures": [
+          "1",
+          "SM2",
+          "SM3",
+          "SM5",
+          "SM9",
+          "SM11"
+        ]
+      },
+      "records": [
+        "work/sinum-phase3-2026-11-11/cohort_pb/results",
+        "work/sinum-phase3-2026-11-11/cohort_pb/results_nc_exact",
+        "work/sinum-phase3-2026-11-11/cohort_pb/results_cd_exact",
+        "numerical-section-revision/sinum-revision-2026-11-10/squared-gap/results"
+      ],
+      "analysis": [
+        {
+          "script": "work/sinum-phase3-2026-11-11/stats/pb_table_rows.py",
+          "kind": "saved_records",
+          "notes": ""
+        },
+        {
+          "script": "work/sinum-phase3-2026-11-11/stats/main_recovery_table.py",
+          "kind": "saved_records",
+          "notes": "Rebuilds main Table 1 directly from all 700 relevant NC/C endpoints with coverage checks and input provenance."
+        }
+      ],
+      "rerun": [
+        "work/sinum-phase3-2026-11-11/cohort_pb/campaign.py",
+        "work/sinum-phase3-2026-11-11/cohort_pb/campaign_nc_exact.py",
+        "work/sinum-phase3-2026-11-11/cohort_pb/campaign_cd_exact.py"
+      ],
+      "notes": "50 matched starts per dimension, four methods. The exact evaluator is primary; averaged-evaluator NC and discrete-completion arms are also explicitly reported controls. Figure 1 re-evaluates one saved d=10 endpoint pair; it is not another optimization study."
+    },
+    {
+      "id": "reversible-pb",
+      "title": "Reversible pair method and three comparators on the PB cohort",
+      "group": "Main-paper studies",
+      "paper": {
+        "sections": [
+          "5.3",
+          "SM2.4"
+        ],
+        "labels": [
+          "fig:main-reversible",
+          "tab:main-reversible-check",
+          "tab:alg41-per-dimension",
+          "tab:alg41-hessian"
+        ],
+        "tables": [
+          "SM3",
+          "SM4",
+          "SM5"
+        ],
+        "figures": [
+          "2"
+        ]
+      },
+      "records": [
+        "work/alg41-pb-cohort-2026-11-12/results",
+        "work/alg41-pb-cohort-2026-11-12/protocol.json",
+        "work/alg41-pb-cohort-2026-11-12/hessian_check.json",
+        "paper_1111/revision-validation/pair-coefficient-audit",
+        "work/alg41-pb-cohort-2026-11-12/pilot"
+      ],
+      "analysis": [
+        {
+          "script": "work/alg41-pb-cohort-2026-11-12/analyze.py",
+          "kind": "saved_records",
+          "notes": ""
+        },
+        {
+          "script": "work/alg41-pb-cohort-2026-11-12/hessian_check.py",
+          "kind": "numerical_validation",
+          "notes": "Finite-difference endpoint Hessians; does not rerun optimization."
+        }
+      ],
+      "rerun": [
+        "work/alg41-pb-cohort-2026-11-12/campaign.py"
+      ],
+      "notes": "30 projected t runs, 18 projected h runs, and 150 runs in each L-BFGS-B chart. Figure 2 uses the 18 shared projected starts; cap failures stay in the denominator. Seed-9 tuning records document the stated exploratory selection."
+    },
+    {
+      "id": "forcing-budget",
+      "title": "Prescribed forcing with varying Gaussian budget",
+      "group": "Main-paper studies",
+      "paper": {
+        "sections": [
+          "5.5",
+          "5.6",
+          "SM5.4"
+        ],
+        "labels": [
+          "fig:main-forcing-solutions",
+          "fig:budget",
+          "tab:budget-study"
+        ],
+        "tables": [
+          "SM24"
+        ],
+        "figures": [
+          "3",
+          "SM6"
+        ]
+      },
+      "records": [
+        "work/pstudy-forcing-2026-11-12/results/runs",
+        "work/pstudy-forcing-2026-11-12/results/baselines",
+        "work/pstudy-forcing-2026-11-12/protocol.json",
+        "paper_1111/revision-validation/forcing-endpoint-audit"
+      ],
+      "analysis": [
+        {
+          "script": "paper_1111/revision-validation/forcing-endpoint-audit/analyze_endpoints.py",
+          "kind": "numerical_validation",
+          "notes": "Re-evaluates saved endpoints and independent references; produces the corrected energy-selection summary. Use the publication builder for the current figure."
+        }
+      ],
+      "rerun": [
+        "work/pstudy-forcing-2026-11-12/campaign.py"
+      ],
+      "notes": "Two forcings, P=2,4,6,8,12,16, ten starts and S/NC/C: all 360 optimizer endpoints plus fixed-center and P1 baselines. Retain every high-budget breakdown. P>=8 is exploratory endpoint evidence, excluded from optimizer-performance claims. The original analyze.py predates the corrected endpoint audit and is not the authoritative current summary."
+    },
+    {
+      "id": "local-scaling",
+      "title": "Pair tolerance, collapse and boundary-identification tests",
+      "group": "Local and reversible checks",
+      "paper": {
+        "sections": [
+          "5.2",
+          "SM5.1.1"
+        ],
+        "labels": [
+          "fig:local-tests"
+        ],
+        "tables": [],
+        "figures": [
+          "SM1"
+        ]
+      },
+      "records": [
+        "work/sinum-phase3-2026-11-11/predictions/results"
+      ],
+      "analysis": [],
+      "rerun": [
+        "work/sinum-phase3-2026-11-11/predictions/run_toy.py",
+        "work/sinum-phase3-2026-11-11/predictions/run_toy_vp.py",
+        "work/sinum-phase3-2026-11-11/predictions/run_pb_sweep.py"
+      ],
+      "notes": "Both prespecified joint optimization and exploratory coefficient-refitted sweeps are reported, including the one-start PB sweep. The nine successful local starts used for slopes do not replace the complete ten-start records."
+    },
+    {
+      "id": "objective-floors",
+      "title": "Local objective, stopping and positive-floor controls",
+      "group": "Local and reversible checks",
+      "paper": {
+        "sections": [
+          "5.2",
+          "SM4.3"
+        ],
+        "labels": [
+          "tab:objective-controls",
+          "tab:positive-floor-controls",
+          "tab:objective-control-times"
+        ],
+        "tables": [
+          "SM9",
+          "SM10",
+          "SM11"
+        ],
+        "figures": []
+      },
+      "records": [
+        "paper_1111/revision-validation/objective-controls/results.json",
+        "paper_1111/revision-validation/objective-controls/validation.json",
+        "paper_1111/revision-validation/objective-controls/timing-context.json",
+        "paper_1111/revision-validation/objective-controls/pilot"
+      ],
+      "analysis": [
+        {
+          "script": "paper_1111/revision-validation/objective-controls/build_text.py",
+          "kind": "saved_records",
+          "notes": ""
+        },
+        {
+          "script": "paper_1111/revision-validation/objective-controls/validate_controls.py",
+          "kind": "numerical_validation",
+          "notes": "80-digit endpoint and refined-grid checks."
+        }
+      ],
+      "rerun": [
+        "paper_1111/revision-validation/objective-controls/run_controls.py"
+      ],
+      "notes": "Three local linear targets, ten matched starts, shifted-Gram versus oracle residual objectives and five squared-gap floors. Keep the disclosed one-start pilot and serial timing records."
+    },
+    {
+      "id": "reversible-reference",
+      "title": "High-precision reference pair checks",
+      "group": "Local and reversible checks",
+      "paper": {
+        "sections": [
+          "SM2.2"
+        ],
+        "labels": [
+          "sm:reversible-verification"
+        ],
+        "tables": [
+          "SM1"
+        ],
+        "figures": []
+      },
+      "records": [
+        "paper_1111/revision-validation/reversible_pair_checks.json",
+        "paper_1111/revision-validation/reversible_pair_summary.csv"
+      ],
+      "analysis": [],
+      "rerun": [
+        "paper_1111/revision-validation/verify_reversible_pairs.py"
+      ],
+      "notes": "Five 70-digit pair iterations test closing, opening, both storage conversions and accepted decrease. Fresh execution performs optimization; the saved trajectories are immediately readable."
+    },
+    {
+      "id": "reversible-multipair",
+      "title": "Two rotating pairs for a nonlinear quadrature energy",
+      "group": "Local and reversible checks",
+      "paper": {
+        "sections": [
+          "SM2.3"
+        ],
+        "labels": [
+          "tab:reversible-multipair"
+        ],
+        "tables": [
+          "SM2"
+        ],
+        "figures": []
+      },
+      "records": [
+        "paper_1111/revision-validation/reversible-multipair/results.json",
+        "paper_1111/revision-validation/reversible-multipair/results.csv",
+        "paper_1111/revision-validation/reversible-multipair/validation.json"
+      ],
+      "analysis": [
+        {
+          "script": "paper_1111/revision-validation/reversible-multipair/verify.py",
+          "kind": "numerical_validation",
+          "notes": "80-digit endpoint errors and quadrature-refit checks."
+        }
+      ],
+      "rerun": [
+        "paper_1111/revision-validation/reversible-multipair/run.py"
+      ],
+      "notes": "Three target-informed starts, reversible t and stable h: all six trajectories and serial timings. This is a discrete manufactured quadrature objective."
+    },
+    {
+      "id": "linear-recovery",
+      "title": "One-dimensional linear recovery with mixed collision orders",
+      "group": "Additional recovery and evaluator controls",
+      "paper": {
+        "sections": [
+          "SM5.1.3",
+          "SM5.3.1",
+          "SM6.2"
+        ],
+        "labels": [
+          "tab:stable-controls",
+          "tab:sm-ablation",
+          "fig:numerics_recovery",
+          "fig:solution_1d"
+        ],
+        "tables": [
+          "SM12",
+          "SM19",
+          "SM20"
+        ],
+        "figures": [
+          "SM3",
+          "SM7"
+        ]
+      },
+      "records": [
+        "numerical-section-revision/phase1-2026-11-11/runs/linear1d"
+      ],
+      "analysis": [
+        {
+          "script": "numerical-section-revision/phase1-2026-11-11/summarize_phase1.py",
+          "kind": "saved_records",
+          "notes": "Summarizes several near-target families. Its PB and full-span rows are historical averaged-evaluator summaries; use the enlarged-cohort and exact-evaluator summaries for the current paper."
+        }
+      ],
+      "rerun": [
+        {
+          "script": "numerical-section-revision/phase1-2026-11-11/src/chain_experiments.py",
+          "args": [
+            "--problem",
+            "linear1d",
+            "--seeds",
+            "0",
+            "10",
+            "--methods",
+            "standard_restart",
+            "stable",
+            "adaptive",
+            "tpair",
+            "--jobs",
+            "1",
+            "--output",
+            "fresh-results/linear1d"
+          ],
+          "notes": "Entire ten-start linear campaign; use a new output directory."
+        }
+      ],
+      "notes": "Ten shared starts, S/NC/C/Cd, one singleton plus first- and second-order collisions."
+    },
+    {
+      "id": "second-order-recovery",
+      "title": "Target-informed one-dimensional second-order PB recovery",
+      "group": "Additional recovery and evaluator controls",
+      "paper": {
+        "sections": [
+          "SM5.1.3",
+          "SM5.3.1"
+        ],
+        "labels": [
+          "tab:stable-controls",
+          "tab:sm-ablation"
+        ],
+        "tables": [
+          "SM12",
+          "SM19",
+          "SM20"
+        ],
+        "figures": []
+      },
+      "records": [
+        "numerical-section-revision/phase1-2026-11-11/runs/second1d",
+        "numerical-section-revision/guarded-rerun-2026-11-09/directional/accuracy-second1d",
+        "work/sinum-phase3-2026-11-11/s_reruns/results.json"
+      ],
+      "analysis": [],
+      "rerun": [
+        {
+          "script": "numerical-section-revision/phase1-2026-11-11/src/chain_experiments.py",
+          "args": [
+            "--problem",
+            "second1d",
+            "--seeds",
+            "40",
+            "50",
+            "--methods",
+            "tpair",
+            "--jobs",
+            "1",
+            "--output",
+            "fresh-results/second1d"
+          ],
+          "notes": "C arm of the ten-start campaign; guarded sources provide the frozen NC/Cd arms."
+        }
+      ],
+      "notes": "Ten shared starts. Current S uses the two-return policy in s_reruns; NC/Cd are guarded records and C uses the squared-gap chain solver."
+    },
+    {
+      "id": "higher-order-recovery",
+      "title": "Target-informed PB recovery through order three in dimension five",
+      "group": "Additional recovery and evaluator controls",
+      "paper": {
+        "sections": [
+          "SM5.1.3",
+          "SM5.3.1",
+          "SM6.2"
+        ],
+        "labels": [
+          "tab:stable-controls",
+          "tab:sm-ablation",
+          "fig:pb_third_order"
+        ],
+        "tables": [
+          "SM12",
+          "SM19",
+          "SM20"
+        ],
+        "figures": [
+          "SM8"
+        ]
+      },
+      "records": [
+        "numerical-section-revision/phase1-2026-11-11/runs/higher",
+        "numerical-section-revision/guarded-rerun-2026-11-09/directional/accuracy-higher",
+        "numerical-section-revision/guarded-rerun-2026-11-09/historical-baselines"
+      ],
+      "analysis": [],
+      "rerun": [
+        {
+          "script": "numerical-section-revision/phase1-2026-11-11/src/chain_experiments.py",
+          "args": [
+            "--problem",
+            "higher",
+            "--dimensions",
+            "5",
+            "--geometries",
+            "0",
+            "1",
+            "--seeds",
+            "10",
+            "15",
+            "--methods",
+            "tpair",
+            "--jobs",
+            "1",
+            "--output",
+            "fresh-results/higher"
+          ],
+          "notes": "C arm on both geometries and five seeds; guarded sources provide NC/Cd."
+        }
+      ],
+      "notes": "Ten shared starts, P=16, mixed second- and third-order target blocks. Preserve failed basins, rejected completions and historical S baselines."
+    },
+    {
+      "id": "fullspan-recovery",
+      "title": "Full-span linear recovery in dimensions 10 and 20",
+      "group": "Additional recovery and evaluator controls",
+      "paper": {
+        "sections": [
+          "SM5.1.3",
+          "SM5.3.1",
+          "SM5.3.2",
+          "SM6.2"
+        ],
+        "labels": [
+          "tab:stable-controls",
+          "tab:sm-ablation",
+          "tab:sm-span-residuals"
+        ],
+        "tables": [
+          "SM12",
+          "SM19",
+          "SM20",
+          "SM21",
+          "SM27"
+        ],
+        "figures": []
+      },
+      "records": [
+        "numerical-section-revision/phase1-2026-11-11/runs/fullspan",
+        "numerical-section-revision/phase1-2026-11-11/runs/evaluator-linear",
+        "numerical-section-revision/guarded-rerun-2026-11-09/first-order/accuracy",
+        "numerical-section-revision/guarded-rerun-2026-11-09/historical-baselines"
+      ],
+      "analysis": [],
+      "rerun": [
+        {
+          "script": "numerical-section-revision/phase1-2026-11-11/first_order_runner.py",
+          "args": [
+            "--mode",
+            "linear_T",
+            "--dimension",
+            "10",
+            "--geometry",
+            "0",
+            "--seed",
+            "10",
+            "--output",
+            "fresh-results/span-d10-s10.json"
+          ],
+          "notes": "One-start example. Repeat for d=10,20 and seeds 10,11,12."
+        },
+        {
+          "script": "numerical-section-revision/phase1-2026-11-11/exact_evaluator_runner.py",
+          "args": [
+            "linear",
+            "--method",
+            "stable",
+            "--dimension",
+            "10",
+            "--geometry",
+            "0",
+            "--seed",
+            "10",
+            "--output",
+            "fresh-results/span-nc-d10-s10.json"
+          ],
+          "notes": "One-start exact NC example. Repeat with method adaptive for Cd and across the same dimensions and seeds."
+        }
+      ],
+      "notes": "Three starts per dimension, d pairs and two singletons. Exact and averaged NC/Cd evaluator records are both reported."
+    },
+    {
+      "id": "pair-evaluators",
+      "title": "Exact-parity, averaged and Taylor-series pair evaluator controls",
+      "group": "Additional recovery and evaluator controls",
+      "paper": {
+        "sections": [
+          "SM5.3.2"
+        ],
+        "labels": [
+          "tab:sm-evaluator"
+        ],
+        "tables": [
+          "SM21"
+        ],
+        "figures": []
+      },
+      "records": [
+        "numerical-section-revision/phase1-2026-11-11/runs/evaluator",
+        "numerical-section-revision/phase1-2026-11-11/runs/evaluator-chain",
+        "numerical-section-revision/phase1-2026-11-11/runs/evaluator-linear",
+        "numerical-section-revision/phase1-2026-11-11/runs/evaluator-twod"
+      ],
+      "analysis": [
+        {
+          "script": "numerical-section-revision/phase1-2026-11-11/exact_evaluator_summary.py",
+          "kind": "saved_records",
+          "notes": ""
+        },
+        {
+          "script": "numerical-section-revision/phase1-2026-11-11/evaluator_matched.py",
+          "kind": "saved_records",
+          "notes": ""
+        }
+      ],
+      "rerun": [
+        {
+          "script": "numerical-section-revision/phase1-2026-11-11/exact_evaluator_runner.py",
+          "args": [
+            "linear",
+            "--method",
+            "stable",
+            "--dimension",
+            "10",
+            "--geometry",
+            "0",
+            "--seed",
+            "10",
+            "--output",
+            "fresh-results/evaluator-span.json"
+          ],
+          "notes": "One full-span evaluator example; twod --list enumerates two-dimensional tasks."
+        },
+        {
+          "script": "numerical-section-revision/phase1-2026-11-11/chain_series_runner.py",
+          "args": [
+            "--problem",
+            "linear1d",
+            "--seed",
+            "0",
+            "--output",
+            "fresh-results/evaluator-chain.json"
+          ],
+          "notes": "One directional-series example. Use linear1d seeds 0\u20139 and second1d seeds 40\u201349 for the complete study."
+        }
+      ],
+      "notes": "Matched evaluator reruns cover PB, full span, 2D controls and 20 one-dimensional directional starts. These are reported controls, not duplicate clutter."
+    },
+    {
+      "id": "variance-family",
+      "title": "Positive-error Gaussian-variance family",
+      "group": "Additional recovery and evaluator controls",
+      "paper": {
+        "sections": [
+          "5.6",
+          "SM5.1.3",
+          "SM5.3.6"
+        ],
+        "labels": [
+          "tab:variance-family",
+          "fig:sm-variance"
+        ],
+        "tables": [
+          "SM23"
+        ],
+        "figures": [
+          "SM10"
+        ]
+      },
+      "records": [
+        "numerical-section-revision/phase1-2026-11-11/runs/variance",
+        "numerical-section-revision/guarded-rerun-2026-11-09/variance/results"
+      ],
+      "analysis": [],
+      "rerun": [
+        "numerical-section-revision/phase1-2026-11-11/variance_t.py",
+        "numerical-section-revision/guarded-rerun-2026-11-09/variance/run_matched.py"
+      ],
+      "notes": "Variance parameters 0.99,0.995,0.999, ten starts, four methods. Joint coefficient/geometry optimization and all unsuccessful basins are retained. The separate old normal-family experiment is not reported."
+    },
+    {
+      "id": "twod-controls",
+      "title": "Two-dimensional recovery, mixed scales and prescribed forcing",
+      "group": "Prescribed forcing and negative controls",
+      "paper": {
+        "sections": [
+          "SM5.3.2",
+          "SM5.3.3"
+        ],
+        "labels": [
+          "tab:sm-2d",
+          "tab:sm-evaluator"
+        ],
+        "tables": [
+          "SM21",
+          "SM22"
+        ],
+        "figures": []
+      },
+      "records": [
+        "numerical-section-revision/phase1-2026-11-11/runs/twod",
+        "numerical-section-revision/phase1-2026-11-11/runs/evaluator-twod",
+        "numerical-section-revision/guarded-rerun-2026-11-09/supplementary-2d/accuracy",
+        "numerical-section-revision/guarded-rerun-2026-11-09/supplementary-2d/tasks.json",
+        "numerical-section-revision/guarded-rerun-2026-11-09/supplementary-2d/historical/allowance"
+      ],
+      "analysis": [],
+      "rerun": [
+        {
+          "script": "numerical-section-revision/phase1-2026-11-11/twod_t_runner.py",
+          "args": [
+            "--id",
+            "recovery_dipole_101_stable",
+            "--output",
+            "fresh-results/recovery-dipole-101-C.json"
+          ],
+          "notes": "One C example; --list enumerates all 48 task IDs."
+        },
+        {
+          "script": "numerical-section-revision/phase1-2026-11-11/exact_evaluator_runner.py",
+          "args": [
+            "twod",
+            "--id",
+            "recovery_dipole_101_stable",
+            "--output",
+            "fresh-results/recovery-dipole-101-NC.json"
+          ],
+          "notes": "One exact NC example; twod --list enumerates the NC/Cd task IDs."
+        }
+      ],
+      "notes": "Ten exact-recovery starts; ten starts at each scale mismatch (0.01,0.05); 9 smooth-source, 6 multiple-source and 3 exploratory forcing starts. Keep the explicitly reported tighter-allowance sensitivity control and fixed reference caches."
+    },
+    {
+      "id": "forcing-single-source",
+      "title": "One-dimensional single-source forcing family",
+      "group": "Prescribed forcing and negative controls",
+      "paper": {
+        "sections": [
+          "SM5.1.2",
+          "SM5.3.4"
+        ],
+        "labels": [
+          "sm:ablation-controls"
+        ],
+        "tables": [],
+        "figures": []
+      },
+      "records": [
+        "numerical-section-revision/sinum-revision-2026-11-10/forcing",
+        "work/independent-tests-2026-11-08/forcing_pair/holdout"
+      ],
+      "analysis": [
+        {
+          "script": "numerical-section-revision/sinum-revision-2026-11-10/forcing/revalidate.py",
+          "kind": "numerical_validation",
+          "notes": "Recomputes endpoint and enlarged-domain reference checks."
+        }
+      ],
+      "rerun": [
+        "work/independent-tests-2026-11-08/forcing_pair/run_holdout.py"
+      ],
+      "notes": "Ten independently parameterized P=2 cases; retain NC/Cd earlier records and the updated C endpoints. All have positive approximation error; completion does not improve it."
+    },
+    {
+      "id": "forcing-multiple-sources",
+      "title": "One-dimensional multiple-source forcing controls",
+      "group": "Prescribed forcing and negative controls",
+      "paper": {
+        "sections": [
+          "SM5.3.4"
+        ],
+        "labels": [
+          "sm:ablation-controls"
+        ],
+        "tables": [],
+        "figures": []
+      },
+      "records": [
+        "work/independent-tests-2026-11-08/forcing_1d/pilot",
+        "work/independent-tests-2026-11-08/forcing_1d/pilot_reference_repair",
+        "work/independent-tests-2026-11-08/forcing_1d/paired.csv"
+      ],
+      "analysis": [],
+      "rerun": [
+        "work/independent-tests-2026-11-08/forcing_1d/run_screen.py",
+        "work/independent-tests-2026-11-08/forcing_1d/rerun_reference.py"
+      ],
+      "notes": "Six families, 18 matched cases, 54 validated endpoints. Keep the nine original failed reference validations and their repaired-reference replacements; they are not 18 new scientific outcomes."
+    },
+    {
+      "id": "forcing-higher-order",
+      "title": "Prescribed Hermite\u2013Gaussian multipole controls",
+      "group": "Prescribed forcing and negative controls",
+      "paper": {
+        "sections": [
+          "SM5.3.4"
+        ],
+        "labels": [
+          "sm:ablation-controls"
+        ],
+        "tables": [],
+        "figures": []
+      },
+      "records": [
+        "work/independent-tests-2026-11-08/forcing_chain/pilot",
+        "work/independent-tests-2026-11-08/forcing_chain/pilot_grid_variant",
+        "work/independent-tests-2026-11-08/forcing_chain/pilot_scale_variant",
+        "work/independent-tests-2026-11-08/forcing_chain/paired.csv"
+      ],
+      "analysis": [
+        {
+          "script": "work/independent-tests-2026-11-08/forcing_chain/validate_resolved.py",
+          "kind": "numerical_validation",
+          "notes": "Validates saved optimizer endpoints against independent boundary-value references."
+        }
+      ],
+      "rerun": [
+        "work/independent-tests-2026-11-08/forcing_chain/run_chain.py",
+        "work/independent-tests-2026-11-08/forcing_chain/run_grid_variant.py",
+        "work/independent-tests-2026-11-08/forcing_chain/run_scale_variant.py"
+      ],
+      "notes": "24 matched cases, 72 endpoints. All three exploratory settings are reported; preserve the original reference failures and resolved checks."
+    },
+    {
+      "id": "twod-higher-order-negative",
+      "title": "Two-dimensional higher-order negative pilots",
+      "group": "Prescribed forcing and negative controls",
+      "paper": {
+        "sections": [
+          "SM5.3.5"
+        ],
+        "labels": [
+          "sm:ablation-controls"
+        ],
+        "tables": [],
+        "figures": []
+      },
+      "records": [
+        "work/independent-tests-2026-11-08/blind_higher_order/pilot",
+        "work/independent-tests-2026-11-08/blind_higher_order/pilot_strong"
+      ],
+      "analysis": [],
+      "rerun": [
+        "work/independent-tests-2026-11-08/blind_higher_order/run.py"
+      ],
+      "notes": "36 runs: second/third derivatives, three seeds, reaction strengths 1 and 10, S/NC/Cd. The supplement explicitly reports failure to recover most targets. Unreported one-dimensional pilot1d and infrastructure smoke/failure directories are excluded."
+    },
+    {
+      "id": "endpoint-validation",
+      "title": "Completion, residual and frozen-chart endpoint validation",
+      "group": "Validation and timing",
+      "paper": {
+        "sections": [
+          "SM6.1",
+          "SM6.2"
+        ],
+        "labels": [
+          "tab:sm-stationarity-cohorts",
+          "tab:sm-stationarity",
+          "tab:sm-stationarity-runs",
+          "tab:sm-span-residuals"
+        ],
+        "tables": [
+          "SM18",
+          "SM25",
+          "SM26",
+          "SM27"
+        ],
+        "figures": []
+      },
+      "records": [
+        "numerical-section-revision/phase1-2026-11-11/posthoc-stationarity.json",
+        "numerical-section-revision/phase1-2026-11-11/pair-solver-residuals.json",
+        "work/sinum-phase3-2026-11-11/stationarity",
+        "numerical-section-revision/guarded-rerun-2026-11-09/independent/accuracy"
+      ],
+      "analysis": [
+        {
+          "script": "numerical-section-revision/phase1-2026-11-11/validate_phase1.py",
+          "kind": "numerical_validation",
+          "notes": "Solver regression, pair columns and slope tests."
+        },
+        {
+          "script": "numerical-section-revision/phase1-2026-11-11/cd_exact_transfer_checks.py",
+          "kind": "numerical_validation",
+          "notes": "Rechecks accepted discrete transfers."
+        }
+      ],
+      "rerun": [],
+      "notes": "These checks support existing experiment endpoints. They are not extra performance cohorts; preserve endpoint failures and numerical-noise classifications."
+    },
+    {
+      "id": "controlled-timing",
+      "title": "Earlier serial timing measurements for NC and discrete completion",
+      "group": "Validation and timing",
+      "paper": {
+        "sections": [
+          "SM6.5"
+        ],
+        "labels": [
+          "tab:sm-timing-old"
+        ],
+        "tables": [
+          "SM28"
+        ],
+        "figures": []
+      },
+      "records": [
+        "numerical-section-revision/guarded-rerun-2026-11-09/first-order/benchmark",
+        "numerical-section-revision/guarded-rerun-2026-11-09/directional/timing-second1d",
+        "numerical-section-revision/guarded-rerun-2026-11-09/directional/timing-higher",
+        "numerical-section-revision/guarded-rerun-2026-11-09/independent/benchmark"
+      ],
+      "analysis": [],
+      "rerun": [],
+      "notes": "Three prescribed starts in each of nine problem/dimension groups. These timings concern NC and Cd, not the current adaptive C. Unexecuted phase3 timing campaign templates do not supply new reported timings."
+    },
+    {
+      "id": "analytic-checks",
+      "title": "Pair constants and nonsmoothable cubic verification",
+      "group": "Validation and timing",
+      "paper": {
+        "sections": [
+          "SM1.2",
+          "SM1.5",
+          "SM2.2"
+        ],
+        "labels": [
+          "sm:width-obstruction",
+          "sm:pair-example-constants"
+        ],
+        "tables": [],
+        "figures": []
+      },
+      "records": [
+        "paper_1111/revision-validation/pair_analysis_checks.json",
+        "paper_1111/revision-validation/nonsmoothable_cubic_summary.txt"
+      ],
+      "analysis": [
+        {
+          "script": "paper_1111/revision-validation/verify_pair_analysis.py",
+          "kind": "numerical_validation",
+          "notes": "80-digit analytic Gaussian correlations."
+        },
+        {
+          "script": "paper_1111/revision-validation/verify_nonsmoothable_cubic.py",
+          "kind": "numerical_validation",
+          "notes": "Exact modular rank and symbolic polynomial checks."
+        }
+      ],
+      "rerun": [],
+      "notes": "Supporting mathematical verification explicitly cited in the supplement; no separate solver-performance claim."
+    }
+  ],
+  "figures": [
+    {
+      "number": "1",
+      "title": "PB solution and error maps",
+      "file": "figures/figure_pb_solution_maps.pdf",
+      "label": "fig:main-solution-fields",
+      "builder": "paper_1111/revision-validation/publication-figures/build_pb_solution_maps.py"
+    },
+    {
+      "number": "2",
+      "title": "Projected methods on the PB cohort",
+      "file": "figures/figure_alg41_cohort.pdf",
+      "label": "fig:main-reversible",
+      "builder": "paper_1111/revision-validation/publication-figures/build_algorithm.py"
+    },
+    {
+      "number": "3",
+      "title": "Prescribed-forcing solution curves",
+      "file": "figures/figure_forcing_solutions.pdf",
+      "label": "fig:main-forcing-solutions",
+      "builder": "paper_1111/revision-validation/publication-figures/build_forcing_solutions.py"
+    },
+    {
+      "number": "SM1",
+      "title": "Local pair scaling and closing",
+      "file": "figures/figure_local.pdf",
+      "label": "fig:local-tests",
+      "builder": "paper_1111/revision-validation/publication-figures/build_local.py"
+    },
+    {
+      "number": "SM2",
+      "title": "Paired accuracy and work ratios",
+      "file": "figures/figure_recovery_tradeoff.pdf",
+      "label": "fig:recovery-tradeoff",
+      "builder": "paper_1111/revision-validation/publication-figures/build_recovery_tradeoff.py"
+    },
+    {
+      "number": "SM3",
+      "title": "Linear and PB recovery trajectories",
+      "file": "figures/figure_recovery.pdf",
+      "label": "fig:numerics_recovery",
+      "builder": "paper_1111/revision-validation/publication-figures/build_supplement.py"
+    },
+    {
+      "number": "SM4",
+      "title": "Independent recovery error distributions",
+      "file": "figures/figure_ecdf.pdf",
+      "label": "fig:sm-ecdf",
+      "builder": "paper_1111/revision-validation/publication-figures/build_supplement.py"
+    },
+    {
+      "number": "SM5",
+      "title": "PB error distributions by dimension",
+      "file": "figures/figure_ecdf_pb_dimensions.pdf",
+      "label": "fig:sm-ecdf-pb",
+      "builder": "paper_1111/revision-validation/publication-figures/build_supplement.py"
+    },
+    {
+      "number": "SM6",
+      "title": "Forcing budget and baseline comparison",
+      "file": "figures/figure_budget.pdf",
+      "label": "fig:budget",
+      "builder": "paper_1111/revision-validation/publication-figures/build_budget.py"
+    },
+    {
+      "number": "SM7",
+      "title": "One-dimensional linear solution",
+      "file": "figures/figure_solution_1d.pdf",
+      "label": "fig:solution_1d",
+      "builder": "paper_1111/revision-validation/publication-figures/build_supplement.py"
+    },
+    {
+      "number": "SM8",
+      "title": "Higher-order PB recovery",
+      "file": "figures/figure_order.pdf",
+      "label": "fig:pb_third_order",
+      "builder": "paper_1111/revision-validation/publication-figures/build_supplement.py"
+    },
+    {
+      "number": "SM9",
+      "title": "First-order PB solution",
+      "file": "figures/figure_solution_pb.pdf",
+      "label": "fig:sm-solution-pb",
+      "builder": "paper_1111/revision-validation/publication-figures/build_supplement.py"
+    },
+    {
+      "number": "SM10",
+      "title": "Positive-error variance family",
+      "file": "figures/figure_variance_family.pdf",
+      "label": "fig:sm-variance",
+      "builder": "paper_1111/revision-validation/publication-figures/build_supplement.py"
+    },
+    {
+      "number": "SM11",
+      "title": "PB trajectories by ambient dimension",
+      "file": "figures/figure_dimension.pdf",
+      "label": "fig:sm-dimension",
+      "builder": "paper_1111/revision-validation/publication-figures/build_supplement.py"
+    }
+  ],
+  "exclusions": [
+    "October six-figure/six-table release, certificate experiment and coefficient-budget sweep not reported in the current manuscript.",
+    "Old hierarchical-jet, normal-family and alternative-geometry campaigns not reported in the current manuscript.",
+    "Unreported one-dimensional pilot1d runs, smoke tests, infrastructure launch failures and unused timing campaign outputs.",
+    "Unused figure_reversible.pdf and editorial-figures replot; only the 14 figures actually included by the current sources are publication outputs.",
+    "Draft manuscripts, referee notes, source-editing scripts, stale report PDFs, screenshots, caches and duplicate release trees."
+  ]
+}

@@ -1,0 +1,207 @@
+{
+ "stationarity": {
+  "projected_gradient_max_abs": 1.8443666631267353e-11,
+  "gradient_max_abs": 1.8443666631267353e-11,
+  "active_bounds": 0,
+  "normalized_coefficient_kkt": 2.479418848619573e-16,
+  "final_objective_normalized": -0.40540144757941754,
+  "final_chain_slopes": []
+ },
+ "final_squared_halfgaps": [],
+ "zero_gap_pairs": 0,
+ "method": "stable",
+ "d": 1,
+ "fits": 58,
+ "iterations": 25,
+ "stop": "function_tolerance",
+ "final_relative_error": 0.43219816022561797,
+ "trace_final_error_double": 0.4321981602256179,
+ "coefficient_norm": 0.9245829053750951,
+ "completions": 0,
+ "joins": 1,
+ "rejections": 0,
+ "blocks_final": {
+  "line2": 1
+ },
+ "wall": 2.2170994579792023,
+ "solve_seconds": 2.0335223749279976,
+ "optimizer_seconds": 2.0335223749279976,
+ "posthoc_validation_seconds": 0.18357899994589388,
+ "postprocessing_seconds": 0.18357945792376995,
+ "guard_counts": {},
+ "guard_examples": [],
+ "coordinate_convention": "dimensionless p_hat = (q/sigma)/prod((t_i-t_j)/sigma)",
+ "trace": [
+  {
+   "fits": 1,
+   "iterations": 0,
+   "wall": 0.08215487492270768,
+   "relative_error": 0.6466789512275827,
+   "coefficient_norm": 1.3051001874213484,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 3
+   }
+  },
+  {
+   "fits": 26,
+   "iterations": 16,
+   "wall": 0.6976500828750432,
+   "relative_error": 0.43219729255490247,
+   "coefficient_norm": 215066.70164474277,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 3
+   }
+  },
+  {
+   "fits": 27,
+   "iterations": 16,
+   "wall": 0.752485791919753,
+   "relative_error": 0.4321989510007307,
+   "coefficient_norm": 92656.54530260921,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 1,
+    "pair": 1
+   }
+  },
+  {
+   "fits": 37,
+   "iterations": 18,
+   "wall": 1.4876045419368893,
+   "relative_error": 0.4321979777449246,
+   "coefficient_norm": 83900.63450574556,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 1,
+    "pair": 1
+   }
+  },
+  {
+   "fits": 38,
+   "iterations": 18,
+   "wall": 1.5181236669886857,
+   "relative_error": 0.4321983898555993,
+   "coefficient_norm": 0.9239496547481153,
+   "completions": 0,
+   "joins": 1,
+   "blocks": {
+    "line2": 1
+   }
+  },
+  {
+   "fits": 43,
+   "iterations": 20,
+   "wall": 1.642300667008385,
+   "relative_error": 0.4321981644439447,
+   "coefficient_norm": 0.9246030712360067,
+   "completions": 0,
+   "joins": 1,
+   "blocks": {
+    "line2": 1
+   }
+  },
+  {
+   "fits": 55,
+   "iterations": 24,
+   "wall": 1.9420814998447895,
+   "relative_error": 0.4321981602247134,
+   "coefficient_norm": 0.9245829054122798,
+   "completions": 0,
+   "joins": 1,
+   "blocks": {
+    "line2": 1
+   }
+  },
+  {
+   "fits": 58,
+   "iterations": 25,
+   "wall": 2.0323011248838156,
+   "relative_error": 0.4321981602256179,
+   "coefficient_norm": 0.9245829053750951,
+   "completions": 0,
+   "joins": 1,
+   "blocks": {
+    "line2": 1
+   }
+  }
+ ],
+ "events": [
+  {
+   "kind": "pair",
+   "fits": 26,
+   "h": 0.0006972284600984535
+  },
+  {
+   "kind": "join",
+   "fits": 37,
+   "into": "pair",
+   "base": "pair",
+   "order": 2,
+   "s": 0.0031340442323926077,
+   "q": 0.0
+  }
+ ],
+ "final_blocks": [
+  {
+   "kind": "line",
+   "base": "pair",
+   "k": 2,
+   "id": 5,
+   "c": [
+    1.0157028906381402
+   ],
+   "e": [
+    1.0
+   ],
+   "h": 8.48675659228192e-11,
+   "s": [
+    5.204014357073717e-10
+   ],
+   "p": [
+    [
+     0.0
+    ]
+   ]
+  }
+ ],
+ "final_coefficients": [
+  -0.5665749065722072,
+  0.6756374085286082,
+  -0.2781375852906136
+ ],
+ "setup_seconds": 0.015540708089247346,
+ "end_to_end_seconds": 2.049063083017245,
+ "timing_scope": "problem, quadrature, target and solver setup + initial coefficient fit through solver termination; excludes high-precision endpoint validation, imports, process launch and JSON I/O",
+ "input_sha256": {
+  "X": "0eb79f53b19ffb823d4f5b475aaa72814d5ac3249e80eb95e6b09e69f6a60e9d",
+  "W": "56c1eb4c95c6c5b71c638387128699cedfff15ce63286a37cb7bd7bbed802d1c",
+  "starts": "b827a75551b16e4780c3453505972de874dd48a334dac93e8ddf13ecb47334ac"
+ },
+ "problem": "second1d",
+ "geometry": 0,
+ "seed": 49,
+ "slots": 3,
+ "phase1_control": "NC with the Taylor-series pair evaluator of C below t = T_SWITCH sigma^2 (h-chart unchanged)",
+ "series_switch": {
+  "evaluations_with_series_pair": 11
+ },
+ "source_sha256": {
+  "src/chain_experiments.py": "f82ab1cd991c835929c96a8fc15d8652c8bb1062219b9ac89b39b64235a06fbc",
+  "src/chain_kernels.py": "26d1e4972976ba49fc70ee53f9fab60e52d5251eaa334ba43c8cf7729b32a0ae",
+  "src/chain_solver.py": "2a23acc6b52f259f54b76e80a9e1822ed02b2116706b479c8756e4effa63ad6b",
+  "src/config.py": "54517c2adcf5ef507bc8528e4fc35fa34ec405fddc211fb729e8bc213d2f3c90",
+  "src/directional_guard.py": "22ac3b90826d4b90378e772bceec00d17d509cafc391a80adc22ad5a8fdae876",
+  "src/fit.py": "98aef2bb1dcdebc14510af261ee7b96cc7ebfef24006644cbd433443fbb713d4",
+  "src/kernels.py": "49cd15bc5fb530e90a3bb7da0a9a4bb4b5eb96861de38dfbd5c62f1f5fdbf8ef",
+  "src/quadrature.py": "4b4f026ff8b45d2d0fed6caf36303b56be3a8587b807805650108fd670f50b80",
+  "src/safeguard_cleanup.py": "fcae79f6a1e02099c65a2e1b7c7b8836f9193250237a9748b1264fafbe5d442f",
+  "src/test_guard.py": "d8391d1640d2060dd31786011a3907f615fdf9499cf908a0c0e7e7a62c419978",
+  "chain_series_runner.py": "0a5a3b01d3451bf627a9ab10f1f07ba3d3d8da813022a6c20662f598843def85"
+ }
+}

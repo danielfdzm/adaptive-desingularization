@@ -1,0 +1,250 @@
+{
+  "description": "Two principal solution slices and matched NC/C errors from saved first-order PB recovery states",
+  "example": {
+    "dimension": 10,
+    "geometry": 0,
+    "seed": 10,
+    "sigma": 0.45,
+    "reaction_strength": 1,
+    "selection": "First seed of geometry 0 in dimension 10; no selection by final error",
+    "method_mapping": {
+      "NC": "NCx exact pair evaluator",
+      "C": "T squared-gap cohort record"
+    }
+  },
+  "inputs": {
+    "work/sinum-phase3-2026-11-11/cohort_pb/results_nc_exact/pb_d10_g0_s10_NCx.json": "003d245d9d3bf9c9de38799a761d8429f08f3eb3d1a4911060d2d2c54e73ffa0",
+    "work/sinum-phase3-2026-11-11/cohort_pb/results/pb_d10_g0_s10_T.json": "8d6fb22b40cc7b15b71369afd7800a284afd6f3db091ea3784063af354a2e101"
+  },
+  "scripts": {
+    "paper_1111/revision-validation/publication-figures/build_pb_solution_maps.py": "850732b99c8eeafafc74afff6e68220f80dc513e085a159061737311217932bd",
+    "paper_1111/revision-validation/publication-figures/figure_style.py": "fa23bfedc456173dd771ad33707d3918aa6dbac246d7b7eba86e794f2180f1b2",
+    "paper_1111/revision-validation/publication-figures/build_algorithm.py": "1724d77183b28c99a4b678f08657bf87f97043c5ab46367951cf0ec6056a3434",
+    "adaptive-desingularization/experiments/plot_style.py": "faf9a1a8873f40c64445b56e2e4f8f9b43b40873b4f87bb78931ca7254df7054"
+  },
+  "palette": [
+    "#0000FF",
+    "#FF0000",
+    "#111111",
+    "#188038"
+  ],
+  "plane_origin": [
+    0.009470636379053552,
+    0.005854778730755239,
+    -0.011419239132372036,
+    0.04328313375739917,
+    -0.03884837429027541,
+    0.03599309358481622,
+    0.016476169747996334,
+    -0.005675848139069858,
+    -0.02269709237860995,
+    -0.03728713174977005
+  ],
+  "principal_directions": [
+    [
+      -0.11687071487041889,
+      0.35807629298199367,
+      -0.2259161798748191,
+      -0.022086018192981335,
+      -0.07327760503545501,
+      -0.2414938704078009,
+      0.18755133665370544,
+      -0.15860449692791537,
+      0.3966736072313948,
+      0.7247254335515698
+    ],
+    [
+      0.34175417065665037,
+      0.23582922056320196,
+      -0.2921005561705132,
+      -0.09342535467452563,
+      -0.2535107472669882,
+      -0.5047261182368444,
+      0.044936482045666845,
+      0.5808255671076643,
+      -0.25808774738615553,
+      -0.09238272658031516
+    ],
+    [
+      0.5011146444557983,
+      -0.054925389612682805,
+      0.008298992301750588,
+      -0.2852611229709678,
+      -0.5085812619188914,
+      0.10915282030449337,
+      0.010169672473498563,
+      -0.2535851569064808,
+      0.5150777448930067,
+      -0.253261441311042
+    ]
+  ],
+  "center_singular_values": [
+    1.2386787476908616,
+    1.0900244680883526,
+    0.4310676049506698,
+    0.3945865306297928,
+    0.11425326601606438,
+    1.3870437076777968e-16
+  ],
+  "plane_definition": "x=origin+s1*q1+sj*qj; top j=2, bottom j=3; SVD directions of centered target centers, signed by largest coordinate",
+  "spatial_limits": [
+    -1.3,
+    1.3
+  ],
+  "grid_size": 881,
+  "solution_limits": [
+    -2.5,
+    2.5
+  ],
+  "error_limits": [
+    1e-09,
+    1e-06
+  ],
+  "solution_colormap": {
+    "name": "plasma"
+  },
+  "error_scale": "logarithmic, shared across all four error panels; values below 1e-9 mapped to blue",
+  "error_colormap": {
+    "name": "fixed_blue_white_red",
+    "colors": [
+      "#0000FF",
+      "#FFFFFF",
+      "#FF0000"
+    ]
+  },
+  "export_dpi": 600,
+  "data_panel_borders": [
+    "left",
+    "right",
+    "bottom",
+    "top"
+  ],
+  "whole_space_relative_H1_error": {
+    "NC": 5.652489270966705e-07,
+    "C": 1.0710226180779089e-07
+  },
+  "fits": {
+    "NC": 398,
+    "C": 107
+  },
+  "high_precision_check": {
+    "decimal_digits": 80,
+    "maximum_absolute_discrepancy": 8.2915585138431235e-16,
+    "point_indices_by_plane": [
+      [
+        0,
+        38808,
+        77616,
+        116424,
+        155232,
+        194040,
+        232848,
+        271656,
+        301130,
+        310464,
+        349272,
+        388080,
+        426888,
+        457650,
+        465696,
+        504504,
+        540248,
+        543312,
+        559944,
+        582120,
+        620928,
+        659736,
+        698544,
+        737352,
+        776160
+      ],
+      [
+        0,
+        32708,
+        38808,
+        77616,
+        116424,
+        155232,
+        194040,
+        232848,
+        271656,
+        310464,
+        345988,
+        349272,
+        388080,
+        415637,
+        426888,
+        465696,
+        504504,
+        543312,
+        552604,
+        582120,
+        620928,
+        659736,
+        698544,
+        737352,
+        776160
+      ]
+    ]
+  },
+  "maximum_slice_error": [
+    {
+      "NC": 6.844957317455116e-07,
+      "C": 2.3276130227400937e-07
+    },
+    {
+      "NC": 5.797615028231562e-07,
+      "C": 1.97730288763881e-07
+    }
+  ],
+  "layout_check": {
+    "visible_text_artists": 47,
+    "text_data_intersections": 0,
+    "text_text_intersections": 0,
+    "clipped_text": 0
+  },
+  "panel_geometry": [
+    {
+      "title": "(a) Solution $u^*$",
+      "width_inches": 1.3107499999999999,
+      "height_inches": 1.3107499999999999,
+      "height_over_width": 1.0
+    },
+    {
+      "title": "(b) Error: NC",
+      "width_inches": 1.3107499999999999,
+      "height_inches": 1.3107499999999999,
+      "height_over_width": 1.0
+    },
+    {
+      "title": "(c) Error: C",
+      "width_inches": 1.3107499999999999,
+      "height_inches": 1.3107499999999999,
+      "height_over_width": 1.0
+    },
+    {
+      "title": "(d) Solution $u^*$",
+      "width_inches": 1.3107499999999999,
+      "height_inches": 1.3107499999999999,
+      "height_over_width": 1.0
+    },
+    {
+      "title": "(e) Error: NC",
+      "width_inches": 1.3107499999999999,
+      "height_inches": 1.3107499999999999,
+      "height_over_width": 1.0
+    },
+    {
+      "title": "(f) Error: C",
+      "width_inches": 1.3107499999999999,
+      "height_inches": 1.3107499999999999,
+      "height_over_width": 1.0
+    }
+  ],
+  "outputs": {
+    "pdf": "d2984d848f152b663040967f1122eac87c587b04ac8ef863b273eb7c9688cd66",
+    "png": "b7c71acecd0bb0ab0231e975b363658afb428ecc114761ad09a06b63bb9e34ab",
+    "svg": "5c3a084adba439fe62b2b5adc92ac86bc0a9f2256031affb9aa85950f90fa32a"
+  },
+  "field_array_sha256": "eed317011a6ebc8f38af4a30bcbbc3f0f7ffb056386f5fa83d4d4e93e2a258bb"
+}

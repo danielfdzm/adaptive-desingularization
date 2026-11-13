@@ -1,0 +1,51 @@
+{
+  "args": {
+    "cases": [
+      "dipole_medium",
+      "two_medium",
+      "wave_nonlinear"
+    ],
+    "seeds": [
+      200,
+      201,
+      202
+    ],
+    "methods": [
+      "standard",
+      "stable",
+      "adaptive",
+      "squared"
+    ],
+    "max_fits": 800,
+    "order": 72,
+    "output": "pilot-smooth"
+  },
+  "cases": {
+    "dipole_medium": {
+      "shape": "dipole",
+      "a": 0.35,
+      "amplitude": 40.0,
+      "lam": 10.0,
+      "capacity": 4
+    },
+    "two_medium": {
+      "shape": "two",
+      "a": 0.35,
+      "amplitude": 45.0,
+      "lam": 10.0,
+      "capacity": 6
+    },
+    "wave_nonlinear": {
+      "shape": "wave",
+      "a": 0.7,
+      "amplitude": 60.0,
+      "lam": 10.0,
+      "capacity": 6
+    }
+  },
+  "source_hash": "4f1a33c66643740466980b96a59788905dd3338d72c4c00b5d9c4ec339f4fc41",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "torch": "2.10.0",
+  "retention": "all requested outcomes including failures; no holdout tuning"
+}

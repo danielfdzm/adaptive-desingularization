@@ -1,0 +1,35 @@
+{
+  "seeds": [
+    900,
+    901,
+    902
+  ],
+  "orders": [
+    2,
+    3
+  ],
+  "methods": [
+    "stable",
+    "adaptive"
+  ],
+  "workers": 1,
+  "benchmark": true,
+  "source_sha256": {
+    "numerical-section-revision/guarded-rerun-2026-11-09/independent/run.py": "10b2269450fa9b87cebdb53314bcf9ecfae6120f34430e33e45ef4ec04520ec6",
+    "numerical-section-revision/guarded-rerun-2026-11-09/directional/src/chain_experiments.py": "68051c5143568e659a70faaedb99e5f7db311958474f838c21ae9b16379e0dc9",
+    "numerical-section-revision/guarded-rerun-2026-11-09/directional/src/chain_kernels.py": "46921f3c2abc77b1419b880b1b0fc0f656360b78e648c42573f4644d56399226",
+    "numerical-section-revision/guarded-rerun-2026-11-09/directional/src/chain_solver.py": "92f19f01013e4d18ee1820b744450ebf642ecb79fd3c3150ee9481dc058219cc",
+    "numerical-section-revision/guarded-rerun-2026-11-09/directional/src/config.py": "54517c2adcf5ef507bc8528e4fc35fa34ec405fddc211fb729e8bc213d2f3c90",
+    "numerical-section-revision/guarded-rerun-2026-11-09/directional/src/directional_guard.py": "22ac3b90826d4b90378e772bceec00d17d509cafc391a80adc22ad5a8fdae876",
+    "numerical-section-revision/guarded-rerun-2026-11-09/directional/src/fit.py": "98aef2bb1dcdebc14510af261ee7b96cc7ebfef24006644cbd433443fbb713d4",
+    "numerical-section-revision/guarded-rerun-2026-11-09/directional/src/kernels.py": "49cd15bc5fb530e90a3bb7da0a9a4bb4b5eb96861de38dfbd5c62f1f5fdbf8ef",
+    "numerical-section-revision/guarded-rerun-2026-11-09/directional/src/quadrature.py": "4b4f026ff8b45d2d0fed6caf36303b56be3a8587b807805650108fd670f50b80",
+    "numerical-section-revision/guarded-rerun-2026-11-09/directional/src/test_guard.py": "d8391d1640d2060dd31786011a3907f615fdf9499cf908a0c0e7e7a62c419978"
+  },
+  "numpy": "2.3.5",
+  "torch": "2.10.0",
+  "python": "3.14.0",
+  "timing_scope": "Solver construction, initial fitting, optimizer, detection, trials, completion and restarts; excludes problem/quadrature generation and posthoc high-precision checks",
+  "matched_original": "work/independent-tests-2026-11-08/blind_higher_order/holdout",
+  "changed_rule": "Equation C.4, dimensionless transverse storage, resolved new directions"
+}

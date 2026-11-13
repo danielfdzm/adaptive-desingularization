@@ -1,0 +1,47 @@
+{
+  "written": "2026-11-12T13:49:55",
+  "purpose": "Run Algorithm 4.1 (projected gradient in t with reversible storage) on the 150 starts of the paper's first-order PB cohort, with three comparators sharing the objective, coefficient solver and stopping residual.",
+  "cohort": "d in {5,10,20}, geometry in {0,1}, seeds 10-34 (config.start_centers); 150 starts",
+  "arms": {
+    "pg_t": "Algorithm 4.1",
+    "pg_h": "same projected-gradient iteration in h",
+    "lbfgs_h": "L-BFGS-B in h, 0<=h<=0.6 sigma",
+    "lbfgs_t": "L-BFGS-B in t, 0<=t<=(0.6 sigma)^2"
+  },
+  "settings": {
+    "tol_canonical_residual": 1e-07,
+    "max_fits": 2500,
+    "alpha0": 1.0,
+    "backtracking": 0.5,
+    "eta": 0.5,
+    "tau_in": 0.0020250000000000003,
+    "tau_out": 0.008100000000000001,
+    "T_max": 0.0729,
+    "center_box": [
+      -2,
+      2
+    ],
+    "lbfgs": {
+      "maxcor": 20,
+      "maxls": 40,
+      "ftol": 0,
+      "gtol": 0,
+      "restart": "after an abnormal return; stop after two returns without a 10% residual decrease"
+    }
+  },
+  "calibration": "Settings fixed after a pilot on seed 9 (geometry 0, d=5), which is not in the cohort: alpha0=1 was accepted at every step; alpha0=8 or 32 was always reduced by backtracking without faster decrease per fit, and alpha0=32 produced trials outside the separation regions.",
+  "objective": "production recovery energy with manufactured forcing, target-only constant omitted, divided by ||u*||_H^2; Sobol mixture quadrature power 12, seed 8128+100g+d; reaction 1",
+  "separation_check": "a posteriori: boxes spanned by all evaluated trials, pair radius sqrt(max(t_max, 1.01 tau_out)); margin>0 means the run is a run of Algorithm 4.1 on regions satisfying the hypothesis of Theorem 4.1",
+  "sources": {
+    "work/alg41-pb-cohort-2026-11-12/alg41.py": "e567a10477381399d1e14825f9a2686aab88256c2b598ae76f82e2aebda94987",
+    "numerical-section-revision/sinum-revision-2026-11-10/squared-gap/squared_gap.py": "bae66169d90d89604979d2ec184bf1d57452ca54bfb55df45290b0008589a55f",
+    "numerical-section-revision/sinum-revision-2026-11-10/squared-gap/source/config.py": "54517c2adcf5ef507bc8528e4fc35fa34ec405fddc211fb729e8bc213d2f3c90",
+    "numerical-section-revision/sinum-revision-2026-11-10/squared-gap/source/fit.py": "98aef2bb1dcdebc14510af261ee7b96cc7ebfef24006644cbd433443fbb713d4",
+    "numerical-section-revision/sinum-revision-2026-11-10/squared-gap/source/kernels.py": "49cd15bc5fb530e90a3bb7da0a9a4bb4b5eb96861de38dfbd5c62f1f5fdbf8ef",
+    "numerical-section-revision/sinum-revision-2026-11-10/squared-gap/source/pair_guard.py": "5e1b2b49ef3fd6315f3b4738abed175369022a19a334b56edde5b962c1713fd7",
+    "numerical-section-revision/sinum-revision-2026-11-10/squared-gap/source/quadrature.py": "4b4f026ff8b45d2d0fed6caf36303b56be3a8587b807805650108fd670f50b80",
+    "numerical-section-revision/sinum-revision-2026-11-10/squared-gap/source/run.py": "ff3eead4aa2d608049b3b016c15973b5917bf57d733a51f069266512c58a159d"
+  },
+  "amendment_1": "Written after 17 runs (seed 10 only), before any further outcome was examined beyond those 17: the comparator pg_h (projected gradient in h) runs on seeds 10-14 only (30 starts) because each run reaches the 2500-fit cap (about 400 s); pg_t, lbfgs_t and lbfgs_h keep all 150 starts. Settings unchanged.",
+  "amendment_2": "Written at 14:12 after 24 runs, by seed index only (no outcome-based selection): under the machine load each projected-gradient run takes about 10 minutes, so Algorithm 4.1 (pg_t) runs on seeds 10-14 (30 starts, all d and geometries) and the projected iteration in h (pg_h) on seeds 10-12 (18 starts); L-BFGS-B in t and h keep all 150 starts. Settings unchanged."
+}

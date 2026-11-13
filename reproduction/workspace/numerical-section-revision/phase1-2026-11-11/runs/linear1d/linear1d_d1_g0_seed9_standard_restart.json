@@ -1,0 +1,171 @@
+{
+ "stationarity": {
+  "projected_gradient_max_abs": 43.23766606440768,
+  "gradient_max_abs": 43.23766606440768,
+  "active_bounds": 0,
+  "normalized_coefficient_kkt": 1.4800483176888003e-10,
+  "final_objective_normalized": -0.5005151380679886,
+  "final_chain_slopes": []
+ },
+ "final_squared_halfgaps": [],
+ "zero_gap_pairs": 0,
+ "method": "standard_restart",
+ "d": 1,
+ "fits": 111,
+ "iterations": 40,
+ "stop": "function_tolerance",
+ "final_relative_error": 0.002695605434098272,
+ "trace_final_error_double": 0.0,
+ "coefficient_norm": 9342276.540959705,
+ "completions": 0,
+ "joins": 0,
+ "rejections": 0,
+ "blocks_final": {
+  "atom": 6
+ },
+ "wall": 1.9083131251391023,
+ "solve_seconds": 1.8609003340825438,
+ "optimizer_seconds": 1.8609003340825438,
+ "posthoc_validation_seconds": 0.04741379106417298,
+ "postprocessing_seconds": 0.04741433309391141,
+ "guard_counts": {
+  "optimizer_trial:singular unconstrained coefficient system": 1
+ },
+ "guard_examples": [
+  {
+   "context": "optimizer_trial",
+   "reason": "singular unconstrained coefficient system",
+   "fits": 95
+  }
+ ],
+ "coordinate_convention": "dimensionless p_hat = (q/sigma)/prod((t_i-t_j)/sigma)",
+ "trace": [
+  {
+   "fits": 1,
+   "iterations": 0,
+   "wall": 0.009264833992347121,
+   "relative_error": 0.11001403926721859,
+   "coefficient_norm": 40.2388616276191,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 6
+   }
+  },
+  {
+   "fits": 23,
+   "iterations": 20,
+   "wall": 0.4978976249694824,
+   "relative_error": 0.00030163905630241675,
+   "coefficient_norm": 1118.1178913329286,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 6
+   }
+  },
+  {
+   "fits": 95,
+   "iterations": 39,
+   "wall": 1.630905375117436,
+   "relative_error": 0.0,
+   "coefficient_norm": 9342276.540959705,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 6
+   }
+  },
+  {
+   "fits": 111,
+   "iterations": 40,
+   "wall": 1.8606526250950992,
+   "relative_error": 0.0,
+   "coefficient_norm": 9342276.540959705,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 6
+   }
+  },
+  {
+   "fits": 111,
+   "iterations": 40,
+   "wall": 1.8608757089823484,
+   "relative_error": 0.0,
+   "coefficient_norm": 9342276.540959705,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 6
+   }
+  }
+ ],
+ "events": [],
+ "final_blocks": [
+  {
+   "kind": "atom",
+   "id": 1,
+   "c": [
+    -2.100445896804959
+   ]
+  },
+  {
+   "kind": "atom",
+   "id": 2,
+   "c": [
+    -0.036858628743367434
+   ]
+  },
+  {
+   "kind": "atom",
+   "id": 3,
+   "c": [
+    0.03815139666941999
+   ]
+  },
+  {
+   "kind": "atom",
+   "id": 4,
+   "c": [
+    2.198109234410249
+   ]
+  },
+  {
+   "kind": "atom",
+   "id": 5,
+   "c": [
+    2.1980865248713215
+   ]
+  },
+  {
+   "kind": "atom",
+   "id": 6,
+   "c": [
+    2.2048118769488196
+   ]
+  }
+ ],
+ "final_coefficients": [
+  1.0006285548075273,
+  -15.611111911441128,
+  16.416185651656747,
+  -6617086.772544569,
+  6594831.18360813,
+  22254.697870713564
+ ],
+ "setup_seconds": 0.06611933396197855,
+ "end_to_end_seconds": 1.9270196680445224,
+ "timing_scope": "problem, quadrature, target and solver setup + initial coefficient fit through solver termination; excludes high-precision endpoint validation, imports, process launch and JSON I/O",
+ "input_sha256": {
+  "X": "0eb79f53b19ffb823d4f5b475aaa72814d5ac3249e80eb95e6b09e69f6a60e9d",
+  "W": "56c1eb4c95c6c5b71c638387128699cedfff15ce63286a37cb7bd7bbed802d1c",
+  "starts": "35063719c50dab1207033b8807e8cc1726b7784b63f42bfa0bd08c36427096d3"
+ },
+ "problem": "linear1d",
+ "geometry": 0,
+ "seed": 9,
+ "slots": 6,
+ "timing_mode": "accuracy",
+ "concurrent_workers": 1
+}

@@ -1,0 +1,70 @@
+{
+  "original_source_sha256": {
+    "revision-2026-11/experiments/chain_solver.py": "a69517525cd6601bb92ca53d35d9c757c9e47e381c811694dd73d9a2e3780344",
+    "revision-2026-11/experiments/chain_kernels.py": "46921f3c2abc77b1419b880b1b0fc0f656360b78e648c42573f4644d56399226",
+    "revision-2026-11/experiments/chain_experiments.py": "382f1cb80d1e299909c5881c57f19a9e866d10cb01de0a156aafb6d286482196",
+    "adaptive-desingularization/final-experiments/pb/fit.py": "98aef2bb1dcdebc14510af261ee7b96cc7ebfef24006644cbd433443fbb713d4",
+    "adaptive-desingularization/final-experiments/pb/quadrature.py": "4b4f026ff8b45d2d0fed6caf36303b56be3a8587b807805650108fd670f50b80",
+    "adaptive-desingularization/final-experiments/pb/config.py": "54517c2adcf5ef507bc8528e4fc35fa34ec405fddc211fb729e8bc213d2f3c90",
+    "adaptive-desingularization/final-experiments/pb/kernels.py": "49cd15bc5fb530e90a3bb7da0a9a4bb4b5eb96861de38dfbd5c62f1f5fdbf8ef"
+  },
+  "changed_files": [
+    "chain_solver.py",
+    "chain_experiments.py"
+  ],
+  "new_files": [
+    "directional_guard.py",
+    "test_guard.py"
+  ],
+  "cohorts": {
+    "higher": {
+      "dimension": 5,
+      "width": 16,
+      "geometries": [
+        0,
+        1
+      ],
+      "seeds": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "methods": [
+        "stable",
+        "adaptive"
+      ],
+      "max_fits": 3000
+    },
+    "second1d": {
+      "dimension": 1,
+      "width": 3,
+      "seeds": [
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ],
+      "methods": [
+        "stable",
+        "adaptive"
+      ],
+      "max_fits": 1000
+    }
+  },
+  "unchanged_standard_accuracy": "Retain historical ordinary S endpoints; new S runs only for the prespecified controlled timing subset.",
+  "unit_roundoff": "numpy float64 eps/2; node separation threshold32u; dimensionless p_hat storage",
+  "guarded_trials": "Reject invalid optimizer trial with +inf and zero gradient before assembling any column or fitting; the last accepted feasible state is retained.",
+  "timing": "All workers single BLAS/Torch thread. Accuracy concurrency is labeled and not interpreted as controlled timing. Controlled subset uses one worker and exclusive campaign reservation.",
+  "problem_constructor_ast_identical_to_published_sources": {
+    "problem_higher": true,
+    "problem_second1d": true
+  }
+}

@@ -1,0 +1,2904 @@
+{
+  "metadata": {
+    "protocol": "Exploratory local controls fixed in this script before the reported run.",
+    "version": 1,
+    "starts": 1,
+    "seed_base": 20261112,
+    "families": [
+      "zero_gap",
+      "positive_gap",
+      "ordinary"
+    ],
+    "design": [
+      [
+        "h",
+        1e-24,
+        "shifted_gram"
+      ],
+      [
+        "t",
+        0.0,
+        "shifted_gram"
+      ],
+      [
+        "h",
+        1e-24,
+        "residual"
+      ],
+      [
+        "t",
+        0.0,
+        "residual"
+      ],
+      [
+        "t",
+        0.0001,
+        "residual"
+      ],
+      [
+        "t",
+        1e-08,
+        "residual"
+      ],
+      [
+        "t",
+        1e-12,
+        "residual"
+      ],
+      [
+        "t",
+        1e-24,
+        "residual"
+      ]
+    ],
+    "tolerance": 1e-12,
+    "grid": {
+      "nodes": 3201,
+      "interval": [
+        -16,
+        16
+      ],
+      "rule": "trapezoidal"
+    },
+    "validation_grid": {
+      "nodes": 6401,
+      "interval": [
+        -20,
+        20
+      ]
+    },
+    "exact_validation_digits": 80,
+    "stopping": "Residual objective: ftol=gtol=0 and common feasible canonical t residual <=1e-12; shifted Gram: ftol=1e-15, chart gtol=1e-12.",
+    "timing": "One serial measurement per run with library threads fixed to one. Timings include optimizer and diagnostics used during iterations, exclude endpoint high-precision and refinement validation. Host idle state is not certified; times are descriptive only.",
+    "python": "3.14.0",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "mpmath": "1.3.0",
+    "machine": "arm64",
+    "system": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "script_sha256": "4ba00e0e1e62c58053499f22170ea5879661b047d9d69bdc71ed70d172ff0759",
+    "total_seconds": 0.5266266250982881
+  },
+  "records": [
+    {
+      "family": "zero_gap",
+      "seed": 0,
+      "chart": "h",
+      "t_floor": 1e-24,
+      "objective": "shifted_gram",
+      "initial_beta": 0.059938205703506164,
+      "initial_h": 0.07493177496532287,
+      "beta": 3.0614531596472265e-09,
+      "t": 9.346176428371928e-08,
+      "coefficients": [
+        -2.551210894497029e-09,
+        -1.0000000327116176
+      ],
+      "iterations": 28,
+      "fits": 29,
+      "seconds": 0.03138524992391467,
+      "stop": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "error_grid": 2.4075992637627977e-08,
+      "feasible_t_residual": 7.207180692499823e-09,
+      "refined_objective_difference": 1.9007011865621364e-26,
+      "refined_gradient_difference": 3.258544979461376e-17,
+      "error": 2.40759926453281e-08,
+      "canonical_residual": 7.2071807146984016e-09,
+      "gradient_t": 6.075014742706417e-09,
+      "coefficient_residual": 1.3860855063976419e-16,
+      "trace": [
+        {
+          "iteration": 1,
+          "fits": 2,
+          "beta": -0.01574135915749031,
+          "t": 0.005579916682421694,
+          "F": 0.0001583723838015996,
+          "canonical_residual": 0.019993928133049416,
+          "feasible_t_residual": 0.019993928133049416
+        },
+        {
+          "iteration": 2,
+          "fits": 3,
+          "beta": 7.101286119702796e-05,
+          "t": 0.005575219784500611,
+          "F": 1.0138061947633429e-06,
+          "canonical_residual": 0.00037366113181794356,
+          "feasible_t_residual": 0.00037366113181794356
+        },
+        {
+          "iteration": 3,
+          "fits": 4,
+          "beta": 2.890260013204033e-08,
+          "t": 0.005568867940459594,
+          "F": 1.008301159073823e-06,
+          "canonical_residual": 0.0003621926092495419,
+          "feasible_t_residual": 0.0003621926092495419
+        },
+        {
+          "iteration": 4,
+          "fits": 5,
+          "beta": -2.5429658575456258e-05,
+          "t": 0.005557953220117147,
+          "F": 1.0047625543195913e-06,
+          "canonical_residual": 0.00036292315249776883,
+          "feasible_t_residual": 0.00036292315249776883
+        },
+        {
+          "iteration": 5,
+          "fits": 6,
+          "beta": -0.00011925909280384382,
+          "t": 0.005477050674593447,
+          "F": 9.843535522975236e-07,
+          "canonical_residual": 0.0003870983643208592,
+          "feasible_t_residual": 0.0003870983643208592
+        },
+        {
+          "iteration": 6,
+          "fits": 7,
+          "beta": -0.00022860588115361145,
+          "t": 0.00529355205248835,
+          "F": 9.442404733309438e-07,
+          "canonical_residual": 0.0004503929706987245,
+          "feasible_t_residual": 0.0004503929706987245
+        },
+        {
+          "iteration": 7,
+          "fits": 8,
+          "beta": -0.00038514449337597096,
+          "t": 0.004798844277718755,
+          "F": 8.428795212906089e-07,
+          "canonical_residual": 0.0005801943879010759,
+          "feasible_t_residual": 0.0005801943879010759
+        },
+        {
+          "iteration": 8,
+          "fits": 9,
+          "beta": -0.0005117632297034723,
+          "t": 0.003861105571279947,
+          "F": 6.508556056251777e-07,
+          "canonical_residual": 0.0006964151187971608,
+          "feasible_t_residual": 0.0006964151187971608
+        },
+        {
+          "iteration": 9,
+          "fits": 10,
+          "beta": -0.00048566386999514955,
+          "t": 0.0025113437816770743,
+          "F": 3.545903638705171e-07,
+          "canonical_residual": 0.0006372787535496775,
+          "feasible_t_residual": 0.0006372787535496775
+        },
+        {
+          "iteration": 10,
+          "fits": 11,
+          "beta": -0.00018521699260634183,
+          "t": 0.0013281063817613282,
+          "F": 7.907299291624556e-08,
+          "canonical_residual": 0.00025014846102113533,
+          "feasible_t_residual": 0.00025014846102113533
+        },
+        {
+          "iteration": 11,
+          "fits": 12,
+          "beta": 5.308446942267251e-07,
+          "t": 0.000780320933328549,
+          "F": 1.9790561386836384e-08,
+          "canonical_residual": 5.0729580694504196e-05,
+          "feasible_t_residual": 5.0729580694504196e-05
+        },
+        {
+          "iteration": 12,
+          "fits": 13,
+          "beta": 3.937509806196093e-05,
+          "t": 0.0005590429922283316,
+          "F": 1.1139809571606891e-08,
+          "canonical_residual": 6.172212828336923e-05,
+          "feasible_t_residual": 6.172212828336923e-05
+        },
+        {
+          "iteration": 13,
+          "fits": 14,
+          "beta": 4.139200250198782e-05,
+          "t": 0.0003557386267889504,
+          "F": 5.198270522019916e-09,
+          "canonical_residual": 5.731195182077071e-05,
+          "feasible_t_residual": 5.731195182077071e-05
+        },
+        {
+          "iteration": 14,
+          "fits": 15,
+          "beta": 1.2526171615253267e-05,
+          "t": 0.00019511306845128152,
+          "F": 1.3366467259751112e-09,
+          "canonical_residual": 2.0313714676222224e-05,
+          "feasible_t_residual": 2.0313714676222224e-05
+        },
+        {
+          "iteration": 15,
+          "fits": 16,
+          "beta": -2.1003643020798614e-06,
+          "t": 0.00011599320109144735,
+          "F": 4.4006651835574596e-10,
+          "canonical_residual": 7.995329636402637e-06,
+          "feasible_t_residual": 7.995329636402637e-06
+        },
+        {
+          "iteration": 16,
+          "fits": 17,
+          "beta": -4.8831026941421556e-06,
+          "t": 7.284402230772162e-05,
+          "F": 1.8755629463034176e-10,
+          "canonical_residual": 7.789720913525282e-06,
+          "feasible_t_residual": 7.789720913525282e-06
+        },
+        {
+          "iteration": 17,
+          "fits": 18,
+          "beta": -3.045333616993785e-06,
+          "t": 4.162900836566316e-05,
+          "F": 6.219553210168356e-11,
+          "canonical_residual": 4.711927295617588e-06,
+          "feasible_t_residual": 4.711927295617588e-06
+        },
+        {
+          "iteration": 18,
+          "fits": 19,
+          "beta": -5.82967075419378e-07,
+          "t": 2.3408856407052733e-05,
+          "F": 1.802444444237139e-11,
+          "canonical_residual": 1.6912981298942035e-06,
+          "feasible_t_residual": 1.6912981298942035e-06
+        },
+        {
+          "iteration": 19,
+          "fits": 20,
+          "beta": 4.0830668560612574e-07,
+          "t": 1.3873316332296053e-05,
+          "F": 6.360832201590423e-12,
+          "canonical_residual": 1.0395534953306973e-06,
+          "feasible_t_residual": 1.0395534953306973e-06
+        },
+        {
+          "iteration": 20,
+          "fits": 21,
+          "beta": 4.725810952357338e-07,
+          "t": 8.204998145027163e-06,
+          "F": 2.329410886511927e-12,
+          "canonical_residual": 8.017258357660041e-07,
+          "feasible_t_residual": 8.017258357660041e-07
+        },
+        {
+          "iteration": 21,
+          "fits": 22,
+          "beta": 1.8587546074605364e-07,
+          "t": 4.626260334110063e-06,
+          "F": 7.174560046769553e-13,
+          "canonical_residual": 3.819136977850798e-07,
+          "feasible_t_residual": 3.819136977850798e-07
+        },
+        {
+          "iteration": 22,
+          "fits": 23,
+          "beta": -8.761332719320345e-09,
+          "t": 2.6528521073305593e-06,
+          "F": 2.2877144874382554e-13,
+          "canonical_residual": 1.727921835740187e-07,
+          "feasible_t_residual": 1.727921835740187e-07
+        },
+        {
+          "iteration": 23,
+          "fits": 24,
+          "beta": -5.8269812873980445e-08,
+          "t": 1.5566406264885322e-06,
+          "F": 8.090213856307316e-14,
+          "canonical_residual": 1.2524145193505963e-07,
+          "feasible_t_residual": 1.2524145193505963e-07
+        },
+        {
+          "iteration": 24,
+          "fits": 25,
+          "beta": -3.70141206998329e-08,
+          "t": 8.911347111094404e-07,
+          "F": 2.6676632194765425e-14,
+          "canonical_residual": 7.452063858911645e-08,
+          "feasible_t_residual": 7.452063858911645e-08
+        },
+        {
+          "iteration": 25,
+          "fits": 26,
+          "beta": -5.37758113495374e-09,
+          "t": 5.054640496703517e-07,
+          "F": 8.321867211187773e-15,
+          "canonical_residual": 3.3553834750899853e-08,
+          "feasible_t_residual": 3.3553834750899853e-08
+        },
+        {
+          "iteration": 26,
+          "fits": 27,
+          "beta": 5.642757701607055e-09,
+          "t": 2.924367114738577e-07,
+          "F": 2.7995408308980298e-15,
+          "canonical_residual": 2.0307767993366036e-08,
+          "feasible_t_residual": 2.0307767993366036e-08
+        },
+        {
+          "iteration": 27,
+          "fits": 28,
+          "beta": -5.010650952778219e-11,
+          "t": 1.6564671750019731e-07,
+          "F": 8.91763738313266e-16,
+          "canonical_residual": 1.0767223935322301e-08,
+          "feasible_t_residual": 1.0767223935322301e-08
+        },
+        {
+          "iteration": 28,
+          "fits": 29,
+          "beta": 3.0614531596472265e-09,
+          "t": 9.346176428371928e-08,
+          "F": 2.8982671074355827e-16,
+          "canonical_residual": 7.207180692499823e-09,
+          "feasible_t_residual": 7.207180692499823e-09
+        }
+      ]
+    },
+    {
+      "family": "zero_gap",
+      "seed": 0,
+      "chart": "t",
+      "t_floor": 0.0,
+      "objective": "shifted_gram",
+      "initial_beta": 0.059938205703506164,
+      "initial_h": 0.07493177496532287,
+      "beta": 5.532931985196669e-17,
+      "t": 0.0,
+      "coefficients": [
+        -4.17584177272265e-17,
+        -1.0
+      ],
+      "iterations": 8,
+      "fits": 9,
+      "seconds": 0.007239999948069453,
+      "stop": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "error_grid": 9.096325355569533e-17,
+      "feasible_t_residual": 1.6271484781634225e-18,
+      "refined_objective_difference": 4.446405733789952e-34,
+      "refined_gradient_difference": 3.720088060543391e-17,
+      "error": 6.245309818980117e-17,
+      "canonical_residual": 7.008380514582448e-17,
+      "gradient_t": 1.0187438041852556e-33,
+      "coefficient_residual": 5.219218579294895e-18,
+      "trace": [
+        {
+          "iteration": 1,
+          "fits": 2,
+          "beta": -0.01574135915749031,
+          "t": 0.0040604565560093675,
+          "F": 0.00015777111391091512,
+          "canonical_residual": 0.01997610144872474,
+          "feasible_t_residual": 0.01997610144872474
+        },
+        {
+          "iteration": 2,
+          "fits": 3,
+          "beta": 5.7442161234575736e-05,
+          "t": 0.003911237489432626,
+          "F": 4.994111538071729e-07,
+          "canonical_residual": 0.00026458224085303074,
+          "feasible_t_residual": 0.00026458224085303074
+        },
+        {
+          "iteration": 3,
+          "fits": 4,
+          "beta": 9.54514316816052e-07,
+          "t": 0.0037109469403939113,
+          "F": 4.47681208953509e-07,
+          "canonical_residual": 0.00024131072536941376,
+          "feasible_t_residual": 0.00024131072536941376
+        },
+        {
+          "iteration": 4,
+          "fits": 5,
+          "beta": -0.00022848745434774943,
+          "t": 0.0012590657459893855,
+          "F": 8.46111595284525e-08,
+          "canonical_residual": 0.0003009577931474039,
+          "feasible_t_residual": 0.0003009577931474039
+        },
+        {
+          "iteration": 5,
+          "fits": 6,
+          "beta": -0.00010172916821233724,
+          "t": 0.00018564989938001032,
+          "F": 7.675050446830186e-09,
+          "canonical_residual": 0.00012943360747033405,
+          "feasible_t_residual": 0.00012943360747033405
+        },
+        {
+          "iteration": 6,
+          "fits": 7,
+          "beta": -9.799714322988678e-06,
+          "t": 0.0,
+          "F": 6.082178717620726e-11,
+          "canonical_residual": 1.2412971473696064e-05,
+          "feasible_t_residual": 1.2412971473696064e-05
+        },
+        {
+          "iteration": 7,
+          "fits": 8,
+          "beta": -2.1228898233753878e-07,
+          "t": 0.0,
+          "F": 2.85421876256946e-14,
+          "canonical_residual": 2.688993776508482e-07,
+          "feasible_t_residual": 2.688993776508482e-07
+        },
+        {
+          "iteration": 8,
+          "fits": 9,
+          "beta": 5.532931985196669e-17,
+          "t": 0.0,
+          "F": 4.13715674871886e-33,
+          "canonical_residual": 1.6271484781634225e-18,
+          "feasible_t_residual": 1.6271484781634225e-18
+        }
+      ]
+    },
+    {
+      "family": "zero_gap",
+      "seed": 0,
+      "chart": "h",
+      "t_floor": 1e-24,
+      "objective": "residual",
+      "initial_beta": 0.059938205703506164,
+      "initial_h": 0.07493177496532287,
+      "beta": -6.452641897520404e-14,
+      "t": 1.4086055954367054e-11,
+      "coefficients": [
+        5.378484203329887e-14,
+        -1.00000000000493
+      ],
+      "iterations": 44,
+      "fits": 45,
+      "seconds": 0.03917104215361178,
+      "stop": "common feasible t residual <= 1e-12",
+      "error_grid": 3.5920104104494193e-12,
+      "feasible_t_residual": 9.19258867254726e-13,
+      "refined_objective_difference": 2.17577890076808e-29,
+      "refined_gradient_difference": 9.007095081717514e-17,
+      "error": 3.5919879140489017e-12,
+      "canonical_residual": 9.192345007247805e-13,
+      "gradient_t": 9.15593637035249e-13,
+      "coefficient_residual": 6.506747758310396e-17,
+      "trace": [
+        {
+          "iteration": 1,
+          "fits": 2,
+          "beta": -0.01574135915749031,
+          "t": 0.005579916682421694,
+          "F": 0.0001583723838015996,
+          "canonical_residual": 0.019993928133049416,
+          "feasible_t_residual": 0.019993928133049416
+        },
+        {
+          "iteration": 2,
+          "fits": 3,
+          "beta": 7.101286119702796e-05,
+          "t": 0.005575219784500611,
+          "F": 1.0138061947633429e-06,
+          "canonical_residual": 0.00037366113181794356,
+          "feasible_t_residual": 0.00037366113181794356
+        },
+        {
+          "iteration": 3,
+          "fits": 4,
+          "beta": 2.890260013204033e-08,
+          "t": 0.005568867940459594,
+          "F": 1.008301159073823e-06,
+          "canonical_residual": 0.0003621926092495419,
+          "feasible_t_residual": 0.0003621926092495419
+        },
+        {
+          "iteration": 4,
+          "fits": 5,
+          "beta": -2.5429658575456258e-05,
+          "t": 0.005557953220117147,
+          "F": 1.0047625543195913e-06,
+          "canonical_residual": 0.00036292315249776883,
+          "feasible_t_residual": 0.00036292315249776883
+        },
+        {
+          "iteration": 5,
+          "fits": 6,
+          "beta": -0.00011925909280384382,
+          "t": 0.005477050674593447,
+          "F": 9.843535522975236e-07,
+          "canonical_residual": 0.0003870983643208592,
+          "feasible_t_residual": 0.0003870983643208592
+        },
+        {
+          "iteration": 6,
+          "fits": 7,
+          "beta": -0.00022860588115361145,
+          "t": 0.00529355205248835,
+          "F": 9.442404733309438e-07,
+          "canonical_residual": 0.0004503929706987245,
+          "feasible_t_residual": 0.0004503929706987245
+        },
+        {
+          "iteration": 7,
+          "fits": 8,
+          "beta": -0.00038514449337597096,
+          "t": 0.004798844277718755,
+          "F": 8.428795212906089e-07,
+          "canonical_residual": 0.0005801943879010759,
+          "feasible_t_residual": 0.0005801943879010759
+        },
+        {
+          "iteration": 8,
+          "fits": 9,
+          "beta": -0.0005117632297034723,
+          "t": 0.003861105571279947,
+          "F": 6.508556056251777e-07,
+          "canonical_residual": 0.0006964151187971608,
+          "feasible_t_residual": 0.0006964151187971608
+        },
+        {
+          "iteration": 9,
+          "fits": 10,
+          "beta": -0.00048566386999514955,
+          "t": 0.0025113437816770743,
+          "F": 3.545903638705171e-07,
+          "canonical_residual": 0.0006372787535496775,
+          "feasible_t_residual": 0.0006372787535496775
+        },
+        {
+          "iteration": 10,
+          "fits": 11,
+          "beta": -0.00018521699260634183,
+          "t": 0.0013281063817613282,
+          "F": 7.907299291624556e-08,
+          "canonical_residual": 0.00025014846102113533,
+          "feasible_t_residual": 0.00025014846102113533
+        },
+        {
+          "iteration": 11,
+          "fits": 12,
+          "beta": 5.308446942267251e-07,
+          "t": 0.000780320933328549,
+          "F": 1.9790561386836384e-08,
+          "canonical_residual": 5.0729580694504196e-05,
+          "feasible_t_residual": 5.0729580694504196e-05
+        },
+        {
+          "iteration": 12,
+          "fits": 13,
+          "beta": 3.937509806196093e-05,
+          "t": 0.0005590429922283316,
+          "F": 1.1139809571606891e-08,
+          "canonical_residual": 6.172212828336923e-05,
+          "feasible_t_residual": 6.172212828336923e-05
+        },
+        {
+          "iteration": 13,
+          "fits": 14,
+          "beta": 4.139200250198782e-05,
+          "t": 0.0003557386267889504,
+          "F": 5.198270522019916e-09,
+          "canonical_residual": 5.731195182077071e-05,
+          "feasible_t_residual": 5.731195182077071e-05
+        },
+        {
+          "iteration": 14,
+          "fits": 15,
+          "beta": 1.2526171615253267e-05,
+          "t": 0.00019511306845128152,
+          "F": 1.3366467259751112e-09,
+          "canonical_residual": 2.0313714676222224e-05,
+          "feasible_t_residual": 2.0313714676222224e-05
+        },
+        {
+          "iteration": 15,
+          "fits": 16,
+          "beta": -2.1003643020798614e-06,
+          "t": 0.00011599320109144735,
+          "F": 4.4006651835574596e-10,
+          "canonical_residual": 7.995329636402637e-06,
+          "feasible_t_residual": 7.995329636402637e-06
+        },
+        {
+          "iteration": 16,
+          "fits": 17,
+          "beta": -4.8831026941421556e-06,
+          "t": 7.284402230772162e-05,
+          "F": 1.8755629463034176e-10,
+          "canonical_residual": 7.789720913525282e-06,
+          "feasible_t_residual": 7.789720913525282e-06
+        },
+        {
+          "iteration": 17,
+          "fits": 18,
+          "beta": -3.045333616993785e-06,
+          "t": 4.162900836566316e-05,
+          "F": 6.219553210168356e-11,
+          "canonical_residual": 4.711927295617588e-06,
+          "feasible_t_residual": 4.711927295617588e-06
+        },
+        {
+          "iteration": 18,
+          "fits": 19,
+          "beta": -5.82967075419378e-07,
+          "t": 2.3408856407052733e-05,
+          "F": 1.802444444237139e-11,
+          "canonical_residual": 1.6912981298942035e-06,
+          "feasible_t_residual": 1.6912981298942035e-06
+        },
+        {
+          "iteration": 19,
+          "fits": 20,
+          "beta": 4.0830668560612574e-07,
+          "t": 1.3873316332296053e-05,
+          "F": 6.360832201590423e-12,
+          "canonical_residual": 1.0395534953306973e-06,
+          "feasible_t_residual": 1.0395534953306973e-06
+        },
+        {
+          "iteration": 20,
+          "fits": 21,
+          "beta": 4.725810952357338e-07,
+          "t": 8.204998145027163e-06,
+          "F": 2.329410886511927e-12,
+          "canonical_residual": 8.017258357660041e-07,
+          "feasible_t_residual": 8.017258357660041e-07
+        },
+        {
+          "iteration": 21,
+          "fits": 22,
+          "beta": 1.8587546074605364e-07,
+          "t": 4.626260334110063e-06,
+          "F": 7.174560046769553e-13,
+          "canonical_residual": 3.819136977850798e-07,
+          "feasible_t_residual": 3.819136977850798e-07
+        },
+        {
+          "iteration": 22,
+          "fits": 23,
+          "beta": -8.761332719320345e-09,
+          "t": 2.6528521073305593e-06,
+          "F": 2.2877144874382554e-13,
+          "canonical_residual": 1.727921835740187e-07,
+          "feasible_t_residual": 1.727921835740187e-07
+        },
+        {
+          "iteration": 23,
+          "fits": 24,
+          "beta": -5.8269812873980445e-08,
+          "t": 1.5566406264885322e-06,
+          "F": 8.090213856307316e-14,
+          "canonical_residual": 1.2524145193505963e-07,
+          "feasible_t_residual": 1.2524145193505963e-07
+        },
+        {
+          "iteration": 24,
+          "fits": 25,
+          "beta": -3.70141206998329e-08,
+          "t": 8.911347111094404e-07,
+          "F": 2.6676632194765425e-14,
+          "canonical_residual": 7.452063858911645e-08,
+          "feasible_t_residual": 7.452063858911645e-08
+        },
+        {
+          "iteration": 25,
+          "fits": 26,
+          "beta": -5.37758113495374e-09,
+          "t": 5.054640496703517e-07,
+          "F": 8.321867211187773e-15,
+          "canonical_residual": 3.3553834750899853e-08,
+          "feasible_t_residual": 3.3553834750899853e-08
+        },
+        {
+          "iteration": 26,
+          "fits": 27,
+          "beta": 5.642757701607055e-09,
+          "t": 2.924367114738577e-07,
+          "F": 2.7995408308980298e-15,
+          "canonical_residual": 2.0307767993366036e-08,
+          "feasible_t_residual": 2.0307767993366036e-08
+        },
+        {
+          "iteration": 27,
+          "fits": 28,
+          "beta": -5.010650952778219e-11,
+          "t": 1.6564671750019731e-07,
+          "F": 8.91763738313266e-16,
+          "canonical_residual": 1.0767223935322301e-08,
+          "feasible_t_residual": 1.0767223935322301e-08
+        },
+        {
+          "iteration": 28,
+          "fits": 29,
+          "beta": 3.0614531596472265e-09,
+          "t": 9.346176428371928e-08,
+          "F": 2.8982671074355827e-16,
+          "canonical_residual": 7.207180692499823e-09,
+          "feasible_t_residual": 7.207180692499823e-09
+        },
+        {
+          "iteration": 29,
+          "fits": 30,
+          "beta": -7.4367170534165825e-09,
+          "t": 5.0810788631455236e-08,
+          "F": 1.1893277743809676e-16,
+          "canonical_residual": 9.982046724323234e-09,
+          "feasible_t_residual": 9.982046724323234e-09
+        },
+        {
+          "iteration": 30,
+          "fits": 31,
+          "beta": -2.6431357783595104e-09,
+          "t": 3.514887410411714e-08,
+          "F": 4.45764814899966e-17,
+          "canonical_residual": 4.053229022304235e-09,
+          "feasible_t_residual": 4.053229022304235e-09
+        },
+        {
+          "iteration": 31,
+          "fits": 32,
+          "beta": 3.890116523872843e-10,
+          "t": 1.955025893848036e-08,
+          "F": 1.2517752546665685e-17,
+          "canonical_residual": 1.3629558764621223e-09,
+          "feasible_t_residual": 1.3629558764621223e-09
+        },
+        {
+          "iteration": 32,
+          "fits": 33,
+          "beta": 5.053561700893438e-10,
+          "t": 1.2080230689702436e-08,
+          "F": 4.9045328474888414e-18,
+          "canonical_residual": 1.0130711425747825e-09,
+          "feasible_t_residual": 1.0130711425747825e-09
+        },
+        {
+          "iteration": 33,
+          "fits": 34,
+          "beta": 2.9847440207098657e-12,
+          "t": 6.6686430924150735e-09,
+          "F": 1.44530663836202e-18,
+          "canonical_residual": 4.334781722990871e-10,
+          "feasible_t_residual": 4.334781722990871e-10
+        },
+        {
+          "iteration": 34,
+          "fits": 35,
+          "beta": -6.88675474026176e-11,
+          "t": 3.899973100513893e-09,
+          "F": 4.973219293532552e-19,
+          "canonical_residual": 2.680872852305316e-10,
+          "feasible_t_residual": 2.680872852305316e-10
+        },
+        {
+          "iteration": 35,
+          "fits": 36,
+          "beta": -1.794029497015292e-11,
+          "t": 2.204047616767437e-09,
+          "F": 1.5808317732499603e-19,
+          "canonical_residual": 1.4505415450713579e-10,
+          "feasible_t_residual": 1.4505415450713579e-10
+        },
+        {
+          "iteration": 36,
+          "fits": 37,
+          "beta": 2.440995835549535e-12,
+          "t": 1.260565953322643e-09,
+          "F": 5.164713887645139e-20,
+          "canonical_residual": 8.199506637556803e-11,
+          "feasible_t_residual": 8.199506637556803e-11
+        },
+        {
+          "iteration": 37,
+          "fits": 38,
+          "beta": 2.435931927864581e-13,
+          "t": 7.173525587675355e-10,
+          "F": 1.6724366944523755e-20,
+          "canonical_residual": 4.662893881098903e-11,
+          "feasible_t_residual": 4.662893881098903e-11
+        },
+        {
+          "iteration": 38,
+          "fits": 39,
+          "beta": 7.202077618081647e-12,
+          "t": 4.087442616459036e-10,
+          "F": 5.462687910719332e-21,
+          "canonical_residual": 2.809098604349151e-11,
+          "feasible_t_residual": 2.809098604349151e-11
+        },
+        {
+          "iteration": 39,
+          "fits": 40,
+          "beta": 1.5560803430051361e-13,
+          "t": 2.3295524012243926e-10,
+          "F": 1.763730365613704e-21,
+          "canonical_residual": 1.5143377707766977e-11,
+          "feasible_t_residual": 1.5143377707766977e-11
+        },
+        {
+          "iteration": 40,
+          "fits": 41,
+          "beta": -6.849395945657272e-13,
+          "t": 1.3296962620447958e-10,
+          "F": 5.74928111627635e-22,
+          "canonical_residual": 8.6864364245383e-12,
+          "feasible_t_residual": 8.6864364245383e-12
+        },
+        {
+          "iteration": 41,
+          "fits": 42,
+          "beta": 2.0492641263871856e-12,
+          "t": 7.557851740814039e-11,
+          "F": 1.8830302210664627e-22,
+          "canonical_residual": 5.556180785034995e-12,
+          "feasible_t_residual": 5.556180785034995e-12
+        },
+        {
+          "iteration": 42,
+          "fits": 43,
+          "beta": 6.40115732565318e-13,
+          "t": 4.3366202877122294e-11,
+          "F": 6.137989799655905e-23,
+          "canonical_residual": 2.933050055250789e-12,
+          "feasible_t_residual": 2.933050055250789e-12
+        },
+        {
+          "iteration": 43,
+          "fits": 44,
+          "beta": -5.967490740101606e-14,
+          "t": 2.466821267311881e-11,
+          "F": 1.977913701776361e-23,
+          "canonical_residual": 1.6052595001495453e-12,
+          "feasible_t_residual": 1.6052595001495453e-12
+        },
+        {
+          "iteration": 44,
+          "fits": 45,
+          "beta": -6.452641897520404e-14,
+          "t": 1.4086055954367054e-11,
+          "F": 6.451269394388503e-24,
+          "canonical_residual": 9.19258867254726e-13,
+          "feasible_t_residual": 9.19258867254726e-13
+        }
+      ]
+    },
+    {
+      "family": "zero_gap",
+      "seed": 0,
+      "chart": "t",
+      "t_floor": 0.0,
+      "objective": "residual",
+      "initial_beta": 0.059938205703506164,
+      "initial_h": 0.07493177496532287,
+      "beta": 5.532931985196669e-17,
+      "t": 0.0,
+      "coefficients": [
+        -4.17584177272265e-17,
+        -1.0
+      ],
+      "iterations": 8,
+      "fits": 9,
+      "seconds": 0.007182457949966192,
+      "stop": "common feasible t residual <= 1e-12",
+      "error_grid": 9.096325355569533e-17,
+      "feasible_t_residual": 1.6271484781634225e-18,
+      "refined_objective_difference": 4.446405733789952e-34,
+      "refined_gradient_difference": 3.720088060543391e-17,
+      "error": 6.245309818980117e-17,
+      "canonical_residual": 7.008380514582448e-17,
+      "gradient_t": 1.0187438041852556e-33,
+      "coefficient_residual": 5.219218579294895e-18,
+      "trace": [
+        {
+          "iteration": 1,
+          "fits": 2,
+          "beta": -0.01574135915749031,
+          "t": 0.0040604565560093675,
+          "F": 0.00015777111391091512,
+          "canonical_residual": 0.01997610144872474,
+          "feasible_t_residual": 0.01997610144872474
+        },
+        {
+          "iteration": 2,
+          "fits": 3,
+          "beta": 5.7442161234575736e-05,
+          "t": 0.003911237489432626,
+          "F": 4.994111538071729e-07,
+          "canonical_residual": 0.00026458224085303074,
+          "feasible_t_residual": 0.00026458224085303074
+        },
+        {
+          "iteration": 3,
+          "fits": 4,
+          "beta": 9.54514316816052e-07,
+          "t": 0.0037109469403939113,
+          "F": 4.47681208953509e-07,
+          "canonical_residual": 0.00024131072536941376,
+          "feasible_t_residual": 0.00024131072536941376
+        },
+        {
+          "iteration": 4,
+          "fits": 5,
+          "beta": -0.00022848745434774943,
+          "t": 0.0012590657459893855,
+          "F": 8.46111595284525e-08,
+          "canonical_residual": 0.0003009577931474039,
+          "feasible_t_residual": 0.0003009577931474039
+        },
+        {
+          "iteration": 5,
+          "fits": 6,
+          "beta": -0.00010172916821233724,
+          "t": 0.00018564989938001032,
+          "F": 7.675050446830186e-09,
+          "canonical_residual": 0.00012943360747033405,
+          "feasible_t_residual": 0.00012943360747033405
+        },
+        {
+          "iteration": 6,
+          "fits": 7,
+          "beta": -9.799714322988678e-06,
+          "t": 0.0,
+          "F": 6.082178717620726e-11,
+          "canonical_residual": 1.2412971473696064e-05,
+          "feasible_t_residual": 1.2412971473696064e-05
+        },
+        {
+          "iteration": 7,
+          "fits": 8,
+          "beta": -2.1228898233753878e-07,
+          "t": 0.0,
+          "F": 2.85421876256946e-14,
+          "canonical_residual": 2.688993776508482e-07,
+          "feasible_t_residual": 2.688993776508482e-07
+        },
+        {
+          "iteration": 8,
+          "fits": 9,
+          "beta": 5.532931985196669e-17,
+          "t": 0.0,
+          "F": 4.13715674871886e-33,
+          "canonical_residual": 1.6271484781634225e-18,
+          "feasible_t_residual": 1.6271484781634225e-18
+        }
+      ]
+    },
+    {
+      "family": "zero_gap",
+      "seed": 0,
+      "chart": "t",
+      "t_floor": 0.0001,
+      "objective": "residual",
+      "initial_beta": 0.059938205703506164,
+      "initial_h": 0.07493177496532287,
+      "beta": -2.4460574624222692e-17,
+      "t": 0.0001,
+      "coefficients": [
+        0.0,
+        -1.0000350000124816
+      ],
+      "iterations": 8,
+      "fits": 9,
+      "seconds": 0.007857459131628275,
+      "stop": "common feasible t residual <= 1e-12",
+      "error_grid": 2.5495189083598146e-05,
+      "feasible_t_residual": 5.964031828717648e-18,
+      "refined_objective_difference": 2.528070747115191e-22,
+      "refined_gradient_difference": 7.273021337996064e-17,
+      "error": 2.549518908358815e-05,
+      "canonical_residual": 6.5000699948248865e-06,
+      "gradient_t": 6.500069994824893e-06,
+      "coefficient_residual": 2.3495556374922306e-16,
+      "trace": [
+        {
+          "iteration": 1,
+          "fits": 2,
+          "beta": -0.01574135915749031,
+          "t": 0.0040604565560093675,
+          "F": 0.00015777111391091512,
+          "canonical_residual": 0.01997610144872474,
+          "feasible_t_residual": 0.01997610144872474
+        },
+        {
+          "iteration": 2,
+          "fits": 3,
+          "beta": 5.7442161234575736e-05,
+          "t": 0.003911237489432626,
+          "F": 4.994111538071729e-07,
+          "canonical_residual": 0.00026458224085303074,
+          "feasible_t_residual": 0.00026458224085303074
+        },
+        {
+          "iteration": 3,
+          "fits": 4,
+          "beta": 9.54514316816052e-07,
+          "t": 0.0037109469403939113,
+          "F": 4.47681208953509e-07,
+          "canonical_residual": 0.00024131072536941376,
+          "feasible_t_residual": 0.00024131072536941376
+        },
+        {
+          "iteration": 4,
+          "fits": 5,
+          "beta": -0.00022848745434774943,
+          "t": 0.0012590657459893855,
+          "F": 8.46111595284525e-08,
+          "canonical_residual": 0.0003009577931474039,
+          "feasible_t_residual": 0.0003009577931474039
+        },
+        {
+          "iteration": 5,
+          "fits": 6,
+          "beta": -0.00010172916821233724,
+          "t": 0.00018564989938001032,
+          "F": 7.675050446830186e-09,
+          "canonical_residual": 0.00012943360747033405,
+          "feasible_t_residual": 0.00012943360747033405
+        },
+        {
+          "iteration": 6,
+          "fits": 7,
+          "beta": -9.799714322988678e-06,
+          "t": 0.0001,
+          "F": 3.858273161092174e-10,
+          "canonical_residual": 1.4012472240966605e-05,
+          "feasible_t_residual": 1.2413623682373033e-05
+        },
+        {
+          "iteration": 7,
+          "fits": 8,
+          "beta": -3.352270259679193e-08,
+          "t": 0.0001,
+          "F": 3.2500304496374357e-10,
+          "canonical_residual": 6.50020870141301e-06,
+          "feasible_t_residual": 4.246432098269242e-08
+        },
+        {
+          "iteration": 8,
+          "fits": 9,
+          "beta": -2.4460574624222692e-17,
+          "t": 0.0001,
+          "F": 3.250023332042111e-10,
+          "canonical_residual": 6.500069994914523e-06,
+          "feasible_t_residual": 5.964031828717648e-18
+        }
+      ]
+    },
+    {
+      "family": "zero_gap",
+      "seed": 0,
+      "chart": "t",
+      "t_floor": 1e-08,
+      "objective": "residual",
+      "initial_beta": 0.059938205703506164,
+      "initial_h": 0.07493177496532287,
+      "beta": -1.569734190713956e-17,
+      "t": 1e-08,
+      "coefficients": [
+        -1.4615446608388964e-25,
+        -1.0000000035
+      ],
+      "iterations": 8,
+      "fits": 9,
+      "seconds": 0.007826915942132473,
+      "stop": "common feasible t residual <= 1e-12",
+      "error_grid": 2.5495097461160852e-09,
+      "feasible_t_residual": 2.9510193314188943e-18,
+      "refined_objective_difference": 1.123002277964013e-26,
+      "refined_gradient_difference": 4.484698306112812e-18,
+      "error": 2.549509757711602e-09,
+      "canonical_residual": 6.500000006999995e-10,
+      "gradient_t": 6.500000007e-10,
+      "coefficient_residual": 6.922493218709125e-17,
+      "trace": [
+        {
+          "iteration": 1,
+          "fits": 2,
+          "beta": -0.01574135915749031,
+          "t": 0.0040604565560093675,
+          "F": 0.00015777111391091512,
+          "canonical_residual": 0.01997610144872474,
+          "feasible_t_residual": 0.01997610144872474
+        },
+        {
+          "iteration": 2,
+          "fits": 3,
+          "beta": 5.7442161234575736e-05,
+          "t": 0.003911237489432626,
+          "F": 4.994111538071729e-07,
+          "canonical_residual": 0.00026458224085303074,
+          "feasible_t_residual": 0.00026458224085303074
+        },
+        {
+          "iteration": 3,
+          "fits": 4,
+          "beta": 9.54514316816052e-07,
+          "t": 0.0037109469403939113,
+          "F": 4.47681208953509e-07,
+          "canonical_residual": 0.00024131072536941376,
+          "feasible_t_residual": 0.00024131072536941376
+        },
+        {
+          "iteration": 4,
+          "fits": 5,
+          "beta": -0.00022848745434774943,
+          "t": 0.0012590657459893855,
+          "F": 8.46111595284525e-08,
+          "canonical_residual": 0.0003009577931474039,
+          "feasible_t_residual": 0.0003009577931474039
+        },
+        {
+          "iteration": 5,
+          "fits": 6,
+          "beta": -0.00010172916821233724,
+          "t": 0.00018564989938001032,
+          "F": 7.675050446830186e-09,
+          "canonical_residual": 0.00012943360747033405,
+          "feasible_t_residual": 0.00012943360747033405
+        },
+        {
+          "iteration": 6,
+          "fits": 7,
+          "beta": -9.799714322988678e-06,
+          "t": 1e-08,
+          "F": 6.082179074581388e-11,
+          "canonical_residual": 1.2412971557759046e-05,
+          "feasible_t_residual": 1.2412971539025945e-05
+        },
+        {
+          "iteration": 7,
+          "fits": 8,
+          "beta": -2.1226335369904312e-07,
+          "t": 1e-08,
+          "F": 2.8538546650609776e-14,
+          "canonical_residual": 2.688677017755231e-07,
+          "feasible_t_residual": 2.688669160357963e-07
+        },
+        {
+          "iteration": 8,
+          "fits": 9,
+          "beta": -1.569734190713956e-17,
+          "t": 1e-08,
+          "F": 3.249999972770453e-18,
+          "canonical_residual": 6.499999708832764e-10,
+          "feasible_t_residual": 2.9510193314188943e-18
+        }
+      ]
+    },
+    {
+      "family": "zero_gap",
+      "seed": 0,
+      "chart": "t",
+      "t_floor": 1e-12,
+      "objective": "residual",
+      "initial_beta": 0.059938205703506164,
+      "initial_h": 0.07493177496532287,
+      "beta": 1.577933329662525e-17,
+      "t": 1e-12,
+      "coefficients": [
+        4.17584177272759e-17,
+        -1.00000000000035
+      ],
+      "iterations": 8,
+      "fits": 9,
+      "seconds": 0.007805125089362264,
+      "stop": "common feasible t residual <= 1e-12",
+      "error_grid": 2.5494700680056476e-13,
+      "feasible_t_residual": 3.5712057500833214e-17,
+      "refined_objective_difference": 7.512553300835829e-31,
+      "refined_gradient_difference": 3.091218821775453e-17,
+      "error": 2.549509899232225e-13,
+      "canonical_residual": 6.500000307297902e-14,
+      "gradient_t": 6.500000000000699e-14,
+      "coefficient_residual": 8.758431387837899e-17,
+      "trace": [
+        {
+          "iteration": 1,
+          "fits": 2,
+          "beta": -0.01574135915749031,
+          "t": 0.0040604565560093675,
+          "F": 0.00015777111391091512,
+          "canonical_residual": 0.01997610144872474,
+          "feasible_t_residual": 0.01997610144872474
+        },
+        {
+          "iteration": 2,
+          "fits": 3,
+          "beta": 5.7442161234575736e-05,
+          "t": 0.003911237489432626,
+          "F": 4.994111538071729e-07,
+          "canonical_residual": 0.00026458224085303074,
+          "feasible_t_residual": 0.00026458224085303074
+        },
+        {
+          "iteration": 3,
+          "fits": 4,
+          "beta": 9.54514316816052e-07,
+          "t": 0.0037109469403939113,
+          "F": 4.47681208953509e-07,
+          "canonical_residual": 0.00024131072536941376,
+          "feasible_t_residual": 0.00024131072536941376
+        },
+        {
+          "iteration": 4,
+          "fits": 5,
+          "beta": -0.00022848745434774943,
+          "t": 0.0012590657459893855,
+          "F": 8.46111595284525e-08,
+          "canonical_residual": 0.0003009577931474039,
+          "feasible_t_residual": 0.0003009577931474039
+        },
+        {
+          "iteration": 5,
+          "fits": 6,
+          "beta": -0.00010172916821233724,
+          "t": 0.00018564989938001032,
+          "F": 7.675050446830186e-09,
+          "canonical_residual": 0.00012943360747033405,
+          "feasible_t_residual": 0.00012943360747033405
+        },
+        {
+          "iteration": 6,
+          "fits": 7,
+          "beta": -9.799714322988678e-06,
+          "t": 1e-12,
+          "F": 6.082178717627381e-11,
+          "canonical_residual": 1.2412971473840123e-05,
+          "feasible_t_residual": 1.2412971473840082e-05
+        },
+        {
+          "iteration": 7,
+          "fits": 8,
+          "beta": -2.122889796688056e-07,
+          "t": 1e-12,
+          "F": 2.8542186899389464e-14,
+          "canonical_residual": 2.688993742245731e-07,
+          "feasible_t_residual": 2.688993742245612e-07
+        },
+        {
+          "iteration": 8,
+          "fits": 9,
+          "beta": 1.577933329662525e-17,
+          "t": 1e-12,
+          "F": 3.2498988138283605e-26,
+          "canonical_residual": 6.502521669927706e-14,
+          "feasible_t_residual": 3.5712057500833214e-17
+        }
+      ]
+    },
+    {
+      "family": "zero_gap",
+      "seed": 0,
+      "chart": "t",
+      "t_floor": 1e-24,
+      "objective": "residual",
+      "initial_beta": 0.059938205703506164,
+      "initial_h": 0.07493177496532287,
+      "beta": 5.532931985196669e-17,
+      "t": 1e-24,
+      "coefficients": [
+        -4.17584177272265e-17,
+        -1.0
+      ],
+      "iterations": 8,
+      "fits": 9,
+      "seconds": 0.0077930421102792025,
+      "stop": "common feasible t residual <= 1e-12",
+      "error_grid": 9.096325355569533e-17,
+      "feasible_t_residual": 1.6271484781634225e-18,
+      "refined_objective_difference": 4.446405733789952e-34,
+      "refined_gradient_difference": 3.720088060543391e-17,
+      "error": 6.245309818980117e-17,
+      "canonical_residual": 7.008380514582448e-17,
+      "gradient_t": 6.50000010187438e-26,
+      "coefficient_residual": 5.219218579294906e-18,
+      "trace": [
+        {
+          "iteration": 1,
+          "fits": 2,
+          "beta": -0.01574135915749031,
+          "t": 0.0040604565560093675,
+          "F": 0.00015777111391091512,
+          "canonical_residual": 0.01997610144872474,
+          "feasible_t_residual": 0.01997610144872474
+        },
+        {
+          "iteration": 2,
+          "fits": 3,
+          "beta": 5.7442161234575736e-05,
+          "t": 0.003911237489432626,
+          "F": 4.994111538071729e-07,
+          "canonical_residual": 0.00026458224085303074,
+          "feasible_t_residual": 0.00026458224085303074
+        },
+        {
+          "iteration": 3,
+          "fits": 4,
+          "beta": 9.54514316816052e-07,
+          "t": 0.0037109469403939113,
+          "F": 4.47681208953509e-07,
+          "canonical_residual": 0.00024131072536941376,
+          "feasible_t_residual": 0.00024131072536941376
+        },
+        {
+          "iteration": 4,
+          "fits": 5,
+          "beta": -0.00022848745434774943,
+          "t": 0.0012590657459893855,
+          "F": 8.46111595284525e-08,
+          "canonical_residual": 0.0003009577931474039,
+          "feasible_t_residual": 0.0003009577931474039
+        },
+        {
+          "iteration": 5,
+          "fits": 6,
+          "beta": -0.00010172916821233724,
+          "t": 0.00018564989938001032,
+          "F": 7.675050446830186e-09,
+          "canonical_residual": 0.00012943360747033405,
+          "feasible_t_residual": 0.00012943360747033405
+        },
+        {
+          "iteration": 6,
+          "fits": 7,
+          "beta": -9.799714322988678e-06,
+          "t": 1e-24,
+          "F": 6.082178717620726e-11,
+          "canonical_residual": 1.2412971473696064e-05,
+          "feasible_t_residual": 1.2412971473696064e-05
+        },
+        {
+          "iteration": 7,
+          "fits": 8,
+          "beta": -2.1228898233753878e-07,
+          "t": 1e-24,
+          "F": 2.85421876256946e-14,
+          "canonical_residual": 2.688993776508482e-07,
+          "feasible_t_residual": 2.688993776508482e-07
+        },
+        {
+          "iteration": 8,
+          "fits": 9,
+          "beta": 5.532931985196669e-17,
+          "t": 1e-24,
+          "F": 4.13715674871886e-33,
+          "canonical_residual": 1.6271484781637296e-18,
+          "feasible_t_residual": 1.6271484781634225e-18
+        }
+      ]
+    },
+    {
+      "family": "positive_gap",
+      "seed": 0,
+      "chart": "h",
+      "t_floor": 1e-24,
+      "objective": "shifted_gram",
+      "initial_beta": 0.059938205703506164,
+      "initial_h": 0.07493177496532287,
+      "beta": 1.5775857260868175e-16,
+      "t": 1e-24,
+      "coefficients": [
+        -1.2550573291432762e-16,
+        -1.0055193598127605
+      ],
+      "iterations": 10,
+      "fits": 12,
+      "seconds": 0.010419083992019296,
+      "stop": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "error_grid": 0.007688479213360543,
+      "feasible_t_residual": 1.7964980280570624e-16,
+      "refined_objective_difference": 7.115076756936123e-20,
+      "refined_gradient_difference": 9.220780616509717e-17,
+      "error": 0.00768847921336053,
+      "canonical_residual": 2.016710351156902e-16,
+      "gradient_t": 0.0019600859378101896,
+      "coefficient_residual": 1.7700045429772258e-16,
+      "trace": [
+        {
+          "iteration": 1,
+          "fits": 2,
+          "beta": -0.016434352889308695,
+          "t": 0.005536209446125944,
+          "F": 0.0002144948565686833,
+          "canonical_residual": 0.021196822749406406,
+          "feasible_t_residual": 0.021196822749406406
+        },
+        {
+          "iteration": 2,
+          "fits": 3,
+          "beta": 7.154617191038633e-05,
+          "t": 0.005507108546152849,
+          "F": 4.1342047265526296e-05,
+          "canonical_residual": 0.0023207778742977323,
+          "feasible_t_residual": 0.0023207778742977323
+        },
+        {
+          "iteration": 3,
+          "fits": 5,
+          "beta": -0.0002713290078515189,
+          "t": 0.00531008190532087,
+          "F": 4.093031932539266e-05,
+          "canonical_residual": 0.002332221313980955,
+          "feasible_t_residual": 0.002332221313980955
+        },
+        {
+          "iteration": 4,
+          "fits": 6,
+          "beta": -0.0009036340247670935,
+          "t": 0.004396328701476636,
+          "F": 3.932624045085769e-05,
+          "canonical_residual": 0.0025275801558661357,
+          "feasible_t_residual": 0.0025275801558661357
+        },
+        {
+          "iteration": 5,
+          "fits": 7,
+          "beta": -0.0015685484998592862,
+          "t": 0.002336256325556239,
+          "F": 3.588788401897504e-05,
+          "canonical_residual": 0.0029147112375423156,
+          "feasible_t_residual": 0.0029147112375423156
+        },
+        {
+          "iteration": 6,
+          "fits": 8,
+          "beta": -0.0014901718979772128,
+          "t": 0.0005147520344587659,
+          "F": 3.199368209225276e-05,
+          "canonical_residual": 0.001973770469189484,
+          "feasible_t_residual": 0.001973770469189484
+        },
+        {
+          "iteration": 7,
+          "fits": 9,
+          "beta": -0.00020433514425816232,
+          "t": 4.538918838588326e-06,
+          "F": 2.9591941137681095e-05,
+          "canonical_residual": 0.00026125233091473253,
+          "feasible_t_residual": 0.00026125233091473253
+        },
+        {
+          "iteration": 8,
+          "fits": 10,
+          "beta": -9.41838667707646e-06,
+          "t": 1e-24,
+          "F": 2.9556413005903236e-05,
+          "canonical_residual": 1.2040016327469988e-05,
+          "feasible_t_residual": 1.2040016327469988e-05
+        },
+        {
+          "iteration": 9,
+          "fits": 11,
+          "beta": -9.206112103137202e-07,
+          "t": 1e-24,
+          "F": 2.955635684885633e-05,
+          "canonical_residual": 1.1768654638188482e-06,
+          "feasible_t_residual": 1.1768654638188482e-06
+        },
+        {
+          "iteration": 10,
+          "fits": 12,
+          "beta": 1.5775857260868175e-16,
+          "t": 1e-24,
+          "F": 2.9556356307138575e-05,
+          "canonical_residual": 1.7964980280570624e-16,
+          "feasible_t_residual": 1.7964980280570624e-16
+        }
+      ]
+    },
+    {
+      "family": "positive_gap",
+      "seed": 0,
+      "chart": "t",
+      "t_floor": 0.0,
+      "objective": "shifted_gram",
+      "initial_beta": 0.059938205703506164,
+      "initial_h": 0.07493177496532287,
+      "beta": -2.2726396985733624e-14,
+      "t": 0.0,
+      "coefficients": [
+        1.908382738107516e-14,
+        -1.0055193598127605
+      ],
+      "iterations": 5,
+      "fits": 6,
+      "seconds": 0.004553542006760836,
+      "stop": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "error_grid": 0.007688479213360535,
+      "feasible_t_residual": 2.8990986927770845e-14,
+      "refined_objective_difference": 0.0,
+      "refined_gradient_difference": 1.5548962031821913e-16,
+      "error": 0.00768847921336053,
+      "canonical_residual": 2.9052341998122115e-14,
+      "gradient_t": 0.0019600859378101896,
+      "coefficient_residual": 1.8328056946986596e-16,
+      "trace": [
+        {
+          "iteration": 1,
+          "fits": 2,
+          "beta": -0.016434352889308695,
+          "t": 0.002104467418457391,
+          "F": 0.000206607578461586,
+          "canonical_residual": 0.021127137962475166,
+          "feasible_t_residual": 0.021127137962475166
+        },
+        {
+          "iteration": 2,
+          "fits": 3,
+          "beta": -1.2447375594155764e-05,
+          "t": 0.0009168576552402114,
+          "F": 3.138095182993362e-05,
+          "canonical_residual": 0.0009169958542274951,
+          "feasible_t_residual": 0.0009169958542274951
+        },
+        {
+          "iteration": 3,
+          "fits": 4,
+          "beta": 5.7827639192441645e-05,
+          "t": 0.0,
+          "F": 2.955849373510571e-05,
+          "canonical_residual": 7.39240954990317e-05,
+          "feasible_t_residual": 7.39240954990317e-05
+        },
+        {
+          "iteration": 4,
+          "fits": 5,
+          "beta": 3.726904933575581e-06,
+          "t": 0.0,
+          "F": 2.9556365185180486e-05,
+          "canonical_residual": 4.7642975166314065e-06,
+          "feasible_t_residual": 4.7642975166314065e-06
+        },
+        {
+          "iteration": 5,
+          "fits": 6,
+          "beta": -2.2726396985733624e-14,
+          "t": 0.0,
+          "F": 2.9556356307138514e-05,
+          "canonical_residual": 2.8990986927770845e-14,
+          "feasible_t_residual": 2.8990986927770845e-14
+        }
+      ]
+    },
+    {
+      "family": "positive_gap",
+      "seed": 0,
+      "chart": "h",
+      "t_floor": 1e-24,
+      "objective": "residual",
+      "initial_beta": 0.059938205703506164,
+      "initial_h": 0.07493177496532287,
+      "beta": 1.5775857260868175e-16,
+      "t": 1e-24,
+      "coefficients": [
+        -1.2550573291432762e-16,
+        -1.0055193598127605
+      ],
+      "iterations": 10,
+      "fits": 12,
+      "seconds": 0.010356416925787926,
+      "stop": "common feasible t residual <= 1e-12",
+      "error_grid": 0.007688479213360543,
+      "feasible_t_residual": 1.7964980280570624e-16,
+      "refined_objective_difference": 7.115076756936123e-20,
+      "refined_gradient_difference": 9.220780616509717e-17,
+      "error": 0.00768847921336053,
+      "canonical_residual": 2.016710351156902e-16,
+      "gradient_t": 0.0019600859378101896,
+      "coefficient_residual": 1.7700045429772258e-16,
+      "trace": [
+        {
+          "iteration": 1,
+          "fits": 2,
+          "beta": -0.016434352889308695,
+          "t": 0.005536209446125944,
+          "F": 0.0002144948565686833,
+          "canonical_residual": 0.021196822749406406,
+          "feasible_t_residual": 0.021196822749406406
+        },
+        {
+          "iteration": 2,
+          "fits": 3,
+          "beta": 7.154617191038633e-05,
+          "t": 0.005507108546152849,
+          "F": 4.1342047265526296e-05,
+          "canonical_residual": 0.0023207778742977323,
+          "feasible_t_residual": 0.0023207778742977323
+        },
+        {
+          "iteration": 3,
+          "fits": 5,
+          "beta": -0.0002713290078515189,
+          "t": 0.00531008190532087,
+          "F": 4.093031932539266e-05,
+          "canonical_residual": 0.002332221313980955,
+          "feasible_t_residual": 0.002332221313980955
+        },
+        {
+          "iteration": 4,
+          "fits": 6,
+          "beta": -0.0009036340247670935,
+          "t": 0.004396328701476636,
+          "F": 3.932624045085769e-05,
+          "canonical_residual": 0.0025275801558661357,
+          "feasible_t_residual": 0.0025275801558661357
+        },
+        {
+          "iteration": 5,
+          "fits": 7,
+          "beta": -0.0015685484998592862,
+          "t": 0.002336256325556239,
+          "F": 3.588788401897504e-05,
+          "canonical_residual": 0.0029147112375423156,
+          "feasible_t_residual": 0.0029147112375423156
+        },
+        {
+          "iteration": 6,
+          "fits": 8,
+          "beta": -0.0014901718979772128,
+          "t": 0.0005147520344587659,
+          "F": 3.199368209225276e-05,
+          "canonical_residual": 0.001973770469189484,
+          "feasible_t_residual": 0.001973770469189484
+        },
+        {
+          "iteration": 7,
+          "fits": 9,
+          "beta": -0.00020433514425816232,
+          "t": 4.538918838588326e-06,
+          "F": 2.9591941137681095e-05,
+          "canonical_residual": 0.00026125233091473253,
+          "feasible_t_residual": 0.00026125233091473253
+        },
+        {
+          "iteration": 8,
+          "fits": 10,
+          "beta": -9.41838667707646e-06,
+          "t": 1e-24,
+          "F": 2.9556413005903236e-05,
+          "canonical_residual": 1.2040016327469988e-05,
+          "feasible_t_residual": 1.2040016327469988e-05
+        },
+        {
+          "iteration": 9,
+          "fits": 11,
+          "beta": -9.206112103137202e-07,
+          "t": 1e-24,
+          "F": 2.955635684885633e-05,
+          "canonical_residual": 1.1768654638188482e-06,
+          "feasible_t_residual": 1.1768654638188482e-06
+        },
+        {
+          "iteration": 10,
+          "fits": 12,
+          "beta": 1.5775857260868175e-16,
+          "t": 1e-24,
+          "F": 2.9556356307138575e-05,
+          "canonical_residual": 1.7964980280570624e-16,
+          "feasible_t_residual": 1.7964980280570624e-16
+        }
+      ]
+    },
+    {
+      "family": "positive_gap",
+      "seed": 0,
+      "chart": "t",
+      "t_floor": 0.0,
+      "objective": "residual",
+      "initial_beta": 0.059938205703506164,
+      "initial_h": 0.07493177496532287,
+      "beta": -2.2726396985733624e-14,
+      "t": 0.0,
+      "coefficients": [
+        1.908382738107516e-14,
+        -1.0055193598127605
+      ],
+      "iterations": 5,
+      "fits": 6,
+      "seconds": 0.004551541060209274,
+      "stop": "common feasible t residual <= 1e-12",
+      "error_grid": 0.007688479213360535,
+      "feasible_t_residual": 2.8990986927770845e-14,
+      "refined_objective_difference": 0.0,
+      "refined_gradient_difference": 1.5548962031821913e-16,
+      "error": 0.00768847921336053,
+      "canonical_residual": 2.9052341998122115e-14,
+      "gradient_t": 0.0019600859378101896,
+      "coefficient_residual": 1.8328056946986596e-16,
+      "trace": [
+        {
+          "iteration": 1,
+          "fits": 2,
+          "beta": -0.016434352889308695,
+          "t": 0.002104467418457391,
+          "F": 0.000206607578461586,
+          "canonical_residual": 0.021127137962475166,
+          "feasible_t_residual": 0.021127137962475166
+        },
+        {
+          "iteration": 2,
+          "fits": 3,
+          "beta": -1.2447375594155764e-05,
+          "t": 0.0009168576552402114,
+          "F": 3.138095182993362e-05,
+          "canonical_residual": 0.0009169958542274951,
+          "feasible_t_residual": 0.0009169958542274951
+        },
+        {
+          "iteration": 3,
+          "fits": 4,
+          "beta": 5.7827639192441645e-05,
+          "t": 0.0,
+          "F": 2.955849373510571e-05,
+          "canonical_residual": 7.39240954990317e-05,
+          "feasible_t_residual": 7.39240954990317e-05
+        },
+        {
+          "iteration": 4,
+          "fits": 5,
+          "beta": 3.726904933575581e-06,
+          "t": 0.0,
+          "F": 2.9556365185180486e-05,
+          "canonical_residual": 4.7642975166314065e-06,
+          "feasible_t_residual": 4.7642975166314065e-06
+        },
+        {
+          "iteration": 5,
+          "fits": 6,
+          "beta": -2.2726396985733624e-14,
+          "t": 0.0,
+          "F": 2.9556356307138514e-05,
+          "canonical_residual": 2.8990986927770845e-14,
+          "feasible_t_residual": 2.8990986927770845e-14
+        }
+      ]
+    },
+    {
+      "family": "positive_gap",
+      "seed": 0,
+      "chart": "t",
+      "t_floor": 0.0001,
+      "objective": "residual",
+      "initial_beta": 0.059938205703506164,
+      "initial_h": 0.07493177496532287,
+      "beta": -1.6891434242225063e-14,
+      "t": 0.0001,
+      "coefficients": [
+        1.4094524473873767e-14,
+        -1.0055543558932285
+      ],
+      "iterations": 5,
+      "fits": 6,
+      "seconds": 0.005295417038723826,
+      "stop": "common feasible t residual <= 1e-12",
+      "error_grid": 0.0077139731075309,
+      "feasible_t_residual": 2.1622247602343686e-14,
+      "refined_objective_difference": 5.421010862427522e-20,
+      "refined_gradient_difference": 8.181970309245682e-17,
+      "error": 0.007713973107530888,
+      "canonical_residual": 0.0001,
+      "gradient_t": 0.0019665989786410458,
+      "coefficient_residual": 2.1604949753922527e-16,
+      "trace": [
+        {
+          "iteration": 1,
+          "fits": 2,
+          "beta": -0.016434352889308695,
+          "t": 0.002104467418457391,
+          "F": 0.000206607578461586,
+          "canonical_residual": 0.021127137962475166,
+          "feasible_t_residual": 0.021117411418111073
+        },
+        {
+          "iteration": 2,
+          "fits": 3,
+          "beta": -1.2447375594155764e-05,
+          "t": 0.0009168576552402114,
+          "F": 3.138095182993362e-05,
+          "canonical_residual": 0.0009169958542274951,
+          "feasible_t_residual": 0.000817012769558941
+        },
+        {
+          "iteration": 3,
+          "fits": 4,
+          "beta": 5.1514080008908266e-05,
+          "t": 0.0001,
+          "F": 2.9754386821850213e-05,
+          "canonical_residual": 0.00011973757218232932,
+          "feasible_t_residual": 6.585655770019053e-05
+        },
+        {
+          "iteration": 4,
+          "fits": 5,
+          "beta": 3.481661248428992e-06,
+          "t": 0.0001,
+          "F": 2.9752698300327812e-05,
+          "canonical_residual": 0.000100099008903451,
+          "feasible_t_residual": 4.451020495702496e-06
+        },
+        {
+          "iteration": 5,
+          "fits": 6,
+          "beta": -1.6891434242225063e-14,
+          "t": 0.0001,
+          "F": 2.9752690551854962e-05,
+          "canonical_residual": 0.0001,
+          "feasible_t_residual": 2.1622247602343686e-14
+        }
+      ]
+    },
+    {
+      "family": "positive_gap",
+      "seed": 0,
+      "chart": "t",
+      "t_floor": 1e-08,
+      "objective": "residual",
+      "initial_beta": 0.059938205703506164,
+      "initial_h": 0.07493177496532287,
+      "beta": -2.2768848466250703e-14,
+      "t": 1e-08,
+      "coefficients": [
+        1.908359706037248e-14,
+        -1.0055193633123685
+      ],
+      "iterations": 5,
+      "fits": 6,
+      "seconds": 0.005241082981228828,
+      "stop": "common feasible t residual <= 1e-12",
+      "error_grid": 0.007688481762741075,
+      "feasible_t_residual": 2.912340122208022e-14,
+      "refined_objective_difference": 1.0164395367051604e-20,
+      "refined_gradient_difference": 8.659521937754453e-17,
+      "error": 0.0076884817627410834,
+      "canonical_residual": 1.000000000004236e-08,
+      "gradient_t": 0.001960086589107636,
+      "coefficient_residual": 2.050857975554587e-16,
+      "trace": [
+        {
+          "iteration": 1,
+          "fits": 2,
+          "beta": -0.016434352889308695,
+          "t": 0.002104467418457391,
+          "F": 0.000206607578461586,
+          "canonical_residual": 0.021127137962475166,
+          "feasible_t_residual": 0.021127136966380727
+        },
+        {
+          "iteration": 2,
+          "fits": 3,
+          "beta": -1.2447375594155764e-05,
+          "t": 0.0009168576552402114,
+          "F": 3.138095182993362e-05,
+          "canonical_residual": 0.0009169958542274951,
+          "feasible_t_residual": 0.0009169858557345956
+        },
+        {
+          "iteration": 3,
+          "fits": 4,
+          "beta": 5.782700783652324e-05,
+          "t": 1e-08,
+          "F": 2.9558513289307255e-05,
+          "canonical_residual": 7.392328946345996e-05,
+          "feasible_t_residual": 7.392328878708313e-05
+        },
+        {
+          "iteration": 4,
+          "fits": 5,
+          "beta": 3.7268803025993416e-06,
+          "t": 1e-08,
+          "F": 2.9556384785925778e-05,
+          "canonical_residual": 4.764276549107313e-06,
+          "feasible_t_residual": 4.764266054322941e-06
+        },
+        {
+          "iteration": 5,
+          "fits": 6,
+          "beta": -2.2768848466250703e-14,
+          "t": 1e-08,
+          "F": 2.955637590800105e-05,
+          "canonical_residual": 1.000000000004241e-08,
+          "feasible_t_residual": 2.912340122208022e-14
+        }
+      ]
+    },
+    {
+      "family": "positive_gap",
+      "seed": 0,
+      "chart": "t",
+      "t_floor": 1e-12,
+      "objective": "residual",
+      "initial_beta": 0.059938205703506164,
+      "initial_h": 0.07493177496532287,
+      "beta": -2.276906321187945e-14,
+      "t": 1e-12,
+      "coefficients": [
+        1.9167113736812933e-14,
+        -1.0055193598131107
+      ],
+      "iterations": 5,
+      "fits": 6,
+      "seconds": 0.005242041079327464,
+      "stop": "common feasible t residual <= 1e-12",
+      "error_grid": 0.007688479213615472,
+      "feasible_t_residual": 2.9038996788865474e-14,
+      "refined_objective_difference": 4.404571325722362e-20,
+      "refined_gradient_difference": 7.669156847397378e-17,
+      "error": 0.007688479213615469,
+      "canonical_residual": 1.0004235156789146e-12,
+      "gradient_t": 0.0019600859378753194,
+      "coefficient_residual": 1.0747343854867588e-16,
+      "trace": [
+        {
+          "iteration": 1,
+          "fits": 2,
+          "beta": -0.016434352889308695,
+          "t": 0.002104467418457391,
+          "F": 0.000206607578461586,
+          "canonical_residual": 0.021127137962475166,
+          "feasible_t_residual": 0.02112713796237556
+        },
+        {
+          "iteration": 2,
+          "fits": 3,
+          "beta": -1.2447375594155764e-05,
+          "t": 0.0009168576552402114,
+          "F": 3.138095182993362e-05,
+          "canonical_residual": 0.0009169958542274951,
+          "feasible_t_residual": 0.0009169958532276459
+        },
+        {
+          "iteration": 3,
+          "fits": 4,
+          "beta": 5.7827639129306005e-05,
+          "t": 1e-12,
+          "F": 2.9558493737061097e-05,
+          "canonical_residual": 7.392409541832518e-05,
+          "feasible_t_residual": 7.392409541832518e-05
+        },
+        {
+          "iteration": 4,
+          "fits": 5,
+          "beta": 3.726904931141618e-06,
+          "t": 1e-12,
+          "F": 2.9556365187140476e-05,
+          "canonical_residual": 4.76429751357127e-06,
+          "feasible_t_residual": 4.764297513571165e-06
+        },
+        {
+          "iteration": 5,
+          "fits": 6,
+          "beta": -2.276906321187945e-14,
+          "t": 1e-12,
+          "F": 2.9556356309098596e-05,
+          "canonical_residual": 1.000421542818078e-12,
+          "feasible_t_residual": 2.9038996788865474e-14
+        }
+      ]
+    },
+    {
+      "family": "positive_gap",
+      "seed": 0,
+      "chart": "t",
+      "t_floor": 1e-24,
+      "objective": "residual",
+      "initial_beta": 0.059938205703506164,
+      "initial_h": 0.07493177496532287,
+      "beta": -2.2726396985733624e-14,
+      "t": 1e-24,
+      "coefficients": [
+        1.908382738107516e-14,
+        -1.0055193598127605
+      ],
+      "iterations": 5,
+      "fits": 6,
+      "seconds": 0.005263417027890682,
+      "stop": "common feasible t residual <= 1e-12",
+      "error_grid": 0.007688479213360535,
+      "feasible_t_residual": 2.8990986927770845e-14,
+      "refined_objective_difference": 0.0,
+      "refined_gradient_difference": 1.5548962031821913e-16,
+      "error": 0.00768847921336053,
+      "canonical_residual": 2.9052341998122115e-14,
+      "gradient_t": 0.0019600859378101896,
+      "coefficient_residual": 1.8328056980377947e-16,
+      "trace": [
+        {
+          "iteration": 1,
+          "fits": 2,
+          "beta": -0.016434352889308695,
+          "t": 0.002104467418457391,
+          "F": 0.000206607578461586,
+          "canonical_residual": 0.021127137962475166,
+          "feasible_t_residual": 0.021127137962475166
+        },
+        {
+          "iteration": 2,
+          "fits": 3,
+          "beta": -1.2447375594155764e-05,
+          "t": 0.0009168576552402114,
+          "F": 3.138095182993362e-05,
+          "canonical_residual": 0.0009169958542274951,
+          "feasible_t_residual": 0.0009169958542274951
+        },
+        {
+          "iteration": 3,
+          "fits": 4,
+          "beta": 5.7827639192441645e-05,
+          "t": 1e-24,
+          "F": 2.955849373510571e-05,
+          "canonical_residual": 7.39240954990317e-05,
+          "feasible_t_residual": 7.39240954990317e-05
+        },
+        {
+          "iteration": 4,
+          "fits": 5,
+          "beta": 3.726904933575581e-06,
+          "t": 1e-24,
+          "F": 2.9556365185180486e-05,
+          "canonical_residual": 4.7642975166314065e-06,
+          "feasible_t_residual": 4.7642975166314065e-06
+        },
+        {
+          "iteration": 5,
+          "fits": 6,
+          "beta": -2.2726396985733624e-14,
+          "t": 1e-24,
+          "F": 2.9556356307138514e-05,
+          "canonical_residual": 2.8990986927770845e-14,
+          "feasible_t_residual": 2.8990986927770845e-14
+        }
+      ]
+    },
+    {
+      "family": "ordinary",
+      "seed": 0,
+      "chart": "h",
+      "t_floor": 1e-24,
+      "objective": "shifted_gram",
+      "initial_beta": 0.059938205703506164,
+      "initial_h": 0.7598362599167748,
+      "beta": -2.2551103745961156e-12,
+      "t": 0.9999999999960838,
+      "coefficients": [
+        1.9999999999987168,
+        1.8911318074749905e-12
+      ],
+      "iterations": 9,
+      "fits": 10,
+      "seconds": 0.009063042001798749,
+      "stop": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "error_grid": 2.2432618052296783e-12,
+      "feasible_t_residual": 1.115322654138152e-12,
+      "refined_objective_difference": 5.251316430363778e-30,
+      "refined_gradient_difference": 2.1866711375385033e-17,
+      "error": 2.243265978242747e-12,
+      "canonical_residual": 1.1152289524554613e-12,
+      "gradient_t": -9.959229672842563e-13,
+      "coefficient_residual": 3.1319491416711715e-17,
+      "trace": [
+        {
+          "iteration": 1,
+          "fits": 2,
+          "beta": 0.04689084347013548,
+          "t": 0.8681936174668644,
+          "F": 0.0025114865652814716,
+          "canonical_residual": 0.03627335559677624,
+          "feasible_t_residual": 0.03627335559677624
+        },
+        {
+          "iteration": 2,
+          "fits": 3,
+          "beta": 0.02411230135493722,
+          "t": 1.0734294625993366,
+          "F": 0.0007378689204032677,
+          "canonical_residual": 0.018935312928397004,
+          "feasible_t_residual": 0.018935312928397004
+        },
+        {
+          "iteration": 3,
+          "fits": 4,
+          "beta": 0.024570953989112132,
+          "t": 0.997636330555494,
+          "F": 6.7933560870296e-05,
+          "canonical_residual": 0.005505561578513597,
+          "feasible_t_residual": 0.005505561578513597
+        },
+        {
+          "iteration": 4,
+          "fits": 5,
+          "beta": 0.018974411466431085,
+          "t": 1.000064572430565,
+          "F": 4.00647666359938e-05,
+          "canonical_residual": 0.004222435282160715,
+          "feasible_t_residual": 0.004222435282160715
+        },
+        {
+          "iteration": 5,
+          "fits": 6,
+          "beta": 0.0003116413357192117,
+          "t": 1.0005846768745152,
+          "F": 5.426958302371752e-08,
+          "canonical_residual": 0.00016404265014970755,
+          "feasible_t_residual": 0.00016404265014970755
+        },
+        {
+          "iteration": 6,
+          "fits": 7,
+          "beta": -1.2893194396879114e-06,
+          "t": 1.000008976491916,
+          "F": 1.0430753134820118e-11,
+          "canonical_residual": 2.300761378332367e-06,
+          "feasible_t_residual": 2.300761378332367e-06
+        },
+        {
+          "iteration": 7,
+          "fits": 8,
+          "beta": -1.2478812365512743e-07,
+          "t": 1.0000000616019755,
+          "F": 2.215652371328363e-15,
+          "canonical_residual": 3.1890259744120604e-08,
+          "feasible_t_residual": 3.1890259744120604e-08
+        },
+        {
+          "iteration": 8,
+          "fits": 9,
+          "beta": -2.089754477128109e-09,
+          "t": 0.9999999997612714,
+          "F": 4.932894015048044e-19,
+          "canonical_residual": 4.691123201306485e-10,
+          "feasible_t_residual": 4.691123201306485e-10
+        },
+        {
+          "iteration": 9,
+          "fits": 10,
+          "beta": -2.2551103745961156e-12,
+          "t": 0.9999999999960838,
+          "F": 2.5161117634011577e-24,
+          "canonical_residual": 1.115322654138152e-12,
+          "feasible_t_residual": 1.115322654138152e-12
+        }
+      ]
+    },
+    {
+      "family": "ordinary",
+      "seed": 0,
+      "chart": "t",
+      "t_floor": 0.0,
+      "objective": "shifted_gram",
+      "initial_beta": 0.059938205703506164,
+      "initial_h": 0.7598362599167748,
+      "beta": 2.3065638552608988e-11,
+      "t": 0.9999999999919487,
+      "coefficients": [
+        1.9999999999973619,
+        -1.9342622157839773e-11
+      ],
+      "iterations": 7,
+      "fits": 8,
+      "seconds": 0.007166708121076226,
+      "stop": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "error_grid": 1.1615071245072245e-11,
+      "feasible_t_residual": 5.5274978304345645e-12,
+      "refined_objective_difference": 2.4330111403990487e-29,
+      "refined_gradient_difference": 3.400456727399943e-17,
+      "error": 1.1615106600730013e-11,
+      "canonical_residual": 5.527473001767294e-12,
+      "gradient_t": -2.0475232065575942e-12,
+      "coefficient_residual": 6.909903638220192e-17,
+      "trace": [
+        {
+          "iteration": 1,
+          "fits": 2,
+          "beta": 0.04689084347013548,
+          "t": 0.6904892142748614,
+          "F": 0.01296663641924794,
+          "canonical_residual": 0.08372477185564339,
+          "feasible_t_residual": 0.08372477185564339
+        },
+        {
+          "iteration": 2,
+          "fits": 3,
+          "beta": -0.00299726725312282,
+          "t": 1.0033150400210937,
+          "F": 2.39533556004296e-06,
+          "canonical_residual": 0.0010738226989382633,
+          "feasible_t_residual": 0.0010738226989382633
+        },
+        {
+          "iteration": 3,
+          "fits": 4,
+          "beta": -0.0004132250463032167,
+          "t": 1.00012500783452,
+          "F": 2.0990855900335595e-08,
+          "canonical_residual": 9.73151436054797e-05,
+          "feasible_t_residual": 9.73151436054797e-05
+        },
+        {
+          "iteration": 4,
+          "fits": 5,
+          "beta": -1.552333813116424e-05,
+          "t": 0.9999885354324654,
+          "F": 4.353252059155974e-11,
+          "canonical_residual": 4.521101503611671e-06,
+          "feasible_t_residual": 4.521101503611671e-06
+        },
+        {
+          "iteration": 5,
+          "fits": 6,
+          "beta": -1.1875966064865235e-07,
+          "t": 0.9999996976735309,
+          "F": 1.3191780569517747e-14,
+          "canonical_residual": 8.130189916132759e-08,
+          "feasible_t_residual": 8.130189916132759e-08
+        },
+        {
+          "iteration": 6,
+          "fits": 7,
+          "beta": 1.2186106743483177e-09,
+          "t": 0.9999999985256809,
+          "F": 4.416621033144754e-19,
+          "canonical_residual": 4.6276725819462345e-10,
+          "feasible_t_residual": 4.6276725819462345e-10
+        },
+        {
+          "iteration": 7,
+          "fits": 8,
+          "beta": 2.3065638552608988e-11,
+          "t": 0.9999999999919487,
+          "F": 6.745494001405206e-23,
+          "canonical_residual": 5.5274978304345645e-12,
+          "feasible_t_residual": 5.5274978304345645e-12
+        }
+      ]
+    },
+    {
+      "family": "ordinary",
+      "seed": 0,
+      "chart": "h",
+      "t_floor": 1e-24,
+      "objective": "residual",
+      "initial_beta": 0.059938205703506164,
+      "initial_h": 0.7598362599167748,
+      "beta": 3.6328161013202885e-16,
+      "t": 0.9999999999999969,
+      "coefficients": [
+        1.999999999999999,
+        -3.8075840488836513e-16
+      ],
+      "iterations": 10,
+      "fits": 11,
+      "seconds": 0.009764292044565082,
+      "stop": "common feasible t residual <= 1e-12",
+      "error_grid": 1.586277153720251e-15,
+      "feasible_t_residual": 7.83132107722161e-16,
+      "refined_objective_difference": 3.594817893114346e-32,
+      "refined_gradient_difference": 6.529155833784964e-17,
+      "error": 1.5780129667751629e-15,
+      "canonical_residual": 7.813518286341197e-16,
+      "gradient_t": -7.905495005931134e-16,
+      "coefficient_residual": 2.729275002776266e-17,
+      "trace": [
+        {
+          "iteration": 1,
+          "fits": 2,
+          "beta": 0.04689084347013548,
+          "t": 0.8681936174668644,
+          "F": 0.0025114865652814716,
+          "canonical_residual": 0.03627335559677624,
+          "feasible_t_residual": 0.03627335559677624
+        },
+        {
+          "iteration": 2,
+          "fits": 3,
+          "beta": 0.02411230135493722,
+          "t": 1.0734294625993366,
+          "F": 0.0007378689204032677,
+          "canonical_residual": 0.018935312928397004,
+          "feasible_t_residual": 0.018935312928397004
+        },
+        {
+          "iteration": 3,
+          "fits": 4,
+          "beta": 0.024570953989112132,
+          "t": 0.997636330555494,
+          "F": 6.7933560870296e-05,
+          "canonical_residual": 0.005505561578513597,
+          "feasible_t_residual": 0.005505561578513597
+        },
+        {
+          "iteration": 4,
+          "fits": 5,
+          "beta": 0.018974411466431085,
+          "t": 1.000064572430565,
+          "F": 4.00647666359938e-05,
+          "canonical_residual": 0.004222435282160715,
+          "feasible_t_residual": 0.004222435282160715
+        },
+        {
+          "iteration": 5,
+          "fits": 6,
+          "beta": 0.0003116413357192117,
+          "t": 1.0005846768745152,
+          "F": 5.426958302371752e-08,
+          "canonical_residual": 0.00016404265014970755,
+          "feasible_t_residual": 0.00016404265014970755
+        },
+        {
+          "iteration": 6,
+          "fits": 7,
+          "beta": -1.2893194396879114e-06,
+          "t": 1.000008976491916,
+          "F": 1.0430753134820118e-11,
+          "canonical_residual": 2.300761378332367e-06,
+          "feasible_t_residual": 2.300761378332367e-06
+        },
+        {
+          "iteration": 7,
+          "fits": 8,
+          "beta": -1.2478812365512743e-07,
+          "t": 1.0000000616019755,
+          "F": 2.215652371328363e-15,
+          "canonical_residual": 3.1890259744120604e-08,
+          "feasible_t_residual": 3.1890259744120604e-08
+        },
+        {
+          "iteration": 8,
+          "fits": 9,
+          "beta": -2.089754477128109e-09,
+          "t": 0.9999999997612714,
+          "F": 4.932894015048044e-19,
+          "canonical_residual": 4.691123201306485e-10,
+          "feasible_t_residual": 4.691123201306485e-10
+        },
+        {
+          "iteration": 9,
+          "fits": 10,
+          "beta": -2.2551103745961156e-12,
+          "t": 0.9999999999960838,
+          "F": 2.5161117634011577e-24,
+          "canonical_residual": 1.115322654138152e-12,
+          "feasible_t_residual": 1.115322654138152e-12
+        },
+        {
+          "iteration": 10,
+          "fits": 11,
+          "beta": 3.6328161013202885e-16,
+          "t": 0.9999999999999969,
+          "F": 1.2581376042074105e-30,
+          "canonical_residual": 7.83132107722161e-16,
+          "feasible_t_residual": 7.83132107722161e-16
+        }
+      ]
+    },
+    {
+      "family": "ordinary",
+      "seed": 0,
+      "chart": "t",
+      "t_floor": 0.0,
+      "objective": "residual",
+      "initial_beta": 0.059938205703506164,
+      "initial_h": 0.7598362599167748,
+      "beta": 3.3834337003708746e-14,
+      "t": 1.0000000000000242,
+      "coefficients": [
+        2.000000000000008,
+        -2.8461690765405746e-14
+      ],
+      "iterations": 8,
+      "fits": 9,
+      "seconds": 0.008085167035460472,
+      "stop": "common feasible t residual <= 1e-12",
+      "error_grid": 2.0064767648742193e-14,
+      "feasible_t_residual": 9.735528965425486e-15,
+      "refined_objective_difference": 2.668526229142382e-32,
+      "refined_gradient_difference": 4.507946463614423e-17,
+      "error": 2.009448763958455e-14,
+      "canonical_residual": 9.766017004787535e-15,
+      "gradient_t": 6.154992540332011e-15,
+      "coefficient_residual": 2.3290857273159366e-17,
+      "trace": [
+        {
+          "iteration": 1,
+          "fits": 2,
+          "beta": 0.04689084347013548,
+          "t": 0.6904892142748614,
+          "F": 0.01296663641924794,
+          "canonical_residual": 0.08372477185564339,
+          "feasible_t_residual": 0.08372477185564339
+        },
+        {
+          "iteration": 2,
+          "fits": 3,
+          "beta": -0.00299726725312282,
+          "t": 1.0033150400210937,
+          "F": 2.39533556004296e-06,
+          "canonical_residual": 0.0010738226989382633,
+          "feasible_t_residual": 0.0010738226989382633
+        },
+        {
+          "iteration": 3,
+          "fits": 4,
+          "beta": -0.0004132250463032167,
+          "t": 1.00012500783452,
+          "F": 2.0990855900335595e-08,
+          "canonical_residual": 9.73151436054797e-05,
+          "feasible_t_residual": 9.73151436054797e-05
+        },
+        {
+          "iteration": 4,
+          "fits": 5,
+          "beta": -1.552333813116424e-05,
+          "t": 0.9999885354324654,
+          "F": 4.353252059155974e-11,
+          "canonical_residual": 4.521101503611671e-06,
+          "feasible_t_residual": 4.521101503611671e-06
+        },
+        {
+          "iteration": 5,
+          "fits": 6,
+          "beta": -1.1875966064865235e-07,
+          "t": 0.9999996976735309,
+          "F": 1.3191780569517747e-14,
+          "canonical_residual": 8.130189916132759e-08,
+          "feasible_t_residual": 8.130189916132759e-08
+        },
+        {
+          "iteration": 6,
+          "fits": 7,
+          "beta": 1.2186106743483177e-09,
+          "t": 0.9999999985256809,
+          "F": 4.416621033144754e-19,
+          "canonical_residual": 4.6276725819462345e-10,
+          "feasible_t_residual": 4.6276725819462345e-10
+        },
+        {
+          "iteration": 7,
+          "fits": 8,
+          "beta": 2.3065638552608988e-11,
+          "t": 0.9999999999919487,
+          "F": 6.745494001405206e-23,
+          "canonical_residual": 5.5274978304345645e-12,
+          "feasible_t_residual": 5.5274978304345645e-12
+        },
+        {
+          "iteration": 8,
+          "fits": 9,
+          "beta": 3.3834337003708746e-14,
+          "t": 1.0000000000000242,
+          "F": 2.0129745039900563e-28,
+          "canonical_residual": 9.735528965425486e-15,
+          "feasible_t_residual": 9.735528965425486e-15
+        }
+      ]
+    },
+    {
+      "family": "ordinary",
+      "seed": 0,
+      "chart": "t",
+      "t_floor": 0.0001,
+      "objective": "residual",
+      "initial_beta": 0.059938205703506164,
+      "initial_h": 0.7598362599167748,
+      "beta": 3.3834337003708746e-14,
+      "t": 1.0000000000000242,
+      "coefficients": [
+        2.000000000000008,
+        -2.8461690765405746e-14
+      ],
+      "iterations": 8,
+      "fits": 9,
+      "seconds": 0.007965917000547051,
+      "stop": "common feasible t residual <= 1e-12",
+      "error_grid": 2.0064767648742193e-14,
+      "feasible_t_residual": 9.735528965425486e-15,
+      "refined_objective_difference": 2.668526229142382e-32,
+      "refined_gradient_difference": 4.507946463614423e-17,
+      "error": 2.009448763958455e-14,
+      "canonical_residual": 9.766017004787535e-15,
+      "gradient_t": 6.154992540332011e-15,
+      "coefficient_residual": 2.3290857273159366e-17,
+      "trace": [
+        {
+          "iteration": 1,
+          "fits": 2,
+          "beta": 0.04689084347013548,
+          "t": 0.6904892142748614,
+          "F": 0.01296663641924794,
+          "canonical_residual": 0.08372477185564339,
+          "feasible_t_residual": 0.08372477185564339
+        },
+        {
+          "iteration": 2,
+          "fits": 3,
+          "beta": -0.00299726725312282,
+          "t": 1.0033150400210937,
+          "F": 2.39533556004296e-06,
+          "canonical_residual": 0.0010738226989382633,
+          "feasible_t_residual": 0.0010738226989382633
+        },
+        {
+          "iteration": 3,
+          "fits": 4,
+          "beta": -0.0004132250463032167,
+          "t": 1.00012500783452,
+          "F": 2.0990855900335595e-08,
+          "canonical_residual": 9.73151436054797e-05,
+          "feasible_t_residual": 9.73151436054797e-05
+        },
+        {
+          "iteration": 4,
+          "fits": 5,
+          "beta": -1.552333813116424e-05,
+          "t": 0.9999885354324654,
+          "F": 4.353252059155974e-11,
+          "canonical_residual": 4.521101503611671e-06,
+          "feasible_t_residual": 4.521101503611671e-06
+        },
+        {
+          "iteration": 5,
+          "fits": 6,
+          "beta": -1.1875966064865235e-07,
+          "t": 0.9999996976735309,
+          "F": 1.3191780569517747e-14,
+          "canonical_residual": 8.130189916132759e-08,
+          "feasible_t_residual": 8.130189916132759e-08
+        },
+        {
+          "iteration": 6,
+          "fits": 7,
+          "beta": 1.2186106743483177e-09,
+          "t": 0.9999999985256809,
+          "F": 4.416621033144754e-19,
+          "canonical_residual": 4.6276725819462345e-10,
+          "feasible_t_residual": 4.6276725819462345e-10
+        },
+        {
+          "iteration": 7,
+          "fits": 8,
+          "beta": 2.3065638552608988e-11,
+          "t": 0.9999999999919487,
+          "F": 6.745494001405206e-23,
+          "canonical_residual": 5.5274978304345645e-12,
+          "feasible_t_residual": 5.5274978304345645e-12
+        },
+        {
+          "iteration": 8,
+          "fits": 9,
+          "beta": 3.3834337003708746e-14,
+          "t": 1.0000000000000242,
+          "F": 2.0129745039900563e-28,
+          "canonical_residual": 9.735528965425486e-15,
+          "feasible_t_residual": 9.735528965425486e-15
+        }
+      ]
+    },
+    {
+      "family": "ordinary",
+      "seed": 0,
+      "chart": "t",
+      "t_floor": 1e-08,
+      "objective": "residual",
+      "initial_beta": 0.059938205703506164,
+      "initial_h": 0.7598362599167748,
+      "beta": 3.3834337003708746e-14,
+      "t": 1.0000000000000242,
+      "coefficients": [
+        2.000000000000008,
+        -2.8461690765405746e-14
+      ],
+      "iterations": 8,
+      "fits": 9,
+      "seconds": 0.007905083009973168,
+      "stop": "common feasible t residual <= 1e-12",
+      "error_grid": 2.0064767648742193e-14,
+      "feasible_t_residual": 9.735528965425486e-15,
+      "refined_objective_difference": 2.668526229142382e-32,
+      "refined_gradient_difference": 4.507946463614423e-17,
+      "error": 2.009448763958455e-14,
+      "canonical_residual": 9.766017004787535e-15,
+      "gradient_t": 6.154992540332011e-15,
+      "coefficient_residual": 2.3290857273159366e-17,
+      "trace": [
+        {
+          "iteration": 1,
+          "fits": 2,
+          "beta": 0.04689084347013548,
+          "t": 0.6904892142748614,
+          "F": 0.01296663641924794,
+          "canonical_residual": 0.08372477185564339,
+          "feasible_t_residual": 0.08372477185564339
+        },
+        {
+          "iteration": 2,
+          "fits": 3,
+          "beta": -0.00299726725312282,
+          "t": 1.0033150400210937,
+          "F": 2.39533556004296e-06,
+          "canonical_residual": 0.0010738226989382633,
+          "feasible_t_residual": 0.0010738226989382633
+        },
+        {
+          "iteration": 3,
+          "fits": 4,
+          "beta": -0.0004132250463032167,
+          "t": 1.00012500783452,
+          "F": 2.0990855900335595e-08,
+          "canonical_residual": 9.73151436054797e-05,
+          "feasible_t_residual": 9.73151436054797e-05
+        },
+        {
+          "iteration": 4,
+          "fits": 5,
+          "beta": -1.552333813116424e-05,
+          "t": 0.9999885354324654,
+          "F": 4.353252059155974e-11,
+          "canonical_residual": 4.521101503611671e-06,
+          "feasible_t_residual": 4.521101503611671e-06
+        },
+        {
+          "iteration": 5,
+          "fits": 6,
+          "beta": -1.1875966064865235e-07,
+          "t": 0.9999996976735309,
+          "F": 1.3191780569517747e-14,
+          "canonical_residual": 8.130189916132759e-08,
+          "feasible_t_residual": 8.130189916132759e-08
+        },
+        {
+          "iteration": 6,
+          "fits": 7,
+          "beta": 1.2186106743483177e-09,
+          "t": 0.9999999985256809,
+          "F": 4.416621033144754e-19,
+          "canonical_residual": 4.6276725819462345e-10,
+          "feasible_t_residual": 4.6276725819462345e-10
+        },
+        {
+          "iteration": 7,
+          "fits": 8,
+          "beta": 2.3065638552608988e-11,
+          "t": 0.9999999999919487,
+          "F": 6.745494001405206e-23,
+          "canonical_residual": 5.5274978304345645e-12,
+          "feasible_t_residual": 5.5274978304345645e-12
+        },
+        {
+          "iteration": 8,
+          "fits": 9,
+          "beta": 3.3834337003708746e-14,
+          "t": 1.0000000000000242,
+          "F": 2.0129745039900563e-28,
+          "canonical_residual": 9.735528965425486e-15,
+          "feasible_t_residual": 9.735528965425486e-15
+        }
+      ]
+    },
+    {
+      "family": "ordinary",
+      "seed": 0,
+      "chart": "t",
+      "t_floor": 1e-12,
+      "objective": "residual",
+      "initial_beta": 0.059938205703506164,
+      "initial_h": 0.7598362599167748,
+      "beta": 3.3834337003708746e-14,
+      "t": 1.0000000000000242,
+      "coefficients": [
+        2.000000000000008,
+        -2.8461690765405746e-14
+      ],
+      "iterations": 8,
+      "fits": 9,
+      "seconds": 0.007927832892164588,
+      "stop": "common feasible t residual <= 1e-12",
+      "error_grid": 2.0064767648742193e-14,
+      "feasible_t_residual": 9.735528965425486e-15,
+      "refined_objective_difference": 2.668526229142382e-32,
+      "refined_gradient_difference": 4.507946463614423e-17,
+      "error": 2.009448763958455e-14,
+      "canonical_residual": 9.766017004787535e-15,
+      "gradient_t": 6.154992540332011e-15,
+      "coefficient_residual": 2.3290857273159366e-17,
+      "trace": [
+        {
+          "iteration": 1,
+          "fits": 2,
+          "beta": 0.04689084347013548,
+          "t": 0.6904892142748614,
+          "F": 0.01296663641924794,
+          "canonical_residual": 0.08372477185564339,
+          "feasible_t_residual": 0.08372477185564339
+        },
+        {
+          "iteration": 2,
+          "fits": 3,
+          "beta": -0.00299726725312282,
+          "t": 1.0033150400210937,
+          "F": 2.39533556004296e-06,
+          "canonical_residual": 0.0010738226989382633,
+          "feasible_t_residual": 0.0010738226989382633
+        },
+        {
+          "iteration": 3,
+          "fits": 4,
+          "beta": -0.0004132250463032167,
+          "t": 1.00012500783452,
+          "F": 2.0990855900335595e-08,
+          "canonical_residual": 9.73151436054797e-05,
+          "feasible_t_residual": 9.73151436054797e-05
+        },
+        {
+          "iteration": 4,
+          "fits": 5,
+          "beta": -1.552333813116424e-05,
+          "t": 0.9999885354324654,
+          "F": 4.353252059155974e-11,
+          "canonical_residual": 4.521101503611671e-06,
+          "feasible_t_residual": 4.521101503611671e-06
+        },
+        {
+          "iteration": 5,
+          "fits": 6,
+          "beta": -1.1875966064865235e-07,
+          "t": 0.9999996976735309,
+          "F": 1.3191780569517747e-14,
+          "canonical_residual": 8.130189916132759e-08,
+          "feasible_t_residual": 8.130189916132759e-08
+        },
+        {
+          "iteration": 6,
+          "fits": 7,
+          "beta": 1.2186106743483177e-09,
+          "t": 0.9999999985256809,
+          "F": 4.416621033144754e-19,
+          "canonical_residual": 4.6276725819462345e-10,
+          "feasible_t_residual": 4.6276725819462345e-10
+        },
+        {
+          "iteration": 7,
+          "fits": 8,
+          "beta": 2.3065638552608988e-11,
+          "t": 0.9999999999919487,
+          "F": 6.745494001405206e-23,
+          "canonical_residual": 5.5274978304345645e-12,
+          "feasible_t_residual": 5.5274978304345645e-12
+        },
+        {
+          "iteration": 8,
+          "fits": 9,
+          "beta": 3.3834337003708746e-14,
+          "t": 1.0000000000000242,
+          "F": 2.0129745039900563e-28,
+          "canonical_residual": 9.735528965425486e-15,
+          "feasible_t_residual": 9.735528965425486e-15
+        }
+      ]
+    },
+    {
+      "family": "ordinary",
+      "seed": 0,
+      "chart": "t",
+      "t_floor": 1e-24,
+      "objective": "residual",
+      "initial_beta": 0.059938205703506164,
+      "initial_h": 0.7598362599167748,
+      "beta": 3.3834337003708746e-14,
+      "t": 1.0000000000000242,
+      "coefficients": [
+        2.000000000000008,
+        -2.8461690765405746e-14
+      ],
+      "iterations": 8,
+      "fits": 9,
+      "seconds": 0.007907999912276864,
+      "stop": "common feasible t residual <= 1e-12",
+      "error_grid": 2.0064767648742193e-14,
+      "feasible_t_residual": 9.735528965425486e-15,
+      "refined_objective_difference": 2.668526229142382e-32,
+      "refined_gradient_difference": 4.507946463614423e-17,
+      "error": 2.009448763958455e-14,
+      "canonical_residual": 9.766017004787535e-15,
+      "gradient_t": 6.154992540332011e-15,
+      "coefficient_residual": 2.3290857273159366e-17,
+      "trace": [
+        {
+          "iteration": 1,
+          "fits": 2,
+          "beta": 0.04689084347013548,
+          "t": 0.6904892142748614,
+          "F": 0.01296663641924794,
+          "canonical_residual": 0.08372477185564339,
+          "feasible_t_residual": 0.08372477185564339
+        },
+        {
+          "iteration": 2,
+          "fits": 3,
+          "beta": -0.00299726725312282,
+          "t": 1.0033150400210937,
+          "F": 2.39533556004296e-06,
+          "canonical_residual": 0.0010738226989382633,
+          "feasible_t_residual": 0.0010738226989382633
+        },
+        {
+          "iteration": 3,
+          "fits": 4,
+          "beta": -0.0004132250463032167,
+          "t": 1.00012500783452,
+          "F": 2.0990855900335595e-08,
+          "canonical_residual": 9.73151436054797e-05,
+          "feasible_t_residual": 9.73151436054797e-05
+        },
+        {
+          "iteration": 4,
+          "fits": 5,
+          "beta": -1.552333813116424e-05,
+          "t": 0.9999885354324654,
+          "F": 4.353252059155974e-11,
+          "canonical_residual": 4.521101503611671e-06,
+          "feasible_t_residual": 4.521101503611671e-06
+        },
+        {
+          "iteration": 5,
+          "fits": 6,
+          "beta": -1.1875966064865235e-07,
+          "t": 0.9999996976735309,
+          "F": 1.3191780569517747e-14,
+          "canonical_residual": 8.130189916132759e-08,
+          "feasible_t_residual": 8.130189916132759e-08
+        },
+        {
+          "iteration": 6,
+          "fits": 7,
+          "beta": 1.2186106743483177e-09,
+          "t": 0.9999999985256809,
+          "F": 4.416621033144754e-19,
+          "canonical_residual": 4.6276725819462345e-10,
+          "feasible_t_residual": 4.6276725819462345e-10
+        },
+        {
+          "iteration": 7,
+          "fits": 8,
+          "beta": 2.3065638552608988e-11,
+          "t": 0.9999999999919487,
+          "F": 6.745494001405206e-23,
+          "canonical_residual": 5.5274978304345645e-12,
+          "feasible_t_residual": 5.5274978304345645e-12
+        },
+        {
+          "iteration": 8,
+          "fits": 9,
+          "beta": 3.3834337003708746e-14,
+          "t": 1.0000000000000242,
+          "F": 2.0129745039900563e-28,
+          "canonical_residual": 9.735528965425486e-15,
+          "feasible_t_residual": 9.735528965425486e-15
+        }
+      ]
+    }
+  ]
+}

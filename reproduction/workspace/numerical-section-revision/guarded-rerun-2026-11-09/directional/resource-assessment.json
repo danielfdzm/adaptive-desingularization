@@ -1,0 +1,25 @@
+{
+  "purpose": "Assess accuracy-run concurrency only; not controlled timing evidence.",
+  "hardware_model": "Mac14,2",
+  "physical_cores": 8,
+  "logical_cores": 8,
+  "memory_bytes": 17179869184,
+  "observed_worker_rss_kib": [
+    1124896,
+    1147808
+  ],
+  "observed_worker_cpu_percent": [
+    98.6,
+    99.1
+  ],
+  "memory_pressure_available_percent": 51,
+  "swap_used_megabytes": 3879.25,
+  "ten_second_vm_sample": {
+    "page_size": 16384,
+    "swapins_before": 20101281,
+    "swapins_after": 20101285,
+    "swapouts_before": 23609216,
+    "swapouts_after": 23609216
+  },
+  "decision": "Restart frozen accuracy campaign with four single-thread workers after preserving next completed C run; retain all completed two-worker records and repeat unfinished cases without source/input/fit-limit changes."
+}

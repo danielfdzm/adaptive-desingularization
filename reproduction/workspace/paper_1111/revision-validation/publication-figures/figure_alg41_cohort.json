@@ -1,0 +1,219 @@
+{
+  "description": "Matched-start comparison of the two projected-gradient methods using saved canonical residual traces",
+  "tolerance": 1e-07,
+  "work_cap": 2500,
+  "common_n": 18,
+  "key_order": [
+    "d",
+    "geometry",
+    "seed"
+  ],
+  "common_keys": [
+    [
+      5,
+      0,
+      10
+    ],
+    [
+      5,
+      0,
+      11
+    ],
+    [
+      5,
+      0,
+      12
+    ],
+    [
+      5,
+      1,
+      10
+    ],
+    [
+      5,
+      1,
+      11
+    ],
+    [
+      5,
+      1,
+      12
+    ],
+    [
+      10,
+      0,
+      10
+    ],
+    [
+      10,
+      0,
+      11
+    ],
+    [
+      10,
+      0,
+      12
+    ],
+    [
+      10,
+      1,
+      10
+    ],
+    [
+      10,
+      1,
+      11
+    ],
+    [
+      10,
+      1,
+      12
+    ],
+    [
+      20,
+      0,
+      10
+    ],
+    [
+      20,
+      0,
+      11
+    ],
+    [
+      20,
+      0,
+      12
+    ],
+    [
+      20,
+      1,
+      10
+    ],
+    [
+      20,
+      1,
+      11
+    ],
+    [
+      20,
+      1,
+      12
+    ]
+  ],
+  "representative_key": [
+    10,
+    0,
+    10
+  ],
+  "palette": {
+    "pg_t": "#FF0000",
+    "pg_h": "#0000FF"
+  },
+  "attainment_rule": "First saved residual <= tolerance at fits <= cap; nonattainment stays in the denominator and is not an event",
+  "arms": {
+    "pg_t": {
+      "n": 18,
+      "attained": 13,
+      "not_attained": 5,
+      "attainment_fits": [
+        1180,
+        1227,
+        1471,
+        1999,
+        2007,
+        2133,
+        2209,
+        2279,
+        2282,
+        2373,
+        2388,
+        2420,
+        2456
+      ],
+      "fraction_at_cap": 0.7222222222222222,
+      "median_fits_among_attained": 2209.0,
+      "stops": {
+        "tolerance": 13,
+        "work_limit": 5
+      },
+      "representative_final_fits": 2373,
+      "representative_final_residual": 9.988984890504407e-08
+    },
+    "pg_h": {
+      "n": 18,
+      "attained": 0,
+      "not_attained": 18,
+      "attainment_fits": [],
+      "fraction_at_cap": 0.0,
+      "median_fits_among_attained": null,
+      "stops": {
+        "work_limit": 18
+      },
+      "representative_final_fits": 2500,
+      "representative_final_residual": 9.114234320369032e-05
+    }
+  },
+  "input_files": {
+    "work/alg41-pb-cohort-2026-11-12/results/pg_t/d5_g0_s10.json": "1d85105828a676a395e589e46d0bd2bfa97300b40b6e441377ff90cd22995f1c",
+    "work/alg41-pb-cohort-2026-11-12/results/pg_t/d5_g0_s11.json": "e54f3b3e2fd592bb3e6721c38206a22aaf05542078719b18288a3f367c8e353d",
+    "work/alg41-pb-cohort-2026-11-12/results/pg_t/d5_g0_s12.json": "38d4410e4ceeb51d11658baa87cd487d2ec96337fe5b86718154ab8cb9c7c29a",
+    "work/alg41-pb-cohort-2026-11-12/results/pg_t/d5_g1_s10.json": "3bbd948975834bf890f8390d5f36d213b55f4e5acb9aa390bad932a155a0a950",
+    "work/alg41-pb-cohort-2026-11-12/results/pg_t/d5_g1_s11.json": "1d0ca7057624188715620e081de32587020fb085f1e0e6a17cc2b8ab3fab210e",
+    "work/alg41-pb-cohort-2026-11-12/results/pg_t/d5_g1_s12.json": "bd196c0e0f66c807926e91f5852c32fdc64fda3d53b9c17b87779a5e28ca8c66",
+    "work/alg41-pb-cohort-2026-11-12/results/pg_t/d10_g0_s10.json": "0287228d06477edef3b7a6d0390269005fa34b107050e8b8c9ae7ee891ddd218",
+    "work/alg41-pb-cohort-2026-11-12/results/pg_t/d10_g0_s11.json": "6471eeaad81e397e55224c8baec775cc1e775a3c994eb07ffe1fd22e44ee3d9a",
+    "work/alg41-pb-cohort-2026-11-12/results/pg_t/d10_g0_s12.json": "58fc267de1140bbe230fdf6cab850486e4e79ae11c444202fa85eeb9e99c4e3f",
+    "work/alg41-pb-cohort-2026-11-12/results/pg_t/d10_g1_s10.json": "121b0d8f707d6089317897d80a7ce8a7ba02e3ac61164b8cce5781fdbbc70e00",
+    "work/alg41-pb-cohort-2026-11-12/results/pg_t/d10_g1_s11.json": "66db6597536dc9886ccc8c30a65c9c415348e9dbf2c0faed27c1013d16374def",
+    "work/alg41-pb-cohort-2026-11-12/results/pg_t/d10_g1_s12.json": "cd33f66c0a68f29ae219054b6932f7c9ec502b316e972a41b0d31b0bf84fd8dd",
+    "work/alg41-pb-cohort-2026-11-12/results/pg_t/d20_g0_s10.json": "e47a9b1dbd6adb204efe824e5a62281e2e260b879d7eab52aa8eef64b48c8470",
+    "work/alg41-pb-cohort-2026-11-12/results/pg_t/d20_g0_s11.json": "1468672bb20dde76ec823174de746e2c2215871760fcc175b9fcdb64173f2264",
+    "work/alg41-pb-cohort-2026-11-12/results/pg_t/d20_g0_s12.json": "acf90ff5342cc0409c54d2abafc3142c1ae27cbcfad900ecee71dc12183123f4",
+    "work/alg41-pb-cohort-2026-11-12/results/pg_t/d20_g1_s10.json": "256752b0e38432d69aad775f4a909179bb2aba38183ab1ae7bc15b57696686e6",
+    "work/alg41-pb-cohort-2026-11-12/results/pg_t/d20_g1_s11.json": "2dd1e64b60965dbaba35d06480f9359addf46a058c3756d42a88a18de7b8683f",
+    "work/alg41-pb-cohort-2026-11-12/results/pg_t/d20_g1_s12.json": "d1825ce3eca812978c78bf7e139cee9c10622c645f573e5989b1285505c3319f",
+    "work/alg41-pb-cohort-2026-11-12/results/pg_h/d5_g0_s10.json": "a7c7fcc34741782449fc67bf22ec02225413deef79421afb4e60de5e76d8425c",
+    "work/alg41-pb-cohort-2026-11-12/results/pg_h/d5_g0_s11.json": "7e4bcf0c40ca5a11ec057182d740ac440b703497bffea5f4fed6819d9e9d67ea",
+    "work/alg41-pb-cohort-2026-11-12/results/pg_h/d5_g0_s12.json": "cd001734ee431b7d24217fe4f03b8128aa53d9d40dfe044875d30309ea579762",
+    "work/alg41-pb-cohort-2026-11-12/results/pg_h/d5_g1_s10.json": "2516b97eca526e3ed92a7a93dccffdd62794d032b594ce4c1aadd40d57a366fc",
+    "work/alg41-pb-cohort-2026-11-12/results/pg_h/d5_g1_s11.json": "a072e1a82d0f13966fd7356c21d8514012c157439740c454d4162da289b7cf08",
+    "work/alg41-pb-cohort-2026-11-12/results/pg_h/d5_g1_s12.json": "5bfbd68de882debf4cbc51c4d74f75fd02b8c520c070fdda661c5e20e55d2124",
+    "work/alg41-pb-cohort-2026-11-12/results/pg_h/d10_g0_s10.json": "d0fa15eb61dfd8cc25c20d833ccdeab3c60805c94392aed62b20967aa60bc4ba",
+    "work/alg41-pb-cohort-2026-11-12/results/pg_h/d10_g0_s11.json": "476a9c7075871c07de3ef7e3a7cf7020ff9d77a991775735c1a5df30df845e2f",
+    "work/alg41-pb-cohort-2026-11-12/results/pg_h/d10_g0_s12.json": "efeef14f86e94a495e37a9e37a31f33a1b7e691ad287584d6f1e7a1c0938d4ca",
+    "work/alg41-pb-cohort-2026-11-12/results/pg_h/d10_g1_s10.json": "099b163fa817583c7fa40543cedac9b30a1e9da45554327826bcb2b89610cec1",
+    "work/alg41-pb-cohort-2026-11-12/results/pg_h/d10_g1_s11.json": "930710be59b8befe9abeabd666ad3a96f0838e1ada8013f6f3304815febe1560",
+    "work/alg41-pb-cohort-2026-11-12/results/pg_h/d10_g1_s12.json": "4f25dbeb36a1e1810e1289ad8420bae45acd7e9771d4514e1d3444172cfbcf30",
+    "work/alg41-pb-cohort-2026-11-12/results/pg_h/d20_g0_s10.json": "1fb6f7554c9bad78209c41532ab49a6cbab7cacc107545108be6382eb66d8594",
+    "work/alg41-pb-cohort-2026-11-12/results/pg_h/d20_g0_s11.json": "ca238fe0c42e72309b2874733b8c64fb3d33b0f3fc0548e073552f33c0510b0e",
+    "work/alg41-pb-cohort-2026-11-12/results/pg_h/d20_g0_s12.json": "0341bab36560c28bea2b16aee50862a911c6dc0b89d9ad326252574226f25a60",
+    "work/alg41-pb-cohort-2026-11-12/results/pg_h/d20_g1_s10.json": "e83b07ac3c49431e490b4be1280fe555eecca204565c3da999cb5a5b7601fde3",
+    "work/alg41-pb-cohort-2026-11-12/results/pg_h/d20_g1_s11.json": "61976c65a3d9c852d5da26ca0c6dd6743f4a239a91fb5d6e0275042ab68b306d",
+    "work/alg41-pb-cohort-2026-11-12/results/pg_h/d20_g1_s12.json": "d9b1ad0c5344ed8c2a79720418fa6fca40c0df3efb0b0708a9fa9b5d4b7718f1"
+  },
+  "layout_check": {
+    "visible_text_artists": 25,
+    "text_data_intersections": 0,
+    "text_text_intersections": 0,
+    "clipped_text": 0
+  },
+  "panel_geometry": [
+    {
+      "width_inches": 1.8458158995815896,
+      "height_inches": 1.8458158995815894,
+      "width_to_height_ratio": 1.0000000000000002
+    },
+    {
+      "width_inches": 1.8458158995815896,
+      "height_inches": 1.84581589958159,
+      "width_to_height_ratio": 0.9999999999999998
+    }
+  ],
+  "generator_sha256": "e7d15cb13170c18547200a574a4e1701d52a31978ae77ffb68231049a1b6d16b",
+  "style_sha256": "fa23bfedc456173dd771ad33707d3918aa6dbac246d7b7eba86e794f2180f1b2",
+  "outputs_sha256": {
+    "pdf": "dba25855cbef0777bf55541fc76b0336cf1328380e8941686451851d540e33a2",
+    "svg": "7c75f93286d12470d5a3b8de166bf8049b63d9e8b1e9192ce65d40819d9406ca",
+    "png": "5c31eb9092b5733e41932cafc1bc12a16f4f2eeac50befbd09c717b2497bffc3"
+  }
+}

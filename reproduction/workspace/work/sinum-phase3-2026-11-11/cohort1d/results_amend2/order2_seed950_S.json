@@ -1,0 +1,172 @@
+{
+  "stationarity": {
+    "projected_gradient_max_abs": 0.007994463347131386,
+    "gradient_max_abs": 0.007994463347131386,
+    "active_bounds": 0,
+    "normalized_coefficient_kkt": 1.734597918867055e-11,
+    "final_objective_normalized": -0.4007341056519667,
+    "final_chain_slopes": []
+  },
+  "final_squared_halfgaps": [],
+  "zero_gap_pairs": 0,
+  "method": "standard_restart",
+  "d": 1,
+  "fits": 31,
+  "iterations": 12,
+  "stop": "function_tolerance",
+  "final_relative_error": 0.4341276381815257,
+  "trace_final_error_double": 0.4341272748148594,
+  "coefficient_norm": 263741.21844471083,
+  "completions": 0,
+  "joins": 0,
+  "rejections": 0,
+  "blocks_final": {
+    "atom": 3
+  },
+  "wall": 0.7316040829755366,
+  "solve_seconds": 0.7197800830472261,
+  "optimizer_seconds": 0.7197800830472261,
+  "posthoc_validation_seconds": 0.011825208086520433,
+  "postprocessing_seconds": 0.011825500056147575,
+  "guard_counts": {},
+  "guard_examples": [],
+  "coordinate_convention": "dimensionless p_hat = (q/sigma)/prod((t_i-t_j)/sigma)",
+  "trace": [
+    {
+      "fits": 1,
+      "iterations": 0,
+      "wall": 0.006769208004698157,
+      "relative_error": 0.4605158105016775,
+      "coefficient_norm": 5.482993903525382,
+      "completions": 0,
+      "joins": 0,
+      "blocks": {
+        "atom": 3
+      }
+    },
+    {
+      "fits": 27,
+      "iterations": 11,
+      "wall": 0.6109844581224024,
+      "relative_error": 0.4341272748148594,
+      "coefficient_norm": 263741.21844471083,
+      "completions": 0,
+      "joins": 0,
+      "blocks": {
+        "atom": 3
+      }
+    },
+    {
+      "fits": 31,
+      "iterations": 12,
+      "wall": 0.7197456660214812,
+      "relative_error": 0.4341272748148594,
+      "coefficient_norm": 263741.21844471083,
+      "completions": 0,
+      "joins": 0,
+      "blocks": {
+        "atom": 3
+      }
+    }
+  ],
+  "events": [],
+  "final_blocks": [
+    {
+      "kind": "atom",
+      "id": 1,
+      "c": [
+        -0.38894419855877665
+      ]
+    },
+    {
+      "kind": "atom",
+      "id": 2,
+      "c": [
+        -0.39229481219469214
+      ]
+    },
+    {
+      "kind": "atom",
+      "id": 3,
+      "c": [
+        -0.3929052132091437
+      ]
+    }
+  ],
+  "final_coefficients": [
+    -30949.318969684195,
+    200031.57221729436,
+    -169082.6427469442
+  ],
+  "order": 2,
+  "seed": 950,
+  "phase3_method": "S",
+  "sigma": 0.65,
+  "lambda_value": 10.0,
+  "target": [
+    [
+      [
+        0.4028126657772118
+      ]
+    ],
+    [
+      [
+        1.0
+      ]
+    ],
+    [
+      2
+    ],
+    [
+      0.3000434392963963
+    ]
+  ],
+  "target_shift": 0.4028126657772118,
+  "target_amplitude_factor": 0.7101619865003462,
+  "initial_centers": [
+    [
+      -0.42598888229486853
+    ],
+    [
+      -0.9052506065879508
+    ],
+    [
+      -0.16094120530978556
+    ]
+  ],
+  "width": 3,
+  "stage": "phase-3 enlarged cohort",
+  "setup_seconds": 0.008509875042364001,
+  "end_to_end_seconds": 0.7282899580895901,
+  "validation": {
+    "quadrature": [
+      {
+        "nodes": 384,
+        "box": 10.0,
+        "quadratic_gap": 0.2840514965374658,
+        "nonlinear_gap": 0.015170114065065094,
+        "total_gap": 0.2992216106025309,
+        "target_nonlinear_over_quadratic": 0.03468753291293234
+      },
+      {
+        "nodes": 768,
+        "box": 10.0,
+        "quadratic_gap": 0.2840514965374658,
+        "nonlinear_gap": 0.01517011406559516,
+        "total_gap": 0.29922161060306096,
+        "target_nonlinear_over_quadratic": 0.03468753291293736
+      },
+      {
+        "nodes": 768,
+        "box": 12.0,
+        "quadratic_gap": 0.2840514965374658,
+        "nonlinear_gap": 0.01517011406550954,
+        "total_gap": 0.29922161060297536,
+        "target_nonlinear_over_quadratic": 0.034687532912937385
+      }
+    ],
+    "normalized_coefficient_kkt": 1.7345979188670546e-11,
+    "normalized_maximum_gap_change": 1.4745444074370492e-13
+  },
+  "independent_validation_seconds": 0.0832462920807302
+}

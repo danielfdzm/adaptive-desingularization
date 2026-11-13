@@ -1,0 +1,65 @@
+--- historical/final-experiments/pb/run.py
++++ current/final-experiments/pb/run.py
+@@ -306,13 +306,7 @@
+         M = block_gram(cs).numpy()
+         q = abs(float(M[0,1]/math.sqrt(M[0,0]*M[1,1])))
+         ratio = math.sqrt(max(0.,1-q))
+-        ix=offsets(self.blocks)
+-        a, beta=self.coef[ix[i]:ix[i+1]]
+-        wg=np.array([a/2+beta/(2*h),a/2-beta/(2*h)])
+-        stable=block_gram([b]).numpy()
+-        norm=math.sqrt(max(float(np.array([a,beta])@stable@np.array([a,beta])),1e-300))
+-        cancellation=float(np.linalg.norm(wg)*self.rho0/norm)
+-        return ratio,cancellation
++        return ratio
+ 
+     def regroup(self):
+         changed=False
+@@ -391,11 +385,11 @@
+         for i,b in enumerate(self.blocks):
+             if b["kind"]!="pair" or b["completed"]:
+                 continue
+-            ratio,cancellation=self.diagnostics(i)
+-            flag=2*b["h"]<=.5*SIGMA and (ratio<=.1 or cancellation>=10.)
++            ratio=self.diagnostics(i)
++            flag=2*b["h"]<=.5*SIGMA and ratio<=.1
+             self.flags[b["id"]]=self.flags.get(b["id"],0)+1 if flag else 0
+             self.events.append({"kind":"scan","fits":self.fits,"scan":self.scans,"block_id":b["id"],
+-                                "gram_smallest_singular_value":ratio,"cancellation":cancellation,"flag":flag,
++                                "gram_smallest_singular_value":ratio,"flag":flag,
+                                 "persistence":self.flags[b["id"]],"h":b["h"]})
+             if self.method == "adaptive" and self.flags[b["id"]]>=2 and self.transfer(i):
+                 return True
+--- historical/final-experiments/linear/run.py
++++ current/final-experiments/linear/run.py
+@@ -203,10 +203,10 @@
+         if self.method=='stable': return changed
+         for i,b in enumerate(self.blocks):
+             if b['kind']!='pair' or b['completed']: continue
+-            ratio,cancellation=self.diagnostics(i)
+-            flag=2*b['h']<=.5*SIGMA and (ratio<=.1 or cancellation>=10.)
++            ratio=self.diagnostics(i)
++            flag=2*b['h']<=.5*SIGMA and ratio<=.1
+             self.flags[b['id']]=self.flags.get(b['id'],0)+1 if flag else 0
+-            self.events.append(dict(kind='scan',fits=self.fits,block_id=b['id'],flag=flag,persistence=self.flags[b['id']],h=b['h'],gram_smallest_singular_value=ratio,cancellation=cancellation))
++            self.events.append(dict(kind='scan',fits=self.fits,block_id=b['id'],flag=flag,persistence=self.flags[b['id']],h=b['h'],gram_smallest_singular_value=ratio))
+             if self.flags[b['id']]>=2 and self.transfer(i): return True
+         return changed
+ 
+--- historical/final-experiments/linear/base_solver.py
++++ current/final-experiments/linear/base_solver.py
+@@ -127,13 +127,7 @@
+             M = block_gram(cs).numpy()
+             q = abs(float(M[0,1]/math.sqrt(M[0,0]*M[1,1])))
+             ratio = math.sqrt(max(0.,1-q))
+-            ix=offsets(self.blocks)
+-            a, beta=self.coef[ix[i]:ix[i+1]]
+-            wg=np.array([a/2+beta/(2*h),a/2-beta/(2*h)])
+-            stable=block_gram([b]).numpy()
+-            norm=math.sqrt(max(float(np.array([a,beta])@stable@np.array([a,beta])),1e-300))
+-            cancellation=float(np.linalg.norm(wg)*self.rho0/norm)
+-            return ratio,cancellation
++            return ratio
+ 
+     def regroup(self):
+             changed=False

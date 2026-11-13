@@ -1,0 +1,51 @@
+Independent algebraic check for the SINUM review, 12 November 2026
+
+Run: python3 verify_nonsmoothable_cubic.py
+Requires SymPy and NumPy. This is an auxiliary review computation, not a
+modification or numerical rerun of the manuscript.
+
+Source for the cubic: Robert Szafarczyk, New elementary components of the
+Gorenstein locus of the Hilbert scheme of points, Communications in Algebra
+51 (2023), 2688--2704, Section 4.
+https://arxiv.org/html/2206.03732v2#S4
+
+Ordinary-derivative convention:
+Q = a1*b1*c1 + a2*b2*c2
+    + (a1*a2^2 + b1*b2^2 + c1*c2^2)/2
+    + (a1^3 + b1^3 + c1^3)/6.
+
+The checked derivative ranks are [1,6,6,1], with total 14.
+For I=Ann(Q), the degree-2 and degree-3 pieces have dimensions 15 and 55.
+Products I_2*I_2 have rational rank 120 in 126 quartics, and I_2*I_3
+have rational rank 252 in all 252 quintics. These ranks are certified by
+Gaussian elimination modulo 10007 reaching the corresponding matrix
+column/row upper bounds. Consequently S/I^2 has Hilbert function
+[1,6,21,56,6,0] and length 90. Since A=S/I is Gorenstein of length 14,
+the Hilbert-scheme tangent space Hom_A(I/I^2,A) has dimension 90-14=76,
+strictly less than the 6*14=84 dimension of the smoothable component.
+Thus A is not smoothable even over C.
+
+For sigma=1 put p(xi)=-Q(xi)-(xi_a1+xi_b1+xi_c1). The script verifies
+p(partial)G=QG. The Hermite map preserves derivative-space dimension,
+so p has derivative-space dimension 14.
+
+Connection to the Gaussian H^1 closure (mathematical inference):
+Suppose v_n/G=g_n, each a sum of at most 14 exponentials, converges in
+distributions to Q. This follows if v_n converges to QG in H^1.
+Choose 14 derivatives of Q forming a basis and 14 compactly supported
+test functions giving an invertible pairing matrix. The same derivatives
+of g_n converge distributionally and form bases of their 14-dimensional
+exponential spaces for all sufficiently large n. The matrices representing
+each partial derivative in these bases converge, because their entries
+are computed by the fixed test-function pairings. The basis can include
+Q itself (and g_n correspondingly), giving a cyclic vector. These are
+coordinates on a Hilbert-scheme chart: the annihilator ideals of the
+14 distinct exponential rates converge to Ann(Q). Hence A would lie in
+the smoothable component, contradicting tangent dimension 76<84.
+Therefore QG is not in C_14 despite satisfying the dimension-14 condition.
+
+Implication for the manuscript: Theorem 2.3 is necessary-only and survives.
+The unrestricted sufficiency question at paper.tex:371-372 and in the
+conclusion cannot be left as a wholly open question in every dimension.
+This is a correction to the literature/open-problem discussion, not a
+counterexample to the main attainment or derivative-form theorems.

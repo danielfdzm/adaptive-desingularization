@@ -1,0 +1,217 @@
+{
+ "problem": "multipole4_scale055_nonlinear",
+ "seed": 201,
+ "method": "adaptive",
+ "capacity": 3,
+ "sigma": 0.55,
+ "reaction": 10.0,
+ "initial_centers": [
+  -0.6027798765362544,
+  0.010989998360206255,
+  0.7465024046057493
+ ],
+ "fits": 67,
+ "iterations": 16,
+ "stop": "abnormal",
+ "coefficient_norm": 2.7889520511862127,
+ "completions": 1,
+ "joins": 1,
+ "rejections": 0,
+ "blocks_final": {
+  "chain2": 1
+ },
+ "solve_seconds": 0.6367216659709811,
+ "trace": [
+  {
+   "fits": 1,
+   "iterations": 0,
+   "wall": 0.01207708299625665,
+   "energy": -0.011769453066323727,
+   "coefficient_norm": 10.983788215254393,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 3
+   }
+  },
+  {
+   "fits": 7,
+   "iterations": 5,
+   "wall": 0.044798332965001464,
+   "energy": -0.01642885382307258,
+   "coefficient_norm": 99.3217619893388,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 3
+   }
+  },
+  {
+   "fits": 8,
+   "iterations": 5,
+   "wall": 0.05029966600704938,
+   "energy": -0.016428853823072572,
+   "coefficient_norm": 57.354149319990995,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 1,
+    "pair": 1
+   }
+  },
+  {
+   "fits": 16,
+   "iterations": 10,
+   "wall": 0.2810142079833895,
+   "energy": -0.016537318163686723,
+   "coefficient_norm": 6073.573095981272,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 1,
+    "pair": 1
+   }
+  },
+  {
+   "fits": 17,
+   "iterations": 10,
+   "wall": 0.2911537910113111,
+   "energy": -0.016537318163772585,
+   "coefficient_norm": 2.7895258571757515,
+   "completions": 0,
+   "joins": 1,
+   "blocks": {
+    "line2": 1
+   }
+  },
+  {
+   "fits": 29,
+   "iterations": 15,
+   "wall": 0.4144949580077082,
+   "energy": -0.01653795137214505,
+   "coefficient_norm": 2.788952051186216,
+   "completions": 0,
+   "joins": 1,
+   "blocks": {
+    "line2": 1
+   }
+  },
+  {
+   "fits": 29,
+   "iterations": 15,
+   "wall": 0.41528808302246034,
+   "energy": -0.01653795137214505,
+   "coefficient_norm": 2.788952051186216,
+   "completions": 0,
+   "joins": 1,
+   "blocks": {
+    "line2": 1
+   }
+  },
+  {
+   "fits": 30,
+   "iterations": 15,
+   "wall": 0.44289533293340355,
+   "energy": -0.01653795137214504,
+   "coefficient_norm": 2.7889520511862127,
+   "completions": 1,
+   "joins": 1,
+   "blocks": {
+    "chain2": 1
+   }
+  },
+  {
+   "fits": 44,
+   "iterations": 16,
+   "wall": 0.5202588749816641,
+   "energy": -0.016537951372145046,
+   "coefficient_norm": 2.7889520511862127,
+   "completions": 1,
+   "joins": 1,
+   "blocks": {
+    "chain2": 1
+   }
+  },
+  {
+   "fits": 67,
+   "iterations": 16,
+   "wall": 0.6366663749795407,
+   "energy": -0.016537951372145046,
+   "coefficient_norm": 2.7889520511862127,
+   "completions": 1,
+   "joins": 1,
+   "blocks": {
+    "chain2": 1
+   }
+  }
+ ],
+ "events": [
+  {
+   "kind": "pair",
+   "fits": 7,
+   "h": 0.10385738379276684
+  },
+  {
+   "kind": "join",
+   "fits": 16,
+   "into": "pair",
+   "base": "pair",
+   "order": 2,
+   "s": -0.02870953407781457,
+   "q": 0.0
+  },
+  {
+   "kind": "completion",
+   "fits": 29,
+   "from": "line",
+   "base": "pair",
+   "order": 2,
+   "omega": 0.0,
+   "a_priori_bound": 8.774521103774487e-07,
+   "centre_shift": -5.737315302421575e-09,
+   "tolerance": 0.1305891003855025,
+   "dJ_normalized": 1.0408340855860843e-17,
+   "eps_normalized": 0.0005
+  }
+ ],
+ "final_blocks": [
+  {
+   "kind": "chain",
+   "k": 2,
+   "id": 6,
+   "c": [
+    0.2299999998346241
+   ],
+   "e": [
+    -1.0
+   ]
+  }
+ ],
+ "final_coefficients": [
+  -2.1557535865508832,
+  -7.660000776399302e-10,
+  -1.7694575490496476
+ ],
+ "forcing_squared_norm": 23030.82222520512,
+ "error": 0.3299986540894762,
+ "validation": [
+  {
+   "nodes": 1024,
+   "error": 0.3299986540894764,
+   "energy": -380.8826180209175,
+   "reference_energy": -406.73593161173994,
+   "nonlinear_to_quadratic_energy_ratio": 0.6842720698816156,
+   "reference_peak": 3.6121224951840816
+  },
+  {
+   "nodes": 1536,
+   "error": 0.3299986540894762,
+   "energy": -380.8826180209335,
+   "reference_energy": -406.7359316117571,
+   "nonlinear_to_quadratic_energy_ratio": 0.6842720698816102,
+   "reference_peak": 3.6131383801774857
+  }
+ ],
+ "reference_refinement_relative_H1": 3.513163251381833e-13,
+ "total_seconds": 0.640497290994972
+}

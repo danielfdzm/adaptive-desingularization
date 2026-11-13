@@ -1,0 +1,114 @@
+{
+ "problem": "multipole5_nonlinear",
+ "seed": 201,
+ "method": "standard_restart",
+ "capacity": 4,
+ "sigma": 0.55,
+ "reaction": 10.0,
+ "initial_centers": [
+  -1.3527798765362544,
+  -0.48901000163979375,
+  0.4965024046057493,
+  1.527592318023637
+ ],
+ "fits": 289,
+ "iterations": 23,
+ "stop": "exception",
+ "coefficient_norm": 6146768.641629346,
+ "completions": 0,
+ "joins": 0,
+ "rejections": 0,
+ "blocks_final": {
+  "atom": 4
+ },
+ "solve_seconds": 1.925623832968995,
+ "trace": [
+  {
+   "fits": 1,
+   "iterations": 0,
+   "wall": 0.005361249903216958,
+   "energy": -0.0013885710404120332,
+   "coefficient_norm": 3.4422730798751107,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 4
+   }
+  },
+  {
+   "fits": 123,
+   "iterations": 20,
+   "wall": 0.9352617079857737,
+   "energy": -0.009129828992251985,
+   "coefficient_norm": 3222579.968507901,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 4
+   }
+  },
+  {
+   "fits": 176,
+   "iterations": 20,
+   "wall": 1.2145335419336334,
+   "energy": -0.009129828992251985,
+   "coefficient_norm": 3222579.968507901,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 4
+   }
+  },
+  {
+   "fits": 289,
+   "iterations": 23,
+   "wall": 1.9256033329293132,
+   "energy": -0.009130494502097514,
+   "coefficient_norm": 6146768.641629346,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 4
+   }
+  }
+ ],
+ "events": [],
+ "final_blocks": [
+  {
+   "kind": "atom",
+   "id": 1,
+   "c": [
+    -0.20341919243171688
+   ]
+  },
+  {
+   "kind": "atom",
+   "id": 2,
+   "c": [
+    -0.17831952676706433
+   ]
+  },
+  {
+   "kind": "atom",
+   "id": 3,
+   "c": [
+    -0.18019644282223243
+   ]
+  },
+  {
+   "kind": "atom",
+   "id": 4,
+   "c": [
+    -0.19798778889676322
+   ]
+  }
+ ],
+ "final_coefficients": [
+  1084695.3805190374,
+  -3706039.91845009,
+  4428022.521536386,
+  -1806677.9837091973
+ ],
+ "forcing_squared_norm": 13085.694446139285,
+ "exception": "RuntimeError('reference: The maximum number of mesh nodes is exceeded.')"
+}

@@ -1,0 +1,172 @@
+{
+  "stationarity": {
+    "projected_gradient_max_abs": 0.00011859580058626307,
+    "gradient_max_abs": 0.00011859580058626307,
+    "active_bounds": 0,
+    "normalized_coefficient_kkt": 2.628541104346518e-12,
+    "final_objective_normalized": -0.4999998736255994,
+    "final_chain_slopes": []
+  },
+  "final_squared_halfgaps": [],
+  "zero_gap_pairs": 0,
+  "method": "standard_restart",
+  "d": 1,
+  "fits": 86,
+  "iterations": 7,
+  "stop": "abnormal",
+  "final_relative_error": 0.0005111049377593453,
+  "trace_final_error_double": 0.0004769548431833074,
+  "coefficient_norm": 19635.72908818532,
+  "completions": 0,
+  "joins": 0,
+  "rejections": 0,
+  "blocks_final": {
+    "atom": 3
+  },
+  "wall": 1.058024208061397,
+  "solve_seconds": 1.050420792074874,
+  "optimizer_seconds": 1.050420792074874,
+  "posthoc_validation_seconds": 0.007604582933709025,
+  "postprocessing_seconds": 0.007604874903336167,
+  "guard_counts": {},
+  "guard_examples": [],
+  "coordinate_convention": "dimensionless p_hat = (q/sigma)/prod((t_i-t_j)/sigma)",
+  "trace": [
+    {
+      "fits": 1,
+      "iterations": 0,
+      "wall": 0.008459167089313269,
+      "relative_error": 0.4395231140822052,
+      "coefficient_norm": 4339.234227359576,
+      "completions": 0,
+      "joins": 0,
+      "blocks": {
+        "atom": 3
+      }
+    },
+    {
+      "fits": 56,
+      "iterations": 7,
+      "wall": 0.6496826249640435,
+      "relative_error": 0.000486357093678746,
+      "coefficient_norm": 19635.730179504288,
+      "completions": 0,
+      "joins": 0,
+      "blocks": {
+        "atom": 3
+      }
+    },
+    {
+      "fits": 86,
+      "iterations": 7,
+      "wall": 1.0503847079817206,
+      "relative_error": 0.0004769548431833074,
+      "coefficient_norm": 19635.72908818532,
+      "completions": 0,
+      "joins": 0,
+      "blocks": {
+        "atom": 3
+      }
+    }
+  ],
+  "events": [],
+  "final_blocks": [
+    {
+      "kind": "atom",
+      "id": 1,
+      "c": [
+        0.2925242848501524
+      ]
+    },
+    {
+      "kind": "atom",
+      "id": 2,
+      "c": [
+        0.29170300574089875
+      ]
+    },
+    {
+      "kind": "atom",
+      "id": 3,
+      "c": [
+        0.22462037140707325
+      ]
+    }
+  ],
+  "final_coefficients": [
+    13799.316973240231,
+    -13968.255705628753,
+    168.9391571566846
+  ],
+  "order": 2,
+  "seed": 972,
+  "phase3_method": "S",
+  "sigma": 0.65,
+  "lambda_value": 10.0,
+  "target": [
+    [
+      [
+        0.26951200326222313
+      ]
+    ],
+    [
+      [
+        1.0
+      ]
+    ],
+    [
+      2
+    ],
+    [
+      0.38430631972675017
+    ]
+  ],
+  "target_shift": 0.26951200326222313,
+  "target_amplitude_factor": 0.9096007567497044,
+  "initial_centers": [
+    [
+      0.6584669061986475
+    ],
+    [
+      0.6574962271909299
+    ],
+    [
+      0.5304105323093729
+    ]
+  ],
+  "width": 3,
+  "stage": "phase-3 enlarged cohort",
+  "setup_seconds": 0.009100208058953285,
+  "end_to_end_seconds": 1.0595210001338273,
+  "validation": {
+    "quadrature": [
+      {
+        "nodes": 384,
+        "box": 10.0,
+        "quadratic_gap": 6.45905743831045e-07,
+        "nonlinear_gap": 5.413744894626124e-08,
+        "total_gap": 7.000431927773062e-07,
+        "target_nonlinear_over_quadratic": 0.05738700596288983
+      },
+      {
+        "nodes": 768,
+        "box": 10.0,
+        "quadratic_gap": 6.45905743831045e-07,
+        "nonlinear_gap": 5.4137449025076574e-08,
+        "total_gap": 7.000431928561216e-07,
+        "target_nonlinear_over_quadratic": 0.05738700596289826
+      },
+      {
+        "nodes": 768,
+        "box": 12.0,
+        "quadratic_gap": 6.45905743831045e-07,
+        "nonlinear_gap": 5.413744910991445e-08,
+        "total_gap": 7.000431929409594e-07,
+        "target_nonlinear_over_quadratic": 0.057387005962898224
+      }
+    ],
+    "normalized_coefficient_kkt": 2.628541104346518e-12,
+    "normalized_maximum_gap_change": 3.309371912340443e-17
+  },
+  "independent_validation_seconds": 0.1560923750512302
+}

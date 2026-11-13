@@ -1,0 +1,231 @@
+{
+ "stationarity": {
+  "projected_gradient_max_abs": 3.0558887564521853e-09,
+  "gradient_max_abs": 3.0558887564521853e-09,
+  "active_bounds": 1,
+  "normalized_coefficient_kkt": 9.852172926272363e-17,
+  "final_objective_normalized": -0.4999999999999995,
+  "final_chain_slopes": []
+ },
+ "final_squared_halfgaps": [],
+ "zero_gap_pairs": 0,
+ "method": "stable",
+ "d": 1,
+ "fits": 63,
+ "iterations": 53,
+ "stop": "function_tolerance",
+ "final_relative_error": 3.44543484953665e-08,
+ "trace_final_error_double": 3.163549305247561e-08,
+ "coefficient_norm": 2.121350524781623,
+ "completions": 0,
+ "joins": 1,
+ "rejections": 0,
+ "blocks_final": {
+  "atom": 1,
+  "pair": 1,
+  "line2": 1
+ },
+ "wall": 5.065951791824773,
+ "solve_seconds": 4.569090541917831,
+ "optimizer_seconds": 4.569090541917831,
+ "posthoc_validation_seconds": 0.49686204199679196,
+ "postprocessing_seconds": 0.496862499974668,
+ "guard_counts": {},
+ "guard_examples": [],
+ "coordinate_convention": "dimensionless p_hat = (q/sigma)/prod((t_i-t_j)/sigma)",
+ "trace": [
+  {
+   "fits": 1,
+   "iterations": 0,
+   "wall": 0.23854691698215902,
+   "relative_error": 0.04246811934641484,
+   "coefficient_norm": 34.57598638741787,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 6
+   }
+  },
+  {
+   "fits": 2,
+   "iterations": 0,
+   "wall": 0.2553375419229269,
+   "relative_error": 0.04246811934637163,
+   "coefficient_norm": 16.925071784951754,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 2,
+    "pair": 2
+   }
+  },
+  {
+   "fits": 23,
+   "iterations": 20,
+   "wall": 1.295929874991998,
+   "relative_error": 0.00013508921552384472,
+   "coefficient_norm": 607.6157339711889,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 2,
+    "pair": 2
+   }
+  },
+  {
+   "fits": 24,
+   "iterations": 20,
+   "wall": 1.3810333339497447,
+   "relative_error": 0.00013509709852345349,
+   "coefficient_norm": 2.1229339342996116,
+   "completions": 0,
+   "joins": 1,
+   "blocks": {
+    "atom": 1,
+    "pair": 1,
+    "line2": 1
+   }
+  },
+  {
+   "fits": 46,
+   "iterations": 40,
+   "wall": 3.127855708822608,
+   "relative_error": 6.265691391316879e-06,
+   "coefficient_norm": 2.121710782819185,
+   "completions": 0,
+   "joins": 1,
+   "blocks": {
+    "atom": 1,
+    "pair": 1,
+    "line2": 1
+   }
+  },
+  {
+   "fits": 60,
+   "iterations": 52,
+   "wall": 4.358662749873474,
+   "relative_error": 3.163549305247561e-08,
+   "coefficient_norm": 2.121350537334161,
+   "completions": 0,
+   "joins": 1,
+   "blocks": {
+    "atom": 1,
+    "pair": 1,
+    "line2": 1
+   }
+  },
+  {
+   "fits": 63,
+   "iterations": 53,
+   "wall": 4.565793458838016,
+   "relative_error": 3.163549305247561e-08,
+   "coefficient_norm": 2.121350524781623,
+   "completions": 0,
+   "joins": 1,
+   "blocks": {
+    "atom": 1,
+    "pair": 1,
+    "line2": 1
+   }
+  }
+ ],
+ "events": [
+  {
+   "kind": "pair",
+   "fits": 1,
+   "h": 0.09321605158158404
+  },
+  {
+   "kind": "pair",
+   "fits": 1,
+   "h": 0.09649108554094743
+  },
+  {
+   "kind": "join",
+   "fits": 23,
+   "into": "pair",
+   "base": "pair",
+   "order": 2,
+   "s": -0.0478353041475863,
+   "q": 0.0
+  }
+ ],
+ "final_blocks": [
+  {
+   "kind": "atom",
+   "id": 1,
+   "c": [
+    -2.100000010809264
+   ]
+  },
+  {
+   "kind": "pair",
+   "id": 7,
+   "c": [
+    -2.3506169274799038e-08
+   ],
+   "e": [
+    -1.0
+   ],
+   "h": 6e-13
+  },
+  {
+   "kind": "line",
+   "base": "pair",
+   "k": 2,
+   "id": 9,
+   "c": [
+    2.199732688283395
+   ],
+   "e": [
+    -1.0
+   ],
+   "h": 2.15612722528336e-12,
+   "s": [
+    -0.0008020271503297917
+   ],
+   "p": [
+    [
+     0.0
+    ]
+   ]
+  }
+ ],
+ "final_coefficients": [
+  0.9999999975223709,
+  0.7999999101893029,
+  -1.19999997692381,
+  -0.8999998501829118,
+  0.6002406205079247,
+  0.4998396944916299
+ ],
+ "setup_seconds": 0.027792915934696794,
+ "end_to_end_seconds": 4.5968834578525275,
+ "timing_scope": "problem, quadrature, target and solver setup + initial coefficient fit through solver termination; excludes high-precision endpoint validation, imports, process launch and JSON I/O",
+ "input_sha256": {
+  "X": "0eb79f53b19ffb823d4f5b475aaa72814d5ac3249e80eb95e6b09e69f6a60e9d",
+  "W": "56c1eb4c95c6c5b71c638387128699cedfff15ce63286a37cb7bd7bbed802d1c",
+  "starts": "3814db010e4a611d96321ad02db1643f1f4bc16ef6a9174d95e0795bd8e3d82d"
+ },
+ "problem": "linear1d",
+ "geometry": 0,
+ "seed": 6,
+ "slots": 6,
+ "phase1_control": "NC with the Taylor-series pair evaluator of C below t = T_SWITCH sigma^2 (h-chart unchanged)",
+ "series_switch": {
+  "evaluations_with_series_pair": 51
+ },
+ "source_sha256": {
+  "src/chain_experiments.py": "f82ab1cd991c835929c96a8fc15d8652c8bb1062219b9ac89b39b64235a06fbc",
+  "src/chain_kernels.py": "26d1e4972976ba49fc70ee53f9fab60e52d5251eaa334ba43c8cf7729b32a0ae",
+  "src/chain_solver.py": "2a23acc6b52f259f54b76e80a9e1822ed02b2116706b479c8756e4effa63ad6b",
+  "src/config.py": "54517c2adcf5ef507bc8528e4fc35fa34ec405fddc211fb729e8bc213d2f3c90",
+  "src/directional_guard.py": "22ac3b90826d4b90378e772bceec00d17d509cafc391a80adc22ad5a8fdae876",
+  "src/fit.py": "98aef2bb1dcdebc14510af261ee7b96cc7ebfef24006644cbd433443fbb713d4",
+  "src/kernels.py": "49cd15bc5fb530e90a3bb7da0a9a4bb4b5eb96861de38dfbd5c62f1f5fdbf8ef",
+  "src/quadrature.py": "4b4f026ff8b45d2d0fed6caf36303b56be3a8587b807805650108fd670f50b80",
+  "src/safeguard_cleanup.py": "fcae79f6a1e02099c65a2e1b7c7b8836f9193250237a9748b1264fafbe5d442f",
+  "src/test_guard.py": "d8391d1640d2060dd31786011a3907f615fdf9499cf908a0c0e7e7a62c419978",
+  "chain_series_runner.py": "0a5a3b01d3451bf627a9ab10f1f07ba3d3d8da813022a6c20662f598843def85"
+ }
+}

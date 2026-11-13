@@ -1,0 +1,53 @@
+{
+  "events": [
+    {
+      "event": "original_launch",
+      "concurrent_workers": 2,
+      "parent_pid": 55821,
+      "worker_pids": [
+        55829,
+        55830
+      ],
+      "provenance_file": "accuracy-higher/provenance-workers2.json",
+      "provenance_sha256": "e292e3eab565ab1a98f647567c5d5ac677c469d75e233c4d846092c01dcaf4f7"
+    },
+    {
+      "event": "approved_restart_plan",
+      "recorded_unix": 1794241109.687686,
+      "from_workers": 2,
+      "to_workers": 4,
+      "reason": "Four single-thread workers fit current memory/CPU capacity; completed cases retained, partial cases restarted without changing numerical source, inputs or fit limits. All concurrency timings remain accuracy diagnostics, not benchmark evidence.",
+      "completed_before_restart": {
+        "higher_d5_g0_seed10_adaptive.json": "a69ffd87edd56014467fcb903369fb240aaa6dfe5cad31dde3ac3d7995d87d63",
+        "higher_d5_g0_seed10_stable.json": "3ed5b9ed6de72d0e420837d34bc3e02234fb2e1a3f1b3b90c5d28241f4fae394",
+        "higher_d5_g0_seed11_adaptive.json": "3c156e0b1f0e74a017f77df919d837a47c37e772face59f77bdad57aa81e1697",
+        "higher_d5_g0_seed11_stable.json": "f26e6848447ae11ca4734073f87d062fa6baa43be3f1e6a0fb94e89d3136fc67"
+      }
+    },
+    {
+      "event": "verified_stop_and_resume",
+      "recorded_unix": 1794241410.6345222,
+      "stopped_pids": [
+        55821,
+        55829,
+        55830
+      ],
+      "signal": "SIGTERM",
+      "completed_files_retained": {
+        "higher_d5_g0_seed10_adaptive.json": "a69ffd87edd56014467fcb903369fb240aaa6dfe5cad31dde3ac3d7995d87d63",
+        "higher_d5_g0_seed10_stable.json": "3ed5b9ed6de72d0e420837d34bc3e02234fb2e1a3f1b3b90c5d28241f4fae394",
+        "higher_d5_g0_seed11_adaptive.json": "3c156e0b1f0e74a017f77df919d837a47c37e772face59f77bdad57aa81e1697",
+        "higher_d5_g0_seed11_stable.json": "f26e6848447ae11ca4734073f87d062fa6baa43be3f1e6a0fb94e89d3136fc67"
+      },
+      "partial_computations_discarded": [
+        "higher_d5_g0_seed12_stable",
+        "higher_d5_g0_seed12_adaptive"
+      ],
+      "reason": "Scheduling only: resume four workers without changing any source, input, fitting limit, or requested outcome.",
+      "new_workers": 4,
+      "python": "/opt/miniconda3/bin/python",
+      "resumed_provenance_file": "accuracy-higher/provenance-workers4.json",
+      "resumed_provenance_sha256": "726cd71b7f04d8ccc44c71337a3217bcbc1b82c673daf9e4546d2d516984fde9"
+    }
+  ]
+}

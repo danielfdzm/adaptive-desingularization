@@ -1,0 +1,9 @@
+{
+  "phase":"exploratory raw-coordinate baseline added after stable pilot",
+  "cases":"all six pilot cases with a<=0.5, without excluding any seeds",
+  "seeds":[200,201,202],
+  "S_joint":"Joint L-BFGS-B of two raw weights and centers, initialized at same state as NC by fitted initial coefficients. Same objective scaling, 300 iterations, 1000 evaluations, gtol1e-10, ftol1e-14. Weights unbounded; centers[-3,3].",
+  "S_vp":"Raw-center variable projection with direct dense unregularized coefficient fits, same raw initial centers and outer settings. Singular/ill-conditioned coefficient failures recorded; no ridge or coefficient bound.",
+  "caveat":"S_joint differs from NC both in representation and coefficient elimination; only S_vp isolates raw versus stable coordinates with coefficient fitting. NC remains the principal comparator.",
+  "reserved_seeds":"900-909 remain untouched"
+}

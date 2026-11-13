@@ -1,0 +1,113 @@
+{
+ "problem": "multipole4_linear",
+ "seed": 201,
+ "method": "standard_restart",
+ "capacity": 3,
+ "sigma": 0.55,
+ "reaction": 0.0,
+ "initial_centers": [
+  -1.3527798765362544,
+  0.010989998360206255,
+  1.4965024046057493
+ ],
+ "fits": 122,
+ "iterations": 16,
+ "stop": "abnormal",
+ "coefficient_norm": 54340.26373268268,
+ "completions": 0,
+ "joins": 0,
+ "rejections": 0,
+ "blocks_final": {
+  "atom": 3
+ },
+ "solve_seconds": 0.3390566660091281,
+ "trace": [
+  {
+   "fits": 1,
+   "iterations": 0,
+   "wall": 0.0019250409677624702,
+   "energy": -0.0022060450566354682,
+   "coefficient_norm": 1.0555095513700938,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 3
+   }
+  },
+  {
+   "fits": 84,
+   "iterations": 15,
+   "wall": 0.21893354097846895,
+   "energy": -0.008158090279667145,
+   "coefficient_norm": 19568.702711858885,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 3
+   }
+  },
+  {
+   "fits": 122,
+   "iterations": 16,
+   "wall": 0.3390253749676049,
+   "energy": -0.008158090673415077,
+   "coefficient_norm": 54340.26373268268,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 3
+   }
+  }
+ ],
+ "events": [],
+ "final_blocks": [
+  {
+   "kind": "atom",
+   "id": 1,
+   "c": [
+    -1.549600804022821
+   ]
+  },
+  {
+   "kind": "atom",
+   "id": 2,
+   "c": [
+    0.6106940327017687
+   ]
+  },
+  {
+   "kind": "atom",
+   "id": 3,
+   "c": [
+    0.610666952674041
+   ]
+  }
+ ],
+ "final_coefficients": [
+  0.3703244668927432,
+  -38424.119585970904,
+  38424.618364316586
+ ],
+ "forcing_squared_norm": 669.9875556423301,
+ "error": 0.7880225069610235,
+ "validation": [
+  {
+   "nodes": 1024,
+   "error": 0.7880225069609043,
+   "energy": -5.465818930837777,
+   "reference_energy": -14.420904725399229,
+   "nonlinear_to_quadratic_energy_ratio": 0.0,
+   "reference_peak": 1.7263346579516958
+  },
+  {
+   "nodes": 1536,
+   "error": 0.7880225069610235,
+   "energy": -5.465818930786346,
+   "reference_energy": -14.420904725399803,
+   "nonlinear_to_quadratic_energy_ratio": 0.0,
+   "reference_peak": 1.7276127950505422
+  }
+ ],
+ "reference_refinement_relative_H1": 1.9974946521322529e-13,
+ "total_seconds": 0.3418982500443235
+}

@@ -1,0 +1,41 @@
+{
+  "source": "work/independent-tests-2026-11-08/forcing_chain/pilot/runs/multipole4_linear-200-adaptive.json",
+  "problem": "multipole4_linear",
+  "seed": 200,
+  "method": "adaptive",
+  "status": "validated",
+  "error": 0.7880225063250752,
+  "checks": [
+    {
+      "nodes": 1024,
+      "error": 0.7880225063250744,
+      "energy": -5.465818945251831,
+      "reference_energy": -14.420904725398042,
+      "nonlinear_to_quadratic_ratio": 0.0,
+      "reference_peak": 1.726334657951559
+    },
+    {
+      "nodes": 1536,
+      "error": 0.7880225063250756,
+      "energy": -5.4658189452520265,
+      "reference_energy": -14.420904725398236,
+      "nonlinear_to_quadratic_ratio": 0.0,
+      "reference_peak": 1.7276127950503921
+    },
+    {
+      "nodes": 2048,
+      "error": 0.7880225063250752,
+      "energy": -5.465818945252009,
+      "reference_energy": -14.420904725398533,
+      "nonlinear_to_quadratic_ratio": 0.0,
+      "reference_peak": 1.7277747622851414
+    }
+  ],
+  "reference_relative_H1_difference": 9.110965166213551e-13,
+  "base_mesh_nodes": 6834,
+  "fine_mesh_nodes": 10249,
+  "fits": 52,
+  "completions": 1,
+  "joins": 0,
+  "original_stop": "function_tolerance"
+}

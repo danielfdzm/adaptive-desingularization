@@ -1,0 +1,98 @@
+{
+ "problem": "multipole5_linear",
+ "seed": 201,
+ "method": "standard_restart",
+ "capacity": 4,
+ "sigma": 0.55,
+ "reaction": 0.0,
+ "initial_centers": [
+  -1.3527798765362544,
+  -0.48901000163979375,
+  0.4965024046057493,
+  1.527592318023637
+ ],
+ "fits": 22,
+ "iterations": 9,
+ "stop": "singular unconstrained coefficient system",
+ "coefficient_norm": 28.827388583282048,
+ "completions": 0,
+ "joins": 0,
+ "rejections": 0,
+ "blocks_final": {
+  "atom": 4
+ },
+ "solve_seconds": 0.09638879203703254,
+ "trace": [
+  {
+   "fits": 1,
+   "iterations": 0,
+   "wall": 0.005479958024807274,
+   "energy": -0.0016213377643622664,
+   "coefficient_norm": 0.8868195123757551,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 4
+   }
+  }
+ ],
+ "events": [],
+ "final_blocks": [
+  {
+   "kind": "atom",
+   "id": 1,
+   "c": [
+    -0.7968644952220181
+   ]
+  },
+  {
+   "kind": "atom",
+   "id": 2,
+   "c": [
+    -0.4489525850583133
+   ]
+  },
+  {
+   "kind": "atom",
+   "id": 3,
+   "c": [
+    -0.30382124556842416
+   ]
+  },
+  {
+   "kind": "atom",
+   "id": 4,
+   "c": [
+    0.571818512436819
+   ]
+  }
+ ],
+ "final_coefficients": [
+  6.146011913012958,
+  -22.137550821998065,
+  17.37431728658694,
+  -1.1431590112937213
+ ],
+ "forcing_squared_norm": 523.4277778455712,
+ "error": 0.6843327827089944,
+ "validation": [
+  {
+   "nodes": 1024,
+   "error": 0.6843327827089936,
+   "energy": -4.734582103381262,
+   "reference_energy": -8.904802030437082,
+   "nonlinear_to_quadratic_energy_ratio": 0.0,
+   "reference_peak": 1.0387049913464226
+  },
+  {
+   "nodes": 1536,
+   "error": 0.6843327827089944,
+   "energy": -4.734582103381476,
+   "reference_energy": -8.904802030437466,
+   "nonlinear_to_quadratic_energy_ratio": 0.0,
+   "reference_peak": 1.0401220708377013
+  }
+ ],
+ "reference_refinement_relative_H1": 2.413227488644569e-13,
+ "total_seconds": 0.10031629202421755
+}

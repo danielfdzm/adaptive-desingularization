@@ -1,0 +1,216 @@
+{
+ "stationarity": {
+  "projected_gradient_max_abs": 5.285221399752374e-09,
+  "gradient_max_abs": 5.285221399752374e-09,
+  "active_bounds": 0,
+  "normalized_coefficient_kkt": 1.7075485514067577e-16,
+  "final_objective_normalized": -0.4999999999999992,
+  "final_chain_slopes": []
+ },
+ "final_squared_halfgaps": [],
+ "zero_gap_pairs": 0,
+ "method": "stable",
+ "d": 1,
+ "fits": 69,
+ "iterations": 54,
+ "stop": "function_tolerance",
+ "final_relative_error": 4.149014491910115e-08,
+ "trace_final_error_double": 3.874540786996375e-08,
+ "coefficient_norm": 2.1212907548582707,
+ "completions": 0,
+ "joins": 1,
+ "rejections": 0,
+ "blocks_final": {
+  "atom": 1,
+  "line2": 1,
+  "pair": 1
+ },
+ "wall": 3.3000851250253618,
+ "solve_seconds": 2.7662242089863867,
+ "optimizer_seconds": 2.7662242089863867,
+ "posthoc_validation_seconds": 0.5338619160465896,
+ "postprocessing_seconds": 0.5338622911367565,
+ "guard_counts": {},
+ "guard_examples": [],
+ "coordinate_convention": "dimensionless p_hat = (q/sigma)/prod((t_i-t_j)/sigma)",
+ "trace": [
+  {
+   "fits": 1,
+   "iterations": 0,
+   "wall": 0.037348374957218766,
+   "relative_error": 0.11001403926721859,
+   "coefficient_norm": 40.2388616276191,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 6
+   }
+  },
+  {
+   "fits": 2,
+   "iterations": 0,
+   "wall": 0.057458417024463415,
+   "relative_error": 0.11001403926728227,
+   "coefficient_norm": 24.164852463305813,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 2,
+    "pair": 2
+   }
+  },
+  {
+   "fits": 23,
+   "iterations": 20,
+   "wall": 0.6144122090190649,
+   "relative_error": 0.0003585073524488559,
+   "coefficient_norm": 222.20997456480788,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 2,
+    "pair": 2
+   }
+  },
+  {
+   "fits": 24,
+   "iterations": 20,
+   "wall": 0.6663659589830786,
+   "relative_error": 0.0003585068876493395,
+   "coefficient_norm": 2.117720082024137,
+   "completions": 0,
+   "joins": 1,
+   "blocks": {
+    "atom": 1,
+    "line2": 1,
+    "pair": 1
+   }
+  },
+  {
+   "fits": 46,
+   "iterations": 40,
+   "wall": 1.6968023751396686,
+   "relative_error": 9.388317832669387e-06,
+   "coefficient_norm": 2.1208152939606784,
+   "completions": 0,
+   "joins": 1,
+   "blocks": {
+    "atom": 1,
+    "line2": 1,
+    "pair": 1
+   }
+  },
+  {
+   "fits": 61,
+   "iterations": 53,
+   "wall": 2.335177083965391,
+   "relative_error": 3.874540786996375e-08,
+   "coefficient_norm": 2.121290754859,
+   "completions": 0,
+   "joins": 1,
+   "blocks": {
+    "atom": 1,
+    "line2": 1,
+    "pair": 1
+   }
+  },
+  {
+   "fits": 69,
+   "iterations": 54,
+   "wall": 2.760890542063862,
+   "relative_error": 3.874540786996375e-08,
+   "coefficient_norm": 2.1212907548582707,
+   "completions": 0,
+   "joins": 1,
+   "blocks": {
+    "atom": 1,
+    "line2": 1,
+    "pair": 1
+   }
+  }
+ ],
+ "events": [
+  {
+   "kind": "pair",
+   "fits": 1,
+   "h": 0.09219524152607073
+  },
+  {
+   "kind": "pair",
+   "fits": 1,
+   "h": 0.11428333350464057
+  },
+  {
+   "kind": "join",
+   "fits": 23,
+   "into": "pair",
+   "base": "pair",
+   "order": 2,
+   "s": 0.0813529385951095,
+   "q": 0.0
+  }
+ ],
+ "final_blocks": [
+  {
+   "kind": "atom",
+   "id": 1,
+   "c": [
+    -2.100000000699454
+   ]
+  },
+  {
+   "kind": "line",
+   "base": "pair",
+   "k": 2,
+   "id": 9,
+   "c": [
+    2.2002609728300238
+   ],
+   "e": [
+    -1.0
+   ],
+   "h": 0.0002372433758719737,
+   "s": [
+    0.0007828099910824069
+   ],
+   "p": [
+    [
+     0.0
+    ]
+   ]
+  },
+  {
+   "kind": "pair",
+   "id": 8,
+   "c": [
+    -2.2062514396599204e-08
+   ],
+   "e": [
+    -1.0
+   ],
+   "h": 6.031037462662815e-13
+  }
+ ],
+ "final_coefficients": [
+  1.0000000002116995,
+  -0.8999998188919419,
+  0.599765175985597,
+  0.5001567151128841,
+  0.7999999168890897,
+  -1.199999966332562
+ ],
+ "setup_seconds": 0.031947958981618285,
+ "end_to_end_seconds": 2.798172167968005,
+ "timing_scope": "problem, quadrature, target and solver setup + initial coefficient fit through solver termination; excludes high-precision endpoint validation, imports, process launch and JSON I/O",
+ "input_sha256": {
+  "X": "0eb79f53b19ffb823d4f5b475aaa72814d5ac3249e80eb95e6b09e69f6a60e9d",
+  "W": "56c1eb4c95c6c5b71c638387128699cedfff15ce63286a37cb7bd7bbed802d1c",
+  "starts": "35063719c50dab1207033b8807e8cc1726b7784b63f42bfa0bd08c36427096d3"
+ },
+ "problem": "linear1d",
+ "geometry": 0,
+ "seed": 9,
+ "slots": 6,
+ "timing_mode": "accuracy",
+ "concurrent_workers": 1
+}

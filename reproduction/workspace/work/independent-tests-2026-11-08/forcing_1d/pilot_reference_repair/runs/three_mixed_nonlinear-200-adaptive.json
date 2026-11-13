@@ -1,0 +1,218 @@
+{
+ "problem": "three_mixed_nonlinear",
+ "capacity": 6,
+ "seed": 200,
+ "method": "adaptive",
+ "sigma": 0.55,
+ "reaction": 10.0,
+ "initial_centers": [
+  -1.4559497568962585,
+  -0.8508240085861761,
+  -0.44102950426730947,
+  0.20334940270127233,
+  0.9220489947748095,
+  1.5153492052878232
+ ],
+ "budget": null,
+ "budget_rule": null,
+ "coefficient_constraint": "none",
+ "fits": 95,
+ "seconds": 0.2862842499744147,
+ "status": "ABNORMAL: ",
+ "completed_count": 3,
+ "error": 0.41179063626473095,
+ "energy": -0.026657668473033788,
+ "validation": [
+  {
+   "nodes": 768,
+   "error": 0.41179065913907353,
+   "energy": -0.026657828949334942
+  },
+  {
+   "nodes": 1024,
+   "error": 0.41179063626473095,
+   "energy": -0.026657668473033788
+  }
+ ],
+ "reference_refinement_relative_H1": 1.7642843089632598e-13,
+ "final_p": [
+  -1.000516542289499,
+  0.09078569317043016,
+  1.0377118222142676
+ ],
+ "completed": [
+  true,
+  true,
+  true
+ ],
+ "coefficients": [
+  0.5437504976511204,
+  0.8155748900820217,
+  0.29126597539068017,
+  -0.21154247892529385,
+  -0.7002791288293579,
+  1.1068197297823072
+ ],
+ "budget_ratio": null,
+ "coefficient_cost": 15.693449424466898,
+ "kkt": 1.7763568394002505e-15,
+ "trace": [
+  {
+   "fits": 22,
+   "energy": -0.026657674115427167,
+   "p": [
+    -1.0024443111040198,
+    1e-08,
+    0.08078292009012861,
+    1e-08,
+    1.0424916349514268,
+    1e-08
+   ],
+   "gradient": 5.7840063794241816e-05,
+   "completed": [
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "fits": 35,
+   "energy": -0.026657828949334935,
+   "p": [
+    -1.0005165424366833,
+    1e-08,
+    0.09078569319601079,
+    1e-08,
+    1.0377118221486905,
+    1e-08
+   ],
+   "gradient": 7.405371322017231e-11,
+   "completed": [
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "fits": 38,
+   "energy": -0.026657828949334935,
+   "p": [
+    -1.0005165423626297,
+    0.09078569318317162,
+    1e-08,
+    1.037711822181872,
+    1e-08
+   ],
+   "gradient": 7.313066968341073e-11,
+   "completed": [
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "fits": 41,
+   "energy": -0.026657828949334935,
+   "p": [
+    -1.000516542289499,
+    0.09078569317043016,
+    1.0377118222142676,
+    1e-08
+   ],
+   "gradient": 7.222097783491917e-11,
+   "completed": [
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "fits": 55,
+   "energy": -0.026657828949334942,
+   "p": [
+    -1.000516542289495,
+    0.09078569317042946,
+    1.0377118222142694
+   ],
+   "gradient": 7.222091875899686e-11,
+   "completed": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "fits": 75,
+   "energy": -0.026657828949334942,
+   "p": [
+    -1.000516542289495,
+    0.09078569317042946,
+    1.0377118222142694
+   ],
+   "gradient": 7.222091875899686e-11,
+   "completed": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "fits": 95,
+   "energy": -0.026657828949334942,
+   "p": [
+    -1.000516542289495,
+    0.09078569317042946,
+    1.0377118222142694
+   ],
+   "gradient": 7.222091875899686e-11,
+   "completed": [
+    true,
+    true,
+    true
+   ]
+  }
+ ],
+ "events": [
+  {
+   "block": 0,
+   "fits": 35,
+   "half_gap": 1e-08,
+   "state_change": 6.530528738054768e-16,
+   "analytic_bound": 6.255336636324216e-16,
+   "relative_bound": 1.1876440711819583e-16,
+   "energy_change": 0.0,
+   "energy_allowance": 0.0005,
+   "accepted": true
+  },
+  {
+   "block": 1,
+   "fits": 38,
+   "half_gap": 1e-08,
+   "state_change": 2.2135718593603538e-16,
+   "analytic_bound": 2.2687594069457994e-16,
+   "relative_bound": 4.30748785437769e-17,
+   "energy_change": 0.0,
+   "energy_allowance": 0.00025,
+   "accepted": true
+  },
+  {
+   "block": 2,
+   "fits": 41,
+   "half_gap": 1e-08,
+   "state_change": 9.16785831056357e-16,
+   "analytic_bound": 8.327190650746905e-16,
+   "relative_bound": 1.5810082144194228e-16,
+   "energy_change": -6.938893903907228e-18,
+   "energy_allowance": 0.000125,
+   "accepted": true
+  }
+ ],
+ "selection": "best evaluated geometry within final representation",
+ "reference_diagnostics": {
+  "reference_peak": 1.4960367787895432,
+  "reference_H1_squared": 34.751250354997126,
+  "nonlinear_to_quadratic_energy_ratio": 0.15028474741583486,
+  "source_squared_norm": 838.1742311828901,
+  "reference_mesh_nodes": 21837
+ }
+}

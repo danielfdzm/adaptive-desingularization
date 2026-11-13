@@ -1,0 +1,43 @@
+{
+  "args": {
+    "cases": [
+      "multi6_nonlinear",
+      "multi6_redundant"
+    ],
+    "seeds": [
+      200,
+      201,
+      202
+    ],
+    "methods": [
+      "standard",
+      "stable",
+      "adaptive",
+      "squared"
+    ],
+    "max_fits": 1200,
+    "order": 72,
+    "output": "pilot-multi6"
+  },
+  "cases": {
+    "multi6_nonlinear": {
+      "shape": "multi6",
+      "a": 0.22,
+      "amplitude": 45.0,
+      "lam": 10.0,
+      "capacity": 12
+    },
+    "multi6_redundant": {
+      "shape": "multi6",
+      "a": 0.22,
+      "amplitude": 45.0,
+      "lam": 10.0,
+      "capacity": 14
+    }
+  },
+  "source_hash": "74c43cbcabc7fc2a5547908994d97bf58bd5e348bdc34956b698b7250054a7ec",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "torch": "2.10.0",
+  "retention": "all requested outcomes including failures; no holdout tuning"
+}

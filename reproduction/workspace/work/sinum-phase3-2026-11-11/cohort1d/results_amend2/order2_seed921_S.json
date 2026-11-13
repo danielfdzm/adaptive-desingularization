@@ -1,0 +1,172 @@
+{
+  "stationarity": {
+    "projected_gradient_max_abs": 0.00042363395914435387,
+    "gradient_max_abs": 0.00042363395914435387,
+    "active_bounds": 0,
+    "normalized_coefficient_kkt": 2.4656578311235372e-11,
+    "final_objective_normalized": -0.39533413260853667,
+    "final_chain_slopes": []
+  },
+  "final_squared_halfgaps": [],
+  "zero_gap_pairs": 0,
+  "method": "standard_restart",
+  "d": 1,
+  "fits": 29,
+  "iterations": 12,
+  "stop": "function_tolerance",
+  "final_relative_error": 0.4366600711914441,
+  "trace_final_error_double": 0.43665980541152394,
+  "coefficient_norm": 109377.3099152653,
+  "completions": 0,
+  "joins": 0,
+  "rejections": 0,
+  "blocks_final": {
+    "atom": 3
+  },
+  "wall": 1.5357598748523742,
+  "solve_seconds": 1.4915105409454554,
+  "optimizer_seconds": 1.4915105409454554,
+  "posthoc_validation_seconds": 0.04425129201263189,
+  "postprocessing_seconds": 0.04425154207274318,
+  "guard_counts": {},
+  "guard_examples": [],
+  "coordinate_convention": "dimensionless p_hat = (q/sigma)/prod((t_i-t_j)/sigma)",
+  "trace": [
+    {
+      "fits": 1,
+      "iterations": 0,
+      "wall": 0.007608999963849783,
+      "relative_error": 0.4483986130431248,
+      "coefficient_norm": 15.384105840634279,
+      "completions": 0,
+      "joins": 0,
+      "blocks": {
+        "atom": 3
+      }
+    },
+    {
+      "fits": 21,
+      "iterations": 10,
+      "wall": 1.2100056658964604,
+      "relative_error": 0.4366602700146561,
+      "coefficient_norm": 109383.75103420686,
+      "completions": 0,
+      "joins": 0,
+      "blocks": {
+        "atom": 3
+      }
+    },
+    {
+      "fits": 29,
+      "iterations": 12,
+      "wall": 1.4914464999455959,
+      "relative_error": 0.43665980541152394,
+      "coefficient_norm": 109377.3099152653,
+      "completions": 0,
+      "joins": 0,
+      "blocks": {
+        "atom": 3
+      }
+    }
+  ],
+  "events": [],
+  "final_blocks": [
+    {
+      "kind": "atom",
+      "id": 1,
+      "c": [
+        -0.594168853795312
+      ]
+    },
+    {
+      "kind": "atom",
+      "id": 2,
+      "c": [
+        -0.5962851211093912
+      ]
+    },
+    {
+      "kind": "atom",
+      "id": 3,
+      "c": [
+        -0.599460772214064
+      ]
+    }
+  ],
+  "final_coefficients": [
+    -53360.120509347405,
+    88697.81639009577,
+    -35338.2346921401
+  ],
+  "order": 2,
+  "seed": 921,
+  "phase3_method": "S",
+  "sigma": 0.65,
+  "lambda_value": 10.0,
+  "target": [
+    [
+      [
+        0.20540952620460676
+      ]
+    ],
+    [
+      [
+        1.0
+      ]
+    ],
+    [
+      2
+    ],
+    [
+      0.44035303590272235
+    ]
+  ],
+  "target_shift": 0.20540952620460676,
+  "target_amplitude_factor": 1.0422557062786326,
+  "initial_centers": [
+    [
+      -0.5545596816141878
+    ],
+    [
+      -0.33812459730064953
+    ],
+    [
+      -0.7354652769687682
+    ]
+  ],
+  "width": 3,
+  "stage": "phase-3 enlarged cohort",
+  "setup_seconds": 0.008235833141952753,
+  "end_to_end_seconds": 1.4997463740874082,
+  "validation": {
+    "quadrature": [
+      {
+        "nodes": 384,
+        "box": 10.0,
+        "quadratic_gap": 0.6189889451895016,
+        "nonlinear_gap": 0.06057634282044684,
+        "total_gap": 0.6795652880099485,
+        "target_nonlinear_over_quadratic": 0.07585648590528661
+      },
+      {
+        "nodes": 768,
+        "box": 10.0,
+        "quadratic_gap": 0.6189889451895016,
+        "nonlinear_gap": 0.060576342820794465,
+        "total_gap": 0.6795652880102961,
+        "target_nonlinear_over_quadratic": 0.07585648590529762
+      },
+      {
+        "nodes": 768,
+        "box": 12.0,
+        "quadratic_gap": 0.6189889451895016,
+        "nonlinear_gap": 0.0605763428200445,
+        "total_gap": 0.6795652880095462,
+        "target_nonlinear_over_quadratic": 0.07585648590529756
+      }
+    ],
+    "normalized_coefficient_kkt": 2.4656578311235372e-11,
+    "normalized_maximum_gap_change": 1.1550735981201076e-13
+  },
+  "independent_validation_seconds": 0.11851170798763633
+}

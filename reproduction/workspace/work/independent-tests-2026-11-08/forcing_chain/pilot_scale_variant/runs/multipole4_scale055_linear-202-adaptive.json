@@ -1,0 +1,217 @@
+{
+ "problem": "multipole4_scale055_linear",
+ "seed": 202,
+ "method": "adaptive",
+ "capacity": 3,
+ "sigma": 0.55,
+ "reaction": 0.0,
+ "initial_centers": [
+  -0.7961137500228773,
+  -0.016903227607677294,
+  0.8447265400729354
+ ],
+ "fits": 38,
+ "iterations": 19,
+ "stop": "function_tolerance",
+ "coefficient_norm": 1.1421994020385857,
+ "completions": 1,
+ "joins": 1,
+ "rejections": 0,
+ "blocks_final": {
+  "chain2": 1
+ },
+ "solve_seconds": 0.2700067500118166,
+ "trace": [
+  {
+   "fits": 1,
+   "iterations": 0,
+   "wall": 0.003298457944765687,
+   "energy": -0.022343091953119752,
+   "coefficient_norm": 4.861990408754811,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 3
+   }
+  },
+  {
+   "fits": 9,
+   "iterations": 5,
+   "wall": 0.032917332951910794,
+   "energy": -0.03837730480025929,
+   "coefficient_norm": 19.738705656225477,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 3
+   }
+  },
+  {
+   "fits": 10,
+   "iterations": 5,
+   "wall": 0.037233166047371924,
+   "energy": -0.03837730480025932,
+   "coefficient_norm": 11.585696027301216,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 1,
+    "pair": 1
+   }
+  },
+  {
+   "fits": 17,
+   "iterations": 10,
+   "wall": 0.0748107909457758,
+   "energy": -0.038703352551516995,
+   "coefficient_norm": 129.25020612743288,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 1,
+    "pair": 1
+   }
+  },
+  {
+   "fits": 18,
+   "iterations": 10,
+   "wall": 0.08587508299387991,
+   "energy": -0.03870335255150755,
+   "coefficient_norm": 1.1584470034804066,
+   "completions": 0,
+   "joins": 1,
+   "blocks": {
+    "line2": 1
+   }
+  },
+  {
+   "fits": 27,
+   "iterations": 15,
+   "wall": 0.1805399579461664,
+   "energy": -0.03871111503619118,
+   "coefficient_norm": 1.1421994021549868,
+   "completions": 0,
+   "joins": 1,
+   "blocks": {
+    "line2": 1
+   }
+  },
+  {
+   "fits": 29,
+   "iterations": 17,
+   "wall": 0.20288279093801975,
+   "energy": -0.03871111503624521,
+   "coefficient_norm": 1.1421994020385866,
+   "completions": 0,
+   "joins": 1,
+   "blocks": {
+    "line2": 1
+   }
+  },
+  {
+   "fits": 30,
+   "iterations": 17,
+   "wall": 0.22407837503124028,
+   "energy": -0.038711115036245206,
+   "coefficient_norm": 1.1421994020385857,
+   "completions": 1,
+   "joins": 1,
+   "blocks": {
+    "chain2": 1
+   }
+  },
+  {
+   "fits": 33,
+   "iterations": 18,
+   "wall": 0.240678415982984,
+   "energy": -0.03871111503624522,
+   "coefficient_norm": 1.1421994020385857,
+   "completions": 1,
+   "joins": 1,
+   "blocks": {
+    "chain2": 1
+   }
+  },
+  {
+   "fits": 38,
+   "iterations": 19,
+   "wall": 0.26995454099960625,
+   "energy": -0.03871111503624523,
+   "coefficient_norm": 1.1421994020385857,
+   "completions": 1,
+   "joins": 1,
+   "blocks": {
+    "chain2": 1
+   }
+  }
+ ],
+ "events": [
+  {
+   "kind": "pair",
+   "fits": 9,
+   "h": 0.18310385805323437
+  },
+  {
+   "kind": "join",
+   "fits": 17,
+   "into": "pair",
+   "base": "pair",
+   "order": 2,
+   "s": -0.15187507526963692,
+   "q": 0.0
+  },
+  {
+   "kind": "completion",
+   "fits": 29,
+   "from": "line",
+   "base": "pair",
+   "order": 2,
+   "omega": 0.0,
+   "a_priori_bound": 2.028426869644972e-11,
+   "centre_shift": 0.0,
+   "tolerance": 0.08445348109056147,
+   "dJ_normalized": 6.938893903907228e-18,
+   "eps_normalized": 0.0005
+  }
+ ],
+ "final_blocks": [
+  {
+   "kind": "chain",
+   "k": 2,
+   "id": 6,
+   "c": [
+    0.22999999999993903
+   ],
+   "e": [
+    -1.0
+   ]
+  }
+ ],
+ "final_coefficients": [
+  -0.47087095886596825,
+  -8.27191545025926e-13,
+  -1.0406248190937724
+ ],
+ "forcing_squared_norm": 921.2328890082047,
+ "error": 0.038773006451250425,
+ "validation": [
+  {
+   "nodes": 1024,
+   "error": 0.0387730064512589,
+   "energy": -35.66195234156331,
+   "reference_energy": -35.71564531519239,
+   "nonlinear_to_quadratic_energy_ratio": 0.0,
+   "reference_peak": 3.043286820403187
+  },
+  {
+   "nodes": 1536,
+   "error": 0.038773006451250425,
+   "energy": -35.66195234156478,
+   "reference_energy": -35.71564531519461,
+   "nonlinear_to_quadratic_energy_ratio": 0.0,
+   "reference_peak": 3.0445159870387064
+  }
+ ],
+ "reference_refinement_relative_H1": 6.858305789902574e-13,
+ "total_seconds": 0.27348112501204014
+}

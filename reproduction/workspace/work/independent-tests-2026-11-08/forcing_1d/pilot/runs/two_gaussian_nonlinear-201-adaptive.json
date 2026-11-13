@@ -1,0 +1,170 @@
+{
+ "problem": "two_gaussian_nonlinear",
+ "capacity": 4,
+ "seed": 201,
+ "method": "adaptive",
+ "sigma": 0.55,
+ "reaction": 10.0,
+ "initial_centers": [
+  -1.3527798765362544,
+  -0.48901000163979375,
+  0.4965024046057493,
+  1.527592318023637
+ ],
+ "budget": null,
+ "budget_rule": null,
+ "coefficient_constraint": "none",
+ "fits": 22,
+ "seconds": 0.053397541982121766,
+ "status": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+ "completed_count": 2,
+ "error": 0.4200367059575434,
+ "energy": -0.03490886928734871,
+ "validation": [
+  {
+   "nodes": 768,
+   "error": 0.42003670595754433,
+   "energy": -0.03490886928734955
+  },
+  {
+   "nodes": 1024,
+   "error": 0.4200367059575434,
+   "energy": -0.03490886928734871
+  }
+ ],
+ "reference_refinement_relative_H1": 1.6847286043083521e-13,
+ "final_p": [
+  -0.8924275484433335,
+  0.964999462093577
+ ],
+ "completed": [
+  true,
+  true
+ ],
+ "coefficients": [
+  -0.08305387481641309,
+  0.9906919017360676,
+  -0.2660550554917202,
+  -1.3912605769426571
+ ],
+ "budget_ratio": null,
+ "coefficient_cost": 15.322877034317278,
+ "kkt": 5.329070518200751e-15,
+ "trace": [
+  {
+   "fits": 12,
+   "energy": -0.03490886928734954,
+   "p": [
+    -0.8924275484433335,
+    1e-08,
+    0.964999462093577,
+    1e-08
+   ],
+   "gradient": 9.49116857733447e-11,
+   "completed": [
+    false,
+    false
+   ]
+  },
+  {
+   "fits": 14,
+   "energy": -0.03490886928734954,
+   "p": [
+    -0.8924275484433335,
+    1e-08,
+    0.964999462093577,
+    1e-08
+   ],
+   "gradient": 9.49116857733447e-11,
+   "completed": [
+    false,
+    false
+   ]
+  },
+  {
+   "fits": 16,
+   "energy": -0.03490886928734954,
+   "p": [
+    -0.8924275484433335,
+    0.964999462093577,
+    1e-08
+   ],
+   "gradient": 9.49116857733447e-11,
+   "completed": [
+    true,
+    false
+   ]
+  },
+  {
+   "fits": 18,
+   "energy": -0.03490886928734955,
+   "p": [
+    -0.8924275484433335,
+    0.964999462093577
+   ],
+   "gradient": 1.3287166120479869e-12,
+   "completed": [
+    true,
+    true
+   ]
+  },
+  {
+   "fits": 20,
+   "energy": -0.03490886928734955,
+   "p": [
+    -0.8924275484433335,
+    0.964999462093577
+   ],
+   "gradient": 1.3287166120479869e-12,
+   "completed": [
+    true,
+    true
+   ]
+  },
+  {
+   "fits": 22,
+   "energy": -0.03490886928734955,
+   "p": [
+    -0.8924275484433335,
+    0.964999462093577
+   ],
+   "gradient": 1.3287166120479869e-12,
+   "completed": [
+    true,
+    true
+   ]
+  }
+ ],
+ "events": [
+  {
+   "block": 0,
+   "fits": 14,
+   "half_gap": 1e-08,
+   "state_change": 7.297039374372573e-16,
+   "analytic_bound": 5.11436672822097e-16,
+   "relative_bound": 9.448363979448573e-17,
+   "energy_change": -6.938893903907228e-18,
+   "energy_allowance": 0.0005,
+   "accepted": true
+  },
+  {
+   "block": 1,
+   "fits": 16,
+   "half_gap": 1e-08,
+   "state_change": 1.1700537330908934e-15,
+   "analytic_bound": 7.825050153192429e-16,
+   "relative_bound": 1.4456124469298618e-16,
+   "energy_change": -6.938893903907228e-18,
+   "energy_allowance": 0.00025,
+   "accepted": true
+  }
+ ],
+ "selection": "best evaluated geometry within final representation",
+ "reference_diagnostics": {
+  "reference_peak": 1.7173997399080863,
+  "reference_H1_squared": 37.60465107996686,
+  "nonlinear_to_quadratic_energy_ratio": 0.28297887857234383,
+  "source_squared_norm": 905.6991488057938,
+  "reference_mesh_nodes": 18098
+ }
+}

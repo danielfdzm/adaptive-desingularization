@@ -1,0 +1,217 @@
+{
+ "problem": "multipole4_scale055_nonlinear",
+ "seed": 202,
+ "method": "adaptive",
+ "capacity": 3,
+ "sigma": 0.55,
+ "reaction": 10.0,
+ "initial_centers": [
+  -0.7961137500228773,
+  -0.016903227607677294,
+  0.8447265400729354
+ ],
+ "fits": 89,
+ "iterations": 17,
+ "stop": "function_tolerance",
+ "coefficient_norm": 2.78895205118622,
+ "completions": 1,
+ "joins": 1,
+ "rejections": 0,
+ "blocks_final": {
+  "chain2": 1
+ },
+ "solve_seconds": 0.8305100420257077,
+ "trace": [
+  {
+   "fits": 1,
+   "iterations": 0,
+   "wall": 0.011220292071811855,
+   "energy": -0.009589950123321212,
+   "coefficient_norm": 7.909029994300564,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 3
+   }
+  },
+  {
+   "fits": 8,
+   "iterations": 5,
+   "wall": 0.0581317920004949,
+   "energy": -0.016430573268838622,
+   "coefficient_norm": 107.2038821857518,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 3
+   }
+  },
+  {
+   "fits": 9,
+   "iterations": 5,
+   "wall": 0.06299708306323737,
+   "energy": -0.016430573268838452,
+   "coefficient_norm": 50.906510333985075,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 1,
+    "pair": 1
+   }
+  },
+  {
+   "fits": 16,
+   "iterations": 10,
+   "wall": 0.21324012498371303,
+   "energy": -0.01653759349686919,
+   "coefficient_norm": 12599.32740605406,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 1,
+    "pair": 1
+   }
+  },
+  {
+   "fits": 17,
+   "iterations": 10,
+   "wall": 0.23319649999029934,
+   "energy": -0.0165375934973985,
+   "coefficient_norm": 2.789247814241384,
+   "completions": 0,
+   "joins": 1,
+   "blocks": {
+    "line2": 1
+   }
+  },
+  {
+   "fits": 64,
+   "iterations": 15,
+   "wall": 0.6871700000483543,
+   "energy": -0.016537951372145067,
+   "coefficient_norm": 2.788952051186219,
+   "completions": 0,
+   "joins": 1,
+   "blocks": {
+    "line2": 1
+   }
+  },
+  {
+   "fits": 64,
+   "iterations": 15,
+   "wall": 0.6877260420005769,
+   "energy": -0.016537951372145067,
+   "coefficient_norm": 2.788952051186219,
+   "completions": 0,
+   "joins": 1,
+   "blocks": {
+    "line2": 1
+   }
+  },
+  {
+   "fits": 65,
+   "iterations": 15,
+   "wall": 0.7077757080551237,
+   "energy": -0.016537951372145046,
+   "coefficient_norm": 2.78895205118622,
+   "completions": 1,
+   "joins": 1,
+   "blocks": {
+    "chain2": 1
+   }
+  },
+  {
+   "fits": 77,
+   "iterations": 16,
+   "wall": 0.7694419170729816,
+   "energy": -0.016537951372145046,
+   "coefficient_norm": 2.78895205118622,
+   "completions": 1,
+   "joins": 1,
+   "blocks": {
+    "chain2": 1
+   }
+  },
+  {
+   "fits": 89,
+   "iterations": 17,
+   "wall": 0.8304666670737788,
+   "energy": -0.016537951372145046,
+   "coefficient_norm": 2.78895205118622,
+   "completions": 1,
+   "joins": 1,
+   "blocks": {
+    "chain2": 1
+   }
+  }
+ ],
+ "events": [
+  {
+   "kind": "pair",
+   "fits": 8,
+   "h": 0.08423796916059478
+  },
+  {
+   "kind": "join",
+   "fits": 16,
+   "into": "pair",
+   "base": "pair",
+   "order": 2,
+   "s": 0.019931846961293798,
+   "q": 0.0
+  },
+  {
+   "kind": "completion",
+   "fits": 64,
+   "from": "line",
+   "base": "pair",
+   "order": 2,
+   "omega": 0.0,
+   "a_priori_bound": 1.8579548764578345e-07,
+   "centre_shift": 0.0,
+   "tolerance": 0.1305891003855026,
+   "dJ_normalized": 2.0816681711721685e-17,
+   "eps_normalized": 0.0005
+  }
+ ],
+ "final_blocks": [
+  {
+   "kind": "chain",
+   "k": 2,
+   "id": 6,
+   "c": [
+    0.23000000120285108
+   ],
+   "e": [
+    -1.0
+   ]
+  }
+ ],
+ "final_coefficients": [
+  -2.155753586550891,
+  5.570658581187255e-09,
+  -1.7694575490496496
+ ],
+ "forcing_squared_norm": 23030.82222520512,
+ "error": 0.3299986540894759,
+ "validation": [
+  {
+   "nodes": 1024,
+   "error": 0.32999865408947604,
+   "energy": -380.8826180209175,
+   "reference_energy": -406.73593161173994,
+   "nonlinear_to_quadratic_energy_ratio": 0.6842720698816156,
+   "reference_peak": 3.6121224951840816
+  },
+  {
+   "nodes": 1536,
+   "error": 0.3299986540894759,
+   "energy": -380.8826180209334,
+   "reference_energy": -406.7359316117571,
+   "nonlinear_to_quadratic_energy_ratio": 0.6842720698816102,
+   "reference_peak": 3.6131383801774857
+  }
+ ],
+ "reference_refinement_relative_H1": 3.513163251381833e-13,
+ "total_seconds": 0.8340343750314787
+}

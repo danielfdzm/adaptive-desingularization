@@ -1,0 +1,159 @@
+{
+  "description": "Saved energy-selected C endpoints at P=2,4,6; no optimization or coefficient refits.",
+  "selection": "Minimum saved finite 1536-node pointwise energy over all ten starts; ties use seed.",
+  "reference": "Original independent scipy.solve_bvp solve on [-14,14], tolerance 3e-11; used only for evaluation.",
+  "evaluation": "Stored primitive expansion, accumulated in numpy.longdouble; same original primitive quadrature.",
+  "displayed_domain": [
+    -4.0,
+    4.0
+  ],
+  "common_solution_limits": [
+    -2.4,
+    2.4
+  ],
+  "relative_H1_error_domain": [
+    -12.0,
+    12.0
+  ],
+  "palette": [
+    "#0000FF",
+    "#FF0000",
+    "#111111",
+    "#188038"
+  ],
+  "selected": {
+    "single_source": {
+      "2": {
+        "seed": 300,
+        "energy_1536": -0.030030972737867236,
+        "relative_H1_error_recorded": 0.6616319665413375,
+        "relative_H1_error_rechecked": 0.6616319665413375,
+        "source": "work/pstudy-forcing-2026-11-12/results/runs/single_source_P2_s300_C.json"
+      },
+      "4": {
+        "seed": 303,
+        "energy_1536": -0.036599689160144666,
+        "relative_H1_error_recorded": 0.5554500442601924,
+        "relative_H1_error_rechecked": 0.5554500442601924,
+        "source": "work/pstudy-forcing-2026-11-12/results/runs/single_source_P4_s303_C.json"
+      },
+      "6": {
+        "seed": 301,
+        "energy_1536": -0.039688998870303326,
+        "relative_H1_error_recorded": 0.4154109559668037,
+        "relative_H1_error_rechecked": 0.41541095595886207,
+        "source": "work/pstudy-forcing-2026-11-12/results/runs/single_source_P6_s301_C.json"
+      }
+    },
+    "sech_dipole": {
+      "2": {
+        "seed": 301,
+        "energy_1536": -0.09544232058568272,
+        "relative_H1_error_recorded": 0.3347725686072994,
+        "relative_H1_error_rechecked": 0.3347725686072995,
+        "source": "work/pstudy-forcing-2026-11-12/results/runs/sech_dipole_P2_s301_C.json"
+      },
+      "4": {
+        "seed": 302,
+        "energy_1536": -0.09963693940823787,
+        "relative_H1_error_recorded": 0.2155224387906096,
+        "relative_H1_error_rechecked": 0.2155224387906096,
+        "source": "work/pstudy-forcing-2026-11-12/results/runs/sech_dipole_P4_s302_C.json"
+      },
+      "6": {
+        "seed": 309,
+        "energy_1536": -0.10155230670748167,
+        "relative_H1_error_recorded": 0.11831578866896152,
+        "relative_H1_error_rechecked": 0.11831578868911397,
+        "source": "work/pstudy-forcing-2026-11-12/results/runs/sech_dipole_P6_s309_C.json"
+      }
+    }
+  },
+  "layout_audit": {
+    "text_intersections_with_data_rectangles": [],
+    "data_panels": [
+      {
+        "title": "(a) Single-source forcing",
+        "width_inches": 1.8909999999999996,
+        "height_inches": 1.891,
+        "height_over_width": 1.0000000000000002
+      },
+      {
+        "title": "(b) Asymmetric sech$^2$ forcing",
+        "width_inches": 1.8910000000000002,
+        "height_inches": 1.891,
+        "height_over_width": 0.9999999999999999
+      }
+    ]
+  },
+  "inputs": {
+    "paper_1111/revision-validation/forcing-endpoint-audit/summary.json": "ae5d0e0aab96b0e2417066aac5900b20440a181c2d0d9e6e65b4e69ecb7120f4",
+    "work/pstudy-forcing-2026-11-12/pstudy.py": "40fb7360f40f692ea7a51cd1a02bb139289e203a1eb53e93bdce47e043ed8eb5",
+    "paper_1111/revision-validation/publication-figures/figure_style.py": "a90a402f7919d160e883af6afcd79bc4696d69aa1c2ca285526ac5c2bdef4fa7",
+    "paper_1111/revision-validation/publication-figures/build_forcing_solutions.py": "7c00e1a24e7c26a84a3e9be3b055ba785ddef76047a22e7fb23598e6b751948c",
+    "numerical-section-revision/phase1-2026-11-11/src/chain_solver.py": "2a23acc6b52f259f54b76e80a9e1822ed02b2116706b479c8756e4effa63ad6b",
+    "numerical-section-revision/phase1-2026-11-11/src/chain_kernels.py": "26d1e4972976ba49fc70ee53f9fab60e52d5251eaa334ba43c8cf7729b32a0ae",
+    "numerical-section-revision/phase1-2026-11-11/src/quadrature.py": "4b4f026ff8b45d2d0fed6caf36303b56be3a8587b807805650108fd670f50b80",
+    "numerical-section-revision/phase1-2026-11-11/src/fit.py": "98aef2bb1dcdebc14510af261ee7b96cc7ebfef24006644cbd433443fbb713d4",
+    "work/pstudy-forcing-2026-11-12/results/runs/single_source_P2_s300_C.json": "02f792f04b274f358cd77fbed64feb11ac1a7a13ff4e5945f44ddea27299920f",
+    "work/pstudy-forcing-2026-11-12/results/runs/single_source_P2_s301_C.json": "6ae8fd02dcb1f0c94306356a60d2b515cb37a049eb690f680c34eae621c60680",
+    "work/pstudy-forcing-2026-11-12/results/runs/single_source_P2_s302_C.json": "4421bf30b343aa2bbeab260f6ba0005e2caf6e6d8b13d374f9974d9f285ca9d8",
+    "work/pstudy-forcing-2026-11-12/results/runs/single_source_P2_s303_C.json": "c237b94d9ac2eef3e5be2413d4a9cfefef966dc1aa2170fc5b419480ad9b21ab",
+    "work/pstudy-forcing-2026-11-12/results/runs/single_source_P2_s304_C.json": "b9f906ecba922b088314651f6d9d29fb529536e28b99bcef3120bf94188db638",
+    "work/pstudy-forcing-2026-11-12/results/runs/single_source_P2_s305_C.json": "ed4a1b30d793d890546c753b2b214e94eaa1372b6b1e3ce7009989b8f5394591",
+    "work/pstudy-forcing-2026-11-12/results/runs/single_source_P2_s306_C.json": "7813a52238c6cbd18eedee2609105c9d791dc8a77620965d3e4c4b2bfa16537d",
+    "work/pstudy-forcing-2026-11-12/results/runs/single_source_P2_s307_C.json": "e546fadb1b874b018276ae4db8e91c68e4e0e32a99ccafb34bcd0dd379d02ab3",
+    "work/pstudy-forcing-2026-11-12/results/runs/single_source_P2_s308_C.json": "f2aca90ec90cc2213e204e57add42a9a6ad8981e2b760b7927809da10c761ce8",
+    "work/pstudy-forcing-2026-11-12/results/runs/single_source_P2_s309_C.json": "a6f22ca102bc7a017cbb93b34e6344fdd991540cf811bfe7829a78c9082a0712",
+    "work/pstudy-forcing-2026-11-12/results/runs/single_source_P4_s300_C.json": "499934510e522cabdc75b77426899c4c17c533609dbb13fcf0a1022882b2878f",
+    "work/pstudy-forcing-2026-11-12/results/runs/single_source_P4_s301_C.json": "640ddac5636f23f65391b483cfa1609627254329afcbe47192f262420c7c864e",
+    "work/pstudy-forcing-2026-11-12/results/runs/single_source_P4_s302_C.json": "a4f33af617420ee1c5300703c00181efc097a8a31b7dd2134163761e1f907fec",
+    "work/pstudy-forcing-2026-11-12/results/runs/single_source_P4_s303_C.json": "c6e1bfbdd3eb7a90eed4581d8b46a5a139c591f85d165311c54274b1aba5dc19",
+    "work/pstudy-forcing-2026-11-12/results/runs/single_source_P4_s304_C.json": "b392a43ba2e74ef42de4e0830c70063da9a22409ece37854de866a4f3c836b18",
+    "work/pstudy-forcing-2026-11-12/results/runs/single_source_P4_s305_C.json": "53ec206cfd4a61b30c888275a8e6730452c6c9fe77dcc20ce04fe06a07d512a3",
+    "work/pstudy-forcing-2026-11-12/results/runs/single_source_P4_s306_C.json": "c3ebc665895588aadb7d2ec9691c126e39631ba96edbc5455645b4d40647a87e",
+    "work/pstudy-forcing-2026-11-12/results/runs/single_source_P4_s307_C.json": "37538a65b7a4d33fb52ad56d055ec1446851ba986453c3dc977ded4cd8b5dd69",
+    "work/pstudy-forcing-2026-11-12/results/runs/single_source_P4_s308_C.json": "bc108d9af1b6612313d904bfcd600b12a30068a462fe509a0fc16e845e86cf4a",
+    "work/pstudy-forcing-2026-11-12/results/runs/single_source_P4_s309_C.json": "7deab5650b2d6d4afb1195bea4ee94029e9af46b783fc2fd064a1e9251d5a774",
+    "work/pstudy-forcing-2026-11-12/results/runs/single_source_P6_s300_C.json": "e9d6770e2e6003de33305ccaa0d50fceed79517f7785eb78b2d19e1d0016ef15",
+    "work/pstudy-forcing-2026-11-12/results/runs/single_source_P6_s301_C.json": "eaa23960d436e1429cb0f8186ba8e7c04c7e9a70efb7e1318a81f72d2a0d0ddd",
+    "work/pstudy-forcing-2026-11-12/results/runs/single_source_P6_s302_C.json": "e0e1cdd25832f87da3478d2d7862934859c4799cef848f9ed8794d9796d3cd47",
+    "work/pstudy-forcing-2026-11-12/results/runs/single_source_P6_s303_C.json": "1da36eb1d48e5c461ce82796dded4e80091ac547a565d936dd2b57363d22e515",
+    "work/pstudy-forcing-2026-11-12/results/runs/single_source_P6_s304_C.json": "00c52fb8a4d8b488234efee330267b6f832e8d1b478529c3d897cd5bde08f500",
+    "work/pstudy-forcing-2026-11-12/results/runs/single_source_P6_s305_C.json": "d6f8bb0b641f23cd2f2a32cdc075599120f4c7c75104a586b1fdac7bdd268179",
+    "work/pstudy-forcing-2026-11-12/results/runs/single_source_P6_s306_C.json": "7033e21350f3397ef8994c11d2f00525857bb61b38002c1b5941df213aab14b5",
+    "work/pstudy-forcing-2026-11-12/results/runs/single_source_P6_s307_C.json": "1230320c1369a78fe0fbaa9222b37e7c55596c357cf02ebe30967e3083a60cb4",
+    "work/pstudy-forcing-2026-11-12/results/runs/single_source_P6_s308_C.json": "c2aa18978de0bfe369598113ddd708735b5ede0eb96a5a0cac7614566ae3b78d",
+    "work/pstudy-forcing-2026-11-12/results/runs/single_source_P6_s309_C.json": "6debc52d7d2f591a906e6d0ca7d43528b4addd59c97dd4d6e9e9ac06bb00ea40",
+    "work/pstudy-forcing-2026-11-12/results/runs/sech_dipole_P2_s300_C.json": "8b1f7fd6156240e124bf6d976f29589ef9bfbd0529264c150e3351f6c6d2f789",
+    "work/pstudy-forcing-2026-11-12/results/runs/sech_dipole_P2_s301_C.json": "102f9283ea20e381e1b5311e77068ba60e83ff78bb8b29fa6174669290d768d9",
+    "work/pstudy-forcing-2026-11-12/results/runs/sech_dipole_P2_s302_C.json": "5f530cdf6848803b60cb6b884c18afd3940aee4c7b1721e11fdeb0bfd1534685",
+    "work/pstudy-forcing-2026-11-12/results/runs/sech_dipole_P2_s303_C.json": "82ffd587a858a4c72f6a8e0f9737b1ad69c0ed75c2b2f28a5cb12defd9dbedca",
+    "work/pstudy-forcing-2026-11-12/results/runs/sech_dipole_P2_s304_C.json": "3f9b027736c823928336d2ff9e151faf3115e9473e031343a475baf575db90b1",
+    "work/pstudy-forcing-2026-11-12/results/runs/sech_dipole_P2_s305_C.json": "5bf66814a6137a021237b4c21eebe18dc79e830a2675f1060f4c51bf47ca5d16",
+    "work/pstudy-forcing-2026-11-12/results/runs/sech_dipole_P2_s306_C.json": "f4cfe137b40ff5df874ecac63ce5c1f47fd550ef0d277cce258ce39bbca502db",
+    "work/pstudy-forcing-2026-11-12/results/runs/sech_dipole_P2_s307_C.json": "c8256783b81e4ee13c93c56b7ea910feea98d18515a46af4bbe83f84afbc2225",
+    "work/pstudy-forcing-2026-11-12/results/runs/sech_dipole_P2_s308_C.json": "1e7c84a904be8a4f01784d0f5d9bda9101457cbd626326c414268066586e78ff",
+    "work/pstudy-forcing-2026-11-12/results/runs/sech_dipole_P2_s309_C.json": "dbd5b07b314e11e33e89ce8bff7063feab9b743965443aef9e0269d8d111244b",
+    "work/pstudy-forcing-2026-11-12/results/runs/sech_dipole_P4_s300_C.json": "883525bcb2f50d968209fea6811be708a452e3844dab2872766225c4f9cf01a2",
+    "work/pstudy-forcing-2026-11-12/results/runs/sech_dipole_P4_s301_C.json": "91eae3068f40c206506b3f9a6d716e7671ad1a2175742b1b7aa8c3f5c244ecd0",
+    "work/pstudy-forcing-2026-11-12/results/runs/sech_dipole_P4_s302_C.json": "cb3312766c8c1d7cf85572fe7f02ff11f9005ffbd978751f951470216680c14e",
+    "work/pstudy-forcing-2026-11-12/results/runs/sech_dipole_P4_s303_C.json": "62b5c9ceb2b1ae9376006610ab0792c709200c3ed1fea348fe323bf1090a1ae9",
+    "work/pstudy-forcing-2026-11-12/results/runs/sech_dipole_P4_s304_C.json": "ac5e9a74b621c33410525840348c706dac5f31692607cf54e6116aa0d4796596",
+    "work/pstudy-forcing-2026-11-12/results/runs/sech_dipole_P4_s305_C.json": "f5bc0245d3831f7838f62313a77cb7e39016823348fef730c7c8714e9300b2c1",
+    "work/pstudy-forcing-2026-11-12/results/runs/sech_dipole_P4_s306_C.json": "dc2ebc9e3855c1600e3c9848d66bc4e29cfd790948687d27b25865f00374d187",
+    "work/pstudy-forcing-2026-11-12/results/runs/sech_dipole_P4_s307_C.json": "015be977ef638fa315975975dc784f058a0b0fa66268f2597f870d8fba9c3707",
+    "work/pstudy-forcing-2026-11-12/results/runs/sech_dipole_P4_s308_C.json": "004908e5de6f38c777827fd4f6c7ed19df97250a8a5290b28b5ceaef95ff7629",
+    "work/pstudy-forcing-2026-11-12/results/runs/sech_dipole_P4_s309_C.json": "f843602c300cd823e28efb1e3839612e1419a77f5ef7c9d72750c88040f3f4e2",
+    "work/pstudy-forcing-2026-11-12/results/runs/sech_dipole_P6_s300_C.json": "2ea4f9cd936b1c1d688d6f921ca3dec58b88731458509c7f00bfde8b2ec8b508",
+    "work/pstudy-forcing-2026-11-12/results/runs/sech_dipole_P6_s301_C.json": "9a9a5eb5447038c5d607d2dcee69b9fb2c455bc6a06b9bb02eb5268c63323e6d",
+    "work/pstudy-forcing-2026-11-12/results/runs/sech_dipole_P6_s302_C.json": "de5771926cca299c35b1578f868b41e3ac33d25d4988c9140ba08972e88f9ab2",
+    "work/pstudy-forcing-2026-11-12/results/runs/sech_dipole_P6_s303_C.json": "58fe0b7bbace56921a0c08b593df0bbea88912fba2852469e47d8754c0549c75",
+    "work/pstudy-forcing-2026-11-12/results/runs/sech_dipole_P6_s304_C.json": "1b8117b1d5e5d22cca4f5a95c997f2e938f6df8d84418fab74c4491c93a1ab05",
+    "work/pstudy-forcing-2026-11-12/results/runs/sech_dipole_P6_s305_C.json": "2d3e1db8ef69fe428cb3745365534b47dee647f5cc0766431b0f0368208ca61e",
+    "work/pstudy-forcing-2026-11-12/results/runs/sech_dipole_P6_s306_C.json": "b98613a081c5d85991b3c1168f569408d3e720b14f0bbc097801dfe0f74a9b72",
+    "work/pstudy-forcing-2026-11-12/results/runs/sech_dipole_P6_s307_C.json": "efd6c0c8163f5fc55e3f657891578a3c5bce0f9cfaddea8d6061e0873c84f9a4",
+    "work/pstudy-forcing-2026-11-12/results/runs/sech_dipole_P6_s308_C.json": "167b0dd7197c74a8940a745af7786a081508fd31c25829c473922094e0d7e92e",
+    "work/pstudy-forcing-2026-11-12/results/runs/sech_dipole_P6_s309_C.json": "6f4d85b83d95ab19f20d9e821b8591fac425eb31941adca842f337a3fb667ea5"
+  }
+}

@@ -1,0 +1,23 @@
+--- final-experiments/pb/run.py
++++ guarded/final-experiments/pb/run.py
+@@ -13,6 +13,7 @@
+ for _name in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS", "VECLIB_MAXIMUM_THREADS"):
+     os.environ[_name] = "1"
+ 
++from pair_guard import eligible_pair
+ import argparse
+ import copy
+ import hashlib
+@@ -316,10 +317,10 @@
+                               for k,i in enumerate(indices) for j in indices[k+1:])
+             success=False
+             for dist,i,j in candidates:
++                if not eligible_pair(self, dist, i, j, SIGMA):
++                    continue
+                 if dist>SIGMA:
+                     break
+-                if dist==0:
+-                    continue
+                 ix=offsets(self.blocks)
+                 bi,bj=self.blocks[i],self.blocks[j]
+                 wi,wj=self.coef[ix[i]],self.coef[ix[j]]

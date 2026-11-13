@@ -1,0 +1,170 @@
+{
+ "problem": "multipole4_nonlinear",
+ "seed": 201,
+ "method": "stable",
+ "capacity": 3,
+ "sigma": 0.55,
+ "reaction": 10.0,
+ "initial_centers": [
+  -0.6027798765362544,
+  0.010989998360206255,
+  0.7465024046057493
+ ],
+ "fits": 30,
+ "iterations": 16,
+ "stop": "exception",
+ "coefficient_norm": 2.1365091376173684,
+ "completions": 0,
+ "joins": 1,
+ "rejections": 0,
+ "blocks_final": {
+  "line2": 1
+ },
+ "solve_seconds": 0.7518876659451053,
+ "trace": [
+  {
+   "fits": 1,
+   "iterations": 0,
+   "wall": 0.009148332988843322,
+   "energy": -0.004704975341412768,
+   "coefficient_norm": 7.986820202709798,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 3
+   }
+  },
+  {
+   "fits": 8,
+   "iterations": 5,
+   "wall": 0.25953425001353025,
+   "energy": -0.005993855902438618,
+   "coefficient_norm": 4035.737002528374,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 3
+   }
+  },
+  {
+   "fits": 9,
+   "iterations": 5,
+   "wall": 0.2658604580210522,
+   "energy": -0.005993855902593549,
+   "coefficient_norm": 530.8695268845618,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 1,
+    "pair": 1
+   }
+  },
+  {
+   "fits": 17,
+   "iterations": 10,
+   "wall": 0.5094452500343323,
+   "energy": -0.0060030212096307215,
+   "coefficient_norm": 32152.06029420458,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 1,
+    "pair": 1
+   }
+  },
+  {
+   "fits": 18,
+   "iterations": 10,
+   "wall": 0.5246435409644619,
+   "energy": -0.0060030212301452725,
+   "coefficient_norm": 2.1358958727020356,
+   "completions": 0,
+   "joins": 1,
+   "blocks": {
+    "line2": 1
+   }
+  },
+  {
+   "fits": 27,
+   "iterations": 15,
+   "wall": 0.7047993330052122,
+   "energy": -0.006003511603048748,
+   "coefficient_norm": 2.1365091376111285,
+   "completions": 0,
+   "joins": 1,
+   "blocks": {
+    "line2": 1
+   }
+  },
+  {
+   "fits": 27,
+   "iterations": 15,
+   "wall": 0.705849124933593,
+   "energy": -0.006003511603048748,
+   "coefficient_norm": 2.1365091376111285,
+   "completions": 0,
+   "joins": 1,
+   "blocks": {
+    "line2": 1
+   }
+  },
+  {
+   "fits": 30,
+   "iterations": 16,
+   "wall": 0.7510758329881355,
+   "energy": -0.006003511603048755,
+   "coefficient_norm": 2.1365091376173684,
+   "completions": 0,
+   "joins": 1,
+   "blocks": {
+    "line2": 1
+   }
+  }
+ ],
+ "events": [
+  {
+   "kind": "pair",
+   "fits": 8,
+   "h": 0.0053315642572406285
+  },
+  {
+   "kind": "join",
+   "fits": 17,
+   "into": "pair",
+   "base": "pair",
+   "order": 2,
+   "s": -0.01019707708339379,
+   "q": 0.0
+  }
+ ],
+ "final_blocks": [
+  {
+   "kind": "line",
+   "base": "pair",
+   "k": 2,
+   "id": 5,
+   "c": [
+    0.9622602472110449
+   ],
+   "e": [
+    -1.0
+   ],
+   "h": 5.500000000000001e-13,
+   "s": [
+    -7.18929036848582e-11
+   ],
+   "p": [
+    [
+     0.0
+    ]
+   ]
+  }
+ ],
+ "final_coefficients": [
+  1.6396940007640561,
+  0.6934642828461334,
+  1.181178296193074
+ ],
+ "forcing_squared_norm": 16749.688891058257,
+ "exception": "RuntimeError('fine: The maximum number of mesh nodes is exceeded.')"
+}

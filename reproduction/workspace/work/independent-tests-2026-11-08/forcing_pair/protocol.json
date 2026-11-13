@@ -1,0 +1,15 @@
+{
+  "created": "2026-11-08",
+  "purpose": "Independent prescribed-forcing positive-gap PDE tests at P=2 and sigma=1",
+  "forcing": "f(x)=A*x/a^2*exp(-x^2/(2*a^2)); solution not manufactured",
+  "pde": "-u''+u+lambda*(sinh(u)-u)=f on R, approximated by zero Dirichlet solve_bvp on [-14,14]",
+  "pilot_seeds": [200,201,202],
+  "reserved_seeds": [900,901,902,903,904,905,906,907,908,909],
+  "pilot_cases": [[0.25,2,0],[0.5,10,0],[0.8,10,0],[0.25,10,1],[0.5,10,1],[0.8,10,1],[0.25,30,10],[0.5,30,10],[0.8,30,10]],
+  "methods": {"NC":"stable pair (beta,h), h>=1e-6, no completion", "C":"identical stable pair plus persistent collision flag and 1% state/summable energy safeguard, then h=0", "SC":"direct stable completed chart (beta,t=h^2), t>=0"},
+  "initialization": "beta uniform[-0.8,0.8], h uniform[0.1,1.2], shared across methods; coefficients refit to PDE energy",
+  "training": "Simpson quadrature on [-12,12], 2401 nodes; beta in [-3,3], half-gap in [1e-6,3]; L-BFGS-B maxiter=300,maxfun=1000,gtol=1e-10,ftol=1e-14; normalize by max(1,||f||_L2^2)",
+  "completion": "scan every 5 iterations and local returns, 2 consecutive flags; diameter<=0.5 and normalized pair Gram smallest sqrt eigenvalue<=0.1; state change<=0.01||v||_H1 and actual energy increase<=0.0005||f||_L2^2",
+  "validation": "solve_bvp tol 1e-9 on [-14,14], compare 1e-10 solve on [-16,16]; evaluate solution/error/energy on 6401 nodes [-16,16] and check quadrature refinement",
+  "honesty": "All pilot cases retained. Reserved seeds untouched until a separate confirmation choice is frozen. No global-optimality claim from local multistarts."
+}

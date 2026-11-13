@@ -1,0 +1,14 @@
+\begin{table}[htbp]\centering\footnotesize
+\setlength{\tabcolsep}{3pt}
+\caption{Exploratory local objective controls, ten matched starts per target. G uses the shifted Gram objective and chart-specific stopping; R uses the directly evaluated residual objective and common feasible $(\beta,t)$ residual stopping. Errors and canonical gradients are independently checked using 80-digit correlations; projected residuals are evaluated in double precision on the common domain $t\ge0$. Every entry is a median. These small linear problems are mechanism controls.}
+\label{tab:objective-controls}
+\begin{tabular}{@{}llrrrrrr@{}}\toprule
+Target & Objective & $E_h$ & $E_t$ & $\|R_t\|_h$ & $\|R_t\|_t$ & Fits $h$ & Fits $t$\\\midrule
+$G'$ & G & $2.41\times10^{-8}$ & $3.91\times10^{-16}$ & $6.99\times10^{-9}$ & $4.39\times10^{-16}$ & 29.5 & 9\\
+$G'$ & R & $2.82\times10^{-12}$ & $2.18\times10^{-16}$ & $7.19\times10^{-13}$ & $9.14\times10^{-17}$ & 47 & 9\\
+$G_{0.99}'$ & G & $7.69\times10^{-3}$ & $7.69\times10^{-3}$ & $2.17\times10^{-16}$ & $4.57\times10^{-14}$ & 13 & 8\\
+$G_{0.99}'$ & R & $7.69\times10^{-3}$ & $7.69\times10^{-3}$ & $1.49\times10^{-16}$ & $2.64\times10^{-13}$ & 13 & 8\\
+$G(\cdot-1)+G(\cdot+1)$ & G & $2.01\times10^{-12}$ & $3.25\times10^{-12}$ & $1.00\times10^{-12}$ & $1.56\times10^{-12}$ & 9.5 & 8\\
+$G(\cdot-1)+G(\cdot+1)$ & R & $1.01\times10^{-13}$ & $1.49\times10^{-14}$ & $4.88\times10^{-14}$ & $7.17\times10^{-15}$ & 10 & 9\\
+\bottomrule\end{tabular}
+\end{table}

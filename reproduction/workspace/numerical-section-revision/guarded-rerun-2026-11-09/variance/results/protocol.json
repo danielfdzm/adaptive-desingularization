@@ -1,0 +1,35 @@
+{
+  "python": "3.14.0 (v3.14.0:ebf955df7a8, Oct  7 2025, 08:20:14) [Clang 16.0.0 (clang-1600.0.26.6)]",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "mpmath": "1.3.0",
+  "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "processor": "arm",
+  "threadpool_info": [],
+  "source_sha256": {
+    "run_matched.py": "65440db137010f4185860283a5c7df929c076de40c95ddc6ea17f01571f0014a",
+    "math_support.py": "1622bd87c394b7867e92a171c8521b11262cd44d509945ad6c863dfd97ed5e7e"
+  },
+  "quadrature": {
+    "rule": "trapezoid",
+    "nodes": 3201,
+    "interval": [
+      -16,
+      16
+    ]
+  },
+  "half_gap_floor": 1e-12,
+  "stopping": "two local returns without structural change; total 20000 iterations/50000 calls; ftol=gtol=0",
+  "completion": "conditioning-only detection, every20 iterations and local return; two consecutive flags; same state/energy bound as historical experiment",
+  "coefficient_policy": "joint coefficient/geometry descent for all methods, including after completion; no variable projection",
+  "runtime_scope": "initialization/representation setup and full optimizer including tracing, scans, transfer tests and restarts; excludes target/quadrature generation, 80-digit endpoint validation and output serialization",
+  "historical_source": "positive-gap-persistence/variance-family/results.json",
+  "historical_source_sha256": "7e5c0304f9cdc40d3e01ddf777a110176089dde64b3cd6674752b88722aff923",
+  "command": [
+    "numerical-section-revision/guarded-rerun-2026-11-09/variance/run_matched.py",
+    "--timed"
+  ],
+  "exclusive_timing_lock": true,
+  "run_order": "rotate S/NC/C order by (seed+variance_index) modulo3"
+}

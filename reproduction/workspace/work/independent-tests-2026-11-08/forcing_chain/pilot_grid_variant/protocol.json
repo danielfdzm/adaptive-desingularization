@@ -1,0 +1,68 @@
+{
+  "arguments": {
+    "cases": [
+      "multipole4_nonlinear",
+      "multipole5_nonlinear"
+    ],
+    "seeds": [
+      200,
+      201,
+      202
+    ],
+    "methods": [
+      "standard_restart",
+      "stable",
+      "adaptive"
+    ],
+    "nodes": 768,
+    "max_fits": 1500,
+    "output": "/Users/eg75agon/Downloads/Desingularization_paper/work/independent-tests-2026-11-08/forcing_chain/pilot_grid_variant",
+    "check_only": false
+  },
+  "cases": {
+    "multipole4_linear": {
+      "order": 4,
+      "source_scale": 0.4,
+      "source_center": 0.23,
+      "amplitude": 12.0,
+      "reaction": 0.0,
+      "capacity": 3
+    },
+    "multipole4_nonlinear": {
+      "order": 4,
+      "source_scale": 0.4,
+      "source_center": 0.23,
+      "amplitude": 60.0,
+      "reaction": 10.0,
+      "capacity": 3
+    },
+    "multipole5_linear": {
+      "order": 5,
+      "source_scale": 0.4,
+      "source_center": -0.19,
+      "amplitude": 5.0,
+      "reaction": 0.0,
+      "capacity": 4
+    },
+    "multipole5_nonlinear": {
+      "order": 5,
+      "source_scale": 0.4,
+      "source_center": -0.19,
+      "amplitude": 25.0,
+      "reaction": 10.0,
+      "capacity": 4
+    }
+  },
+  "python": "3.14.0",
+  "source_sha256": {
+    "work/independent-tests-2026-11-08/forcing_chain/run_chain.py": "7da164b4f6b31fd7cb600d2b013eb1b52f276510a3b207ef2d49bde87ad58239",
+    "revision-2026-11/experiments/chain_solver.py": "a69517525cd6601bb92ca53d35d9c757c9e47e381c811694dd73d9a2e3780344",
+    "revision-2026-11/experiments/chain_kernels.py": "46921f3c2abc77b1419b880b1b0fc0f656360b78e648c42573f4644d56399226",
+    "adaptive-desingularization/final-experiments/pb/fit.py": "98aef2bb1dcdebc14510af261ee7b96cc7ebfef24006644cbd433443fbb713d4",
+    "adaptive-desingularization/final-experiments/pb/quadrature.py": "4b4f026ff8b45d2d0fed6caf36303b56be3a8587b807805650108fd670f50b80"
+  },
+  "starts": "linspace(-1.5,1.5,P) plus U[-.15,.15] independent jitter",
+  "objective": "exact H1 Gram + fixed quadrature nonlinear potential and load; scaled by Q[f\u00b2]",
+  "reference": "independent BVP on [-12,12] and [-14,14]; never used in optimization",
+  "role": "exploratory; retain all outcomes; no holdout use"
+}

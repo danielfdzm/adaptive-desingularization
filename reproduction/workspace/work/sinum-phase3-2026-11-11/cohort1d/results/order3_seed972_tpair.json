@@ -1,0 +1,178 @@
+{
+  "stationarity": {
+    "projected_gradient_max_abs": 2.780969878557471e-05,
+    "gradient_max_abs": 0.00015497764570682193,
+    "active_bounds": 1,
+    "normalized_coefficient_kkt": 3.22987973339118e-05,
+    "final_objective_normalized": -0.4999996349962542,
+    "final_chain_slopes": []
+  },
+  "final_squared_halfgaps": [
+    0.0
+  ],
+  "zero_gap_pairs": 1,
+  "method": "tpair",
+  "d": 1,
+  "fits": 21,
+  "iterations": 8,
+  "stop": "singular unconstrained coefficient system",
+  "final_relative_error": 0.0008182431887994946,
+  "trace_final_error_double": 0.33540357737392573,
+  "coefficient_norm": 16374.63478266618,
+  "completions": 0,
+  "joins": 0,
+  "rejections": 0,
+  "blocks_final": {
+    "atom": 2,
+    "pair": 1
+  },
+  "wall": 1.4879993328358978,
+  "solve_seconds": 1.419548540841788,
+  "optimizer_seconds": 1.419548540841788,
+  "posthoc_validation_seconds": 0.06845262506976724,
+  "postprocessing_seconds": 0.06845295918174088,
+  "guard_counts": {},
+  "guard_examples": [],
+  "coordinate_convention": "dimensionless p_hat = (q/sigma)/prod((t_i-t_j)/sigma)",
+  "trace": [
+    {
+      "fits": 1,
+      "iterations": 0,
+      "wall": 0.010703166015446186,
+      "relative_error": 0.33540358424448813,
+      "coefficient_norm": 18590.9444897743,
+      "completions": 0,
+      "joins": 0,
+      "blocks": {
+        "atom": 4
+      }
+    },
+    {
+      "fits": 2,
+      "iterations": 0,
+      "wall": 0.0672472498845309,
+      "relative_error": 0.33540357737392573,
+      "coefficient_norm": 167.3070477396265,
+      "completions": 0,
+      "joins": 0,
+      "blocks": {
+        "atom": 2,
+        "pair": 1
+      }
+    }
+  ],
+  "events": [
+    {
+      "kind": "pair",
+      "fits": 1,
+      "h": 0.00048533950385876157
+    }
+  ],
+  "final_blocks": [
+    {
+      "kind": "atom",
+      "id": 3,
+      "c": [
+        0.34790079825470316
+      ]
+    },
+    {
+      "kind": "atom",
+      "id": 4,
+      "c": [
+        0.26988386752006605
+      ]
+    },
+    {
+      "kind": "pair",
+      "id": 5,
+      "c": [
+        0.23014454400218998
+      ],
+      "e": [
+        1.0
+      ],
+      "t": 0.0
+    }
+  ],
+  "final_coefficients": [
+    -1390.4304062898884,
+    12208.802759232352,
+    -10818.372295006699,
+    -321.4399224701706
+  ],
+  "order": 3,
+  "seed": 972,
+  "phase3_method": "tpair",
+  "sigma": 0.65,
+  "lambda_value": 10.0,
+  "target": [
+    [
+      [
+        0.26951200326222313
+      ]
+    ],
+    [
+      [
+        1.0
+      ]
+    ],
+    [
+      3
+    ],
+    [
+      0.2497991078223876
+    ]
+  ],
+  "target_shift": 0.26951200326222313,
+  "target_amplitude_factor": 0.9096007567497044,
+  "initial_centers": [
+    [
+      0.6584669061986475
+    ],
+    [
+      0.6574962271909299
+    ],
+    [
+      0.5304105323093729
+    ],
+    [
+      0.7651553774263963
+    ]
+  ],
+  "width": 4,
+  "stage": "phase-3 enlarged cohort",
+  "setup_seconds": 0.020120750181376934,
+  "end_to_end_seconds": 1.439669291023165,
+  "validation": {
+    "quadrature": [
+      {
+        "nodes": 384,
+        "box": 10.0,
+        "quadratic_gap": 5.554720766908546e-06,
+        "nonlinear_gap": 4.734663147839449e-07,
+        "total_gap": 6.028187081692491e-06,
+        "target_nonlinear_over_quadratic": 0.10199927528587403
+      },
+      {
+        "nodes": 768,
+        "box": 10.0,
+        "quadratic_gap": 5.554720766908546e-06,
+        "nonlinear_gap": 4.734663149573448e-07,
+        "total_gap": 6.028187081865891e-06,
+        "target_nonlinear_over_quadratic": 0.10199927528588887
+      },
+      {
+        "nodes": 768,
+        "box": 12.0,
+        "quadratic_gap": 5.554720766908546e-06,
+        "nonlinear_gap": 4.734663148212497e-07,
+        "total_gap": 6.028187081729795e-06,
+        "target_nonlinear_over_quadratic": 0.10199927528588887
+      }
+    ],
+    "normalized_coefficient_kkt": 3.2298797333911794e-05,
+    "normalized_maximum_gap_change": 8.201924669173843e-18
+  },
+  "independent_validation_seconds": 0.25094716693274677
+}

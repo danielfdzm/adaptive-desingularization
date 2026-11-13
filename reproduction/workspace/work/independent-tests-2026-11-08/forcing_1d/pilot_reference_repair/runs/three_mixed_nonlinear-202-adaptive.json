@@ -1,0 +1,218 @@
+{
+ "problem": "three_mixed_nonlinear",
+ "capacity": 6,
+ "seed": 202,
+ "method": "adaptive",
+ "sigma": 0.55,
+ "reaction": 10.0,
+ "initial_centers": [
+  -1.5461137500228772,
+  -0.9169032276076773,
+  -0.20527345992706475,
+  0.3562475042350457,
+  0.8401277973632986,
+  1.4820425213304993
+ ],
+ "budget": null,
+ "budget_rule": null,
+ "coefficient_constraint": "none",
+ "fits": 58,
+ "seconds": 0.21624379104468971,
+ "status": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+ "completed_count": 3,
+ "error": 0.41179063623356965,
+ "energy": -0.02665766847303391,
+ "validation": [
+  {
+   "nodes": 768,
+   "error": 0.4117906591079122,
+   "energy": -0.026657828949334942
+  },
+  {
+   "nodes": 1024,
+   "error": 0.41179063623356965,
+   "energy": -0.02665766847303391
+  }
+ ],
+ "reference_refinement_relative_H1": 1.7642843089632598e-13,
+ "final_p": [
+  -1.0005165385107995,
+  0.09078564771551391,
+  1.0377118191238899
+ ],
+ "completed": [
+  true,
+  true,
+  true
+ ],
+ "coefficients": [
+  0.5437504989171615,
+  0.8155748881510256,
+  0.2912660377227673,
+  -0.21154243755695276,
+  -0.7002791901363208,
+  1.1068197533081146
+ ],
+ "budget_ratio": null,
+ "coefficient_cost": 15.69344950279331,
+ "kkt": 3.552713678800501e-15,
+ "trace": [
+  {
+   "fits": 22,
+   "energy": -0.02665777723459806,
+   "p": [
+    -1.0037265940645852,
+    1e-08,
+    0.07663067130782232,
+    0.005168679568024363,
+    1.0391433248808657,
+    1e-08
+   ],
+   "gradient": 1.515891921062686e-05,
+   "completed": [
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "fits": 43,
+   "energy": -0.026657828949334935,
+   "p": [
+    -1.0005165385759778,
+    1e-08,
+    0.09078564771372426,
+    1e-08,
+    1.0377118191022403,
+    1e-08
+   ],
+   "gradient": 1.3344904870631925e-11,
+   "completed": [
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "fits": 46,
+   "energy": -0.026657828949334935,
+   "p": [
+    -1.000516538562633,
+    0.09078564771405172,
+    1e-08,
+    1.0377118191068107,
+    1e-08
+   ],
+   "gradient": 1.3188111809628614e-11,
+   "completed": [
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "fits": 49,
+   "energy": -0.026657828949334935,
+   "p": [
+    -1.0005165385494448,
+    0.09078564771439467,
+    1.0377118191112586,
+    1e-08
+   ],
+   "gradient": 1.3033485483910237e-11,
+   "completed": [
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "fits": 52,
+   "energy": -0.026657828949334935,
+   "p": [
+    -1.0005165385364112,
+    0.09078564771475285,
+    1.0377118191155863
+   ],
+   "gradient": 1.2881052120007321e-11,
+   "completed": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "fits": 55,
+   "energy": -0.026657828949334935,
+   "p": [
+    -1.0005165385235302,
+    0.09078564771512601,
+    1.037711819119796
+   ],
+   "gradient": 1.2730793438822832e-11,
+   "completed": [
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "fits": 58,
+   "energy": -0.026657828949334942,
+   "p": [
+    -1.0005165385107995,
+    0.09078564771551391,
+    1.0377118191238899
+   ],
+   "gradient": 1.2582624667732834e-11,
+   "completed": [
+    true,
+    true,
+    true
+   ]
+  }
+ ],
+ "events": [
+  {
+   "block": 0,
+   "fits": 43,
+   "half_gap": 1e-08,
+   "state_change": 7.19833227061918e-16,
+   "analytic_bound": 6.255336633925293e-16,
+   "relative_bound": 1.1876440708342294e-16,
+   "energy_change": 0.0,
+   "energy_allowance": 0.0005,
+   "accepted": true
+  },
+  {
+   "block": 1,
+   "fits": 46,
+   "half_gap": 1e-08,
+   "state_change": 2.29168733841218e-16,
+   "analytic_bound": 2.268759475952119e-16,
+   "relative_bound": 4.3074879857797517e-17,
+   "energy_change": 0.0,
+   "energy_allowance": 0.00025,
+   "accepted": true
+  },
+  {
+   "block": 2,
+   "fits": 49,
+   "half_gap": 1e-08,
+   "state_change": 8.32485533544248e-16,
+   "analytic_bound": 8.327191027549763e-16,
+   "relative_bound": 1.5810082860995413e-16,
+   "energy_change": 0.0,
+   "energy_allowance": 0.000125,
+   "accepted": true
+  }
+ ],
+ "selection": "best evaluated geometry within final representation",
+ "reference_diagnostics": {
+  "reference_peak": 1.4960367787895432,
+  "reference_H1_squared": 34.751250354997126,
+  "nonlinear_to_quadratic_energy_ratio": 0.15028474741583486,
+  "source_squared_norm": 838.1742311828901,
+  "reference_mesh_nodes": 21837
+ }
+}

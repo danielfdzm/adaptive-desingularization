@@ -1,0 +1,49 @@
+{
+  "args": {
+    "cases": [
+      "dipole_nonlinear",
+      "compact_nonlinear",
+      "two_nonlinear"
+    ],
+    "seeds": [
+      200
+    ],
+    "methods": [
+      "standard",
+      "stable",
+      "adaptive",
+      "squared"
+    ],
+    "max_fits": 600,
+    "order": 72,
+    "output": "pilot-smoke"
+  },
+  "cases": {
+    "dipole_nonlinear": {
+      "shape": "dipole",
+      "a": 0.22,
+      "amplitude": 65.0,
+      "lam": 10.0,
+      "capacity": 4
+    },
+    "compact_nonlinear": {
+      "shape": "compact",
+      "a": 0.48,
+      "amplitude": 180.0,
+      "lam": 10.0,
+      "capacity": 4
+    },
+    "two_nonlinear": {
+      "shape": "two",
+      "a": 0.22,
+      "amplitude": 65.0,
+      "lam": 10.0,
+      "capacity": 6
+    }
+  },
+  "source_hash": "7552e71af0bfbc43a304c913b6d40cdd1f195b21ca5d419a33a8da7968aa3c05",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "torch": "2.10.0",
+  "retention": "all requested outcomes including failures; no holdout tuning"
+}

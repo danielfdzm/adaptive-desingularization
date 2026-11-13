@@ -1,0 +1,342 @@
+{
+  "written_utc": "2026-11-11T09:50Z",
+  "cohortA": {
+    "name": "one-dimensional independent recovery",
+    "orders": [
+      2,
+      3
+    ],
+    "seeds": [
+      900,
+      901,
+      902,
+      903,
+      904,
+      905,
+      906,
+      907,
+      908,
+      909,
+      910,
+      911,
+      912,
+      913,
+      914,
+      915,
+      916,
+      917,
+      918,
+      919,
+      920,
+      921,
+      922,
+      923,
+      924,
+      925,
+      926,
+      927,
+      928,
+      929,
+      930,
+      931,
+      932,
+      933,
+      934,
+      935,
+      936,
+      937,
+      938,
+      939,
+      940,
+      941,
+      942,
+      943,
+      944,
+      945,
+      946,
+      947,
+      948,
+      949,
+      950,
+      951,
+      952,
+      953,
+      954,
+      955,
+      956,
+      957,
+      958,
+      959,
+      960,
+      961,
+      962,
+      963,
+      964,
+      965,
+      966,
+      967,
+      968,
+      969,
+      970,
+      971,
+      972,
+      973,
+      974,
+      975,
+      976,
+      977,
+      978,
+      979,
+      980,
+      981,
+      982,
+      983,
+      984,
+      985,
+      986,
+      987,
+      988,
+      989,
+      990,
+      991,
+      992,
+      993,
+      994,
+      995,
+      996,
+      997,
+      998,
+      999
+    ],
+    "methods": {
+      "S": "standard_restart",
+      "NC": "stable",
+      "C": "adaptive"
+    },
+    "solver": "numerical-section-revision/guarded-rerun-2026-11-09/directional/src (unchanged)",
+    "sigma": 0.65,
+    "reaction": 10.0,
+    "training_rule": "384-node Gauss-Legendre on [-10,10]",
+    "centre_box": 3.0,
+    "fit_limit": 1200,
+    "max_order": 3,
+    "stopping": "two local returns without structural change, or fit limit",
+    "target_draw": "default_rng(100000+seed): shift U[-0.6,0.6], factor U[0.7,1.3]",
+    "start_draw": "default_rng(seed): P=r+1 centres iid U[-1.2,1.2]",
+    "reproduce_existing": [
+      "seeds 900-909 NC/C exactly equal to guarded records",
+      "seeds 900-909 S equal to historical S records"
+    ]
+  },
+  "cohortB": {
+    "name": "first-order Poisson-Boltzmann recovery",
+    "dimensions": [
+      5,
+      10,
+      20
+    ],
+    "geometries": [
+      0,
+      1
+    ],
+    "seeds": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34
+    ],
+    "methods": {
+      "S": "standard with derived two-return loop",
+      "NC": "stable",
+      "C": "adaptive",
+      "T": "squared_gap.install"
+    },
+    "solver": "numerical-section-revision/sinum-revision-2026-11-10/squared-gap/source (unchanged) + squared_gap.py (unchanged)",
+    "reaction": 1.0,
+    "sigma": 0.45,
+    "width": 10,
+    "quadrature_power": 12,
+    "quadrature_seed": 8128,
+    "fit_limit": 1500,
+    "optimizer": {
+      "ftol": 1e-15,
+      "gtol": 1e-12,
+      "maxls": 40,
+      "maxiter": 6000
+    },
+    "stopping": "two local returns without structural change, or fit limit; S keeps its cond>1e16 stop",
+    "reproduce_existing": [
+      "seeds 10-14 NC/C/T exactly equal to existing records"
+    ]
+  },
+  "statistics": {
+    "thresholds": [
+      0.0001,
+      1e-06,
+      1e-08,
+      1e-10
+    ],
+    "primary_pair": [
+      "C",
+      "NC"
+    ],
+    "primaryA": {
+      "mcnemar_thresholds": [
+        1e-06,
+        1e-10
+      ],
+      "wilcoxon": "paired log10 errors, two-sided",
+      "strata": "each order"
+    },
+    "primaryB": {
+      "mcnemar_thresholds": [
+        1e-06
+      ],
+      "wilcoxon": "paired log10 errors, two-sided",
+      "strata": "pooled and each dimension"
+    },
+    "multiplicity": "Holm within the primary family of each cohort, reported with raw p-values",
+    "secondary_pairs": {
+      "A": [
+        [
+          "C",
+          "S"
+        ],
+        [
+          "NC",
+          "S"
+        ]
+      ],
+      "B": [
+        [
+          "C",
+          "S"
+        ],
+        [
+          "NC",
+          "S"
+        ],
+        [
+          "C",
+          "T"
+        ],
+        [
+          "NC",
+          "T"
+        ]
+      ]
+    },
+    "effect": "median paired log10 ratio with distribution-free 95% interval (sign-test order statistics)",
+    "ecdf": "final relative H1 error, every method and stratum",
+    "cost": "coefficient fits; paired Wilcoxon on fits for C vs NC",
+    "retention": "all runs retained"
+  },
+  "timing": {
+    "studies": "nine rows of the existing timing table with their prescribed starts",
+    "methods": [
+      "NC",
+      "C",
+      "T (first-order PB only)"
+    ],
+    "repetitions": 5,
+    "threads": 1,
+    "concurrency": 1,
+    "order": "alternate method order between repetitions",
+    "report": "median over repetitions and starts; range of per-start medians; exact reproduction of accuracy endpoints and fits"
+  },
+  "step10": {
+    "toy": {
+      "protocol": "matched Gaussian-variance protocol (joint L-BFGS-B, 3201-node trapezoid on [-16,16])",
+      "sigma": 1.0,
+      "width": 2,
+      "variances": {
+        "kappa_zero": 1.0,
+        "kappa_positive": 0.99
+      },
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "charts": {
+        "NC": "h>=1e-12",
+        "C": "NC + completion",
+        "T": "t=h^2>=0"
+      }
+    },
+    "panel_a": {
+      "ftol": 0.0,
+      "gtol": [
+        0.1,
+        0.03162277660168379,
+        0.01,
+        0.0031622776601683794,
+        0.001,
+        0.00031622776601683794,
+        0.0001,
+        3.1622776601683795e-05,
+        1e-05,
+        3.162277660168379e-06,
+        1e-06,
+        3.162277660168379e-07,
+        1e-07,
+        3.162277660168379e-08,
+        1e-08,
+        3.1622776601683795e-09,
+        1e-09,
+        3.1622776601683795e-10,
+        1e-10,
+        3.1622776601683794e-11,
+        1e-11,
+        3.1622776601683794e-12,
+        1e-12,
+        3.162277660168379e-13,
+        1e-13,
+        3.1622776601683796e-14,
+        1e-14
+      ],
+      "pb_start": {
+        "dimension": 5,
+        "geometry": 0,
+        "seed": 10,
+        "fit_limit": 20000
+      },
+      "slope_fit": "runs whose last local return met pgtol and with E > 10*min_E of that method",
+      "predictions": {
+        "NC": 0.6666666666666666,
+        "T": 1.0,
+        "C_after_completion": 1.0
+      }
+    },
+    "panel_b": "NC h_k vs iteration, ftol=gtol=0, s=1 and s=0.99; geometric decay when kappa>0; weights ~ |c|/(2h_k)",
+    "panel_c": "T at s=0.99: first iteration after which t_k=0 holds to the end (finite identification)"
+  }
+}

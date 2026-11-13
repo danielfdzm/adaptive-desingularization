@@ -1,0 +1,138 @@
+{
+ "python": "3.13.9",
+ "numpy": "2.4.2",
+ "torch": "2.10.0",
+ "A_regression": {
+  "stable": {
+   "identical": true,
+   "differing_fields": [],
+   "final_relative_error": [
+    6.6404347215435e-07,
+    6.6404347215435e-07
+   ],
+   "fits": [
+    78,
+    78
+   ]
+  },
+  "adaptive": {
+   "identical": true,
+   "differing_fields": [],
+   "final_relative_error": [
+    4.958219031995917e-13,
+    4.958219031995917e-13
+   ],
+   "fits": [
+    91,
+    91
+   ]
+  }
+ },
+ "B_columns": {
+  "columns": [
+   {
+    "t_over_sigma2": 2.5e-06,
+    "max_abs_error_E": 1.1102230246251565e-16,
+    "max_abs_error_D": 2.220446049250313e-16,
+    "branch": "series"
+   },
+   {
+    "t_over_sigma2": 4.9950000000000005e-06,
+    "max_abs_error_E": 1.1102230246251565e-16,
+    "max_abs_error_D": 3.3306690738754696e-16,
+    "branch": "series"
+   },
+   {
+    "t_over_sigma2": 5.0049999999999995e-06,
+    "max_abs_error_E": 1.1102230246251565e-16,
+    "max_abs_error_D": 1.1102230246251565e-16,
+    "branch": "sqrt"
+   },
+   {
+    "t_over_sigma2": 0.001,
+    "max_abs_error_E": 1.1102230246251565e-16,
+    "max_abs_error_D": 2.220446049250313e-16,
+    "branch": "sqrt"
+   },
+   {
+    "t_over_sigma2": 0.10000000000000002,
+    "max_abs_error_E": 1.1102230246251565e-16,
+    "max_abs_error_D": 2.220446049250313e-16,
+    "branch": "sqrt"
+   }
+  ],
+  "reduced_slope_autograd": 0.0008305382563047194,
+  "reduced_slope_fd": [
+   0.0008305707233091653,
+   0.0008305417464882225
+  ]
+ },
+ "C_slope_formula": [
+  {
+   "order": 1,
+   "formula": 0.04975943840260351,
+   "finite_difference": [
+    0.05001913632538684,
+    0.04982440812720256
+   ],
+   "richardson": 0.0497594987278078,
+   "relative_difference": 1.212336919925271e-06
+  },
+  {
+   "order": 2,
+   "formula": -6.552895975838723e-05,
+   "finite_difference": [
+    0.00021724692646681493,
+    5.263916293592648e-06
+   ],
+   "richardson": -6.539708709748145e-05,
+   "relative_difference": 0.0020124333026498398
+  },
+  {
+   "order": 3,
+   "formula": 0.00038946450956804635,
+   "finite_difference": [
+    0.0006047933798387916,
+    0.0004434213909711621
+   ],
+   "richardson": 0.00038963072801528566,
+   "relative_difference": 0.0004267871478807279
+  }
+ ],
+ "D_saddle": {
+  "slope_normalized": -0.21886271321911493,
+  "slope_per_unit_h2": -1.3064814625867083,
+  "paper_value": -1.31,
+  "tpair_run": {
+   "final_relative_error": 0.32950615327169297,
+   "final_t": [
+    0.36
+   ],
+   "initial_t": 0.0016,
+   "stop": "function_tolerance",
+   "fits": 6
+  }
+ },
+ "E_slope_test": {
+  "three_gaussians_a0.5": {
+   "slope_normalized": -5.335752794932517e-05,
+   "threshold": -0.009999865698094319,
+   "accepted": true
+  },
+  "three_gaussians_a1.0": {
+   "slope_normalized": -0.002857608090764418,
+   "threshold": -0.009970354190116862,
+   "accepted": true
+  },
+  "three_gaussians_a1.5": {
+   "slope_normalized": -0.01951049969982244,
+   "threshold": -0.009504377924576892,
+   "accepted": false
+  },
+  "second_derivative": {
+   "slope_normalized": 0.0,
+   "threshold": -0.01,
+   "accepted": true
+  }
+ }
+}

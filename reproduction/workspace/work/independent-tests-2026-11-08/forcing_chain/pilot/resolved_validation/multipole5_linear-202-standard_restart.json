@@ -1,0 +1,41 @@
+{
+  "source": "work/independent-tests-2026-11-08/forcing_chain/pilot/runs/multipole5_linear-202-standard_restart.json",
+  "problem": "multipole5_linear",
+  "seed": 202,
+  "method": "standard_restart",
+  "status": "validated",
+  "error": 0.8823563146202483,
+  "checks": [
+    {
+      "nodes": 1024,
+      "error": 0.8823563142540832,
+      "energy": -1.9719446853763758,
+      "reference_energy": -8.904802030436267,
+      "nonlinear_to_quadratic_ratio": 0.0,
+      "reference_peak": 1.038704991346398
+    },
+    {
+      "nodes": 1536,
+      "error": 0.8823563143186437,
+      "energy": -1.9719446692648317,
+      "reference_energy": -8.90480203043682,
+      "nonlinear_to_quadratic_ratio": 0.0,
+      "reference_peak": 1.0401220708376895
+    },
+    {
+      "nodes": 2048,
+      "error": 0.8823563146202483,
+      "energy": -1.9719446629181152,
+      "reference_energy": -8.904802030436496,
+      "nonlinear_to_quadratic_ratio": 0.0,
+      "reference_peak": 1.0404101549503046
+    }
+  ],
+  "reference_relative_H1_difference": 6.681000905941342e-13,
+  "base_mesh_nodes": 7498,
+  "fine_mesh_nodes": 11171,
+  "fits": 179,
+  "completions": 0,
+  "joins": 0,
+  "original_stop": "singular unconstrained coefficient system"
+}

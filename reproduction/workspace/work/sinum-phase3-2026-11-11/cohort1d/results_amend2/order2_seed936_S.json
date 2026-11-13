@@ -1,0 +1,172 @@
+{
+  "stationarity": {
+    "projected_gradient_max_abs": 0.00021403894970717374,
+    "gradient_max_abs": 0.00021403894970717374,
+    "active_bounds": 0,
+    "normalized_coefficient_kkt": 2.176718100795294e-11,
+    "final_objective_normalized": -0.39324068331493517,
+    "final_chain_slopes": []
+  },
+  "final_squared_halfgaps": [],
+  "zero_gap_pairs": 0,
+  "method": "standard_restart",
+  "d": 1,
+  "fits": 153,
+  "iterations": 19,
+  "stop": "function_tolerance",
+  "final_relative_error": 0.43749547633387975,
+  "trace_final_error_double": 0.43749224811355414,
+  "coefficient_norm": 244150.4418800275,
+  "completions": 0,
+  "joins": 0,
+  "rejections": 0,
+  "blocks_final": {
+    "atom": 3
+  },
+  "wall": 8.759894749848172,
+  "solve_seconds": 8.727070207940415,
+  "optimizer_seconds": 8.727070207940415,
+  "posthoc_validation_seconds": 0.0328255828935653,
+  "postprocessing_seconds": 0.032825957983732224,
+  "guard_counts": {},
+  "guard_examples": [],
+  "coordinate_convention": "dimensionless p_hat = (q/sigma)/prod((t_i-t_j)/sigma)",
+  "trace": [
+    {
+      "fits": 1,
+      "iterations": 0,
+      "wall": 0.011054915841668844,
+      "relative_error": 0.5639795092330473,
+      "coefficient_norm": 1.77813135710848,
+      "completions": 0,
+      "joins": 0,
+      "blocks": {
+        "atom": 3
+      }
+    },
+    {
+      "fits": 106,
+      "iterations": 16,
+      "wall": 4.815931082936004,
+      "relative_error": 0.43749277868403447,
+      "coefficient_norm": 244150.12299570287,
+      "completions": 0,
+      "joins": 0,
+      "blocks": {
+        "atom": 3
+      }
+    },
+    {
+      "fits": 153,
+      "iterations": 19,
+      "wall": 8.726898915832862,
+      "relative_error": 0.43749224811355414,
+      "coefficient_norm": 244150.4418800275,
+      "completions": 0,
+      "joins": 0,
+      "blocks": {
+        "atom": 3
+      }
+    }
+  ],
+  "events": [],
+  "final_blocks": [
+    {
+      "kind": "atom",
+      "id": 1,
+      "c": [
+        0.28663548471454087
+      ]
+    },
+    {
+      "kind": "atom",
+      "id": 2,
+      "c": [
+        0.280505790556688
+      ]
+    },
+    {
+      "kind": "atom",
+      "id": 3,
+      "c": [
+        0.2872305303235687
+      ]
+    }
+  ],
+  "final_coefficients": [
+    180105.48113352899,
+    -16051.831488979267,
+    -164054.23689049346
+  ],
+  "order": 2,
+  "seed": 936,
+  "phase3_method": "S",
+  "sigma": 0.65,
+  "lambda_value": 10.0,
+  "target": [
+    [
+      [
+        -0.5197822842157448
+      ]
+    ],
+    [
+      [
+        1.0
+      ]
+    ],
+    [
+      2
+    ],
+    [
+      0.4872441134124737
+    ]
+  ],
+  "target_shift": -0.5197822842157448,
+  "target_amplitude_factor": 1.1532405051182808,
+  "initial_centers": [
+    [
+      -0.4568289456294803
+    ],
+    [
+      0.4829840446073306
+    ],
+    [
+      1.035315919844838
+    ]
+  ],
+  "width": 3,
+  "stage": "phase-3 enlarged cohort",
+  "setup_seconds": 0.0073343750555068254,
+  "end_to_end_seconds": 8.734404582995921,
+  "validation": {
+    "quadrature": [
+      {
+        "nodes": 384,
+        "box": 10.0,
+        "quadratic_gap": 0.7607365386656542,
+        "nonlinear_gap": 0.08791356562102065,
+        "total_gap": 0.8486501042866748,
+        "target_nonlinear_over_quadratic": 0.09346447937306479
+      },
+      {
+        "nodes": 768,
+        "box": 10.0,
+        "quadratic_gap": 0.7607365386656542,
+        "nonlinear_gap": 0.08791356562162499,
+        "total_gap": 0.8486501042872792,
+        "target_nonlinear_over_quadratic": 0.09346447937307846
+      },
+      {
+        "nodes": 768,
+        "box": 12.0,
+        "quadratic_gap": 0.7607365386656542,
+        "nonlinear_gap": 0.08791356562073784,
+        "total_gap": 0.848650104286392,
+        "target_nonlinear_over_quadratic": 0.09346447937307849
+      }
+    ],
+    "normalized_coefficient_kkt": 2.1767181007952935e-11,
+    "normalized_maximum_gap_change": 1.1160771642357848e-13
+  },
+  "independent_validation_seconds": 0.2412374170962721
+}

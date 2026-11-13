@@ -1,0 +1,93 @@
+{
+ "problem": "multipole4_nonlinear",
+ "seed": 200,
+ "method": "standard_restart",
+ "capacity": 3,
+ "sigma": 0.55,
+ "reaction": 10.0,
+ "initial_centers": [
+  -1.4559497568962585,
+  0.049175991413823845,
+  1.3589704957326907
+ ],
+ "fits": 115,
+ "iterations": 14,
+ "stop": "exception",
+ "coefficient_norm": 74337.64894140763,
+ "completions": 0,
+ "joins": 0,
+ "rejections": 0,
+ "blocks_final": {
+  "atom": 3
+ },
+ "solve_seconds": 1.1110632920172065,
+ "trace": [
+  {
+   "fits": 1,
+   "iterations": 0,
+   "wall": 0.014169750036671758,
+   "energy": -0.0016849464707212657,
+   "coefficient_norm": 2.640286996100921,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 3
+   }
+  },
+  {
+   "fits": 87,
+   "iterations": 14,
+   "wall": 0.7878707080380991,
+   "energy": -0.004249347205706389,
+   "coefficient_norm": 74337.64894140763,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 3
+   }
+  },
+  {
+   "fits": 115,
+   "iterations": 14,
+   "wall": 1.1110375000862405,
+   "energy": -0.004249347205706389,
+   "coefficient_norm": 74337.64894140763,
+   "completions": 0,
+   "joins": 0,
+   "blocks": {
+    "atom": 3
+   }
+  }
+ ],
+ "events": [],
+ "final_blocks": [
+  {
+   "kind": "atom",
+   "id": 1,
+   "c": [
+    -1.6915998343717191
+   ]
+  },
+  {
+   "kind": "atom",
+   "id": 2,
+   "c": [
+    0.6412015201316553
+   ]
+  },
+  {
+   "kind": "atom",
+   "id": 3,
+   "c": [
+    0.6412420379649736
+   ]
+  }
+ ],
+ "final_coefficients": [
+  0.7811170091863414,
+  52564.765487035096,
+  -52564.545834800316
+ ],
+ "forcing_squared_norm": 16749.688891058257,
+ "exception": "RuntimeError('reference: The maximum number of mesh nodes is exceeded.')"
+}

@@ -1,0 +1,98 @@
+{
+  "task": "Guard-enforced reruns, matched end-to-end timings, variance NC control and focused manuscript revision",
+  "source_paper_sha256": "50a1ee99110858c7f463a8e60f9fc01928f19707efc3ed0465843a50bc218d96",
+  "python": "3.14.0 (v3.14.0:ebf955df7a8, Oct  7 2025, 08:20:14) [Clang 16.0.0 (clang-1600.0.26.6)]",
+  "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "logical_cpu_count": 8,
+  "timing_policy": "Accuracy campaigns may run concurrently. Controlled timing repetitions run serially without other task computation. Single numerical thread. All failures retained. Fixed benchmark subset selected before reruns.",
+  "benchmark_subset": {
+    "first_order_pb": {
+      "dimensions": [
+        5,
+        10,
+        20
+      ],
+      "geometry_seed": [
+        [
+          0,
+          10
+        ],
+        [
+          0,
+          11
+        ],
+        [
+          1,
+          10
+        ]
+      ]
+    },
+    "linear_full_span": {
+      "dimensions": [
+        10,
+        20
+      ],
+      "seeds": [
+        10,
+        11,
+        12
+      ]
+    },
+    "directional_higher": {
+      "dimensions": [
+        5
+      ],
+      "geometry_seed": [
+        [
+          0,
+          10
+        ],
+        [
+          0,
+          11
+        ],
+        [
+          1,
+          10
+        ]
+      ]
+    },
+    "second1d": {
+      "seeds": [
+        40,
+        41,
+        42
+      ]
+    },
+    "independent_confirmation": {
+      "orders": [
+        2,
+        3
+      ],
+      "seeds": [
+        900,
+        901,
+        902
+      ]
+    },
+    "variance": {
+      "variances": [
+        0.99,
+        0.995,
+        0.999
+      ],
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    }
+  }
+}

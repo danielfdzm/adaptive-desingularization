@@ -1,0 +1,41 @@
+{
+  "source": "work/independent-tests-2026-11-08/forcing_chain/pilot/runs/multipole5_linear-200-standard_restart.json",
+  "problem": "multipole5_linear",
+  "seed": 200,
+  "method": "standard_restart",
+  "status": "validated",
+  "error": 0.5434719509085627,
+  "checks": [
+    {
+      "nodes": 1024,
+      "error": 0.5434719508878207,
+      "energy": -6.27466402015364,
+      "reference_energy": -8.904802030436267,
+      "nonlinear_to_quadratic_ratio": 0.0,
+      "reference_peak": 1.038704991346398
+    },
+    {
+      "nodes": 1536,
+      "error": 0.5434719509031931,
+      "energy": -6.274664018161701,
+      "reference_energy": -8.90480203043682,
+      "nonlinear_to_quadratic_ratio": 0.0,
+      "reference_peak": 1.0401220708376895
+    },
+    {
+      "nodes": 2048,
+      "error": 0.5434719509085627,
+      "energy": -6.274664016435883,
+      "reference_energy": -8.904802030436496,
+      "nonlinear_to_quadratic_ratio": 0.0,
+      "reference_peak": 1.0404101549503046
+    }
+  ],
+  "reference_relative_H1_difference": 6.681000905941342e-13,
+  "base_mesh_nodes": 7498,
+  "fine_mesh_nodes": 11171,
+  "fits": 95,
+  "completions": 0,
+  "joins": 0,
+  "original_stop": "function_tolerance"
+}

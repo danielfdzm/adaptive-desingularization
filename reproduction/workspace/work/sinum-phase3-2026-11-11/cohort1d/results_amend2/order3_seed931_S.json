@@ -1,0 +1,183 @@
+{
+  "stationarity": {
+    "projected_gradient_max_abs": 2.7718943329091417e-05,
+    "gradient_max_abs": 2.7718943329091417e-05,
+    "active_bounds": 0,
+    "normalized_coefficient_kkt": 1.0108797610924838e-11,
+    "final_objective_normalized": -0.49999994617049137,
+    "final_chain_slopes": []
+  },
+  "final_squared_halfgaps": [],
+  "zero_gap_pairs": 0,
+  "method": "standard_restart",
+  "d": 1,
+  "fits": 55,
+  "iterations": 14,
+  "stop": "abnormal",
+  "final_relative_error": 0.0004398427987806643,
+  "trace_final_error_double": 0.0003042094793195309,
+  "coefficient_norm": 60640.11263948175,
+  "completions": 0,
+  "joins": 0,
+  "rejections": 0,
+  "blocks_final": {
+    "atom": 4
+  },
+  "wall": 0.7403609592001885,
+  "solve_seconds": 0.7228452090639621,
+  "optimizer_seconds": 0.7228452090639621,
+  "posthoc_validation_seconds": 0.0175178749486804,
+  "postprocessing_seconds": 0.017518125008791685,
+  "guard_counts": {},
+  "guard_examples": [],
+  "coordinate_convention": "dimensionless p_hat = (q/sigma)/prod((t_i-t_j)/sigma)",
+  "trace": [
+    {
+      "fits": 1,
+      "iterations": 0,
+      "wall": 0.005758417071774602,
+      "relative_error": 0.06974971779360978,
+      "coefficient_norm": 290.60088190282346,
+      "completions": 0,
+      "joins": 0,
+      "blocks": {
+        "atom": 4
+      }
+    },
+    {
+      "fits": 25,
+      "iterations": 14,
+      "wall": 0.4020023341290653,
+      "relative_error": 0.0003616624234897985,
+      "coefficient_norm": 60640.11138316731,
+      "completions": 0,
+      "joins": 0,
+      "blocks": {
+        "atom": 4
+      }
+    },
+    {
+      "fits": 55,
+      "iterations": 14,
+      "wall": 0.7227643341757357,
+      "relative_error": 0.0003042094793195309,
+      "coefficient_norm": 60640.11263948175,
+      "completions": 0,
+      "joins": 0,
+      "blocks": {
+        "atom": 4
+      }
+    }
+  ],
+  "events": [],
+  "final_blocks": [
+    {
+      "kind": "atom",
+      "id": 1,
+      "c": [
+        0.0816778632808974
+      ]
+    },
+    {
+      "kind": "atom",
+      "id": 2,
+      "c": [
+        0.07180739723750706
+      ]
+    },
+    {
+      "kind": "atom",
+      "id": 3,
+      "c": [
+        0.12030607141815493
+      ]
+    },
+    {
+      "kind": "atom",
+      "id": 4,
+      "c": [
+        0.16070565169012915
+      ]
+    }
+  ],
+  "final_coefficients": [
+    -46909.31675134076,
+    33213.904167062414,
+    18675.505512165222,
+    -4980.0930410681985
+  ],
+  "order": 3,
+  "seed": 931,
+  "phase3_method": "S",
+  "sigma": 0.65,
+  "lambda_value": 10.0,
+  "target": [
+    [
+      [
+        0.10857309427008706
+      ]
+    ],
+    [
+      [
+        1.0
+      ]
+    ],
+    [
+      3
+    ],
+    [
+      0.23512486896008777
+    ]
+  ],
+  "target_shift": 0.10857309427008706,
+  "target_amplitude_factor": 0.8561670239784717,
+  "initial_centers": [
+    [
+      -0.10585334925617786
+    ],
+    [
+      -0.16236471760892374
+    ],
+    [
+      0.16218795461629723
+    ],
+    [
+      0.3480079780289242
+    ]
+  ],
+  "width": 4,
+  "stage": "phase-3 enlarged cohort",
+  "setup_seconds": 0.010022458853200078,
+  "end_to_end_seconds": 0.7328676679171622,
+  "validation": {
+    "quadrature": [
+      {
+        "nodes": 384,
+        "box": 10.0,
+        "quadratic_gap": 1.4220267743831533e-06,
+        "nonlinear_gap": 1.111062465002172e-07,
+        "total_gap": 1.5331330208833704e-06,
+        "target_nonlinear_over_quadratic": 0.08991979314686575
+      },
+      {
+        "nodes": 768,
+        "box": 10.0,
+        "quadratic_gap": 1.4220267743831533e-06,
+        "nonlinear_gap": 1.1110624601254789e-07,
+        "total_gap": 1.533133020395701e-06,
+        "target_nonlinear_over_quadratic": 0.08991979314687898
+      },
+      {
+        "nodes": 768,
+        "box": 12.0,
+        "quadratic_gap": 1.4220267743831533e-06,
+        "nonlinear_gap": 1.1110624591680155e-07,
+        "total_gap": 1.5331330202999548e-06,
+        "target_nonlinear_over_quadratic": 0.08991979314687894
+      }
+    ],
+    "normalized_coefficient_kkt": 1.0108797610924836e-11,
+    "normalized_maximum_gap_change": 3.9685805266603796e-17
+  },
+  "independent_validation_seconds": 0.07663854211568832
+}
